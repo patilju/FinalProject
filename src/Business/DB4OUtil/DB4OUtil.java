@@ -1,8 +1,5 @@
-                                                                                                                                                                                                                                            /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Business.DB4OUtil;
+
 import Business.ConfigureASystem;
 import Business.EcoSystem;
 import com.db4o.Db4oEmbedded;
@@ -14,10 +11,11 @@ import java.nio.file.Paths;
 
 /**
  *
- * @author juile
+ * @author rrheg
+ * @author Lingfeng
  */
 public class DB4OUtil {
-    
+
     private static final String FILENAME = Paths.get("Databank.db4o").toAbsolutePath().toString();// path to the data store
     private static DB4OUtil dB4OUtil;
     
@@ -75,5 +73,4 @@ public class DB4OUtil {
         conn.close();
         return system;
     }
-    
 }

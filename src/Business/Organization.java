@@ -1,19 +1,21 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business;
+
 import Business.Employee.EmployeeDirectory;
 import Business.Role.Role;
 import Business.UserAccount.UserAccountDirectory;
 import Business.WorkQueue.WorkQueue;
 import java.util.ArrayList;
+
 /**
  *
- * @author juile
+ * @author raunak
  */
 public abstract class Organization {
-    
+
     private String name;
     private WorkQueue workQueue;
     private EmployeeDirectory employeeDirectory;
@@ -81,7 +83,6 @@ public abstract class Organization {
     public String toString() {
         return name;
     }
-    
     
     
 }

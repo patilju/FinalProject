@@ -1,13 +1,75 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.UserAccount;
 
+import Business.Employee.Employee;
+import Business.Role.Role;
+import java.util.ArrayList;
+
 /**
  *
- * @author juile
+ * @author raunak
  */
 public class UserAccountDirectory {
     
+    private ArrayList<UserAccount> userAccountList;
+
+    public UserAccountDirectory() {
+        userAccountList = new ArrayList();
+    }
+
+    public ArrayList<UserAccount> getUserAccountList() {
+        return userAccountList;
+    }
+    
+    public UserAccount authenticateUser(String username, String password){
+        for (UserAccount ua : userAccountList)
+            if (ua.getUsername().equals(username) && ua.getPassword().equals(password)){
+                return ua;
+            }
+        return null;
+    }
+    
+    public UserAccount createUserAccount(String username, String password, Employee employee, Role role){
+        UserAccount userAccount = new UserAccount();
+        userAccount.setUsername(username);
+        userAccount.setPassword(password);
+        userAccount.setEmployee(employee);
+        userAccount.setRole(role);
+        userAccountList.add(userAccount);
+        return userAccount;
+    }
+    
+     public UserAccount getUserByEmployeeNo(String employeeNo) {
+        for (UserAccount user : userAccountList) {
+            if (user.getEmployee().getName().equalsIgnoreCase(employeeNo)) {
+                return user;
+            }
+        }
+        return null;
+    }
+
+    public void removeAllAccounts() {
+        for (int i = 0; i < userAccountList.size(); i++) {
+            if (!userAccountList.get(i).getUsername().equalsIgnoreCase("admin")) {
+                userAccountList.remove(i);
+            }
+        }
+
+        for (int i = 0; i < userAccountList.size(); i++) {
+            System.out.println(userAccountList.get(i).getEmployee());
+        }
+    }
+
+    public boolean checkIfUsernameIsUnique(String username) {
+        for (UserAccount ua : userAccountList) {
+            if (ua.getUsername().equals(username)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
