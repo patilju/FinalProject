@@ -39,7 +39,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
     }
     
     public void populateTable(){
-        DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblDelivery.getModel();
         model.setRowCount(0);
         for (Order order : business.getOrderDirectory().getOrderDir()) {
             if (order.getDeliveryMan() != null) {
@@ -67,32 +67,32 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        refreshJButton = new javax.swing.JButton();
+        btnRefresh = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        workRequestJTable = new javax.swing.JTable();
-        btnConfirm = new javax.swing.JButton();
-        btnDeliComplete = new javax.swing.JButton();
+        tblDelivery = new javax.swing.JTable();
+        btnConfirmDelivery = new javax.swing.JButton();
+        btnDeliveryComplete = new javax.swing.JButton();
         lblDeliDetails = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        refreshJButton.setBackground(new java.awt.Color(204, 255, 255));
-        refreshJButton.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        refreshJButton.setForeground(new java.awt.Color(0, 51, 51));
-        refreshJButton.setText("Refresh");
-        refreshJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        refreshJButton.addActionListener(new java.awt.event.ActionListener() {
+        btnRefresh.setBackground(new java.awt.Color(204, 255, 255));
+        btnRefresh.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnRefresh.setForeground(new java.awt.Color(0, 51, 51));
+        btnRefresh.setText("Refresh");
+        btnRefresh.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnRefresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                refreshJButtonActionPerformed(evt);
+                btnRefreshActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 55, -1, -1));
+        add(btnRefresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 55, -1, -1));
 
-        workRequestJTable.setBackground(new java.awt.Color(255, 255, 204));
-        workRequestJTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        workRequestJTable.setForeground(new java.awt.Color(0, 51, 51));
-        workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
+        tblDelivery.setBackground(new java.awt.Color(255, 255, 204));
+        tblDelivery.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        tblDelivery.setForeground(new java.awt.Color(0, 51, 51));
+        tblDelivery.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -118,33 +118,33 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(workRequestJTable);
+        jScrollPane1.setViewportView(tblDelivery);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 96, 790, 130));
 
-        btnConfirm.setBackground(new java.awt.Color(255, 255, 204));
-        btnConfirm.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnConfirm.setForeground(new java.awt.Color(0, 51, 51));
-        btnConfirm.setText("Confirm Pickup");
-        btnConfirm.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnConfirm.addActionListener(new java.awt.event.ActionListener() {
+        btnConfirmDelivery.setBackground(new java.awt.Color(255, 255, 204));
+        btnConfirmDelivery.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnConfirmDelivery.setForeground(new java.awt.Color(0, 51, 51));
+        btnConfirmDelivery.setText("Confirm Pickup");
+        btnConfirmDelivery.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnConfirmDelivery.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnConfirmActionPerformed(evt);
+                btnConfirmDeliveryActionPerformed(evt);
             }
         });
-        add(btnConfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 140, 35));
+        add(btnConfirmDelivery, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 140, 35));
 
-        btnDeliComplete.setBackground(new java.awt.Color(204, 255, 255));
-        btnDeliComplete.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnDeliComplete.setForeground(new java.awt.Color(0, 51, 51));
-        btnDeliComplete.setText("Delivery Complete");
-        btnDeliComplete.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnDeliComplete.addActionListener(new java.awt.event.ActionListener() {
+        btnDeliveryComplete.setBackground(new java.awt.Color(204, 255, 255));
+        btnDeliveryComplete.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnDeliveryComplete.setForeground(new java.awt.Color(0, 51, 51));
+        btnDeliveryComplete.setText("Delivery Complete");
+        btnDeliveryComplete.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDeliveryComplete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeliCompleteActionPerformed(evt);
+                btnDeliveryCompleteActionPerformed(evt);
             }
         });
-        add(btnDeliComplete, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 140, 33));
+        add(btnDeliveryComplete, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 140, 33));
 
         lblDeliDetails.setBackground(new java.awt.Color(204, 255, 255));
         lblDeliDetails.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -154,44 +154,44 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         add(lblDeliDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 25, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
+    private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
         populateTable();
-        btnDeliComplete.setVisible(true);
-    }//GEN-LAST:event_refreshJButtonActionPerformed
+        btnDeliveryComplete.setVisible(true);
+    }//GEN-LAST:event_btnRefreshActionPerformed
 
-    private void btnConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmActionPerformed
+    private void btnConfirmDeliveryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmDeliveryActionPerformed
         // TODO add your handling code here:
-                int selectedRow = workRequestJTable.getSelectedRow();
+                int selectedRow = tblDelivery.getSelectedRow();
 
         if (selectedRow < 0) {
             JOptionPane.showMessageDialog(null, "Please select a row!");
             return;
         }
-        String orderStatus = (String) workRequestJTable.getValueAt(selectedRow, 1);
-        String selectedOrderId = (String) workRequestJTable.getValueAt(selectedRow, 0);
+        String orderStatus = (String) tblDelivery.getValueAt(selectedRow, 1);
+        String selectedOrderId = (String) tblDelivery.getValueAt(selectedRow, 0);
        if(orderStatus.equals("Completed")){
-           btnDeliComplete.setVisible(false);
+           btnDeliveryComplete.setVisible(false);
            JOptionPane.showMessageDialog(null, "Order has already been completed!");
        }
        else{
            
-           btnDeliComplete.setVisible(true);
+           btnDeliveryComplete.setVisible(true);
         Order order = business.getOrderDirectory().fetchOrders(selectedOrderId);
         order.setStatus("Out For Delivery");
         JOptionPane.showMessageDialog(null, "Order has been updated!");
         populateTable();
        }
-    }//GEN-LAST:event_btnConfirmActionPerformed
+    }//GEN-LAST:event_btnConfirmDeliveryActionPerformed
 
-    private void btnDeliCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliCompleteActionPerformed
-        int selectedRow = workRequestJTable.getSelectedRow();
+    private void btnDeliveryCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliveryCompleteActionPerformed
+        int selectedRow = tblDelivery.getSelectedRow();
 
         if (selectedRow < 0) {
             JOptionPane.showMessageDialog(null, "Please select a row first!");
             return;
         }
 
-        String selectedOrderId = (String) workRequestJTable.getValueAt(selectedRow, 0);
+        String selectedOrderId = (String) tblDelivery.getValueAt(selectedRow, 0);
         Order order = business.getOrderDirectory().fetchOrders(selectedOrderId);
 
         if (order.getStatus().trim().equalsIgnoreCase("Out For Delivery")) {
@@ -201,14 +201,14 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         } else {
             JOptionPane.showMessageDialog(null, "Kindly confirm the order pick-up before confirming delivery!");
         }
-    }//GEN-LAST:event_btnDeliCompleteActionPerformed
+    }//GEN-LAST:event_btnDeliveryCompleteActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnConfirm;
-    private javax.swing.JButton btnDeliComplete;
+    private javax.swing.JButton btnConfirmDelivery;
+    private javax.swing.JButton btnDeliveryComplete;
+    private javax.swing.JButton btnRefresh;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblDeliDetails;
-    private javax.swing.JButton refreshJButton;
-    private javax.swing.JTable workRequestJTable;
+    private javax.swing.JTable tblDelivery;
     // End of variables declaration//GEN-END:variables
 }

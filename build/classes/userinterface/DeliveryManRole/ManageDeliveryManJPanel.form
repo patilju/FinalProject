@@ -32,10 +32,10 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jScrollPane1" min="-2" pref="640" max="-2" attributes="0"/>
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="btnDeliveryDel" alignment="0" pref="116" max="32767" attributes="0"/>
+                              <Component id="btnDeliveryDelete" alignment="0" pref="116" max="32767" attributes="0"/>
                               <Component id="btnDeliveryView" alignment="0" max="32767" attributes="0"/>
                               <Component id="btnDeliveryAdd" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnDeliveryBack" alignment="0" max="32767" attributes="0"/>
+                              <Component id="btnBack2" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -52,13 +52,13 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="115" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btnDeliveryBack" min="-2" max="-2" attributes="0"/>
+              <Component id="btnBack2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="btnDeliveryAdd" min="-2" pref="31" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
               <Component id="btnDeliveryView" min="-2" pref="31" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="btnDeliveryDel" min="-2" pref="31" max="-2" attributes="0"/>
+              <Component id="btnDeliveryDelete" min="-2" pref="31" max="-2" attributes="0"/>
               <EmptySpace pref="29" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -87,7 +87,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="TblDeliveyMan">
+        <Component class="javax.swing.JTable" name="tblDeliveyMan">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="ff" red="ff" type="rgb"/>
@@ -137,7 +137,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="btnDeliveryBack">
+    <Component class="javax.swing.JButton" name="btnBack2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -156,7 +156,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeliveryBackActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBack2ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnDeliveryAdd">
@@ -203,7 +203,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeliveryViewActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnDeliveryDel">
+    <Component class="javax.swing.JButton" name="btnDeliveryDelete">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -222,7 +222,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeliveryDelActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeliveryDeleteActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

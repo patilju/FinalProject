@@ -48,13 +48,13 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
         lblDeliUserName = new javax.swing.JLabel();
         lblDeliPass = new javax.swing.JLabel();
         lblDeliContact = new javax.swing.JLabel();
-        txtDeliName = new javax.swing.JTextField();
-        txtDeliUserName = new javax.swing.JTextField();
-        pwDeliPass = new javax.swing.JPasswordField();
-        txtDeliContact = new javax.swing.JTextField();
+        txtDeliveryName = new javax.swing.JTextField();
+        txtDeliveryUserName = new javax.swing.JTextField();
+        pwDeliveryPassword = new javax.swing.JPasswordField();
+        txtDeliveryContact = new javax.swing.JTextField();
         lblAddRest = new javax.swing.JLabel();
-        btnBack = new javax.swing.JButton();
-        btnAddRest = new javax.swing.JButton();
+        btnBack1 = new javax.swing.JButton();
+        btnAddDelivery = new javax.swing.JButton();
         pbDeliPassStr = new javax.swing.JProgressBar();
 
         setBackground(new java.awt.Color(255, 255, 204));
@@ -84,38 +84,38 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
         lblDeliContact.setText("Contact No:");
         add(lblDeliContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, -1, -1));
 
-        txtDeliName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtDeliName.setForeground(new java.awt.Color(0, 51, 51));
-        txtDeliName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        add(txtDeliName, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 53, 350, -1));
+        txtDeliveryName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDeliveryName.setForeground(new java.awt.Color(0, 51, 51));
+        txtDeliveryName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        add(txtDeliveryName, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 53, 350, -1));
 
-        txtDeliUserName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtDeliUserName.setForeground(new java.awt.Color(0, 51, 51));
-        txtDeliUserName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        add(txtDeliUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 82, 350, -1));
+        txtDeliveryUserName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDeliveryUserName.setForeground(new java.awt.Color(0, 51, 51));
+        txtDeliveryUserName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        add(txtDeliveryUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 82, 350, -1));
 
-        pwDeliPass.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        pwDeliPass.setForeground(new java.awt.Color(0, 51, 51));
-        pwDeliPass.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        pwDeliPass.addActionListener(new java.awt.event.ActionListener() {
+        pwDeliveryPassword.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        pwDeliveryPassword.setForeground(new java.awt.Color(0, 51, 51));
+        pwDeliveryPassword.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        pwDeliveryPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pwDeliPassActionPerformed(evt);
+                pwDeliveryPasswordActionPerformed(evt);
             }
         });
-        pwDeliPass.addKeyListener(new java.awt.event.KeyAdapter() {
+        pwDeliveryPassword.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                pwDeliPassKeyReleased(evt);
+                pwDeliveryPasswordKeyReleased(evt);
             }
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                pwDeliPassKeyTyped(evt);
+                pwDeliveryPasswordKeyTyped(evt);
             }
         });
-        add(pwDeliPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 111, 350, -1));
+        add(pwDeliveryPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 111, 350, -1));
 
-        txtDeliContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtDeliContact.setForeground(new java.awt.Color(0, 51, 51));
-        txtDeliContact.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        add(txtDeliContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(212, 158, 350, -1));
+        txtDeliveryContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDeliveryContact.setForeground(new java.awt.Color(0, 51, 51));
+        txtDeliveryContact.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        add(txtDeliveryContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(212, 158, 350, -1));
 
         lblAddRest.setBackground(new java.awt.Color(204, 255, 255));
         lblAddRest.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -124,29 +124,29 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
         lblAddRest.setText("Delivery Person Information");
         add(lblAddRest, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 20, -1, -1));
 
-        btnBack.setBackground(new java.awt.Color(204, 255, 255));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 51));
-        btnBack.setText("Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        btnBack1.setBackground(new java.awt.Color(204, 255, 255));
+        btnBack1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnBack1.setForeground(new java.awt.Color(0, 51, 51));
+        btnBack1.setText("Back");
+        btnBack1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                btnBack1ActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 80, 30));
+        add(btnBack1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 80, 30));
 
-        btnAddRest.setBackground(new java.awt.Color(204, 255, 255));
-        btnAddRest.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnAddRest.setForeground(new java.awt.Color(0, 51, 51));
-        btnAddRest.setText("Add");
-        btnAddRest.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnAddRest.addActionListener(new java.awt.event.ActionListener() {
+        btnAddDelivery.setBackground(new java.awt.Color(204, 255, 255));
+        btnAddDelivery.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnAddDelivery.setForeground(new java.awt.Color(0, 51, 51));
+        btnAddDelivery.setText("Add");
+        btnAddDelivery.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAddDelivery.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddRestActionPerformed(evt);
+                btnAddDeliveryActionPerformed(evt);
             }
         });
-        add(btnAddRest, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 80, 30));
+        add(btnAddDelivery, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 80, 30));
 
         pbDeliPassStr.setBackground(new java.awt.Color(204, 255, 255));
         pbDeliPassStr.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
@@ -161,21 +161,21 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
         add(pbDeliPassStr, new org.netbeans.lib.awtextra.AbsoluteConstraints(212, 139, 126, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void pwDeliPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwDeliPassActionPerformed
+    private void pwDeliveryPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwDeliveryPasswordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_pwDeliPassActionPerformed
+    }//GEN-LAST:event_pwDeliveryPasswordActionPerformed
 
-    private void pwDeliPassKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwDeliPassKeyReleased
+    private void pwDeliveryPasswordKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwDeliveryPasswordKeyReleased
         // TODO add your handling code here
-    }//GEN-LAST:event_pwDeliPassKeyReleased
+    }//GEN-LAST:event_pwDeliveryPasswordKeyReleased
 
-    private void pwDeliPassKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwDeliPassKeyTyped
+    private void pwDeliveryPasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwDeliveryPasswordKeyTyped
         // TODO add your handling code here:
-        int pwSize = pwDeliPass.getText().length();
+        int pwSize = pwDeliveryPassword.getText().length();
         pbDeliPassStr.setValue(pwSize);
-    }//GEN-LAST:event_pwDeliPassKeyTyped
+    }//GEN-LAST:event_pwDeliveryPasswordKeyTyped
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void btnBack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack1ActionPerformed
         // TODO add your handling code here:
         container.remove(this);
         Component[] componentArray = container.getComponents();
@@ -184,15 +184,15 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
         manageDeliJPanel.populateDeliveryManTable();
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_btnBack1ActionPerformed
 
-    private void btnAddRestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddRestActionPerformed
+    private void btnAddDeliveryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddDeliveryActionPerformed
         // TODO add your handling code here:
 
-        String custName = txtDeliName.getText();
-        String custContact = txtDeliContact.getText();
-        String custUserName = txtDeliUserName.getText();
-        String custPass = String.valueOf(pwDeliPass.getPassword());
+        String custName = txtDeliveryName.getText();
+        String custContact = txtDeliveryContact.getText();
+        String custUserName = txtDeliveryUserName.getText();
+        String custPass = String.valueOf(pwDeliveryPassword.getPassword());
 
         if( custName.isEmpty() || custContact.isEmpty() || 
             custUserName.isEmpty() || custPass.isEmpty() ) {
@@ -214,12 +214,12 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "New Delivery Man "+account.getUsername()+" added to the System Successfully!");
             resetFields();
         }
-    }//GEN-LAST:event_btnAddRestActionPerformed
+    }//GEN-LAST:event_btnAddDeliveryActionPerformed
     public void resetFields(){
-            txtDeliName.setText("");
-            txtDeliContact.setText("");
-            txtDeliUserName.setText("");
-            pwDeliPass.setText("");
+            txtDeliveryName.setText("");
+            txtDeliveryContact.setText("");
+            txtDeliveryUserName.setText("");
+            pwDeliveryPassword.setText("");
     }
     private void pbDeliPassStrStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_pbDeliPassStrStateChanged
         // TODO add your handling code here:
@@ -227,17 +227,17 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAddRest;
-    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnAddDelivery;
+    private javax.swing.JButton btnBack1;
     private javax.swing.JLabel lblAddRest;
     private javax.swing.JLabel lblDeliContact;
     private javax.swing.JLabel lblDeliName;
     private javax.swing.JLabel lblDeliPass;
     private javax.swing.JLabel lblDeliUserName;
     private javax.swing.JProgressBar pbDeliPassStr;
-    private javax.swing.JPasswordField pwDeliPass;
-    private javax.swing.JTextField txtDeliContact;
-    private javax.swing.JTextField txtDeliName;
-    private javax.swing.JTextField txtDeliUserName;
+    private javax.swing.JPasswordField pwDeliveryPassword;
+    private javax.swing.JTextField txtDeliveryContact;
+    private javax.swing.JTextField txtDeliveryName;
+    private javax.swing.JTextField txtDeliveryUserName;
     // End of variables declaration//GEN-END:variables
 }

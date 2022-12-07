@@ -32,18 +32,18 @@
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="lblItemName" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblDishName" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtItemName" min="-2" pref="246" max="-2" attributes="0"/>
+                              <Component id="txtDishName" min="-2" pref="246" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="btnBack" min="-2" pref="52" max="-2" attributes="0"/>
+                          <Component id="btnDishBack" min="-2" pref="52" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="83" max="32767" attributes="0"/>
                       <Component id="lblPrice" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtItemPrice" min="-2" pref="264" max="-2" attributes="0"/>
-                          <Component id="btnSave" min="-2" pref="54" max="-2" attributes="0"/>
+                          <Component id="txtDishPrice" min="-2" pref="264" max="-2" attributes="0"/>
+                          <Component id="btnDishSave" min="-2" pref="54" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -58,15 +58,15 @@
               <Component id="lblAddItem" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblItemName" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtItemName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDishName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDishName" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtItemPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDishPrice" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnSave" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnBack" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnDishSave" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnDishBack" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="155" max="32767" attributes="0"/>
           </Group>
@@ -89,7 +89,7 @@
         <Property name="text" type="java.lang.String" value="Create New Order Item"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblItemName">
+    <Component class="javax.swing.JLabel" name="lblDishName">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -117,7 +117,7 @@
         <Property name="text" type="java.lang.String" value="Price :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtItemPrice">
+    <Component class="javax.swing.JTextField" name="txtDishPrice">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -132,7 +132,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtItemName">
+    <Component class="javax.swing.JTextField" name="txtDishName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -147,7 +147,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnSave">
+    <Component class="javax.swing.JButton" name="btnDishSave">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -166,10 +166,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDishSaveActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnBack">
+    <Component class="javax.swing.JButton" name="btnDishBack">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -188,7 +188,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDishBackActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

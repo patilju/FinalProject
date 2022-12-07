@@ -34,16 +34,16 @@ public class EditMenuItemJPanel extends javax.swing.JPanel {
         this.container = container;
         this.item = item;
         this.menuDirectory = menuDirectory;
-        txtItemName.setText(item.getItemName());
-        txtItemPrice.setText(String.valueOf(item.getPrice()));
-        txtItemNo.setText(item.getItemNo());
+        txtDishName.setText(item.getItemName());
+        txtIDishPrice1.setText(String.valueOf(item.getPrice()));
+        txtDishID.setText(item.getItemNo());
         disableUpdate();
     }
     
     void disableUpdate(){
-        txtItemName.setEditable(false);
-        txtItemNo.setEditable(false);
-        txtItemPrice.setEditable(false);
+        txtDishName.setEditable(false);
+        txtDishID.setEditable(false);
+        txtIDishPrice1.setEditable(false);
     }
 
     /**
@@ -58,13 +58,13 @@ public class EditMenuItemJPanel extends javax.swing.JPanel {
         lblAddItem = new javax.swing.JLabel();
         lblItemName = new javax.swing.JLabel();
         lblPrice = new javax.swing.JLabel();
-        txtItemPrice = new javax.swing.JTextField();
-        txtItemName = new javax.swing.JTextField();
+        txtIDishPrice1 = new javax.swing.JTextField();
+        txtDishName = new javax.swing.JTextField();
         lblItemNo = new javax.swing.JLabel();
-        txtItemNo = new javax.swing.JTextField();
-        btnEnableUpdate = new javax.swing.JButton();
-        btnSaveChanges = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
+        txtDishID = new javax.swing.JTextField();
+        btnUpdateDish = new javax.swing.JButton();
+        btnSaveDish = new javax.swing.JButton();
+        btnBackDish = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 204));
         setForeground(new java.awt.Color(0, 51, 51));
@@ -85,52 +85,52 @@ public class EditMenuItemJPanel extends javax.swing.JPanel {
         lblPrice.setForeground(new java.awt.Color(0, 51, 51));
         lblPrice.setText("Price :");
 
-        txtItemPrice.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtItemPrice.setForeground(new java.awt.Color(0, 51, 51));
+        txtIDishPrice1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtIDishPrice1.setForeground(new java.awt.Color(0, 51, 51));
 
-        txtItemName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtItemName.setForeground(new java.awt.Color(0, 51, 51));
-        txtItemName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtDishName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDishName.setForeground(new java.awt.Color(0, 51, 51));
+        txtDishName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         lblItemNo.setBackground(new java.awt.Color(204, 255, 255));
         lblItemNo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblItemNo.setForeground(new java.awt.Color(0, 51, 51));
         lblItemNo.setText("Item ID :");
 
-        txtItemNo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtItemNo.setForeground(new java.awt.Color(0, 51, 51));
-        txtItemNo.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtDishID.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDishID.setForeground(new java.awt.Color(0, 51, 51));
+        txtDishID.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        btnEnableUpdate.setBackground(new java.awt.Color(204, 255, 255));
-        btnEnableUpdate.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnEnableUpdate.setForeground(new java.awt.Color(0, 51, 51));
-        btnEnableUpdate.setText("Update");
-        btnEnableUpdate.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnEnableUpdate.addActionListener(new java.awt.event.ActionListener() {
+        btnUpdateDish.setBackground(new java.awt.Color(204, 255, 255));
+        btnUpdateDish.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnUpdateDish.setForeground(new java.awt.Color(0, 51, 51));
+        btnUpdateDish.setText("Update");
+        btnUpdateDish.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnUpdateDish.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEnableUpdateActionPerformed(evt);
+                btnUpdateDishActionPerformed(evt);
             }
         });
 
-        btnSaveChanges.setBackground(new java.awt.Color(204, 255, 255));
-        btnSaveChanges.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnSaveChanges.setForeground(new java.awt.Color(0, 51, 51));
-        btnSaveChanges.setText("Save");
-        btnSaveChanges.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnSaveChanges.addActionListener(new java.awt.event.ActionListener() {
+        btnSaveDish.setBackground(new java.awt.Color(204, 255, 255));
+        btnSaveDish.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnSaveDish.setForeground(new java.awt.Color(0, 51, 51));
+        btnSaveDish.setText("Save");
+        btnSaveDish.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnSaveDish.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSaveChangesActionPerformed(evt);
+                btnSaveDishActionPerformed(evt);
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(204, 255, 255));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 51));
-        btnBack.setText("Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        btnBackDish.setBackground(new java.awt.Color(204, 255, 255));
+        btnBackDish.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnBackDish.setForeground(new java.awt.Color(0, 51, 51));
+        btnBackDish.setText("Back");
+        btnBackDish.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBackDish.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                btnBackDishActionPerformed(evt);
             }
         });
 
@@ -144,7 +144,7 @@ public class EditMenuItemJPanel extends javax.swing.JPanel {
                         .addGap(82, 82, 82)
                         .addComponent(lblItemNo)
                         .addGap(38, 38, 38)
-                        .addComponent(txtItemNo, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtDishID, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(331, 331, 331)
                         .addComponent(lblAddItem))
@@ -155,11 +155,11 @@ public class EditMenuItemJPanel extends javax.swing.JPanel {
                             .addComponent(lblPrice))
                         .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtItemName, javax.swing.GroupLayout.DEFAULT_SIZE, 561, Short.MAX_VALUE)
-                            .addComponent(txtItemPrice)
-                            .addComponent(btnSaveChanges, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnEnableUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, 561, Short.MAX_VALUE)
-                            .addComponent(btnBack, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(txtDishName, javax.swing.GroupLayout.DEFAULT_SIZE, 561, Short.MAX_VALUE)
+                            .addComponent(txtIDishPrice1)
+                            .addComponent(btnSaveDish, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnUpdateDish, javax.swing.GroupLayout.DEFAULT_SIZE, 561, Short.MAX_VALUE)
+                            .addComponent(btnBackDish, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(84, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -170,41 +170,41 @@ public class EditMenuItemJPanel extends javax.swing.JPanel {
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblItemNo)
-                    .addComponent(txtItemNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDishID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblItemName)
-                    .addComponent(txtItemName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDishName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtItemPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtIDishPrice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblPrice))
                 .addGap(18, 18, 18)
-                .addComponent(btnBack)
+                .addComponent(btnBackDish)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnEnableUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnUpdateDish, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnSaveChanges, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSaveDish, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(66, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnEnableUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnableUpdateActionPerformed
+    private void btnUpdateDishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateDishActionPerformed
         // TODO add your handling code here:
-        txtItemName.setEditable(true);
-        txtItemPrice.setEditable(true);
+        txtDishName.setEditable(true);
+        txtIDishPrice1.setEditable(true);
 
-        btnEnableUpdate.setEnabled(false);
-    }//GEN-LAST:event_btnEnableUpdateActionPerformed
+        btnUpdateDish.setEnabled(false);
+    }//GEN-LAST:event_btnUpdateDishActionPerformed
 
-    private void btnSaveChangesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveChangesActionPerformed
+    private void btnSaveDishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveDishActionPerformed
         // TODO add your handling code here:
 
-         String itemNo = txtItemNo.getText();
-        String itemName = txtItemName.getText();
+         String itemNo = txtDishID.getText();
+        String itemName = txtDishName.getText();
         Double itemPrice = 0.0;
         try{
-            itemPrice  = Double.parseDouble(txtItemPrice.getText());
+            itemPrice  = Double.parseDouble(txtIDishPrice1.getText());
         } catch(NumberFormatException exception){
             JOptionPane.showMessageDialog(null, "Invalid Price Entered!");
         }
@@ -217,9 +217,9 @@ public class EditMenuItemJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Menu item successfully!");
         }
         
-    }//GEN-LAST:event_btnSaveChangesActionPerformed
+    }//GEN-LAST:event_btnSaveDishActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void btnBackDishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackDishActionPerformed
         // TODO add your handling code here:
 
         container.remove(this);
@@ -230,19 +230,19 @@ public class EditMenuItemJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
 
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_btnBackDishActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnEnableUpdate;
-    private javax.swing.JButton btnSaveChanges;
+    private javax.swing.JButton btnBackDish;
+    private javax.swing.JButton btnSaveDish;
+    private javax.swing.JButton btnUpdateDish;
     private javax.swing.JLabel lblAddItem;
     private javax.swing.JLabel lblItemName;
     private javax.swing.JLabel lblItemNo;
     private javax.swing.JLabel lblPrice;
-    private javax.swing.JTextField txtItemName;
-    private javax.swing.JTextField txtItemNo;
-    private javax.swing.JTextField txtItemPrice;
+    private javax.swing.JTextField txtDishID;
+    private javax.swing.JTextField txtDishName;
+    private javax.swing.JTextField txtIDishPrice1;
     // End of variables declaration//GEN-END:variables
 }

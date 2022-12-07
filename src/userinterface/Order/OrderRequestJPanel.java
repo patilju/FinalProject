@@ -42,7 +42,7 @@ public class OrderRequestJPanel extends javax.swing.JPanel {
         populateWorkRequestTable();
     }
     public void populateWorkRequestTable() {
-        DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblOrderList.getModel();
         model.setRowCount(0);
         for (Order order : orderDirectory.getOrderDir()) {
             if (order.getCustomer().getCustID().equalsIgnoreCase(userAccount.getEmployee().getName())) {
@@ -70,20 +70,20 @@ public class OrderRequestJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jScrollPane2 = new javax.swing.JScrollPane();
-        workRequestJTable = new javax.swing.JTable();
-        orderComment = new javax.swing.JTextField();
-        btnOrderCmnt = new javax.swing.JButton();
+        tblOrderList = new javax.swing.JTable();
+        txtOrderFeedback = new javax.swing.JTextField();
+        btnOrderComment = new javax.swing.JButton();
         lblOrderFeedback = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        btnBack = new javax.swing.JButton();
+        btnOrderBack = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 204));
         setForeground(new java.awt.Color(0, 51, 51));
 
-        workRequestJTable.setBackground(new java.awt.Color(255, 255, 204));
-        workRequestJTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        workRequestJTable.setForeground(new java.awt.Color(0, 51, 51));
-        workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
+        tblOrderList.setBackground(new java.awt.Color(255, 255, 204));
+        tblOrderList.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        tblOrderList.setForeground(new java.awt.Color(0, 51, 51));
+        tblOrderList.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null},
@@ -109,20 +109,20 @@ public class OrderRequestJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane2.setViewportView(workRequestJTable);
+        jScrollPane2.setViewportView(tblOrderList);
 
-        orderComment.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        orderComment.setForeground(new java.awt.Color(0, 51, 51));
-        orderComment.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtOrderFeedback.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtOrderFeedback.setForeground(new java.awt.Color(0, 51, 51));
+        txtOrderFeedback.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        btnOrderCmnt.setBackground(new java.awt.Color(204, 255, 255));
-        btnOrderCmnt.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnOrderCmnt.setForeground(new java.awt.Color(0, 51, 51));
-        btnOrderCmnt.setText("Comment");
-        btnOrderCmnt.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnOrderCmnt.addActionListener(new java.awt.event.ActionListener() {
+        btnOrderComment.setBackground(new java.awt.Color(204, 255, 255));
+        btnOrderComment.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnOrderComment.setForeground(new java.awt.Color(0, 51, 51));
+        btnOrderComment.setText("Comment");
+        btnOrderComment.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnOrderComment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOrderCmntActionPerformed(evt);
+                btnOrderCommentActionPerformed(evt);
             }
         });
 
@@ -137,14 +137,14 @@ public class OrderRequestJPanel extends javax.swing.JPanel {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Order Work List");
 
-        btnBack.setBackground(new java.awt.Color(204, 255, 255));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 51));
-        btnBack.setText("Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        btnOrderBack.setBackground(new java.awt.Color(204, 255, 255));
+        btnOrderBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnOrderBack.setForeground(new java.awt.Color(0, 51, 51));
+        btnOrderBack.setText("Back");
+        btnOrderBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnOrderBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                btnOrderBackActionPerformed(evt);
             }
         });
 
@@ -164,10 +164,10 @@ public class OrderRequestJPanel extends javax.swing.JPanel {
                                 .addComponent(lblOrderFeedback)
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(orderComment, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtOrderFeedback, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(btnBack, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnOrderCmnt, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 74, Short.MAX_VALUE)))))
+                                        .addComponent(btnOrderBack, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btnOrderComment, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 74, Short.MAX_VALUE)))))
                         .addGap(0, 258, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
@@ -183,28 +183,28 @@ public class OrderRequestJPanel extends javax.swing.JPanel {
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(orderComment, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtOrderFeedback, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblOrderFeedback))
                 .addGap(18, 18, 18)
-                .addComponent(btnOrderCmnt)
+                .addComponent(btnOrderComment)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnBack)
+                .addComponent(btnOrderBack)
                 .addContainerGap(32, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnOrderCmntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrderCmntActionPerformed
+    private void btnOrderCommentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrderCommentActionPerformed
         // TODO add your handling code here:
-        int row = workRequestJTable.getSelectedRow();
-        int count = workRequestJTable.getSelectedRowCount();
+        int row = tblOrderList.getSelectedRow();
+        int count = tblOrderList.getSelectedRowCount();
         if (count == 1) {
             if (row >= 0) {
-                String orderId = workRequestJTable.getValueAt(row, 1).toString();
+                String orderId = tblOrderList.getValueAt(row, 1).toString();
                 Order order = orderDirectory.fetchOrders(orderId);
-               String comment = orderComment.getText();
+               String comment = txtOrderFeedback.getText();
                     if (!comment.isEmpty()) {
                         order.setMessage(comment);
-                        orderComment.setText("");
+                        txtOrderFeedback.setText("");
                         JOptionPane.showMessageDialog(null, "Thank you for your feedback!");
                         populateWorkRequestTable();
                     } else {
@@ -215,25 +215,25 @@ public class OrderRequestJPanel extends javax.swing.JPanel {
         } else {
             JOptionPane.showMessageDialog(null, "Please select one row!");
         }
-    }//GEN-LAST:event_btnOrderCmntActionPerformed
+    }//GEN-LAST:event_btnOrderCommentActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void btnOrderBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrderBackActionPerformed
         // TODO add your handling code here:
          container.remove(this);
         Component[] componentArray = container.getComponents();
         Component component = componentArray[componentArray.length - 1];
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_btnOrderBackActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnOrderCmnt;
+    private javax.swing.JButton btnOrderBack;
+    private javax.swing.JButton btnOrderComment;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblOrderFeedback;
-    private javax.swing.JTextField orderComment;
-    private javax.swing.JTable workRequestJTable;
+    private javax.swing.JTable tblOrderList;
+    private javax.swing.JTextField txtOrderFeedback;
     // End of variables declaration//GEN-END:variables
 }
