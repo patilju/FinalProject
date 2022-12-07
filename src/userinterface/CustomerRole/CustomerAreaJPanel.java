@@ -53,7 +53,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         populateMenuTable();
     }
     public void populateMenuTable() {
-        DefaultTableModel model = (DefaultTableModel) tblRestaurantList.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblRestaurantMenu.getModel();
         model.setRowCount(0);
         for (OrderItem item : menuDirectory.getMenuList()) {
             Object[] row = new Object[3];
@@ -74,11 +74,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
 
         restaurantlbl = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblRestaurantList = new javax.swing.JTable();
+        tblRestaurantMenu = new javax.swing.JTable();
         lblQuantity = new javax.swing.JLabel();
-        btnOrder = new javax.swing.JButton();
-        btnView = new javax.swing.JButton();
-        cmboxQtyCount = new javax.swing.JComboBox();
+        btnPlaceOrder = new javax.swing.JButton();
+        btnViewOrder = new javax.swing.JButton();
+        ComboQtyCount = new javax.swing.JComboBox();
 
         setBackground(new java.awt.Color(255, 255, 204));
 
@@ -86,9 +86,9 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         restaurantlbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         restaurantlbl.setText("Restaurant");
 
-        tblRestaurantList.setBackground(new java.awt.Color(255, 255, 204));
-        tblRestaurantList.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        tblRestaurantList.setModel(new javax.swing.table.DefaultTableModel(
+        tblRestaurantMenu.setBackground(new java.awt.Color(255, 255, 204));
+        tblRestaurantMenu.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        tblRestaurantMenu.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -114,34 +114,34 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tblRestaurantList);
+        jScrollPane1.setViewportView(tblRestaurantMenu);
 
         lblQuantity.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblQuantity.setText("Quantity:");
 
-        btnOrder.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnOrder.setText("Place Order");
-        btnOrder.addActionListener(new java.awt.event.ActionListener() {
+        btnPlaceOrder.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnPlaceOrder.setText("Place Order");
+        btnPlaceOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOrderActionPerformed(evt);
+                btnPlaceOrderActionPerformed(evt);
             }
         });
 
-        btnView.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnView.setText("View");
-        btnView.addActionListener(new java.awt.event.ActionListener() {
+        btnViewOrder.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnViewOrder.setText("View");
+        btnViewOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewActionPerformed(evt);
+                btnViewOrderActionPerformed(evt);
             }
         });
 
-        cmboxQtyCount.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
-        cmboxQtyCount.setForeground(new java.awt.Color(0, 51, 51));
-        cmboxQtyCount.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50" }));
-        cmboxQtyCount.setToolTipText("");
-        cmboxQtyCount.addActionListener(new java.awt.event.ActionListener() {
+        ComboQtyCount.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
+        ComboQtyCount.setForeground(new java.awt.Color(0, 51, 51));
+        ComboQtyCount.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50" }));
+        ComboQtyCount.setToolTipText("");
+        ComboQtyCount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmboxQtyCountActionPerformed(evt);
+                ComboQtyCountActionPerformed(evt);
             }
         });
 
@@ -163,9 +163,9 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 .addComponent(lblQuantity)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnView, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnOrder)
-                    .addComponent(cmboxQtyCount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnViewOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnPlaceOrder)
+                    .addComponent(ComboQtyCount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -178,26 +178,26 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblQuantity)
-                    .addComponent(cmboxQtyCount, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ComboQtyCount, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnOrder)
+                .addComponent(btnPlaceOrder)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnView)
+                .addComponent(btnViewOrder)
                 .addContainerGap(56, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cmboxQtyCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmboxQtyCountActionPerformed
+    private void ComboQtyCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboQtyCountActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmboxQtyCountActionPerformed
+    }//GEN-LAST:event_ComboQtyCountActionPerformed
 
-    private void btnOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrderActionPerformed
+    private void btnPlaceOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlaceOrderActionPerformed
         // TODO add your handling code here:
-        int row = tblRestaurantList.getSelectedRow();
-        int count = tblRestaurantList.getSelectedRowCount();
+        int row = tblRestaurantMenu.getSelectedRow();
+        int count = tblRestaurantMenu.getSelectedRowCount();
         if (count == 1) {
             if (row >= 0) {
-                int quantity = Integer.parseInt(cmboxQtyCount.getSelectedItem().toString());
+                int quantity = Integer.parseInt(ComboQtyCount.getSelectedItem().toString());
                 Restaurant restaurant = restaurantDirectory.getRestaurant(menuDirectory.getOrderItemByKey(row).getRestaurantNo());
                 Customer customer = customerDirectory.getCustomer(userAccount.getEmployee().getName());
                 OrderItem item = menuDirectory.getOrderItemByKey(row);
@@ -219,23 +219,23 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         } else {
             JOptionPane.showMessageDialog(null, "Please select one row!");
         }
-    }//GEN-LAST:event_btnOrderActionPerformed
+    }//GEN-LAST:event_btnPlaceOrderActionPerformed
 
-    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
+    private void btnViewOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewOrderActionPerformed
         // TODO add your handling code here:
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         OrderRequestJPanel orderRequest = new OrderRequestJPanel(userProcessContainer, userAccount, system, customerDirectory, restaurantDirectory, deliveryManDirectory, menuDirectory,orderDirectory);
         userProcessContainer.add(orderRequest);
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnViewActionPerformed
+    }//GEN-LAST:event_btnViewOrderActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnOrder;
-    private javax.swing.JButton btnView;
-    private javax.swing.JComboBox cmboxQtyCount;
+    private javax.swing.JComboBox ComboQtyCount;
+    private javax.swing.JButton btnPlaceOrder;
+    private javax.swing.JButton btnViewOrder;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblQuantity;
     private javax.swing.JLabel restaurantlbl;
-    private javax.swing.JTable tblRestaurantList;
+    private javax.swing.JTable tblRestaurantMenu;
     // End of variables declaration//GEN-END:variables
 }
