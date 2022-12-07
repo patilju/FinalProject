@@ -7,7 +7,7 @@ package userinterface.Order;
 
 import Business.EcoSystem;
 import Business.Order.Menu;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -17,7 +17,7 @@ import userinterface.RestaurantAdminRole.RestMenuJPanel;
 
 /**
  *
- * @author Vini
+ * @author nupoo
  */
 public class AddMenuItemJPanel extends javax.swing.JPanel {
 
@@ -28,7 +28,7 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
     private final EcoSystem system;
     private final Menu menuDirectory;
     private final UserAccount account;
-    public AddMenuItemJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, RestaurantDirectory restaurantDirectory, Menu menuDirectory) {
+    public AddMenuItemJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, RestaurantStore restaurantDirectory, Menu menuDirectory) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;
@@ -46,12 +46,12 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         lblAddItem = new javax.swing.JLabel();
-        lblItemName = new javax.swing.JLabel();
+        lblDishName = new javax.swing.JLabel();
         lblPrice = new javax.swing.JLabel();
-        txtItemPrice = new javax.swing.JTextField();
-        txtItemName = new javax.swing.JTextField();
-        btnSave = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
+        txtDishPrice = new javax.swing.JTextField();
+        txtDishName = new javax.swing.JTextField();
+        btnDishSave = new javax.swing.JButton();
+        btnDishBack = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 204));
 
@@ -61,43 +61,43 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
         lblAddItem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblAddItem.setText("Create New Order Item");
 
-        lblItemName.setBackground(new java.awt.Color(204, 255, 255));
-        lblItemName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        lblItemName.setForeground(new java.awt.Color(0, 51, 51));
-        lblItemName.setText("Item Name :");
+        lblDishName.setBackground(new java.awt.Color(204, 255, 255));
+        lblDishName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        lblDishName.setForeground(new java.awt.Color(0, 51, 51));
+        lblDishName.setText("Item Name :");
 
         lblPrice.setBackground(new java.awt.Color(204, 255, 255));
         lblPrice.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblPrice.setForeground(new java.awt.Color(0, 51, 51));
         lblPrice.setText("Price :");
 
-        txtItemPrice.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtItemPrice.setForeground(new java.awt.Color(0, 51, 51));
-        txtItemPrice.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtDishPrice.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDishPrice.setForeground(new java.awt.Color(0, 51, 51));
+        txtDishPrice.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        txtItemName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtItemName.setForeground(new java.awt.Color(0, 51, 51));
-        txtItemName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtDishName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDishName.setForeground(new java.awt.Color(0, 51, 51));
+        txtDishName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        btnSave.setBackground(new java.awt.Color(204, 255, 255));
-        btnSave.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnSave.setForeground(new java.awt.Color(0, 51, 51));
-        btnSave.setText("Save");
-        btnSave.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnSave.addActionListener(new java.awt.event.ActionListener() {
+        btnDishSave.setBackground(new java.awt.Color(204, 255, 255));
+        btnDishSave.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnDishSave.setForeground(new java.awt.Color(0, 51, 51));
+        btnDishSave.setText("Save");
+        btnDishSave.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDishSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSaveActionPerformed(evt);
+                btnDishSaveActionPerformed(evt);
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(204, 255, 255));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 51));
-        btnBack.setText("Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        btnDishBack.setBackground(new java.awt.Color(204, 255, 255));
+        btnDishBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnDishBack.setForeground(new java.awt.Color(0, 51, 51));
+        btnDishBack.setText("Back");
+        btnDishBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDishBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                btnDishBackActionPerformed(evt);
             }
         });
 
@@ -112,19 +112,22 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
                         .addComponent(lblAddItem)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblItemName)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtItemName, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
-                        .addComponent(lblPrice)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtItemPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addComponent(lblDishName)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtDishName, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                                .addComponent(lblPrice)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnDishSave, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(169, 169, 169)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnDishBack, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtDishPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -134,24 +137,24 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
                 .addComponent(lblAddItem)
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblItemName)
-                    .addComponent(txtItemName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDishName)
+                    .addComponent(txtDishName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblPrice)
-                    .addComponent(txtItemPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
+                    .addComponent(txtDishPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(71, 71, 71)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSave)
-                    .addComponent(btnBack))
-                .addContainerGap(155, Short.MAX_VALUE))
+                    .addComponent(btnDishBack)
+                    .addComponent(btnDishSave))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+    private void btnDishSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDishSaveActionPerformed
         // TODO add your handling code here:
-        String itemName = txtItemName.getText();
+        String itemName = txtDishName.getText();
         double price = 0;
         try {
-            price = Double.parseDouble(txtItemPrice.getText());
+            price = Double.parseDouble(txtDishPrice.getText());
         } catch (NumberFormatException exception) {
             System.out.println(exception);
             JOptionPane.showMessageDialog(null, "Please enter valid price!");
@@ -165,9 +168,9 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
             system.setMenu(menuDirectory);
             JOptionPane.showMessageDialog(null, "Item added sucessfully!");
         }
-    }//GEN-LAST:event_btnSaveActionPerformed
+    }//GEN-LAST:event_btnDishSaveActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void btnDishBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDishBackActionPerformed
         // TODO add your handling code here:
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
@@ -177,16 +180,16 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
 
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_btnDishBackActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnSave;
+    private javax.swing.JButton btnDishBack;
+    private javax.swing.JButton btnDishSave;
     private javax.swing.JLabel lblAddItem;
-    private javax.swing.JLabel lblItemName;
+    private javax.swing.JLabel lblDishName;
     private javax.swing.JLabel lblPrice;
-    private javax.swing.JTextField txtItemName;
-    private javax.swing.JTextField txtItemPrice;
+    private javax.swing.JTextField txtDishName;
+    private javax.swing.JTextField txtDishPrice;
     // End of variables declaration//GEN-END:variables
 }

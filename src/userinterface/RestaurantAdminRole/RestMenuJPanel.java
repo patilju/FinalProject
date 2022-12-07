@@ -8,7 +8,7 @@ package userinterface.RestaurantAdminRole;
 import Business.EcoSystem;
 import Business.Order.Menu;
 import Business.Order.OrderItem;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -20,7 +20,7 @@ import userinterface.Order.EditMenuItemJPanel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class RestMenuJPanel extends javax.swing.JPanel {
 
@@ -30,11 +30,11 @@ public class RestMenuJPanel extends javax.swing.JPanel {
     
     private final JPanel container;
     private final EcoSystem system;
-    private final RestaurantDirectory restaurantDirectory;
+    private final RestaurantStore restaurantDirectory;
     private final Menu menuDirectory;
     private final UserAccount account;
 
-    public RestMenuJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, RestaurantDirectory restaurantDirectory, Menu menuDirectory) {
+    public RestMenuJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, RestaurantStore restaurantDirectory, Menu menuDirectory) {
         initComponents();
         this.container = userProcessContainer;
         this.system = system;
@@ -119,7 +119,7 @@ public class RestMenuJPanel extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 80, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 250, 80, -1));
 
         btnAddItem.setBackground(new java.awt.Color(204, 255, 255));
         btnAddItem.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -131,7 +131,7 @@ public class RestMenuJPanel extends javax.swing.JPanel {
                 btnAddItemActionPerformed(evt);
             }
         });
-        add(btnAddItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 80, -1));
+        add(btnAddItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 80, -1));
 
         btnEditItem.setBackground(new java.awt.Color(204, 255, 255));
         btnEditItem.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -143,7 +143,7 @@ public class RestMenuJPanel extends javax.swing.JPanel {
                 btnEditItemActionPerformed(evt);
             }
         });
-        add(btnEditItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 80, -1));
+        add(btnEditItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 250, 80, -1));
 
         btnDeleteItem.setBackground(new java.awt.Color(204, 255, 255));
         btnDeleteItem.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -155,7 +155,7 @@ public class RestMenuJPanel extends javax.swing.JPanel {
                 btnDeleteItemActionPerformed(evt);
             }
         });
-        add(btnDeleteItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 80, -1));
+        add(btnDeleteItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 250, 80, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed

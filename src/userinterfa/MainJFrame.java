@@ -4,15 +4,15 @@
  */
 package userinterfa;
 
-import Business.Customer.CustomerDirectory;
+import Business.Customer.CustomerStore;
 import Business.EcoSystem;
 import Business.DB4OUtil.DB4OUtil;
-import Business.DeliveryMan.DeliveryManDirectory;
-import Business.Order.OrderDirectory;
+import Business.DeliveryMan.DeliveryManStore;
+import Business.Order.OrderStore;
 import Business.Order.Menu;
 
 import Business.Organization;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
@@ -30,31 +30,31 @@ public class MainJFrame extends javax.swing.JFrame {
     private EcoSystem system;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
 
-    private final CustomerDirectory customerDirectory;
-    private final RestaurantDirectory restaurantDirectory;
-    private final DeliveryManDirectory deliveryManDirectory;
+    private final CustomerStore customerDirectory;
+    private final RestaurantStore restaurantDirectory;
+    private final DeliveryManStore deliveryManDirectory;
     private final Menu menu;
-    private final OrderDirectory orderDirectory;
+    private final OrderStore orderDirectory;
     
     public MainJFrame() {
         initComponents();
         system = dB4OUtil.retrieveSystem();
         
         if (system.getCustomerDirectory() == null) {
-            this.customerDirectory = new CustomerDirectory();
+            this.customerDirectory = new CustomerStore();
         } else {
             this.customerDirectory = system.getCustomerDirectory();
         }
         
         if (system.getRestaurantDirectory() == null) {
-            this.restaurantDirectory = new RestaurantDirectory();
+            this.restaurantDirectory = new RestaurantStore();
 
         } else {
             this.restaurantDirectory = system.getRestaurantDirectory();
         }
         
         if (system.getDeliveryManDirectory() == null) {
-            deliveryManDirectory = new DeliveryManDirectory();
+            deliveryManDirectory = new DeliveryManStore();
 
         } else {
             this.deliveryManDirectory = system.getDeliveryManDirectory();
@@ -66,7 +66,7 @@ public class MainJFrame extends javax.swing.JFrame {
             this.menu = system.getMenu();
         }
          if (system.getOrderDirectory()== null) {
-            orderDirectory = new OrderDirectory();
+            orderDirectory = new OrderStore();
 
         } else {
             this.orderDirectory = system.getOrderDirectory();
@@ -85,7 +85,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jSplitPane1 = new javax.swing.JSplitPane();
-        jPanel1 = new javax.swing.JPanel();
+        Control = new javax.swing.JPanel();
         btnLogin = new javax.swing.JButton();
         txtUsername = new javax.swing.JTextField();
         txtPassword = new javax.swing.JPasswordField();
@@ -97,8 +97,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
-        jPanel1.setForeground(new java.awt.Color(0, 51, 51));
+        Control.setBackground(new java.awt.Color(204, 255, 204));
+        Control.setForeground(new java.awt.Color(0, 51, 51));
 
         btnLogin.setBackground(new java.awt.Color(204, 255, 255));
         btnLogin.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -149,18 +149,18 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout ControlLayout = new javax.swing.GroupLayout(Control);
+        Control.setLayout(ControlLayout);
+        ControlLayout.setHorizontalGroup(
+            ControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ControlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGroup(ControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ControlLayout.createSequentialGroup()
+                        .addGroup(ControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(btnLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(ControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(ControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(txtPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtUsername, javax.swing.GroupLayout.Alignment.LEADING)
@@ -170,9 +170,9 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(btnLogout, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        ControlLayout.setVerticalGroup(
+            ControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ControlLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -190,7 +190,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addContainerGap(199, Short.MAX_VALUE))
         );
 
-        jSplitPane1.setLeftComponent(jPanel1);
+        jSplitPane1.setLeftComponent(Control);
 
         container.setBackground(new java.awt.Color(255, 255, 204));
         container.setLayout(new java.awt.CardLayout());
@@ -289,12 +289,12 @@ public class MainJFrame extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Control;
     private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnLogout;
     private javax.swing.JPanel container;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel loginJLabel;
     private javax.swing.JPasswordField txtPassword;

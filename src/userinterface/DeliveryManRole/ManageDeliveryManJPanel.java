@@ -5,11 +5,11 @@
  */
 package userinterface.DeliveryManRole;
 
-import Business.Customer.CustomerDirectory;
+import Business.Customer.CustomerStore;
 import Business.DeliveryMan.DeliveryMan;
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.EcoSystem;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class ManageDeliveryManJPanel extends javax.swing.JPanel {
 
@@ -27,11 +27,11 @@ public class ManageDeliveryManJPanel extends javax.swing.JPanel {
      */
     JPanel container;
     EcoSystem system;
-    CustomerDirectory customerDirectory;
-    RestaurantDirectory restaurantDirectory;
-    DeliveryManDirectory deliveryManDirectory;
+    CustomerStore customerDirectory;
+    RestaurantStore restaurantDirectory;
+    DeliveryManStore deliveryManDirectory;
     
-    public ManageDeliveryManJPanel(JPanel container, EcoSystem system, DeliveryManDirectory deliveryManDirectory) {
+    public ManageDeliveryManJPanel(JPanel container, EcoSystem system, DeliveryManStore deliveryManDirectory) {
         initComponents();
         this.container = container;
         this.system = system;
@@ -39,7 +39,7 @@ public class ManageDeliveryManJPanel extends javax.swing.JPanel {
         populateDeliveryManTable();
     }
 public void populateDeliveryManTable() {
-        DefaultTableModel model = (DefaultTableModel) TblDeliveyMan.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblDeliveyMan.getModel();
         
         model.setRowCount(0);
         for (UserAccount ua : system.getUserAccountDirectory().getUserAccountList()) {
@@ -67,11 +67,11 @@ public void populateDeliveryManTable() {
 
         lbl_DeliDetails = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        TblDeliveyMan = new javax.swing.JTable();
-        btnDeliveryBack = new javax.swing.JButton();
+        tblDeliveyMan = new javax.swing.JTable();
+        btnBack2 = new javax.swing.JButton();
         btnDeliveryAdd = new javax.swing.JButton();
         btnDeliveryView = new javax.swing.JButton();
-        btnDeliveryDel = new javax.swing.JButton();
+        btnDeliveryDelete = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 204));
 
@@ -81,10 +81,10 @@ public void populateDeliveryManTable() {
         lbl_DeliDetails.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_DeliDetails.setText("Delivery Person List");
 
-        TblDeliveyMan.setBackground(new java.awt.Color(255, 255, 204));
-        TblDeliveyMan.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        TblDeliveyMan.setForeground(new java.awt.Color(0, 51, 51));
-        TblDeliveyMan.setModel(new javax.swing.table.DefaultTableModel(
+        tblDeliveyMan.setBackground(new java.awt.Color(255, 255, 204));
+        tblDeliveyMan.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        tblDeliveyMan.setForeground(new java.awt.Color(0, 51, 51));
+        tblDeliveyMan.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -103,16 +103,16 @@ public void populateDeliveryManTable() {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(TblDeliveyMan);
+        jScrollPane1.setViewportView(tblDeliveyMan);
 
-        btnDeliveryBack.setBackground(new java.awt.Color(204, 255, 255));
-        btnDeliveryBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnDeliveryBack.setForeground(new java.awt.Color(0, 51, 51));
-        btnDeliveryBack.setText("Back");
-        btnDeliveryBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnDeliveryBack.addActionListener(new java.awt.event.ActionListener() {
+        btnBack2.setBackground(new java.awt.Color(204, 255, 255));
+        btnBack2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnBack2.setForeground(new java.awt.Color(0, 51, 51));
+        btnBack2.setText("Back");
+        btnBack2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeliveryBackActionPerformed(evt);
+                btnBack2ActionPerformed(evt);
             }
         });
 
@@ -138,14 +138,14 @@ public void populateDeliveryManTable() {
             }
         });
 
-        btnDeliveryDel.setBackground(new java.awt.Color(204, 255, 255));
-        btnDeliveryDel.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnDeliveryDel.setForeground(new java.awt.Color(0, 51, 51));
-        btnDeliveryDel.setText("Delete");
-        btnDeliveryDel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnDeliveryDel.addActionListener(new java.awt.event.ActionListener() {
+        btnDeliveryDelete.setBackground(new java.awt.Color(204, 255, 255));
+        btnDeliveryDelete.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnDeliveryDelete.setForeground(new java.awt.Color(0, 51, 51));
+        btnDeliveryDelete.setText("Delete");
+        btnDeliveryDelete.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDeliveryDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeliveryDelActionPerformed(evt);
+                btnDeliveryDeleteActionPerformed(evt);
             }
         });
 
@@ -160,13 +160,16 @@ public void populateDeliveryManTable() {
                         .addComponent(lbl_DeliDetails))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(btnDeliveryDel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
-                                .addComponent(btnDeliveryView, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnDeliveryAdd, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnDeliveryBack, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnDeliveryAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(38, 38, 38)
+                                .addComponent(btnDeliveryView, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(49, 49, 49)
+                                .addComponent(btnDeliveryDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnBack2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -176,24 +179,22 @@ public void populateDeliveryManTable() {
                 .addComponent(lbl_DeliDetails)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnDeliveryBack)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnDeliveryAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
-                .addComponent(btnDeliveryView, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnDeliveryDel, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addGap(51, 51, 51)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnDeliveryAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBack2)
+                    .addComponent(btnDeliveryView, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDeliveryDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnDeliveryBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliveryBackActionPerformed
+    private void btnBack2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack2ActionPerformed
         // TODO add your handling code here:
         container.remove(this);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
-    }//GEN-LAST:event_btnDeliveryBackActionPerformed
+    }//GEN-LAST:event_btnBack2ActionPerformed
 
     private void btnDeliveryAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliveryAddActionPerformed
         // TODO add your handling code here:
@@ -205,8 +206,8 @@ public void populateDeliveryManTable() {
 
     private void btnDeliveryViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliveryViewActionPerformed
         // TODO add your handling code here:
-        int selectedRow = TblDeliveyMan.getSelectedRow();
-        int count = TblDeliveyMan.getSelectedRowCount();
+        int selectedRow = tblDeliveyMan.getSelectedRow();
+        int count = tblDeliveyMan.getSelectedRowCount();
         if (count == 1) {
             if (selectedRow >= 0) {
                 CardLayout layout = (CardLayout) container.getLayout();
@@ -220,10 +221,10 @@ public void populateDeliveryManTable() {
         }
     }//GEN-LAST:event_btnDeliveryViewActionPerformed
 
-    private void btnDeliveryDelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliveryDelActionPerformed
+    private void btnDeliveryDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliveryDeleteActionPerformed
         // TODO add your handling code here:
-        int selectedRow = TblDeliveyMan.getSelectedRow();
-        int count = TblDeliveyMan.getSelectedRowCount();
+        int selectedRow = tblDeliveyMan.getSelectedRow();
+        int count = tblDeliveyMan.getSelectedRowCount();
         if (count == 1) {
             if (selectedRow >= 0) {
                 int selectionButton = JOptionPane.YES_NO_OPTION;
@@ -236,16 +237,16 @@ public void populateDeliveryManTable() {
         } else {
             JOptionPane.showMessageDialog(null, "Select a Row to continue.");
         }
-    }//GEN-LAST:event_btnDeliveryDelActionPerformed
+    }//GEN-LAST:event_btnDeliveryDeleteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTable TblDeliveyMan;
+    private javax.swing.JButton btnBack2;
     private javax.swing.JButton btnDeliveryAdd;
-    private javax.swing.JButton btnDeliveryBack;
-    private javax.swing.JButton btnDeliveryDel;
+    private javax.swing.JButton btnDeliveryDelete;
     private javax.swing.JButton btnDeliveryView;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbl_DeliDetails;
+    private javax.swing.JTable tblDeliveyMan;
     // End of variables declaration//GEN-END:variables
 }

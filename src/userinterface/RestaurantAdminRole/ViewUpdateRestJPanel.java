@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class ViewUpdateRestJPanel extends javax.swing.JPanel {
 
@@ -70,7 +70,7 @@ private void disableEdit(){
 
         txtRestName1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtRestName1.setForeground(new java.awt.Color(0, 51, 51));
-        add(txtRestName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(236, 121, 390, -1));
+        add(txtRestName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 390, -1));
 
         lblRestContact1.setBackground(new java.awt.Color(204, 255, 255));
         lblRestContact1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -86,7 +86,7 @@ private void disableEdit(){
 
         txtRestAddr1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtRestAddr1.setForeground(new java.awt.Color(0, 51, 51));
-        add(txtRestAddr1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 390, -1));
+        add(txtRestAddr1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, 390, -1));
 
         lblAddRest1.setBackground(new java.awt.Color(204, 255, 255));
         lblAddRest1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -103,7 +103,7 @@ private void disableEdit(){
 
         txtRestContact1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtRestContact1.setForeground(new java.awt.Color(0, 51, 51));
-        add(txtRestContact1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 390, -1));
+        add(txtRestContact1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, 390, -1));
 
         btnBack.setBackground(new java.awt.Color(204, 255, 255));
         btnBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -115,11 +115,11 @@ private void disableEdit(){
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 51, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 270, 51, -1));
 
         txtRestNo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtRestNo.setForeground(new java.awt.Color(0, 51, 51));
-        add(txtRestNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(236, 92, 390, -1));
+        add(txtRestNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, 390, -1));
 
         lblRestNo.setBackground(new java.awt.Color(204, 255, 255));
         lblRestNo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -137,7 +137,7 @@ private void disableEdit(){
                 btnEnableUpdateActionPerformed(evt);
             }
         });
-        add(btnEnableUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, 50, -1));
+        add(btnEnableUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 50, -1));
 
         btnSaveChanges.setBackground(new java.awt.Color(204, 255, 255));
         btnSaveChanges.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -150,7 +150,7 @@ private void disableEdit(){
                 btnSaveChangesActionPerformed(evt);
             }
         });
-        add(btnSaveChanges, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 300, 50, -1));
+        add(btnSaveChanges, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 50, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
