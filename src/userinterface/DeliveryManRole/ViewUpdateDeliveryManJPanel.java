@@ -6,7 +6,7 @@
 package userinterface.DeliveryManRole;
 
 import Business.DeliveryMan.DeliveryMan;
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.EcoSystem;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
 
@@ -24,12 +24,12 @@ public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
      */
     public JPanel container;
     public DeliveryMan deliveryMan;
-    public DeliveryManDirectory deliveryManDirectory;
+    public DeliveryManStore deliveryManDirectory;
     private final EcoSystem system;
     private String currentPhoneNo;
     
     
-    public ViewUpdateDeliveryManJPanel(EcoSystem system, JPanel container, DeliveryMan deliveryMan, DeliveryManDirectory deliveryManDirectory) {
+    public ViewUpdateDeliveryManJPanel(EcoSystem system, JPanel container, DeliveryMan deliveryMan, DeliveryManStore deliveryManDirectory) {
         initComponents();
         this.container = container;
         this.deliveryMan = deliveryMan;

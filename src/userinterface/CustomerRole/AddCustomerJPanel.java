@@ -6,7 +6,7 @@
 package userinterface.CustomerRole;
 
 import Business.Customer.Customer;
-import Business.Customer.CustomerDirectory;
+import Business.Customer.CustomerStore;
 import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Role.CustomerRole;
@@ -17,11 +17,11 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class AddCustomerJPanel extends javax.swing.JPanel {
 
-    private CustomerDirectory custDirectory;
+    private CustomerStore custDirectory;
     private JPanel container;
     private EcoSystem system;
     
@@ -29,7 +29,7 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
     /**
      * Creates new form AddCustomerJPanel
      */
-    public AddCustomerJPanel(JPanel container, EcoSystem system, CustomerDirectory custDir) {
+    public AddCustomerJPanel(JPanel container, EcoSystem system, CustomerStore custDir) {
         initComponents();
         this.custDirectory = custDir;
         this.system = system;
@@ -47,18 +47,18 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
 
         lblAddCustomer = new javax.swing.JLabel();
         lblCustName = new javax.swing.JLabel();
-        txtCustName = new javax.swing.JTextField();
+        txtCustomerName = new javax.swing.JTextField();
         lblCustUserName = new javax.swing.JLabel();
-        txtCustUserName = new javax.swing.JTextField();
+        txtCustomerUserName = new javax.swing.JTextField();
         lblCustPass = new javax.swing.JLabel();
-        pwCustPass = new javax.swing.JPasswordField();
-        pbCustPassStr = new javax.swing.JProgressBar();
+        txtCustomerPassword = new javax.swing.JPasswordField();
+        pbCustomerPassword = new javax.swing.JProgressBar();
         lblCustContact = new javax.swing.JLabel();
-        txtCustContact = new javax.swing.JTextField();
+        txtCustomerContact = new javax.swing.JTextField();
         lblCustAddr = new javax.swing.JLabel();
-        txtCustAddr = new javax.swing.JTextField();
-        btnBack = new javax.swing.JButton();
-        lblAddCust = new javax.swing.JButton();
+        txtCustomerAddress = new javax.swing.JTextField();
+        btnAddCustomerBack = new javax.swing.JButton();
+        btnCustomerAdd = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -75,10 +75,10 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
         lblCustName.setText("Name :");
         add(lblCustName, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, -1, -1));
 
-        txtCustName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtCustName.setForeground(new java.awt.Color(0, 51, 51));
-        txtCustName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        add(txtCustName, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 69, 340, -1));
+        txtCustomerName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtCustomerName.setForeground(new java.awt.Color(0, 51, 51));
+        txtCustomerName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        add(txtCustomerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 69, 340, -1));
 
         lblCustUserName.setBackground(new java.awt.Color(204, 255, 255));
         lblCustUserName.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -86,10 +86,10 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
         lblCustUserName.setText("Set Username :");
         add(lblCustUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, -1, -1));
 
-        txtCustUserName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtCustUserName.setForeground(new java.awt.Color(0, 51, 51));
-        txtCustUserName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        add(txtCustUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 340, -1));
+        txtCustomerUserName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtCustomerUserName.setForeground(new java.awt.Color(0, 51, 51));
+        txtCustomerUserName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        add(txtCustomerUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 340, -1));
 
         lblCustPass.setBackground(new java.awt.Color(204, 255, 255));
         lblCustPass.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -97,35 +97,35 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
         lblCustPass.setText("Set Password :");
         add(lblCustPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
 
-        pwCustPass.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        pwCustPass.setForeground(new java.awt.Color(0, 51, 51));
-        pwCustPass.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        pwCustPass.addActionListener(new java.awt.event.ActionListener() {
+        txtCustomerPassword.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtCustomerPassword.setForeground(new java.awt.Color(0, 51, 51));
+        txtCustomerPassword.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtCustomerPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pwCustPassActionPerformed(evt);
+                txtCustomerPasswordActionPerformed(evt);
             }
         });
-        pwCustPass.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtCustomerPassword.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                pwCustPassKeyReleased(evt);
+                txtCustomerPasswordKeyReleased(evt);
             }
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                pwCustPassKeyTyped(evt);
+                txtCustomerPasswordKeyTyped(evt);
             }
         });
-        add(pwCustPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 131, 340, -1));
+        add(txtCustomerPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 131, 340, -1));
 
-        pbCustPassStr.setBackground(new java.awt.Color(204, 255, 255));
-        pbCustPassStr.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
-        pbCustPassStr.setForeground(new java.awt.Color(0, 51, 51));
-        pbCustPassStr.setMaximum(13);
-        pbCustPassStr.setMinimum(1);
-        pbCustPassStr.addChangeListener(new javax.swing.event.ChangeListener() {
+        pbCustomerPassword.setBackground(new java.awt.Color(204, 255, 255));
+        pbCustomerPassword.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
+        pbCustomerPassword.setForeground(new java.awt.Color(0, 51, 51));
+        pbCustomerPassword.setMaximum(13);
+        pbCustomerPassword.setMinimum(1);
+        pbCustomerPassword.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                pbCustPassStrStateChanged(evt);
+                pbCustomerPasswordStateChanged(evt);
             }
         });
-        add(pbCustPassStr, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 162, 127, 10));
+        add(pbCustomerPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 162, 127, 10));
 
         lblCustContact.setBackground(new java.awt.Color(204, 255, 255));
         lblCustContact.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -133,10 +133,10 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
         lblCustContact.setText("Phone No:");
         add(lblCustContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, -1, -1));
 
-        txtCustContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtCustContact.setForeground(new java.awt.Color(0, 51, 51));
-        txtCustContact.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        add(txtCustContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 187, 340, -1));
+        txtCustomerContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtCustomerContact.setForeground(new java.awt.Color(0, 51, 51));
+        txtCustomerContact.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        add(txtCustomerContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 187, 340, -1));
 
         lblCustAddr.setBackground(new java.awt.Color(204, 255, 255));
         lblCustAddr.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -144,67 +144,67 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
         lblCustAddr.setText("Address:");
         add(lblCustAddr, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, -1, -1));
 
-        txtCustAddr.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtCustAddr.setForeground(new java.awt.Color(0, 51, 51));
-        txtCustAddr.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        add(txtCustAddr, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 340, -1));
+        txtCustomerAddress.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtCustomerAddress.setForeground(new java.awt.Color(0, 51, 51));
+        txtCustomerAddress.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        add(txtCustomerAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 340, -1));
 
-        btnBack.setBackground(new java.awt.Color(204, 255, 255));
-        btnBack.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 51));
-        btnBack.setText("Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        btnAddCustomerBack.setBackground(new java.awt.Color(204, 255, 255));
+        btnAddCustomerBack.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
+        btnAddCustomerBack.setForeground(new java.awt.Color(0, 51, 51));
+        btnAddCustomerBack.setText("Back");
+        btnAddCustomerBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAddCustomerBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                btnAddCustomerBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 60, -1));
+        add(btnAddCustomerBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 60, -1));
 
-        lblAddCust.setBackground(new java.awt.Color(204, 255, 255));
-        lblAddCust.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
-        lblAddCust.setForeground(new java.awt.Color(0, 51, 51));
-        lblAddCust.setText("Add");
-        lblAddCust.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        lblAddCust.addActionListener(new java.awt.event.ActionListener() {
+        btnCustomerAdd.setBackground(new java.awt.Color(204, 255, 255));
+        btnCustomerAdd.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
+        btnCustomerAdd.setForeground(new java.awt.Color(0, 51, 51));
+        btnCustomerAdd.setText("Add");
+        btnCustomerAdd.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnCustomerAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lblAddCustActionPerformed(evt);
+                btnCustomerAddActionPerformed(evt);
             }
         });
-        add(lblAddCust, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 60, -1));
+        add(btnCustomerAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 60, -1));
     }// </editor-fold>//GEN-END:initComponents
    public void resetFields() {
-        txtCustAddr.setText("");
-        txtCustContact.setText("");
-        txtCustName.setText("");
-        pwCustPass.setText("");
-        txtCustUserName.setText("");
-        pbCustPassStr.setValue(0);
+        txtCustomerAddress.setText("");
+        txtCustomerContact.setText("");
+        txtCustomerName.setText("");
+        txtCustomerPassword.setText("");
+        txtCustomerUserName.setText("");
+        pbCustomerPassword.setValue(0);
     }
-    private void pwCustPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwCustPassActionPerformed
+    private void txtCustomerPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCustomerPasswordActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_pwCustPassActionPerformed
+    }//GEN-LAST:event_txtCustomerPasswordActionPerformed
 
-    private void pwCustPassKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwCustPassKeyReleased
+    private void txtCustomerPasswordKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCustomerPasswordKeyReleased
         // TODO add your handling code here:
         //          int pwSize = pwCustPass.getText().length();
         //        System.out.println("PassKeyReleased PwSize :: "+pwSize);
         //        pbCustPassStr.setValue(pwSize);
-    }//GEN-LAST:event_pwCustPassKeyReleased
+    }//GEN-LAST:event_txtCustomerPasswordKeyReleased
 
-    private void pwCustPassKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwCustPassKeyTyped
+    private void txtCustomerPasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCustomerPasswordKeyTyped
         // TODO add your handling code here:
-        int pwSize = pwCustPass.getText().length();
+        int pwSize = txtCustomerPassword.getText().length();
         //        System.out.println("PassKeyTyped PwSize :: "+pwSize);
-        pbCustPassStr.setValue(pwSize);
-    }//GEN-LAST:event_pwCustPassKeyTyped
+        pbCustomerPassword.setValue(pwSize);
+    }//GEN-LAST:event_txtCustomerPasswordKeyTyped
 
-    private void pbCustPassStrStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_pbCustPassStrStateChanged
+    private void pbCustomerPasswordStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_pbCustomerPasswordStateChanged
         // TODO add your handling code here:
-    }//GEN-LAST:event_pbCustPassStrStateChanged
+    }//GEN-LAST:event_pbCustomerPasswordStateChanged
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void btnAddCustomerBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCustomerBackActionPerformed
         // TODO add your handling code here:
         container.remove(this);
         Component[] componentArray = container.getComponents();
@@ -213,16 +213,16 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
         manageCustomersJPanel.populateCustomerListTable();
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_btnAddCustomerBackActionPerformed
 
-    private void lblAddCustActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblAddCustActionPerformed
+    private void btnCustomerAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCustomerAddActionPerformed
         // TODO add your handling code here:
 
-        String custName = txtCustName.getText();
-        String custContact = txtCustContact.getText();
-        String custAddr = txtCustAddr.getText();
-        String custUserName = txtCustUserName.getText();
-        String custPass = String.valueOf(pwCustPass.getPassword());
+        String custName = txtCustomerName.getText();
+        String custContact = txtCustomerContact.getText();
+        String custAddr = txtCustomerAddress.getText();
+        String custUserName = txtCustomerUserName.getText();
+        String custPass = String.valueOf(txtCustomerPassword.getPassword());
 
         if( custName.isEmpty() || custContact.isEmpty() || custAddr.isEmpty()  ||
             custUserName.isEmpty() || custPass.isEmpty()  ) {
@@ -246,23 +246,23 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "New Customer "+account.getUsername()+" added to the System Successfully!");
             resetFields();
         }
-    }//GEN-LAST:event_lblAddCustActionPerformed
+    }//GEN-LAST:event_btnCustomerAddActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton lblAddCust;
+    private javax.swing.JButton btnAddCustomerBack;
+    private javax.swing.JButton btnCustomerAdd;
     private javax.swing.JLabel lblAddCustomer;
     private javax.swing.JLabel lblCustAddr;
     private javax.swing.JLabel lblCustContact;
     private javax.swing.JLabel lblCustName;
     private javax.swing.JLabel lblCustPass;
     private javax.swing.JLabel lblCustUserName;
-    private javax.swing.JProgressBar pbCustPassStr;
-    private javax.swing.JPasswordField pwCustPass;
-    private javax.swing.JTextField txtCustAddr;
-    private javax.swing.JTextField txtCustContact;
-    private javax.swing.JTextField txtCustName;
-    private javax.swing.JTextField txtCustUserName;
+    private javax.swing.JProgressBar pbCustomerPassword;
+    private javax.swing.JTextField txtCustomerAddress;
+    private javax.swing.JTextField txtCustomerContact;
+    private javax.swing.JTextField txtCustomerName;
+    private javax.swing.JPasswordField txtCustomerPassword;
+    private javax.swing.JTextField txtCustomerUserName;
     // End of variables declaration//GEN-END:variables
 }

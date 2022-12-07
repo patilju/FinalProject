@@ -7,7 +7,7 @@ package userinterface.RestaurantAdminRole;
 
 import Business.EcoSystem;
 import Business.Restaurant.Restaurant;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class RestInfoPanel extends javax.swing.JPanel {
 
@@ -27,7 +27,7 @@ public class RestInfoPanel extends javax.swing.JPanel {
     private Restaurant restaurant;
     private final EcoSystem system;
     private String currentPhoneNo;
-    public RestInfoPanel(JPanel container, UserAccount account, EcoSystem system, RestaurantDirectory restaurantDirectory) {
+    public RestInfoPanel(JPanel container, UserAccount account, EcoSystem system, RestaurantStore restaurantDirectory) {
         initComponents();
          this.container = container;
          this.system = system;

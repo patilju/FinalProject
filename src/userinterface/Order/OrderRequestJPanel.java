@@ -5,13 +5,13 @@
  */
 package userinterface.Order;
 
-import Business.Customer.CustomerDirectory;
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.Customer.CustomerStore;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.EcoSystem;
 import Business.Order.Menu;
 import Business.Order.Order;
-import Business.Order.OrderDirectory;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Order.OrderStore;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -21,18 +21,18 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author nupoo
  */
 public class OrderRequestJPanel extends javax.swing.JPanel {
     
     private final EcoSystem system;
     private final UserAccount userAccount;
-    private final OrderDirectory orderDirectory;
+    private final OrderStore orderDirectory;
     private final JPanel container;
     /**
      * Creates new form OrderRequestJPanel
      */
-    public OrderRequestJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, CustomerDirectory customerDirectory, RestaurantDirectory restaurantDirectory, DeliveryManDirectory deliveryManDirectory, Menu menuDirectory, OrderDirectory orderDirectory) {
+    public OrderRequestJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, CustomerStore customerDirectory, RestaurantStore restaurantDirectory, DeliveryManStore deliveryManDirectory, Menu menuDirectory, OrderStore orderDirectory) {
         initComponents();
         this.system = system;
         this.userAccount = account;

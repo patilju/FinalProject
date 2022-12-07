@@ -6,7 +6,7 @@
 package userinterface.DeliveryManRole;
 
 import Business.DeliveryMan.DeliveryMan;
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Role.DeliverManRole;
@@ -18,17 +18,17 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class AddDeliveryManJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form AddDeliveryManJPanel
      */
-    private final DeliveryManDirectory deliveryManDirectory;
+    private final DeliveryManStore deliveryManDirectory;
     private final EcoSystem system;
     private final JPanel container;
-    public AddDeliveryManJPanel(JPanel container, EcoSystem system, DeliveryManDirectory deliveryManDirectory) {
+    public AddDeliveryManJPanel(JPanel container, EcoSystem system, DeliveryManStore deliveryManDirectory) {
         initComponents();
         this.deliveryManDirectory = deliveryManDirectory;
         this.system = system;

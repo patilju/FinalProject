@@ -5,15 +5,15 @@
 package userinterface.CustomerRole;
 
 import Business.Customer.Customer;
-import Business.Customer.CustomerDirectory;
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.Customer.CustomerStore;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.EcoSystem;
 import Business.Order.Menu;
 import Business.Order.Order;
-import Business.Order.OrderDirectory;
+import Business.Order.OrderStore;
 import Business.Order.OrderItem;
 import Business.Restaurant.Restaurant;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
@@ -24,22 +24,22 @@ import userinterface.Order.OrderRequestJPanel;
 
 /**
  *
- * @author raunak
+ * @author dhrit
  */
 public class CustomerAreaJPanel extends javax.swing.JPanel {
 
     private final JPanel userProcessContainer;
     private final EcoSystem system;
     private final UserAccount userAccount;
-    private final CustomerDirectory customerDirectory;
-    private final RestaurantDirectory restaurantDirectory;
-    private final DeliveryManDirectory deliveryManDirectory;
+    private final CustomerStore customerDirectory;
+    private final RestaurantStore restaurantDirectory;
+    private final DeliveryManStore deliveryManDirectory;
     private final Menu menuDirectory;
-    private final OrderDirectory orderDirectory;
+    private final OrderStore orderDirectory;
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
-    public CustomerAreaJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, CustomerDirectory customerDirectory, RestaurantDirectory restaurantDirectory, DeliveryManDirectory deliveryManDirectory, Menu menuDirectory,OrderDirectory orderDirectory) {
+    public CustomerAreaJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, CustomerStore customerDirectory, RestaurantStore restaurantDirectory, DeliveryManStore deliveryManDirectory, Menu menuDirectory,OrderStore orderDirectory) {
         initComponents();
       
         this.userProcessContainer = userProcessContainer;

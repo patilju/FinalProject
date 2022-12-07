@@ -6,7 +6,7 @@
 package userinterface.CustomerRole;
 
 import Business.Customer.Customer;
-import Business.Customer.CustomerDirectory;
+import Business.Customer.CustomerStore;
 import Business.EcoSystem;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class ViewUpdateCustomerJPanel extends javax.swing.JPanel {
 
@@ -24,13 +24,13 @@ public class ViewUpdateCustomerJPanel extends javax.swing.JPanel {
      * Creates new form ViewCustomerJPanel
      */
     
-    public CustomerDirectory customerDirectory;
+    public CustomerStore customerDirectory;
     public JPanel container;
     public Customer customer;
     private final EcoSystem system;
     private String currentPhoneNo;
     
-    public ViewUpdateCustomerJPanel(EcoSystem system, JPanel container, Customer customer, CustomerDirectory customerDirectory) {
+    public ViewUpdateCustomerJPanel(EcoSystem system, JPanel container, Customer customer, CustomerStore customerDirectory) {
         
         initComponents();
         this.customerDirectory = customerDirectory;

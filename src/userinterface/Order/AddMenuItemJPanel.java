@@ -7,7 +7,7 @@ package userinterface.Order;
 
 import Business.EcoSystem;
 import Business.Order.Menu;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -17,7 +17,7 @@ import userinterface.RestaurantAdminRole.RestMenuJPanel;
 
 /**
  *
- * @author Vini
+ * @author nupoo
  */
 public class AddMenuItemJPanel extends javax.swing.JPanel {
 
@@ -28,7 +28,7 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
     private final EcoSystem system;
     private final Menu menuDirectory;
     private final UserAccount account;
-    public AddMenuItemJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, RestaurantDirectory restaurantDirectory, Menu menuDirectory) {
+    public AddMenuItemJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, RestaurantStore restaurantDirectory, Menu menuDirectory) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;

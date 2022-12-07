@@ -3,31 +3,31 @@
 package userinterface.RestaurantAdminRole;
 
 
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.EcoSystem;
 import Business.Order.Menu;
-import Business.Order.OrderDirectory;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Order.OrderStore;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 
 /**
  *
- * @author  raunak
+ * @author  dhrit
  */
 public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     
     private final JPanel userProcessContainer;
-    private final RestaurantDirectory restaurantDirectory;
+    private final RestaurantStore restaurantDirectory;
     private final EcoSystem system;
     private final Menu menuDirectory;
-    private final OrderDirectory orderDirectory;
+    private final OrderStore orderDirectory;
     private final UserAccount account;
-    private final DeliveryManDirectory deliveryManDirectory;
+    private final DeliveryManStore deliveryManDirectory;
     
     /** Creates new form AdminWorkAreaJPanel */
-    public AdminWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, RestaurantDirectory restaurantDirectory, DeliveryManDirectory deliveryManDirectory, Menu menuDirectory, OrderDirectory orderDirectory) {
+    public AdminWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, RestaurantStore restaurantDirectory, DeliveryManStore deliveryManDirectory, Menu menuDirectory, OrderStore orderDirectory) {
         initComponents();
         lblRestName.setText(account.getUsername());
         lblRestAdmin.setText(account.getEmployee().getName()+" 's Admin Page");
@@ -51,9 +51,9 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         lblRestAdmin = new javax.swing.JLabel();
-        btnRestInfo = new javax.swing.JButton();
-        btnMenu = new javax.swing.JButton();
-        btnOrders = new javax.swing.JButton();
+        btnRestaurantInfo = new javax.swing.JButton();
+        btnRestMenu = new javax.swing.JButton();
+        btnRestManageOrders = new javax.swing.JButton();
         lblRestName = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 204));
@@ -67,75 +67,75 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         lblRestAdmin.setText("Restaurant Management Screen");
         add(lblRestAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, -1, -1));
 
-        btnRestInfo.setBackground(new java.awt.Color(204, 255, 255));
-        btnRestInfo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnRestInfo.setForeground(new java.awt.Color(0, 51, 51));
-        btnRestInfo.setText("Manage Restaurant Information");
-        btnRestInfo.addActionListener(new java.awt.event.ActionListener() {
+        btnRestaurantInfo.setBackground(new java.awt.Color(204, 255, 255));
+        btnRestaurantInfo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnRestaurantInfo.setForeground(new java.awt.Color(0, 51, 51));
+        btnRestaurantInfo.setText("Manage Restaurant Information");
+        btnRestaurantInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRestInfoActionPerformed(evt);
+                btnRestaurantInfoActionPerformed(evt);
             }
         });
-        add(btnRestInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 410, -1));
+        add(btnRestaurantInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 410, -1));
 
-        btnMenu.setBackground(new java.awt.Color(204, 255, 255));
-        btnMenu.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnMenu.setForeground(new java.awt.Color(0, 51, 51));
-        btnMenu.setText("Manage menu");
-        btnMenu.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnMenu.addActionListener(new java.awt.event.ActionListener() {
+        btnRestMenu.setBackground(new java.awt.Color(204, 255, 255));
+        btnRestMenu.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnRestMenu.setForeground(new java.awt.Color(0, 51, 51));
+        btnRestMenu.setText("Manage menu");
+        btnRestMenu.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnRestMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMenuActionPerformed(evt);
+                btnRestMenuActionPerformed(evt);
             }
         });
-        add(btnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 410, -1));
+        add(btnRestMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 410, -1));
 
-        btnOrders.setBackground(new java.awt.Color(204, 255, 255));
-        btnOrders.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnOrders.setForeground(new java.awt.Color(0, 51, 51));
-        btnOrders.setText("Manage Orders");
-        btnOrders.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnOrders.addActionListener(new java.awt.event.ActionListener() {
+        btnRestManageOrders.setBackground(new java.awt.Color(204, 255, 255));
+        btnRestManageOrders.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnRestManageOrders.setForeground(new java.awt.Color(0, 51, 51));
+        btnRestManageOrders.setText("Manage Orders");
+        btnRestManageOrders.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnRestManageOrders.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOrdersActionPerformed(evt);
+                btnRestManageOrdersActionPerformed(evt);
             }
         });
-        add(btnOrders, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 410, -1));
+        add(btnRestManageOrders, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 410, -1));
 
         lblRestName.setBackground(new java.awt.Color(204, 255, 255));
         lblRestName.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         lblRestName.setForeground(new java.awt.Color(0, 51, 51));
         lblRestName.setText("Restaurant");
-        add(lblRestName, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 60, 30));
+        add(lblRestName, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 100, 30));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnRestInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestInfoActionPerformed
+    private void btnRestaurantInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaurantInfoActionPerformed
         // TODO add your handling code here:
          RestInfoPanel restInfoJPanel = new RestInfoPanel(userProcessContainer, account, system, restaurantDirectory);
         userProcessContainer.add("restInfoJPanel", restInfoJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnRestInfoActionPerformed
+    }//GEN-LAST:event_btnRestaurantInfoActionPerformed
 
-    private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
+    private void btnRestMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestMenuActionPerformed
         RestMenuJPanel restMenuJPanel = new RestMenuJPanel(userProcessContainer, account, system, restaurantDirectory, menuDirectory);
         userProcessContainer.add("restMenuJPanel", restMenuJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnMenuActionPerformed
+    }//GEN-LAST:event_btnRestMenuActionPerformed
 
-    private void btnOrdersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdersActionPerformed
+    private void btnRestManageOrdersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestManageOrdersActionPerformed
         RestOrderJPanel restOrderJPanel = new RestOrderJPanel(userProcessContainer, account, system, restaurantDirectory, deliveryManDirectory, menuDirectory,orderDirectory);
         userProcessContainer.add("restOrderJPanel", restOrderJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnOrdersActionPerformed
+    }//GEN-LAST:event_btnRestManageOrdersActionPerformed
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnMenu;
-    private javax.swing.JButton btnOrders;
-    private javax.swing.JButton btnRestInfo;
+    private javax.swing.JButton btnRestManageOrders;
+    private javax.swing.JButton btnRestMenu;
+    private javax.swing.JButton btnRestaurantInfo;
     private javax.swing.JLabel lblRestAdmin;
     private javax.swing.JLabel lblRestName;
     // End of variables declaration//GEN-END:variables

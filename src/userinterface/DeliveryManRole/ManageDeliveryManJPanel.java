@@ -5,11 +5,11 @@
  */
 package userinterface.DeliveryManRole;
 
-import Business.Customer.CustomerDirectory;
+import Business.Customer.CustomerStore;
 import Business.DeliveryMan.DeliveryMan;
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.EcoSystem;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class ManageDeliveryManJPanel extends javax.swing.JPanel {
 
@@ -27,11 +27,11 @@ public class ManageDeliveryManJPanel extends javax.swing.JPanel {
      */
     JPanel container;
     EcoSystem system;
-    CustomerDirectory customerDirectory;
-    RestaurantDirectory restaurantDirectory;
-    DeliveryManDirectory deliveryManDirectory;
+    CustomerStore customerDirectory;
+    RestaurantStore restaurantDirectory;
+    DeliveryManStore deliveryManDirectory;
     
-    public ManageDeliveryManJPanel(JPanel container, EcoSystem system, DeliveryManDirectory deliveryManDirectory) {
+    public ManageDeliveryManJPanel(JPanel container, EcoSystem system, DeliveryManStore deliveryManDirectory) {
         initComponents();
         this.container = container;
         this.system = system;

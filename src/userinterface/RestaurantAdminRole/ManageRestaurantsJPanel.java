@@ -7,7 +7,7 @@ package userinterface.RestaurantAdminRole;
 
 import Business.EcoSystem;
 import Business.Restaurant.Restaurant;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
@@ -16,16 +16,16 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class ManageRestaurantsJPanel extends javax.swing.JPanel {
-    public RestaurantDirectory restDirectory;
+    public RestaurantStore restDirectory;
     public JPanel container;
     public EcoSystem system;
     /**
      * Creates new form ManageRestaurantsJPanel
      */
-    public ManageRestaurantsJPanel(JPanel container, EcoSystem system, RestaurantDirectory restaurantDirectory) {
+    public ManageRestaurantsJPanel(JPanel container, EcoSystem system, RestaurantStore restaurantDirectory) {
         initComponents();
         this.container = container;
         this.restDirectory = restaurantDirectory;

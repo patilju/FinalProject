@@ -6,12 +6,12 @@
 package userinterface.RestaurantAdminRole;
 
 import Business.DeliveryMan.DeliveryMan;
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.EcoSystem;
 import Business.Order.Menu;
 import Business.Order.Order;
-import Business.Order.OrderDirectory;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Order.OrderStore;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class RestOrderJPanel extends javax.swing.JPanel {
 
@@ -31,10 +31,10 @@ public class RestOrderJPanel extends javax.swing.JPanel {
     private final JPanel userProcessContainer;
     private final UserAccount account;
     private final EcoSystem business;
-    private final DeliveryManDirectory deliveryManDirectory;
-    private final OrderDirectory orderDirectory;
+    private final DeliveryManStore deliveryManDirectory;
+    private final OrderStore orderDirectory;
     private final Menu menuDirectory;
-    public RestOrderJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem business, RestaurantDirectory restaurantDirectory, DeliveryManDirectory deliveryManDirectory, Menu menuDirectory, OrderDirectory orderDirectory) {
+    public RestOrderJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem business, RestaurantStore restaurantDirectory, DeliveryManStore deliveryManDirectory, Menu menuDirectory, OrderStore orderDirectory) {
         this.userProcessContainer = userProcessContainer;
         this.account = account;
         this.business = business;

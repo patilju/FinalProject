@@ -6,7 +6,7 @@
 package userinterface.CustomerRole;
 
 import Business.Customer.Customer;
-import Business.Customer.CustomerDirectory;
+import Business.Customer.CustomerStore;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
@@ -16,16 +16,16 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class ManageCustomersJPanel extends javax.swing.JPanel {
-    public CustomerDirectory custDirectory;
+    public CustomerStore custDirectory;
     public JPanel container;
     public EcoSystem system;
     /**
      * Creates new form UpdateCustomersJPanel
      */
-    public ManageCustomersJPanel(JPanel userProcessContainer, EcoSystem system, CustomerDirectory custDirectory) {
+    public ManageCustomersJPanel(JPanel userProcessContainer, EcoSystem system, CustomerStore custDirectory) {
         initComponents();
         this.system = system;
         this.custDirectory = custDirectory;

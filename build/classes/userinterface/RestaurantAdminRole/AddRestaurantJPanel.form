@@ -44,19 +44,19 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtRestAddr" alignment="1" max="32767" attributes="0"/>
-                          <Component id="pbRestPassStr" alignment="0" pref="476" max="32767" attributes="0"/>
-                          <Component id="txtRestContact" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtRestUserName" max="32767" attributes="0"/>
-                          <Component id="pwRestPass" max="32767" attributes="0"/>
-                          <Component id="txtRestName" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtRestaurantAddress" alignment="1" max="32767" attributes="0"/>
+                          <Component id="pbRestaurantPassword" alignment="0" pref="476" max="32767" attributes="0"/>
+                          <Component id="txtRestaurantContact" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtRestaurantUserName" max="32767" attributes="0"/>
+                          <Component id="txtRestaurantPassword" max="32767" attributes="0"/>
+                          <Component id="txtRestaurantName" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="btnBack" alignment="0" pref="73" max="32767" attributes="0"/>
-                          <Component id="btnAddRest" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnNewRestaurantBack" alignment="0" pref="73" max="32767" attributes="0"/>
+                          <Component id="btnAddNewRestaurant" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -72,41 +72,41 @@
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblRestName" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtRestName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtRestaurantName" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblRestUserName" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtRestUserName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtRestaurantUserName" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblRestPass" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="pwRestPass" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtRestaurantPassword" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="pbRestPassStr" min="-2" pref="7" max="-2" attributes="0"/>
+              <Component id="pbRestaurantPassword" min="-2" pref="7" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtRestContact" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtRestaurantContact" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblRestContact" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtRestAddr" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtRestaurantAddress" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblRestAddr" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Component id="btnBack" min="-2" max="-2" attributes="0"/>
+              <Component id="btnNewRestaurantBack" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btnAddRest" min="-2" max="-2" attributes="0"/>
+              <Component id="btnAddNewRestaurant" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="44" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JPasswordField" name="pwRestPass">
+    <Component class="javax.swing.JPasswordField" name="txtRestaurantPassword">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -121,12 +121,12 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pwRestPassActionPerformed"/>
-        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="pwRestPassKeyReleased"/>
-        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="pwRestPassKeyTyped"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtRestaurantPasswordActionPerformed"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtRestaurantPasswordKeyReleased"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtRestaurantPasswordKeyTyped"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtRestUserName">
+    <Component class="javax.swing.JTextField" name="txtRestaurantUserName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -141,7 +141,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtRestName">
+    <Component class="javax.swing.JTextField" name="txtRestaurantName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -212,7 +212,7 @@
         <Property name="text" type="java.lang.String" value="Restaurant Name :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtRestAddr">
+    <Component class="javax.swing.JTextField" name="txtRestaurantAddress">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -256,7 +256,7 @@
         <Property name="text" type="java.lang.String" value="Address :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JProgressBar" name="pbRestPassStr">
+    <Component class="javax.swing.JProgressBar" name="pbRestaurantPassword">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -271,10 +271,10 @@
         <Property name="minimum" type="int" value="1"/>
       </Properties>
       <Events>
-        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="pbRestPassStrStateChanged"/>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="pbRestaurantPasswordStateChanged"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtRestContact">
+    <Component class="javax.swing.JTextField" name="txtRestaurantContact">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -289,7 +289,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnAddRest">
+    <Component class="javax.swing.JButton" name="btnAddNewRestaurant">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -308,10 +308,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddRestActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddNewRestaurantActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnBack">
+    <Component class="javax.swing.JButton" name="btnNewRestaurantBack">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -330,7 +330,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNewRestaurantBackActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

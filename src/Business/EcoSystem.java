@@ -6,11 +6,11 @@
 package Business;
 
 
-import Business.Customer.CustomerDirectory;
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.Customer.CustomerStore;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.Order.Menu;
-import Business.Order.OrderDirectory;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Order.OrderStore;
+import Business.Restaurant.RestaurantStore;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
 import java.util.ArrayList;
@@ -24,16 +24,16 @@ import java.util.regex.Pattern;
 public class EcoSystem extends Organization{
     
     private static EcoSystem business;
-    private RestaurantDirectory restaurantDirectory;
-    private CustomerDirectory customerDirectory;
-    private OrderDirectory orderDirectory;
+    private RestaurantStore restaurantDirectory;
+    private CustomerStore customerDirectory;
+    private OrderStore orderDirectory;
     private Menu menu;
 
-    public OrderDirectory getOrderDirectory() {
+    public OrderStore getOrderDirectory() {
         return orderDirectory;
     }
 
-    public void setOrderDirectory(OrderDirectory orderDirectory) {
+    public void setOrderDirectory(OrderStore orderDirectory) {
         this.orderDirectory = orderDirectory;
     }
 
@@ -45,32 +45,32 @@ public class EcoSystem extends Organization{
         this.menu = menu;
     }
 
-    public RestaurantDirectory getRestaurantDirectory() {
+    public RestaurantStore getRestaurantDirectory() {
         return restaurantDirectory;
     }
 
-    public void setRestaurantDirectory(RestaurantDirectory restaurantDirectory) {
+    public void setRestaurantDirectory(RestaurantStore restaurantDirectory) {
         this.restaurantDirectory = restaurantDirectory;
     }
 
-    public CustomerDirectory getCustomerDirectory() {
+    public CustomerStore getCustomerDirectory() {
         return customerDirectory;
     }
 
-    public void setCustomerDirectory(CustomerDirectory customerDirectory) {
+    public void setCustomerDirectory(CustomerStore customerDirectory) {
         this.customerDirectory = customerDirectory;
     }
 
-    public DeliveryManDirectory getDeliveryManDirectory() {
+    public DeliveryManStore getDeliveryManDirectory() {
         return deliveryManDirectory;
     }
 
-    public void setDeliveryManDirectory(DeliveryManDirectory deliveryManDirectory) {
+    public void setDeliveryManDirectory(DeliveryManStore deliveryManDirectory) {
         this.deliveryManDirectory = deliveryManDirectory;
     }
-    private DeliveryManDirectory deliveryManDirectory;
+    private DeliveryManStore deliveryManDirectory;
 
-    public EcoSystem(RestaurantDirectory restaurantDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory) {
+    public EcoSystem(RestaurantStore restaurantDirectory, CustomerStore customerDirectory, DeliveryManStore deliveryManDirectory) {
 
         this.restaurantDirectory = restaurantDirectory;
         this.customerDirectory = customerDirectory;

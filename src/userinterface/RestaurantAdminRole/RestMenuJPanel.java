@@ -8,7 +8,7 @@ package userinterface.RestaurantAdminRole;
 import Business.EcoSystem;
 import Business.Order.Menu;
 import Business.Order.OrderItem;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -20,7 +20,7 @@ import userinterface.Order.EditMenuItemJPanel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class RestMenuJPanel extends javax.swing.JPanel {
 
@@ -30,11 +30,11 @@ public class RestMenuJPanel extends javax.swing.JPanel {
     
     private final JPanel container;
     private final EcoSystem system;
-    private final RestaurantDirectory restaurantDirectory;
+    private final RestaurantStore restaurantDirectory;
     private final Menu menuDirectory;
     private final UserAccount account;
 
-    public RestMenuJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, RestaurantDirectory restaurantDirectory, Menu menuDirectory) {
+    public RestMenuJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem system, RestaurantStore restaurantDirectory, Menu menuDirectory) {
         initComponents();
         this.container = userProcessContainer;
         this.system = system;

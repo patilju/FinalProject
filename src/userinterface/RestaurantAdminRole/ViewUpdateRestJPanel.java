@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class ViewUpdateRestJPanel extends javax.swing.JPanel {
 

@@ -4,10 +4,10 @@
  */
 package userinterface.DeliveryManRole;
 
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.EcoSystem;
 import Business.Order.Order;
-import Business.Order.OrderDirectory;
+import Business.Order.OrderStore;
 
 import Business.UserAccount.UserAccount;
 import javax.swing.JOptionPane;
@@ -16,7 +16,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raunak
+ * @author juile
  */
 public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -28,7 +28,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form LabAssistantWorkAreaJPanel
      */
-    public DeliveryManWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem business, DeliveryManDirectory deliveryManDirectory, OrderDirectory orderDirectory) {
+    public DeliveryManWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem business, DeliveryManStore deliveryManDirectory, OrderStore orderDirectory) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
