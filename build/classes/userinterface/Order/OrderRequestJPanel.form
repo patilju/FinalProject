@@ -38,9 +38,10 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="txtOrderFeedback" min="-2" pref="304" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="btnOrderBack" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="btnOrderComment" alignment="0" pref="74" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="btnOrderComment" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="btnOrderBack" min="-2" pref="74" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -69,10 +70,11 @@
                   <Component id="lblOrderFeedback" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btnOrderComment" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="btnOrderBack" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="32" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnOrderComment" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnOrderBack" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="65" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

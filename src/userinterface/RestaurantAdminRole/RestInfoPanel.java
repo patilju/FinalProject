@@ -131,7 +131,7 @@ private void disableEdit(){
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 48, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, 48, -1));
 
         txtRestNo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtRestNo.setForeground(new java.awt.Color(0, 51, 51));
@@ -154,7 +154,7 @@ private void disableEdit(){
                 btnEnableUpdateActionPerformed(evt);
             }
         });
-        add(btnEnableUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 50, -1));
+        add(btnEnableUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 50, -1));
 
         btnSaveChanges.setBackground(new java.awt.Color(204, 255, 255));
         btnSaveChanges.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -166,7 +166,7 @@ private void disableEdit(){
                 btnSaveChangesActionPerformed(evt);
             }
         });
-        add(btnSaveChanges, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 50, -1));
+        add(btnSaveChanges, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 50, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed

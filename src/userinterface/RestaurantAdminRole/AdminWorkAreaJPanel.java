@@ -76,7 +76,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnRestaurantInfoActionPerformed(evt);
             }
         });
-        add(btnRestaurantInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 410, -1));
+        add(btnRestaurantInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 140, 180, -1));
 
         btnRestMenu.setBackground(new java.awt.Color(204, 255, 255));
         btnRestMenu.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -88,7 +88,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnRestMenuActionPerformed(evt);
             }
         });
-        add(btnRestMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 410, -1));
+        add(btnRestMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 180, -1));
 
         btnRestManageOrders.setBackground(new java.awt.Color(204, 255, 255));
         btnRestManageOrders.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -100,7 +100,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnRestManageOrdersActionPerformed(evt);
             }
         });
-        add(btnRestManageOrders, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 410, -1));
+        add(btnRestManageOrders, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 180, -1));
 
         lblRestName.setBackground(new java.awt.Color(204, 255, 255));
         lblRestName.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N

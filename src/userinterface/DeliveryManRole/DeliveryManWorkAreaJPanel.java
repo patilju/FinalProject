@@ -132,7 +132,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 btnConfirmDeliveryActionPerformed(evt);
             }
         });
-        add(btnConfirmDelivery, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 140, 35));
+        add(btnConfirmDelivery, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 140, 35));
 
         btnDeliveryComplete.setBackground(new java.awt.Color(204, 255, 255));
         btnDeliveryComplete.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -144,7 +144,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 btnDeliveryCompleteActionPerformed(evt);
             }
         });
-        add(btnDeliveryComplete, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 140, 33));
+        add(btnDeliveryComplete, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 140, 33));
 
         lblDeliDetails.setBackground(new java.awt.Color(204, 255, 255));
         lblDeliDetails.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N

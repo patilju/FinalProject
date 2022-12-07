@@ -159,7 +159,7 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
                 btnAddCustomerBackActionPerformed(evt);
             }
         });
-        add(btnAddCustomerBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 60, -1));
+        add(btnAddCustomerBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, 60, -1));
 
         btnCustomerAdd.setBackground(new java.awt.Color(204, 255, 255));
         btnCustomerAdd.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
@@ -171,7 +171,7 @@ public class AddCustomerJPanel extends javax.swing.JPanel {
                 btnCustomerAddActionPerformed(evt);
             }
         });
-        add(btnCustomerAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 60, -1));
+        add(btnCustomerAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 60, -1));
     }// </editor-fold>//GEN-END:initComponents
    public void resetFields() {
         txtCustomerAddress.setText("");

@@ -59,7 +59,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
                 btnRequestActionPerformed(evt);
             }
         });
-        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 95, -1, -1));
+        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, -1, -1));
 
         jLabel1.setText("Message");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 40, -1, -1));
@@ -71,7 +71,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
                 btnBackEnterpriseActionPerformed(evt);
             }
         });
-        add(btnBackEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 138, -1, -1));
+        add(btnBackEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
 
         valueLabel.setText("<value>");
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 130, -1));

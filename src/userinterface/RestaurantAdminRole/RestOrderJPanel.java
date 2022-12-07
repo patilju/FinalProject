@@ -152,7 +152,7 @@ public class RestOrderJPanel extends javax.swing.JPanel {
                 brnConfirmOrderActionPerformed(evt);
             }
         });
-        add(brnConfirmOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 110, 30));
+        add(brnConfirmOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 90, 30));
 
         tblDeliManDetails.setBackground(new java.awt.Color(255, 255, 204));
         tblDeliManDetails.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N

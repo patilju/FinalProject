@@ -134,7 +134,7 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
                 btnBack1ActionPerformed(evt);
             }
         });
-        add(btnBack1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 80, 30));
+        add(btnBack1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, 80, 30));
 
         btnAddDelivery.setBackground(new java.awt.Color(204, 255, 255));
         btnAddDelivery.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -146,7 +146,7 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
                 btnAddDeliveryActionPerformed(evt);
             }
         });
-        add(btnAddDelivery, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 80, 30));
+        add(btnAddDelivery, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 80, 30));
 
         pbDeliPassStr.setBackground(new java.awt.Color(204, 255, 255));
         pbDeliPassStr.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N

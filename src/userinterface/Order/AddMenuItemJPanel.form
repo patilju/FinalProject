@@ -29,21 +29,25 @@
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                               <Component id="lblDishName" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="txtDishName" min="-2" pref="246" max="-2" attributes="0"/>
+                              <EmptySpace pref="83" max="32767" attributes="0"/>
+                              <Component id="lblPrice" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
-                          <Component id="btnDishBack" min="-2" pref="52" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="btnDishSave" min="-2" pref="54" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="169" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace pref="83" max="32767" attributes="0"/>
-                      <Component id="lblPrice" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnDishBack" min="-2" pref="52" max="-2" attributes="0"/>
                           <Component id="txtDishPrice" min="-2" pref="264" max="-2" attributes="0"/>
-                          <Component id="btnDishSave" min="-2" pref="54" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -63,12 +67,12 @@
                   <Component id="lblPrice" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtDishPrice" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnDishSave" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnDishBack" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnDishSave" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="155" max="32767" attributes="0"/>
+              <EmptySpace pref="114" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
