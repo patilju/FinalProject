@@ -36,18 +36,15 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtDeliName" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtDeliContact" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtDeliNo" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtDeliveryName" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtDeliveryContact" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtDeliveryUsername" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btnBack1" min="-2" pref="66" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="btnSaveChanges" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="btnEnableUpdate" alignment="0" pref="66" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="0" pref="388" max="32767" attributes="0"/>
+                              <Component id="btnDeliverySave" min="-2" pref="66" max="-2" attributes="0"/>
+                              <EmptySpace pref="132" max="32767" attributes="0"/>
+                              <Component id="btnDeliveryUpdate" min="-2" pref="66" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
+                              <Component id="btnBack3" min="-2" pref="66" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -64,27 +61,27 @@
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblDeliNo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtDeliNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDeliveryUsername" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblDeliName" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtDeliName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDeliveryName" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="txtDeliContact" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                      <Component id="btnBack1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnEnableUpdate" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtDeliveryContact" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnDeliveryUpdate" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnBack3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnDeliverySave" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <Component id="lblDeliContact" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="btnSaveChanges" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="83" max="32767" attributes="0"/>
+              <EmptySpace pref="110" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -104,7 +101,7 @@
         <Property name="text" type="java.lang.String" value="Contact No :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtDeliContact">
+    <Component class="javax.swing.JTextField" name="txtDeliveryContact">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -119,7 +116,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtDeliName">
+    <Component class="javax.swing.JTextField" name="txtDeliveryName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -134,7 +131,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtDeliNo">
+    <Component class="javax.swing.JTextField" name="txtDeliveryUsername">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -192,7 +189,7 @@
         <Property name="text" type="java.lang.String" value="Create Delivery Person"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnBack1">
+    <Component class="javax.swing.JButton" name="btnBack3">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -211,10 +208,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBack1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBack3ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnEnableUpdate">
+    <Component class="javax.swing.JButton" name="btnDeliveryUpdate">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -233,10 +230,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEnableUpdateActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeliveryUpdateActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnSaveChanges">
+    <Component class="javax.swing.JButton" name="btnDeliverySave">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -255,7 +252,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveChangesActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeliverySaveActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

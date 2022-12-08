@@ -8,7 +8,7 @@ package userinterface.RestaurantAdminRole;
 import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Restaurant.Restaurant;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestaurantStore;
 import Business.Role.AdminRole;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
@@ -18,19 +18,19 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class AddRestaurantJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form AddRestaurantJPanel
      */
-    private final RestaurantDirectory restDirectory;
+    private final RestaurantStore restDirectory;
     private final JPanel container;
     private final EcoSystem system;
     
     Restaurant  rest = new Restaurant();
-    public AddRestaurantJPanel(JPanel container, EcoSystem system, RestaurantDirectory restDir) {
+    public AddRestaurantJPanel(JPanel container, EcoSystem system, RestaurantStore restDir) {
         initComponents();
         this.restDirectory = restDir;
         this.system = system;
@@ -47,48 +47,48 @@ public class AddRestaurantJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        pwRestPass = new javax.swing.JPasswordField();
-        txtRestUserName = new javax.swing.JTextField();
-        txtRestName = new javax.swing.JTextField();
+        txtRestaurantPassword = new javax.swing.JPasswordField();
+        txtRestaurantUserName = new javax.swing.JTextField();
+        txtRestaurantName = new javax.swing.JTextField();
         lblRestContact = new javax.swing.JLabel();
         lblRestPass = new javax.swing.JLabel();
         lblRestUserName = new javax.swing.JLabel();
         lblRestName = new javax.swing.JLabel();
-        txtRestAddr = new javax.swing.JTextField();
+        txtRestaurantAddress = new javax.swing.JTextField();
         lblAddRest = new javax.swing.JLabel();
         lblRestAddr = new javax.swing.JLabel();
-        pbRestPassStr = new javax.swing.JProgressBar();
-        txtRestContact = new javax.swing.JTextField();
-        btnAddRest = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
+        pbRestaurantPassword = new javax.swing.JProgressBar();
+        txtRestaurantContact = new javax.swing.JTextField();
+        btnAddNewRestaurant = new javax.swing.JButton();
+        btnNewRestaurantBack = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 204));
         setForeground(new java.awt.Color(0, 51, 51));
 
-        pwRestPass.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        pwRestPass.setForeground(new java.awt.Color(0, 51, 51));
-        pwRestPass.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        pwRestPass.addActionListener(new java.awt.event.ActionListener() {
+        txtRestaurantPassword.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtRestaurantPassword.setForeground(new java.awt.Color(0, 51, 51));
+        txtRestaurantPassword.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtRestaurantPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pwRestPassActionPerformed(evt);
+                txtRestaurantPasswordActionPerformed(evt);
             }
         });
-        pwRestPass.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtRestaurantPassword.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                pwRestPassKeyReleased(evt);
+                txtRestaurantPasswordKeyReleased(evt);
             }
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                pwRestPassKeyTyped(evt);
+                txtRestaurantPasswordKeyTyped(evt);
             }
         });
 
-        txtRestUserName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtRestUserName.setForeground(new java.awt.Color(0, 51, 51));
-        txtRestUserName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtRestaurantUserName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtRestaurantUserName.setForeground(new java.awt.Color(0, 51, 51));
+        txtRestaurantUserName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        txtRestName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtRestName.setForeground(new java.awt.Color(0, 51, 51));
-        txtRestName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtRestaurantName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtRestaurantName.setForeground(new java.awt.Color(0, 51, 51));
+        txtRestaurantName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         lblRestContact.setBackground(new java.awt.Color(204, 255, 255));
         lblRestContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -110,9 +110,9 @@ public class AddRestaurantJPanel extends javax.swing.JPanel {
         lblRestName.setForeground(new java.awt.Color(0, 51, 51));
         lblRestName.setText("Restaurant Name :");
 
-        txtRestAddr.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtRestAddr.setForeground(new java.awt.Color(0, 51, 51));
-        txtRestAddr.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtRestaurantAddress.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtRestaurantAddress.setForeground(new java.awt.Color(0, 51, 51));
+        txtRestaurantAddress.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         lblAddRest.setBackground(new java.awt.Color(204, 255, 255));
         lblAddRest.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -125,40 +125,40 @@ public class AddRestaurantJPanel extends javax.swing.JPanel {
         lblRestAddr.setForeground(new java.awt.Color(0, 51, 51));
         lblRestAddr.setText("Address :");
 
-        pbRestPassStr.setBackground(new java.awt.Color(255, 255, 255));
-        pbRestPassStr.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
-        pbRestPassStr.setForeground(new java.awt.Color(0, 51, 51));
-        pbRestPassStr.setMaximum(13);
-        pbRestPassStr.setMinimum(1);
-        pbRestPassStr.addChangeListener(new javax.swing.event.ChangeListener() {
+        pbRestaurantPassword.setBackground(new java.awt.Color(255, 255, 255));
+        pbRestaurantPassword.setFont(new java.awt.Font("Ebrima", 1, 12)); // NOI18N
+        pbRestaurantPassword.setForeground(new java.awt.Color(0, 51, 51));
+        pbRestaurantPassword.setMaximum(13);
+        pbRestaurantPassword.setMinimum(1);
+        pbRestaurantPassword.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                pbRestPassStrStateChanged(evt);
+                pbRestaurantPasswordStateChanged(evt);
             }
         });
 
-        txtRestContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtRestContact.setForeground(new java.awt.Color(0, 51, 51));
-        txtRestContact.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtRestaurantContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtRestaurantContact.setForeground(new java.awt.Color(0, 51, 51));
+        txtRestaurantContact.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        btnAddRest.setBackground(new java.awt.Color(204, 255, 255));
-        btnAddRest.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnAddRest.setForeground(new java.awt.Color(0, 51, 51));
-        btnAddRest.setText("Add");
-        btnAddRest.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnAddRest.addActionListener(new java.awt.event.ActionListener() {
+        btnAddNewRestaurant.setBackground(new java.awt.Color(204, 255, 255));
+        btnAddNewRestaurant.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnAddNewRestaurant.setForeground(new java.awt.Color(0, 51, 51));
+        btnAddNewRestaurant.setText("Add");
+        btnAddNewRestaurant.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAddNewRestaurant.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddRestActionPerformed(evt);
+                btnAddNewRestaurantActionPerformed(evt);
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(204, 255, 255));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 51));
-        btnBack.setText("Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        btnNewRestaurantBack.setBackground(new java.awt.Color(204, 255, 255));
+        btnNewRestaurantBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnNewRestaurantBack.setForeground(new java.awt.Color(0, 51, 51));
+        btnNewRestaurantBack.setText("Back");
+        btnNewRestaurantBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnNewRestaurantBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                btnNewRestaurantBackActionPerformed(evt);
             }
         });
 
@@ -183,81 +183,86 @@ public class AddRestaurantJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtRestAddr, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(pbRestPassStr, javax.swing.GroupLayout.DEFAULT_SIZE, 476, Short.MAX_VALUE)
-                            .addComponent(txtRestContact)
-                            .addComponent(txtRestUserName)
-                            .addComponent(pwRestPass)
-                            .addComponent(txtRestName))
+                            .addComponent(txtRestaurantAddress, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(pbRestaurantPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 476, Short.MAX_VALUE)
+                            .addComponent(txtRestaurantContact)
+                            .addComponent(txtRestaurantUserName)
+                            .addComponent(txtRestaurantPassword)
+                            .addComponent(txtRestaurantName))
                         .addGap(111, 111, 111))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(btnBack, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-                            .addComponent(btnAddRest, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnAddNewRestaurant, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(79, 79, 79)
+                        .addComponent(btnNewRestaurantBack, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(237, 237, 237))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(lblAddRest)
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblRestName)
-                    .addComponent(txtRestName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblRestUserName)
-                    .addComponent(txtRestUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblRestPass)
-                    .addComponent(pwRestPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pbRestPassStr, javax.swing.GroupLayout.PREFERRED_SIZE, 7, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtRestContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblRestContact))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtRestAddr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblRestAddr))
-                .addGap(26, 26, 26)
-                .addComponent(btnBack)
-                .addGap(18, 18, 18)
-                .addComponent(btnAddRest)
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblRestName)
+                            .addComponent(txtRestaurantName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblRestUserName)
+                            .addComponent(txtRestaurantUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblRestPass)
+                            .addComponent(txtRestaurantPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pbRestaurantPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 7, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtRestaurantContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblRestContact))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtRestaurantAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblRestAddr))
+                        .addContainerGap(130, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnNewRestaurantBack)
+                            .addComponent(btnAddNewRestaurant))
+                        .addGap(59, 59, 59))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void pwRestPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwRestPassActionPerformed
+    private void txtRestaurantPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRestaurantPasswordActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_pwRestPassActionPerformed
+    }//GEN-LAST:event_txtRestaurantPasswordActionPerformed
 
-    private void pwRestPassKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwRestPassKeyReleased
+    private void txtRestaurantPasswordKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRestaurantPasswordKeyReleased
         // TODO add your handling code here
-    }//GEN-LAST:event_pwRestPassKeyReleased
+    }//GEN-LAST:event_txtRestaurantPasswordKeyReleased
 
-    private void pwRestPassKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwRestPassKeyTyped
+    private void txtRestaurantPasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRestaurantPasswordKeyTyped
         // TODO add your handling code here:
-        int pwSize = pwRestPass.getText().length();
-        pbRestPassStr.setValue(pwSize);
-    }//GEN-LAST:event_pwRestPassKeyTyped
+        int pwSize = txtRestaurantPassword.getText().length();
+        pbRestaurantPassword.setValue(pwSize);
+    }//GEN-LAST:event_txtRestaurantPasswordKeyTyped
 
-    private void pbRestPassStrStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_pbRestPassStrStateChanged
+    private void pbRestaurantPasswordStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_pbRestaurantPasswordStateChanged
         // TODO add your handling code here:
-    }//GEN-LAST:event_pbRestPassStrStateChanged
+    }//GEN-LAST:event_pbRestaurantPasswordStateChanged
 
-    private void btnAddRestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddRestActionPerformed
+    private void btnAddNewRestaurantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddNewRestaurantActionPerformed
         // TODO add your handling code here:
 
-        String custName = txtRestName.getText();
-        String custContact = txtRestContact.getText();
-        String custAddr = txtRestAddr.getText();
-        String custUserName = txtRestUserName.getText();
-        String custPass = String.valueOf(pwRestPass.getPassword());
+        String custName = txtRestaurantName.getText();
+        String custContact = txtRestaurantContact.getText();
+        String custAddr = txtRestaurantAddress.getText();
+        String custUserName = txtRestaurantUserName.getText();
+        String custPass = String.valueOf(txtRestaurantPassword.getPassword());
 
         if( custName.isEmpty() || custContact.isEmpty() || custAddr.isEmpty() ||
             custUserName.isEmpty() || custPass.isEmpty()  ) {
@@ -280,15 +285,15 @@ public class AddRestaurantJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "New Restaurant "+account.getUsername()+" added to the System Successfully!");
             clearAllFields();
         }
-    }//GEN-LAST:event_btnAddRestActionPerformed
+    }//GEN-LAST:event_btnAddNewRestaurantActionPerformed
  public void clearAllFields() {
-        txtRestName.setText("");
-        txtRestAddr.setText("");
-        txtRestContact.setText("");
-        txtRestUserName.setText("");
-        pwRestPass.setText("");
+        txtRestaurantName.setText("");
+        txtRestaurantAddress.setText("");
+        txtRestaurantContact.setText("");
+        txtRestaurantUserName.setText("");
+        txtRestaurantPassword.setText("");
     }
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void btnNewRestaurantBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewRestaurantBackActionPerformed
         // TODO add your handling code here:
         container.remove(this);
         Component[] componentArray = container.getComponents();
@@ -297,23 +302,23 @@ public class AddRestaurantJPanel extends javax.swing.JPanel {
         manageRestJPanel.populateRestaurantsTable();
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_btnNewRestaurantBackActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAddRest;
-    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnAddNewRestaurant;
+    private javax.swing.JButton btnNewRestaurantBack;
     private javax.swing.JLabel lblAddRest;
     private javax.swing.JLabel lblRestAddr;
     private javax.swing.JLabel lblRestContact;
     private javax.swing.JLabel lblRestName;
     private javax.swing.JLabel lblRestPass;
     private javax.swing.JLabel lblRestUserName;
-    private javax.swing.JProgressBar pbRestPassStr;
-    private javax.swing.JPasswordField pwRestPass;
-    private javax.swing.JTextField txtRestAddr;
-    private javax.swing.JTextField txtRestContact;
-    private javax.swing.JTextField txtRestName;
-    private javax.swing.JTextField txtRestUserName;
+    private javax.swing.JProgressBar pbRestaurantPassword;
+    private javax.swing.JTextField txtRestaurantAddress;
+    private javax.swing.JTextField txtRestaurantContact;
+    private javax.swing.JTextField txtRestaurantName;
+    private javax.swing.JPasswordField txtRestaurantPassword;
+    private javax.swing.JTextField txtRestaurantUserName;
     // End of variables declaration//GEN-END:variables
 }

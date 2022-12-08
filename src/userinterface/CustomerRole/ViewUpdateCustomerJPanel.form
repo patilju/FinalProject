@@ -33,13 +33,17 @@
                       </Group>
                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txtCustID" alignment="0" pref="468" max="32767" attributes="0"/>
-                          <Component id="txtCustName" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtCustContact" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtCustAddr" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnSaveChanges" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnEnableUpdate" alignment="0" pref="468" max="32767" attributes="0"/>
-                          <Component id="btnBack1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtCustomerID" alignment="0" pref="468" max="32767" attributes="0"/>
+                          <Component id="txtCustomerName" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtCustomerContact" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtCustomerAddress" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="btnCustomerChanges" min="-2" pref="117" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="btnUpdateCustomer" min="-2" pref="117" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="btnBack0" min="-2" pref="117" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -62,17 +66,17 @@
                       <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblCustContact" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="txtCustContact" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCustomerContact" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtCustID" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCustomerID" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblCustID" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtCustName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCustomerName" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblCustName" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -80,21 +84,21 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblCustAddr" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtCustAddr" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCustomerAddress" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Component id="btnBack1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-              <Component id="btnEnableUpdate" min="-2" pref="29" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btnSaveChanges" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="18" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnBack0" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnUpdateCustomer" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="btnCustomerChanges" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="0" pref="61" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="txtCustContact">
+    <Component class="javax.swing.JTextField" name="txtCustomerContact">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -152,7 +156,7 @@
         <Property name="text" type="java.lang.String" value="Name:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtCustAddr">
+    <Component class="javax.swing.JTextField" name="txtCustomerAddress">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -181,7 +185,7 @@
         <Property name="text" type="java.lang.String" value="Contact No :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtCustName">
+    <Component class="javax.swing.JTextField" name="txtCustomerName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -196,7 +200,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnBack1">
+    <Component class="javax.swing.JButton" name="btnBack0">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -215,10 +219,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBack1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBack0ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnSaveChanges">
+    <Component class="javax.swing.JButton" name="btnCustomerChanges">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -237,10 +241,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveChangesActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCustomerChangesActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnEnableUpdate">
+    <Component class="javax.swing.JButton" name="btnUpdateCustomer">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="cc" type="rgb"/>
@@ -259,7 +263,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEnableUpdateActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateCustomerActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblCustID">
@@ -276,7 +280,7 @@
         <Property name="text" type="java.lang.String" value="Customer ID :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtCustID">
+    <Component class="javax.swing.JTextField" name="txtCustomerID">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>

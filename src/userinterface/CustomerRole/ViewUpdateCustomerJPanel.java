@@ -6,7 +6,7 @@
 package userinterface.CustomerRole;
 
 import Business.Customer.Customer;
-import Business.Customer.CustomerDirectory;
+import Business.Customer.CustomerStore;
 import Business.EcoSystem;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class ViewUpdateCustomerJPanel extends javax.swing.JPanel {
 
@@ -24,13 +24,13 @@ public class ViewUpdateCustomerJPanel extends javax.swing.JPanel {
      * Creates new form ViewCustomerJPanel
      */
     
-    public CustomerDirectory customerDirectory;
+    public CustomerStore customerDirectory;
     public JPanel container;
     public Customer customer;
     private final EcoSystem system;
     private String currentPhoneNo;
     
-    public ViewUpdateCustomerJPanel(EcoSystem system, JPanel container, Customer customer, CustomerDirectory customerDirectory) {
+    public ViewUpdateCustomerJPanel(EcoSystem system, JPanel container, Customer customer, CustomerStore customerDirectory) {
         
         initComponents();
         this.customerDirectory = customerDirectory;
@@ -39,18 +39,18 @@ public class ViewUpdateCustomerJPanel extends javax.swing.JPanel {
         this.system = system;
         this.currentPhoneNo = customer.getCustContact(); 
         
-        txtCustID.setText(customer.getCustID());
-        txtCustAddr.setText(customer.getCustAddr());
-        txtCustContact.setText(customer.getCustContact());
-        txtCustName.setText(customer.getCustName());
+        txtCustomerID.setText(customer.getCustID());
+        txtCustomerAddress.setText(customer.getCustAddr());
+        txtCustomerContact.setText(customer.getCustContact());
+        txtCustomerName.setText(customer.getCustName());
         
         disableEdit();
     }
 private void disableEdit(){
-    txtCustID.setEditable(false);
-    txtCustAddr.setEditable(false);
-    txtCustContact.setEditable(false);
-    txtCustName.setEditable(false);
+    txtCustomerID.setEditable(false);
+    txtCustomerAddress.setEditable(false);
+    txtCustomerContact.setEditable(false);
+    txtCustomerName.setEditable(false);
 }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -61,24 +61,24 @@ private void disableEdit(){
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtCustContact = new javax.swing.JTextField();
+        txtCustomerContact = new javax.swing.JTextField();
         lblViewUpdateCust = new javax.swing.JLabel();
         lblCustAddr = new javax.swing.JLabel();
         lblCustName = new javax.swing.JLabel();
-        txtCustAddr = new javax.swing.JTextField();
+        txtCustomerAddress = new javax.swing.JTextField();
         lblCustContact = new javax.swing.JLabel();
-        txtCustName = new javax.swing.JTextField();
-        btnBack1 = new javax.swing.JButton();
-        btnSaveChanges = new javax.swing.JButton();
-        btnEnableUpdate = new javax.swing.JButton();
+        txtCustomerName = new javax.swing.JTextField();
+        btnBack0 = new javax.swing.JButton();
+        btnCustomerChanges = new javax.swing.JButton();
+        btnUpdateCustomer = new javax.swing.JButton();
         lblCustID = new javax.swing.JLabel();
-        txtCustID = new javax.swing.JTextField();
+        txtCustomerID = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 255, 204));
 
-        txtCustContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtCustContact.setForeground(new java.awt.Color(0, 51, 51));
-        txtCustContact.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtCustomerContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtCustomerContact.setForeground(new java.awt.Color(0, 51, 51));
+        txtCustomerContact.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         lblViewUpdateCust.setBackground(new java.awt.Color(204, 255, 255));
         lblViewUpdateCust.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -96,49 +96,49 @@ private void disableEdit(){
         lblCustName.setForeground(new java.awt.Color(0, 51, 51));
         lblCustName.setText("Name:");
 
-        txtCustAddr.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtCustAddr.setForeground(new java.awt.Color(0, 51, 51));
-        txtCustAddr.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtCustomerAddress.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtCustomerAddress.setForeground(new java.awt.Color(0, 51, 51));
+        txtCustomerAddress.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         lblCustContact.setBackground(new java.awt.Color(204, 255, 255));
         lblCustContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lblCustContact.setForeground(new java.awt.Color(0, 51, 51));
         lblCustContact.setText("Contact No :");
 
-        txtCustName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtCustName.setForeground(new java.awt.Color(0, 51, 51));
-        txtCustName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtCustomerName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtCustomerName.setForeground(new java.awt.Color(0, 51, 51));
+        txtCustomerName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        btnBack1.setBackground(new java.awt.Color(204, 255, 255));
-        btnBack1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnBack1.setForeground(new java.awt.Color(0, 51, 51));
-        btnBack1.setText("Back");
-        btnBack1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack1.addActionListener(new java.awt.event.ActionListener() {
+        btnBack0.setBackground(new java.awt.Color(204, 255, 255));
+        btnBack0.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnBack0.setForeground(new java.awt.Color(0, 51, 51));
+        btnBack0.setText("Back");
+        btnBack0.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBack1ActionPerformed(evt);
+                btnBack0ActionPerformed(evt);
             }
         });
 
-        btnSaveChanges.setBackground(new java.awt.Color(204, 255, 255));
-        btnSaveChanges.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnSaveChanges.setForeground(new java.awt.Color(0, 51, 51));
-        btnSaveChanges.setText("Add");
-        btnSaveChanges.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnSaveChanges.addActionListener(new java.awt.event.ActionListener() {
+        btnCustomerChanges.setBackground(new java.awt.Color(204, 255, 255));
+        btnCustomerChanges.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnCustomerChanges.setForeground(new java.awt.Color(0, 51, 51));
+        btnCustomerChanges.setText("Add");
+        btnCustomerChanges.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnCustomerChanges.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSaveChangesActionPerformed(evt);
+                btnCustomerChangesActionPerformed(evt);
             }
         });
 
-        btnEnableUpdate.setBackground(new java.awt.Color(204, 255, 255));
-        btnEnableUpdate.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnEnableUpdate.setForeground(new java.awt.Color(0, 51, 51));
-        btnEnableUpdate.setText("Update");
-        btnEnableUpdate.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnEnableUpdate.addActionListener(new java.awt.event.ActionListener() {
+        btnUpdateCustomer.setBackground(new java.awt.Color(204, 255, 255));
+        btnUpdateCustomer.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnUpdateCustomer.setForeground(new java.awt.Color(0, 51, 51));
+        btnUpdateCustomer.setText("Update");
+        btnUpdateCustomer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnUpdateCustomer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEnableUpdateActionPerformed(evt);
+                btnUpdateCustomerActionPerformed(evt);
             }
         });
 
@@ -147,9 +147,9 @@ private void disableEdit(){
         lblCustID.setForeground(new java.awt.Color(0, 51, 51));
         lblCustID.setText("Customer ID :");
 
-        txtCustID.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtCustID.setForeground(new java.awt.Color(0, 51, 51));
-        txtCustID.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtCustomerID.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtCustomerID.setForeground(new java.awt.Color(0, 51, 51));
+        txtCustomerID.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -166,13 +166,16 @@ private void disableEdit(){
                             .addComponent(lblCustAddr))
                         .addGap(42, 42, 42)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtCustID, javax.swing.GroupLayout.DEFAULT_SIZE, 468, Short.MAX_VALUE)
-                            .addComponent(txtCustName)
-                            .addComponent(txtCustContact)
-                            .addComponent(txtCustAddr)
-                            .addComponent(btnSaveChanges, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnEnableUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, 468, Short.MAX_VALUE)
-                            .addComponent(btnBack1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(txtCustomerID, javax.swing.GroupLayout.DEFAULT_SIZE, 468, Short.MAX_VALUE)
+                            .addComponent(txtCustomerName)
+                            .addComponent(txtCustomerContact)
+                            .addComponent(txtCustomerAddress)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnCustomerChanges, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnUpdateCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(60, 60, 60)
+                                .addComponent(btnBack0, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(319, 319, 319)
                         .addComponent(lblViewUpdateCust)))
@@ -189,30 +192,29 @@ private void disableEdit(){
                         .addGap(58, 58, 58)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblCustContact, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCustContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtCustomerContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtCustID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCustomerID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblCustID))
                         .addGap(7, 7, 7)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtCustName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCustomerName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblCustName))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblCustAddr)
-                    .addComponent(txtCustAddr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addComponent(btnBack1)
-                .addGap(17, 17, 17)
-                .addComponent(btnEnableUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnSaveChanges)
-                .addGap(0, 18, Short.MAX_VALUE))
+                    .addComponent(txtCustomerAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(66, 66, 66)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBack0)
+                    .addComponent(btnUpdateCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCustomerChanges, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 61, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnBack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack1ActionPerformed
+    private void btnBack0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack0ActionPerformed
         // TODO add your handling code here:
         container.remove(this);
         Component[] componentArray = container.getComponents();
@@ -223,14 +225,14 @@ private void disableEdit(){
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
        
-    }//GEN-LAST:event_btnBack1ActionPerformed
+    }//GEN-LAST:event_btnBack0ActionPerformed
 
-    private void btnSaveChangesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveChangesActionPerformed
+    private void btnCustomerChangesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCustomerChangesActionPerformed
         // TODO add your handling code here:
-        String custID = txtCustID.getText();
-        String custName = txtCustName.getText();
-        String custContact = txtCustContact.getText();
-        String custAddr = txtCustAddr.getText();
+        String custID = txtCustomerID.getText();
+        String custName = txtCustomerName.getText();
+        String custContact = txtCustomerContact.getText();
+        String custAddr = txtCustomerAddress.getText();
         boolean allSet = true;
         
         if( custName.isEmpty() || custContact.isEmpty() || custAddr.isEmpty()  ) {
@@ -252,29 +254,29 @@ private void disableEdit(){
             JOptionPane.showMessageDialog(null, "Customer details updated!");
             disableEdit();
         }
-    }//GEN-LAST:event_btnSaveChangesActionPerformed
+    }//GEN-LAST:event_btnCustomerChangesActionPerformed
 
-    private void btnEnableUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnableUpdateActionPerformed
+    private void btnUpdateCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateCustomerActionPerformed
         // TODO add your handling code here:
-    txtCustAddr.setEditable(true);
-    txtCustContact.setEditable(true);
-    txtCustName.setEditable(true);
-    btnEnableUpdate.setEnabled(false);
-    }//GEN-LAST:event_btnEnableUpdateActionPerformed
+    txtCustomerAddress.setEditable(true);
+    txtCustomerContact.setEditable(true);
+    txtCustomerName.setEditable(true);
+    btnUpdateCustomer.setEnabled(false);
+    }//GEN-LAST:event_btnUpdateCustomerActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack1;
-    private javax.swing.JButton btnEnableUpdate;
-    private javax.swing.JButton btnSaveChanges;
+    private javax.swing.JButton btnBack0;
+    private javax.swing.JButton btnCustomerChanges;
+    private javax.swing.JButton btnUpdateCustomer;
     private javax.swing.JLabel lblCustAddr;
     private javax.swing.JLabel lblCustContact;
     private javax.swing.JLabel lblCustID;
     private javax.swing.JLabel lblCustName;
     private javax.swing.JLabel lblViewUpdateCust;
-    private javax.swing.JTextField txtCustAddr;
-    private javax.swing.JTextField txtCustContact;
-    private javax.swing.JTextField txtCustID;
-    private javax.swing.JTextField txtCustName;
+    private javax.swing.JTextField txtCustomerAddress;
+    private javax.swing.JTextField txtCustomerContact;
+    private javax.swing.JTextField txtCustomerID;
+    private javax.swing.JTextField txtCustomerName;
     // End of variables declaration//GEN-END:variables
 }

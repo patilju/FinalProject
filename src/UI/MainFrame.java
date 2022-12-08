@@ -224,6 +224,11 @@ public class MainFrame extends javax.swing.JFrame {
         });
 
         btnAddCust.setText("Add");
+        btnAddCust.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddCustActionPerformed(evt);
+            }
+        });
 
         btnViewCust.setText("View");
 
@@ -480,6 +485,10 @@ public class MainFrame extends javax.swing.JFrame {
     private void btnDeliveryDelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliveryDelActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnDeliveryDelActionPerformed
+
+    private void btnAddCustActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCustActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddCustActionPerformed
 
     /**
      * @param args the command line arguments

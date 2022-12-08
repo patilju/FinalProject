@@ -6,7 +6,7 @@
 package userinterface.DeliveryManRole;
 
 import Business.DeliveryMan.DeliveryMan;
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.DeliveryMan.DeliveryManStore;
 import Business.EcoSystem;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
 
@@ -24,12 +24,12 @@ public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
      */
     public JPanel container;
     public DeliveryMan deliveryMan;
-    public DeliveryManDirectory deliveryManDirectory;
+    public DeliveryManStore deliveryManDirectory;
     private final EcoSystem system;
     private String currentPhoneNo;
     
     
-    public ViewUpdateDeliveryManJPanel(EcoSystem system, JPanel container, DeliveryMan deliveryMan, DeliveryManDirectory deliveryManDirectory) {
+    public ViewUpdateDeliveryManJPanel(EcoSystem system, JPanel container, DeliveryMan deliveryMan, DeliveryManStore deliveryManDirectory) {
         initComponents();
         this.container = container;
         this.deliveryMan = deliveryMan;
@@ -37,9 +37,9 @@ public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
         this.system = system;
         this.currentPhoneNo = deliveryMan.getDeliPhoneNo();
         
-        txtDeliNo.setText(deliveryMan.getDeliveryID());
-        txtDeliName.setText(deliveryMan.getDeliName());
-        txtDeliContact.setText(deliveryMan.getDeliPhoneNo());
+        txtDeliveryUsername.setText(deliveryMan.getDeliveryID());
+        txtDeliveryName.setText(deliveryMan.getDeliName());
+        txtDeliveryContact.setText(deliveryMan.getDeliPhoneNo());
         disableEdit();
     }
 
@@ -53,15 +53,15 @@ public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         lblDeliContact = new javax.swing.JLabel();
-        txtDeliContact = new javax.swing.JTextField();
-        txtDeliName = new javax.swing.JTextField();
-        txtDeliNo = new javax.swing.JTextField();
+        txtDeliveryContact = new javax.swing.JTextField();
+        txtDeliveryName = new javax.swing.JTextField();
+        txtDeliveryUsername = new javax.swing.JTextField();
         lblDeliName = new javax.swing.JLabel();
         lblDeliNo = new javax.swing.JLabel();
         lblAddDeli = new javax.swing.JLabel();
-        btnBack1 = new javax.swing.JButton();
-        btnEnableUpdate = new javax.swing.JButton();
-        btnSaveChanges = new javax.swing.JButton();
+        btnBack3 = new javax.swing.JButton();
+        btnDeliveryUpdate = new javax.swing.JButton();
+        btnDeliverySave = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 204));
 
@@ -70,17 +70,17 @@ public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
         lblDeliContact.setForeground(new java.awt.Color(0, 51, 51));
         lblDeliContact.setText("Contact No :");
 
-        txtDeliContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtDeliContact.setForeground(new java.awt.Color(0, 51, 51));
-        txtDeliContact.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtDeliveryContact.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDeliveryContact.setForeground(new java.awt.Color(0, 51, 51));
+        txtDeliveryContact.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        txtDeliName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtDeliName.setForeground(new java.awt.Color(0, 51, 51));
-        txtDeliName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtDeliveryName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDeliveryName.setForeground(new java.awt.Color(0, 51, 51));
+        txtDeliveryName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        txtDeliNo.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtDeliNo.setForeground(new java.awt.Color(0, 51, 51));
-        txtDeliNo.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtDeliveryUsername.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDeliveryUsername.setForeground(new java.awt.Color(0, 51, 51));
+        txtDeliveryUsername.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         lblDeliName.setBackground(new java.awt.Color(204, 255, 255));
         lblDeliName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -98,36 +98,36 @@ public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
         lblAddDeli.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblAddDeli.setText("Create Delivery Person");
 
-        btnBack1.setBackground(new java.awt.Color(204, 255, 255));
-        btnBack1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnBack1.setForeground(new java.awt.Color(0, 51, 51));
-        btnBack1.setText("Back");
-        btnBack1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack1.addActionListener(new java.awt.event.ActionListener() {
+        btnBack3.setBackground(new java.awt.Color(204, 255, 255));
+        btnBack3.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnBack3.setForeground(new java.awt.Color(0, 51, 51));
+        btnBack3.setText("Back");
+        btnBack3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBack1ActionPerformed(evt);
+                btnBack3ActionPerformed(evt);
             }
         });
 
-        btnEnableUpdate.setBackground(new java.awt.Color(204, 255, 255));
-        btnEnableUpdate.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnEnableUpdate.setForeground(new java.awt.Color(0, 51, 51));
-        btnEnableUpdate.setText(" Update");
-        btnEnableUpdate.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnEnableUpdate.addActionListener(new java.awt.event.ActionListener() {
+        btnDeliveryUpdate.setBackground(new java.awt.Color(204, 255, 255));
+        btnDeliveryUpdate.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnDeliveryUpdate.setForeground(new java.awt.Color(0, 51, 51));
+        btnDeliveryUpdate.setText(" Update");
+        btnDeliveryUpdate.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDeliveryUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEnableUpdateActionPerformed(evt);
+                btnDeliveryUpdateActionPerformed(evt);
             }
         });
 
-        btnSaveChanges.setBackground(new java.awt.Color(204, 255, 255));
-        btnSaveChanges.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnSaveChanges.setForeground(new java.awt.Color(0, 51, 51));
-        btnSaveChanges.setText("Save");
-        btnSaveChanges.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnSaveChanges.addActionListener(new java.awt.event.ActionListener() {
+        btnDeliverySave.setBackground(new java.awt.Color(204, 255, 255));
+        btnDeliverySave.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnDeliverySave.setForeground(new java.awt.Color(0, 51, 51));
+        btnDeliverySave.setText("Save");
+        btnDeliverySave.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDeliverySave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSaveChangesActionPerformed(evt);
+                btnDeliverySaveActionPerformed(evt);
             }
         });
 
@@ -148,16 +148,15 @@ public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
                             .addComponent(lblDeliNo))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtDeliName)
-                            .addComponent(txtDeliContact)
-                            .addComponent(txtDeliNo)
+                            .addComponent(txtDeliveryName)
+                            .addComponent(txtDeliveryContact)
+                            .addComponent(txtDeliveryUsername)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnBack1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(btnSaveChanges, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnEnableUpdate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)))
-                                .addGap(0, 388, Short.MAX_VALUE)))))
+                                .addComponent(btnDeliverySave, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
+                                .addComponent(btnDeliveryUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(124, 124, 124)
+                                .addComponent(btnBack3, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(136, 136, 136))
         );
         layout.setVerticalGroup(
@@ -168,27 +167,26 @@ public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblDeliNo)
-                    .addComponent(txtDeliNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDeliveryUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblDeliName)
-                    .addComponent(txtDeliName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDeliveryName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(txtDeliContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(14, 14, 14)
-                        .addComponent(btnBack1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnEnableUpdate))
+                        .addComponent(txtDeliveryContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(41, 41, 41)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnDeliveryUpdate)
+                            .addComponent(btnBack3)
+                            .addComponent(btnDeliverySave)))
                     .addComponent(lblDeliContact))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnSaveChanges)
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnBack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack1ActionPerformed
+    private void btnBack3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack3ActionPerformed
         // TODO add your handling code here:
         container.remove(this);
         Component[] componentArray = container.getComponents();
@@ -199,25 +197,25 @@ public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
 
-    }//GEN-LAST:event_btnBack1ActionPerformed
+    }//GEN-LAST:event_btnBack3ActionPerformed
     public void disableEdit() {
-        txtDeliNo.setEditable(false);
-        txtDeliName.setEditable(false);
-        txtDeliContact.setEditable(false);
+        txtDeliveryUsername.setEditable(false);
+        txtDeliveryName.setEditable(false);
+        txtDeliveryContact.setEditable(false);
     }
-    private void btnEnableUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnableUpdateActionPerformed
+    private void btnDeliveryUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliveryUpdateActionPerformed
         // TODO add your handling code here:
-        txtDeliName.setEditable(true);
-        txtDeliContact.setEditable(true);
+        txtDeliveryName.setEditable(true);
+        txtDeliveryContact.setEditable(true);
      
-        btnEnableUpdate.setEnabled(false);
-    }//GEN-LAST:event_btnEnableUpdateActionPerformed
+        btnDeliveryUpdate.setEnabled(false);
+    }//GEN-LAST:event_btnDeliveryUpdateActionPerformed
 
-    private void btnSaveChangesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveChangesActionPerformed
+    private void btnDeliverySaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliverySaveActionPerformed
         // TODO add your handling code here:
-        String custID = txtDeliNo.getText();
-        String custName = txtDeliName.getText();
-        String custContact = txtDeliContact.getText();
+        String custID = txtDeliveryUsername.getText();
+        String custName = txtDeliveryName.getText();
+        String custContact = txtDeliveryContact.getText();
         boolean allSet = true;
 
         if( custName.isEmpty() || custContact.isEmpty()  ) {
@@ -239,19 +237,19 @@ public class ViewUpdateDeliveryManJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Customer details updated!");
             disableEdit();
         }
-    }//GEN-LAST:event_btnSaveChangesActionPerformed
+    }//GEN-LAST:event_btnDeliverySaveActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack1;
-    private javax.swing.JButton btnEnableUpdate;
-    private javax.swing.JButton btnSaveChanges;
+    private javax.swing.JButton btnBack3;
+    private javax.swing.JButton btnDeliverySave;
+    private javax.swing.JButton btnDeliveryUpdate;
     private javax.swing.JLabel lblAddDeli;
     private javax.swing.JLabel lblDeliContact;
     private javax.swing.JLabel lblDeliName;
     private javax.swing.JLabel lblDeliNo;
-    private javax.swing.JTextField txtDeliContact;
-    private javax.swing.JTextField txtDeliName;
-    private javax.swing.JTextField txtDeliNo;
+    private javax.swing.JTextField txtDeliveryContact;
+    private javax.swing.JTextField txtDeliveryName;
+    private javax.swing.JTextField txtDeliveryUsername;
     // End of variables declaration//GEN-END:variables
 }

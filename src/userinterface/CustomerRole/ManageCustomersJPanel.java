@@ -6,7 +6,7 @@
 package userinterface.CustomerRole;
 
 import Business.Customer.Customer;
-import Business.Customer.CustomerDirectory;
+import Business.Customer.CustomerStore;
 import Business.EcoSystem;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
@@ -16,16 +16,16 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class ManageCustomersJPanel extends javax.swing.JPanel {
-    public CustomerDirectory custDirectory;
+    public CustomerStore custDirectory;
     public JPanel container;
     public EcoSystem system;
     /**
      * Creates new form UpdateCustomersJPanel
      */
-    public ManageCustomersJPanel(JPanel userProcessContainer, EcoSystem system, CustomerDirectory custDirectory) {
+    public ManageCustomersJPanel(JPanel userProcessContainer, EcoSystem system, CustomerStore custDirectory) {
         initComponents();
         this.system = system;
         this.custDirectory = custDirectory;
@@ -34,7 +34,7 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
     }
     
     public void populateCustomerListTable() {
-        DefaultTableModel model = (DefaultTableModel) TblCustomers.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblCustomersList.getModel();
         model.setRowCount(0);
         for (UserAccount userAcc : system.getUserAccountDirectory().getUserAccountList()) {
             for (Customer customer : custDirectory.getCustDir()) {
@@ -62,11 +62,11 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        TblCustomers = new javax.swing.JTable();
-        btnViewCust = new javax.swing.JButton();
-        btnDelCust = new javax.swing.JButton();
-        btnAddCust = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
+        tblCustomersList = new javax.swing.JTable();
+        btnViewCustomer = new javax.swing.JButton();
+        btnDeleteCustomer = new javax.swing.JButton();
+        btnAddCustomer = new javax.swing.JButton();
+        btnBackCust = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 204));
 
@@ -76,10 +76,10 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Customer List");
 
-        TblCustomers.setBackground(new java.awt.Color(255, 255, 204));
-        TblCustomers.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        TblCustomers.setForeground(new java.awt.Color(0, 51, 51));
-        TblCustomers.setModel(new javax.swing.table.DefaultTableModel(
+        tblCustomersList.setBackground(new java.awt.Color(255, 255, 204));
+        tblCustomersList.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        tblCustomersList.setForeground(new java.awt.Color(0, 51, 51));
+        tblCustomersList.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -98,49 +98,49 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(TblCustomers);
+        jScrollPane1.setViewportView(tblCustomersList);
 
-        btnViewCust.setBackground(new java.awt.Color(204, 255, 255));
-        btnViewCust.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnViewCust.setForeground(new java.awt.Color(0, 51, 51));
-        btnViewCust.setText("View");
-        btnViewCust.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnViewCust.addActionListener(new java.awt.event.ActionListener() {
+        btnViewCustomer.setBackground(new java.awt.Color(204, 255, 255));
+        btnViewCustomer.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnViewCustomer.setForeground(new java.awt.Color(0, 51, 51));
+        btnViewCustomer.setText("View");
+        btnViewCustomer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnViewCustomer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewCustActionPerformed(evt);
+                btnViewCustomerActionPerformed(evt);
             }
         });
 
-        btnDelCust.setBackground(new java.awt.Color(204, 255, 255));
-        btnDelCust.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnDelCust.setForeground(new java.awt.Color(0, 51, 51));
-        btnDelCust.setText("Delete");
-        btnDelCust.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnDelCust.addActionListener(new java.awt.event.ActionListener() {
+        btnDeleteCustomer.setBackground(new java.awt.Color(204, 255, 255));
+        btnDeleteCustomer.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnDeleteCustomer.setForeground(new java.awt.Color(0, 51, 51));
+        btnDeleteCustomer.setText("Delete");
+        btnDeleteCustomer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDeleteCustomer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDelCustActionPerformed(evt);
+                btnDeleteCustomerActionPerformed(evt);
             }
         });
 
-        btnAddCust.setBackground(new java.awt.Color(204, 255, 255));
-        btnAddCust.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnAddCust.setForeground(new java.awt.Color(0, 51, 51));
-        btnAddCust.setText("Add");
-        btnAddCust.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnAddCust.addActionListener(new java.awt.event.ActionListener() {
+        btnAddCustomer.setBackground(new java.awt.Color(204, 255, 255));
+        btnAddCustomer.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnAddCustomer.setForeground(new java.awt.Color(0, 51, 51));
+        btnAddCustomer.setText("Add");
+        btnAddCustomer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAddCustomer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddCustActionPerformed(evt);
+                btnAddCustomerActionPerformed(evt);
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(204, 255, 255));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 51, 51));
-        btnBack.setText("Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        btnBackCust.setBackground(new java.awt.Color(204, 255, 255));
+        btnBackCust.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnBackCust.setForeground(new java.awt.Color(0, 51, 51));
+        btnBackCust.setText("Back");
+        btnBackCust.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBackCust.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                btnBackCustActionPerformed(evt);
             }
         });
 
@@ -153,18 +153,19 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
                 .addComponent(jScrollPane1)
                 .addGap(20, 20, 20))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(415, 415, 415)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(btnDelCust, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
-                            .addComponent(btnViewCust, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnAddCust, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnBack, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(415, 415, 415)
+                .addComponent(jLabel1)
                 .addContainerGap(305, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnAddCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53)
+                .addComponent(btnViewCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(80, 80, 80)
+                .addComponent(btnDeleteCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnBackCust, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(115, 115, 115))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -173,22 +174,20 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnBack)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnAddCust)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnViewCust)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnDelCust)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addGap(51, 51, 51)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnAddCustomer)
+                    .addComponent(btnBackCust)
+                    .addComponent(btnViewCustomer)
+                    .addComponent(btnDeleteCustomer))
+                .addContainerGap(92, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnViewCustActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewCustActionPerformed
+    private void btnViewCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewCustomerActionPerformed
         // TODO add your handling code here:
-        int selectedRow = TblCustomers.getSelectedRow();
-        int count = TblCustomers.getSelectedRowCount();
+        int selectedRow = tblCustomersList.getSelectedRow();
+        int count = tblCustomersList.getSelectedRowCount();
         if (count == 1) {
             if (selectedRow >= 0) {
                 CardLayout layout = (CardLayout) container.getLayout();
@@ -200,12 +199,12 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
         } else {
             JOptionPane.showMessageDialog(null, "Select a Row to continue.");
         }
-    }//GEN-LAST:event_btnViewCustActionPerformed
+    }//GEN-LAST:event_btnViewCustomerActionPerformed
 
-    private void btnDelCustActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelCustActionPerformed
+    private void btnDeleteCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteCustomerActionPerformed
         // TODO add your handling code here:
-        int selectedRow = TblCustomers.getSelectedRow();
-        int count = TblCustomers.getSelectedRowCount();
+        int selectedRow = tblCustomersList.getSelectedRow();
+        int count = tblCustomersList.getSelectedRowCount();
         if (count == 1) {
             if (selectedRow >= 0) {
                 int selectionButton = JOptionPane.YES_NO_OPTION;
@@ -218,31 +217,31 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
         } else {
             JOptionPane.showMessageDialog(null, "Select a Row to continue.");
         }
-    }//GEN-LAST:event_btnDelCustActionPerformed
+    }//GEN-LAST:event_btnDeleteCustomerActionPerformed
 
-    private void btnAddCustActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCustActionPerformed
+    private void btnAddCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCustomerActionPerformed
         // TODO add your handling code here:
         CardLayout layout = (CardLayout) container.getLayout();
         AddCustomerJPanel createCustomersJPanel = new AddCustomerJPanel(container, system, custDirectory);
         container.add(createCustomersJPanel);
         layout.next(container);
-    }//GEN-LAST:event_btnAddCustActionPerformed
+    }//GEN-LAST:event_btnAddCustomerActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void btnBackCustActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackCustActionPerformed
         // TODO add your handling code here:
         container.remove(this);
         CardLayout layout = (CardLayout) container.getLayout();
         layout.previous(container);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_btnBackCustActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTable TblCustomers;
-    private javax.swing.JButton btnAddCust;
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnDelCust;
-    private javax.swing.JButton btnViewCust;
+    private javax.swing.JButton btnAddCustomer;
+    private javax.swing.JButton btnBackCust;
+    private javax.swing.JButton btnDeleteCustomer;
+    private javax.swing.JButton btnViewCustomer;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable tblCustomersList;
     // End of variables declaration//GEN-END:variables
 }
