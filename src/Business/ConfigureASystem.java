@@ -2,11 +2,12 @@ package Business;
 
 import Business.Employee.Employee;
 import Business.Role.SystemAdminRole;
+import Business.SupplierEmp.SupplierEmp;
 import Business.UserAccount.UserAccount;
 
 /**
  *
- * @author dhrit
+ * @author Vini
  */
 public class ConfigureASystem {
     
@@ -21,8 +22,9 @@ public class ConfigureASystem {
         //create user account
         
         
-        Employee employee = system.getEmployeeDirectory().createEmployee("RRH");
-        
+        Employee employee = system.getEmployeeDirectory().createEmployee("RRH", "SomeAddress", "SomePhone");
+                //SupplierEmp supplierEmp = system.getSupplierEmpDirectory().createSupplierEmp("RRH", "SomeAddress", "SomePhone");
+
         UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
         
         return system;

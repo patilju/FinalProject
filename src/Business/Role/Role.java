@@ -1,30 +1,28 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package Business.Role;
 
-import Business.Customer.CustomerDirectory;
-import Business.DeliveryMan.DeliveryManDirectory;
 import Business.EcoSystem;
-import Business.Order.Menu;
-import Business.Order.OrderDirectory;
-
-import Business.Restaurant.RestaurantDirectory;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 
 /**
  *
- * @author nupoo
+ * @author Vini
  */
 public abstract class Role {
     
     public enum RoleType{
-        RestaurantAdmin("RestaurantAdmin"),
+        PharmacyAdmin("PharmacyAdmin"),
         Customer("Customer"),
         DeliveryMan("Delivery"),
+        SupplierAdmin("SupplierAdmin"),
+        SupplierDeliveryMan("SupplierDeliveryMan"),
         SysAdmin("Sysadmin");
+        
         
         private String value;
         private RoleType(String value){
@@ -43,12 +41,7 @@ public abstract class Role {
     
     public abstract JPanel createWorkArea(JPanel userProcessContainer, 
             UserAccount account,  
-            EcoSystem business,
-            CustomerDirectory customerDirectory,
-            RestaurantDirectory restaurantDirectory,
-            DeliveryManDirectory deliveryManDirectory,
-            Menu menu,
-            OrderDirectory orderDirectory);
+            EcoSystem business);
 
     @Override
     public String toString() {

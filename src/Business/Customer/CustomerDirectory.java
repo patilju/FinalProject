@@ -5,81 +5,49 @@
  */
 package Business.Customer;
 
-import Business.EcoSystem;
 import java.util.ArrayList;
 
 /**
  *
- * @author dhrit
+ * @author Vini
  */
 public class CustomerDirectory {
-    private ArrayList<Customer> custDir;
+  private ArrayList<Customer> customerList;
+
+    public CustomerDirectory() {
+        customerList = new ArrayList();
+    }
     
-    public CustomerDirectory(){
-        custDir = new ArrayList<Customer>();
+    public Customer createCustomer(String name, String address, String phone){
+        Customer customer = new Customer();
+        customer.setCustomerName(name);
+        customer.setAddress(address);
+        customer.setPhone(phone);
+
+        customerList.add(customer);
+        return customer;
     }
 
-    public ArrayList<Customer> getCustDir() {
-        return custDir;
-    }
-
-    public void setCustDir(ArrayList<Customer> custDir) {
-        this.custDir = custDir;
+    public ArrayList<Customer> getCustomerList() {
+        return customerList;
     }
     
-    public void addCustomer(Customer customer){
-        custDir.add(customer);
-    }
-    
-    public Customer getCustomerId(int index){
-        return custDir.get(index);
-    }
-    
-    public String genCustID(){
-        return "Customer "+(custDir.size()+1);
-    }
-    
-     public Customer getCustomer(String id){
-        for(Customer customer: custDir){
-            if(customer.getCustID().equalsIgnoreCase(id)){
-                return customer;
+    public Customer findCustomer(String name)
+    {
+        for(Customer c : customerList)
+        {
+            if(c.getCustomerName() == name)
+            {
+                return c;
             }
         }
         return null;
     }
     
-        public boolean isContactNoUnique(String contactNo){
-        for(Customer customer : custDir){
-            if(customer.getCustContact().equalsIgnoreCase(contactNo)){
-                return false;
-            }
-        }
-        return true;
-    }
-    
-    
-    
-    public void deleteCustomer(int index,EcoSystem system){
-        String id = custDir.get(index).getCustID();
-        for(int i =0; i <system.getUserAccountDirectory().getUserAccountList().size();i++){
-            if(system.getUserAccountDirectory().getUserAccountList().get(i)
-                    .getEmployee().getName().equalsIgnoreCase(id)){
-                system.getUserAccountDirectory().getUserAccountList().remove(i);
-            } else System.out.println("Customer does not Exist!");
-        }
-        custDir.remove(index);
-    }
-    
-    public void updateCustomer(String custNo, String custName, String custContact, String custAddr){
-        for(Customer customer: custDir){
-            if(customer.getCustID().equalsIgnoreCase(custNo)){
-                
-                customer.setCustName(custName);
-                customer.setCustContact(custContact);
-                customer.setCustAddr(custAddr);
-                break;
-            }
-        }
-    }
-    
+    public void deleteCustomer(Customer customer)
+    {
+        customerList.remove(customer);
+    }    
 }
+  
+

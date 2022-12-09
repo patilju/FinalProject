@@ -8,74 +8,37 @@ package Business;
 
 import Business.Customer.CustomerDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
-import Business.Order.Menu;
-import Business.Order.OrderDirectory;
-import Business.Restaurant.RestaurantDirectory;
+import Business.Pharmacy.PharmacyDirectory;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
+import Business.Supplier.SupplierDirectory;
+import Business.SupplierDeliveryMan.SupplierDeliveryManDirectory;
 import java.util.ArrayList;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  *
- * @author dhrit
+ * @author Vini
  */
 public class EcoSystem extends Organization{
     
     private static EcoSystem business;
-    private RestaurantDirectory restaurantDirectory;
+    private PharmacyDirectory pharmacyDirectory;
     private CustomerDirectory customerDirectory;
-    private OrderDirectory orderDirectory;
-    private Menu menu;
-
-    public OrderDirectory getOrderDirectory() {
-        return orderDirectory;
-    }
-
-    public void setOrderDirectory(OrderDirectory orderDirectory) {
-        this.orderDirectory = orderDirectory;
-    }
-
-    public Menu getMenu() {
-        return menu;
-    }
-
-    public void setMenu(Menu menu) {
-        this.menu = menu;
-    }
-
-    public RestaurantDirectory getRestaurantDirectory() {
-        return restaurantDirectory;
-    }
-
-    public void setRestaurantDirectory(RestaurantDirectory restaurantDirectory) {
-        this.restaurantDirectory = restaurantDirectory;
-    }
-
-    public CustomerDirectory getCustomerDirectory() {
-        return customerDirectory;
-    }
-
-    public void setCustomerDirectory(CustomerDirectory customerDirectory) {
-        this.customerDirectory = customerDirectory;
-    }
-
-    public DeliveryManDirectory getDeliveryManDirectory() {
-        return deliveryManDirectory;
-    }
-
-    public void setDeliveryManDirectory(DeliveryManDirectory deliveryManDirectory) {
-        this.deliveryManDirectory = deliveryManDirectory;
-    }
     private DeliveryManDirectory deliveryManDirectory;
+    private SupplierDirectory supplierDirectory;
+    private SupplierDeliveryManDirectory supplierDeliveryManDirectory;
 
-    public EcoSystem(RestaurantDirectory restaurantDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory) {
+    public EcoSystem(PharmacyDirectory pharmacyDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory, SupplierDirectory supplierDirectory, SupplierDeliveryManDirectory supplierDeliveryManDirectory) {
 
-        this.restaurantDirectory = restaurantDirectory;
+        this.pharmacyDirectory = pharmacyDirectory;
         this.customerDirectory = customerDirectory;
         this.deliveryManDirectory = deliveryManDirectory;
+                this.supplierDirectory = supplierDirectory;
+                        this.supplierDeliveryManDirectory = supplierDeliveryManDirectory;
+
     }
+
+    
     
     public static EcoSystem getInstance(){
         if(business==null){
@@ -93,29 +56,34 @@ public class EcoSystem extends Organization{
     private EcoSystem(){
         super(null);
        // networkList=new ArrayList<Network>();
+        this.pharmacyDirectory = new PharmacyDirectory();
+        this.customerDirectory = new CustomerDirectory();
+        this.deliveryManDirectory = new DeliveryManDirectory();
+         this.supplierDirectory = new SupplierDirectory();
+
+                        this.supplierDeliveryManDirectory = new SupplierDeliveryManDirectory();
     }
 
-    
+    public PharmacyDirectory getPharmacyDirectory() {
+        return pharmacyDirectory;
+    }
+
+    public CustomerDirectory getCustomerDirectory() {
+        return customerDirectory;
+    }
+
+    public DeliveryManDirectory getDeliveryManDirectory() {
+        return deliveryManDirectory;
+    } 
+    public SupplierDirectory getSupplierDirectory() {
+        return supplierDirectory;
+    }
+
+    public SupplierDeliveryManDirectory getSupplierDeliveryManDirectory() {
+        return supplierDeliveryManDirectory;
+    }
     public boolean checkIfUserIsUnique(String userName){
        //
        return false;
-    }
-    
-    public Boolean validateMobileNo(String phoneNo)
-    {
-        String regex = "^\\(?([0-9]{3})\\)?[-.\\s]?([0-9]{3})[-.\\s]?([0-9]{4})$";
-        Pattern pattern = Pattern.compile(regex);
-
-        Matcher matcher = pattern.matcher(phoneNo);
-        return (matcher.matches());
-       
-    }
-    public Boolean validateEmail(String email)
-    {
-        String regex = "^(.+)@(.+)$";
-        Pattern pattern = Pattern.compile(regex);
-
-        Matcher matcher = pattern.matcher(email);
-        return (matcher.matches());
     }
 }

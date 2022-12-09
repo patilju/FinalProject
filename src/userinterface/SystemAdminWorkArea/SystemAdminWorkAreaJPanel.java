@@ -5,46 +5,99 @@
  */
 package userinterface.SystemAdminWorkArea;
 
-import Business.Customer.CustomerDirectory;
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.Customer.Customer;
 import Business.EcoSystem;
-import Business.Order.Menu;
-import Business.Order.OrderDirectory;
+import Business.Employee.Employee;
+import Business.MedicineItems.MedicineItem;
 
-import Business.Restaurant.RestaurantDirectory;
+import Business.Organization;
+import Business.Pharmacy.Pharmacy;
+import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
+import java.util.ArrayList;
 import javax.swing.JPanel;
-import userinterface.CustomerRole.ManageCustomersJPanel;
-import userinterface.DeliveryManRole.ManageDeliveryManJPanel;
-import userinterface.RestaurantAdminRole.ManageRestaurantsJPanel;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
- * @author Sa
+ * @author Vini
  */
 public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form SystemAdminWorkAreaJPanel
      */
-    JPanel userProcessContainer;
-    EcoSystem ecosystem;
-    CustomerDirectory customerDirectory;
-    RestaurantDirectory restaurantDirectory;
-    DeliveryManDirectory deliveryManDirectory;
-    Menu menuDirectory;
-    OrderDirectory orderDirectory;
-    public SystemAdminWorkAreaJPanel(JPanel userProcessContainer,EcoSystem ecosystem, CustomerDirectory customerDirectory, RestaurantDirectory restaurantDirectory, DeliveryManDirectory deliveryManDirectory, Menu menuDirectory, OrderDirectory orderDirectory) {
+    JPanel userProcessContainerSAWAP;
+    EcoSystem ecosystemSAWAP;
+    public SystemAdminWorkAreaJPanel(JPanel userProcessContainer,EcoSystem ecosystem) {
         initComponents();
-        this.userProcessContainer=userProcessContainer;
-        this.ecosystem=ecosystem;
-        this.customerDirectory = customerDirectory;
-        this.restaurantDirectory = restaurantDirectory;
-        this.deliveryManDirectory = deliveryManDirectory;
-        this.menuDirectory = menuDirectory;
-        this.orderDirectory = orderDirectory;
+        this.userProcessContainerSAWAP = userProcessContainer;
+        this.ecosystemSAWAP = ecosystem;
+        //populateTree();
     }
-   
+    
+    /*public void populateTree(){
+        DefaultTreeModel modelSAWAP=(DefaultTreeModel)jTreeSAWAP.getModel();
+       // Add the code for draw your system structure shown by JTree
+        //MutableTreeNode root = (MutableTreeNode) model.getRoot();
+        DefaultMutableTreeNode root = (DefaultMutableTreeNode)modelSAWAP.getRoot();
+        root.removeAllChildren();
+        DefaultMutableTreeNode es = new DefaultMutableTreeNode("Ecosystem");
+        root.add(es);
+        DefaultMutableTreeNode cd = new DefaultMutableTreeNode("Customer Directory");
+        es.add(cd);
+        for(Customer c : ecosystemSAWAP.getCustomerDirectory().getCustomerList())
+        {
+            DefaultMutableTreeNode cu = (DefaultMutableTreeNode)es.getRoot();
+            cd.add(new DefaultMutableTreeNode(c.getName()));
+        }
+        DefaultMutableTreeNode rd = new DefaultMutableTreeNode("Restaurant Directory");
+        es.add(rd);
+        
+        for(Pharmacy p : ecosystemSAWAP.getPharmacyDirectory().getPharmacyList())
+        {
+            //DefaultMutableTreeNode cu = (DefaultMutableTreeNode)rd.getRoot();
+            DefaultMutableTreeNode sd = new DefaultMutableTreeNode(p.getName());
+            rd.add(sd);
+            DefaultMutableTreeNode ed = new DefaultMutableTreeNode("Employee Directory");
+            sd.add(ed);
+            DefaultMutableTreeNode manager = new DefaultMutableTreeNode("Manager Directory");
+            ed.add(manager);
+            DefaultMutableTreeNode deliver = new DefaultMutableTreeNode("Delivery Man Directory");
+            ed.add(deliver);
+            for(Employee e : p.getEmployeeDirectory().getEmployeeList())
+            {
+                for(UserAccount u : ecosystemSAWAP.getUserAccountDirectory().getUserAccountList())
+                {
+                    if(u.getEmployee().equals(e))
+                    {
+                        if(u.getRole().toString() == "Business.Role.AdminRole")
+                        {
+                            DefaultMutableTreeNode ar = new DefaultMutableTreeNode(e.getName());
+                            manager.add(ar);
+                        }
+                        else if(u.getRole().toString() == "Business.Role.DeliverManRole")
+                        {
+                            DefaultMutableTreeNode dm = new DefaultMutableTreeNode(e.getName());
+                            deliver.add(dm);
+                        }
+                    }
+                }
+            }
+            
+            //DefaultMutableTreeNode fl = (DefaultMutableTreeNode)rd.getRoot();
+            DefaultMutableTreeNode f = new DefaultMutableTreeNode("MedicineCatalog");
+            sd.add(f);
+            for(MedicineItem mi : p.getMedicineCatalog().getMedicineItemList())
+            {
+                DefaultMutableTreeNode z = (DefaultMutableTreeNode)ed.getRoot();
+                f.add(new DefaultMutableTreeNode(mi.getName()));
+            }
+        }
+        
+        modelSAWAP.reload(root);
+    }*/
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -57,14 +110,17 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jSplitPane = new javax.swing.JSplitPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        btnManageCustomers = new javax.swing.JButton();
-        btnManageResta = new javax.swing.JButton();
-        btnManageDelivery = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        btnManageCustomersSAWAP = new javax.swing.JButton();
+        btnManagePharmacySAWAP = new javax.swing.JButton();
+        BtnManageSupplier = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setLayout(new java.awt.BorderLayout());
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 255));
-        jPanel1.setForeground(new java.awt.Color(0, 51, 51));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 204));
+        jPanel1.setAutoscrolls(true);
+        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -74,102 +130,93 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 276, Short.MAX_VALUE)
+            .addGap(0, 911, Short.MAX_VALUE)
         );
 
         jSplitPane.setLeftComponent(jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 204));
-        jPanel2.setForeground(new java.awt.Color(0, 51, 51));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(null);
 
-        btnManageCustomers.setBackground(new java.awt.Color(204, 255, 255));
-        btnManageCustomers.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnManageCustomers.setForeground(new java.awt.Color(0, 51, 51));
-        btnManageCustomers.setText("Manage All Customers");
-        btnManageCustomers.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnManageCustomers.addActionListener(new java.awt.event.ActionListener() {
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setText("Admin Panel");
+        jPanel2.add(jLabel2);
+        jLabel2.setBounds(243, 11, 150, 31);
+
+        btnManageCustomersSAWAP.setBackground(new java.awt.Color(255, 255, 255));
+        btnManageCustomersSAWAP.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btnManageCustomersSAWAP.setText("Manage Customers");
+        btnManageCustomersSAWAP.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnManageCustomersSAWAP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageCustomersActionPerformed(evt);
+                btnManageCustomersSAWAPActionPerformed(evt);
             }
         });
+        jPanel2.add(btnManageCustomersSAWAP);
+        btnManageCustomersSAWAP.setBounds(10, 95, 130, 35);
 
-        btnManageResta.setBackground(new java.awt.Color(204, 255, 255));
-        btnManageResta.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnManageResta.setForeground(new java.awt.Color(0, 51, 51));
-        btnManageResta.setText("Manage Restaurants");
-        btnManageResta.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnManageResta.addActionListener(new java.awt.event.ActionListener() {
+        btnManagePharmacySAWAP.setBackground(new java.awt.Color(255, 255, 255));
+        btnManagePharmacySAWAP.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btnManagePharmacySAWAP.setText("Manage Pharmacy");
+        btnManagePharmacySAWAP.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnManagePharmacySAWAP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageRestaActionPerformed(evt);
+                btnManagePharmacySAWAPActionPerformed(evt);
             }
         });
+        jPanel2.add(btnManagePharmacySAWAP);
+        btnManagePharmacySAWAP.setBounds(10, 179, 130, 35);
 
-        btnManageDelivery.setBackground(new java.awt.Color(204, 255, 255));
-        btnManageDelivery.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnManageDelivery.setForeground(new java.awt.Color(0, 51, 51));
-        btnManageDelivery.setText("Manage Deliveryman");
-        btnManageDelivery.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnManageDelivery.addActionListener(new java.awt.event.ActionListener() {
+        BtnManageSupplier.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        BtnManageSupplier.setText("Manage Supplier");
+        BtnManageSupplier.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BtnManageSupplier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageDeliveryActionPerformed(evt);
+                BtnManageSupplierActionPerformed(evt);
             }
         });
+        jPanel2.add(BtnManageSupplier);
+        BtnManageSupplier.setBounds(10, 278, 130, 37);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnManageResta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnManageCustomers, javax.swing.GroupLayout.DEFAULT_SIZE, 665, Short.MAX_VALUE)
-                    .addComponent(btnManageDelivery, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnManageCustomers, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnManageResta, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnManageDelivery, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(133, Short.MAX_VALUE))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Manage_WORK_AREA_FINAL.jpg"))); // NOI18N
+        jPanel2.add(jLabel3);
+        jLabel3.setBounds(0, 0, 1500, 910);
 
         jSplitPane.setRightComponent(jPanel2);
 
         add(jSplitPane, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnManageCustomersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageCustomersActionPerformed
-        ManageCustomersJPanel manageCustomersJPanel = new ManageCustomersJPanel(userProcessContainer, ecosystem, customerDirectory);
-        userProcessContainer.add("manageCustomersJPanel", manageCustomersJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnManageCustomersActionPerformed
+    private void btnManageCustomersSAWAPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageCustomersSAWAPActionPerformed
+        SystemAdminManageCustomers uc = new SystemAdminManageCustomers(userProcessContainerSAWAP, ecosystemSAWAP);
+        userProcessContainerSAWAP.add("UserCustomer", uc);
+        CardLayout layout = (CardLayout)this.userProcessContainerSAWAP.getLayout();
+        layout.next(userProcessContainerSAWAP);
+    }//GEN-LAST:event_btnManageCustomersSAWAPActionPerformed
 
-    private void btnManageRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageRestaActionPerformed
-        ManageRestaurantsJPanel manageRestaurantJPanel = new ManageRestaurantsJPanel(userProcessContainer, ecosystem, restaurantDirectory);
-        userProcessContainer.add("manageRestaurantJPanel", manageRestaurantJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnManageRestaActionPerformed
+    private void btnManagePharmacySAWAPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManagePharmacySAWAPActionPerformed
+        SystemAdminManagePharmacy um = new SystemAdminManagePharmacy(userProcessContainerSAWAP, ecosystemSAWAP);
+        userProcessContainerSAWAP.add("UserManager", um);
+        CardLayout layout = (CardLayout)this.userProcessContainerSAWAP.getLayout();
+        layout.next(userProcessContainerSAWAP);
+    }//GEN-LAST:event_btnManagePharmacySAWAPActionPerformed
 
-    private void btnManageDeliveryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageDeliveryActionPerformed
-       ManageDeliveryManJPanel manageDeliveryJPanel = new ManageDeliveryManJPanel(userProcessContainer, ecosystem, deliveryManDirectory);
-        userProcessContainer.add("manageDeliveryJPanel", manageDeliveryJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnManageDeliveryActionPerformed
+    private void BtnManageSupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnManageSupplierActionPerformed
+        // TODO add your handling code here:
+        SystemAdminManageSupplier ms = new SystemAdminManageSupplier(userProcessContainerSAWAP, ecosystemSAWAP);
+        userProcessContainerSAWAP.add("UserSupplier", ms);
+        CardLayout layout = (CardLayout)this.userProcessContainerSAWAP.getLayout();
+        layout.next(userProcessContainerSAWAP);
+    }//GEN-LAST:event_BtnManageSupplierActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnManageCustomers;
-    private javax.swing.JButton btnManageDelivery;
-    private javax.swing.JButton btnManageResta;
+    private javax.swing.JButton BtnManageSupplier;
+    private javax.swing.JButton btnManageCustomersSAWAP;
+    private javax.swing.JButton btnManagePharmacySAWAP;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSplitPane jSplitPane;

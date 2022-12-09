@@ -5,52 +5,76 @@
  */
 package Business.Customer;
 
+import Business.Orders.Orders;
+import java.util.ArrayList;
 
 /**
  *
- * @author dhrit
+ * @author Vini
  */
 public class Customer {
-    
-    private String custID;
-    private String custName;
-    private String custContact;
-    private String custAddr;
-  
-    public String getCustID() {
-        return custID;
+    private String CustomerName;
+    private int id;
+    private String address;
+    private String phone;
+   
+
+    private static int count = 1;
+    private ArrayList<Orders> PastOrderList;
+
+    public Customer() {
+        id = count;
+        count++;
+        this.PastOrderList = new ArrayList<Orders>();
     }
 
-    public void setCustID(String custID) {
-        this.custID = custID;
+    public int getId() {
+        return id;
     }
 
-    public String getCustName() {
-        return custName;
-    }
-
-    public void setCustName(String custName) {
-        this.custName = custName;
-    }
-
-    public String getCustContact() {
-        return custContact;
-    }
-
-    public void setCustContact(String custContact) {
-        this.custContact = custContact;
+    public void setCustomerName(String CustomerName) {
+        this.CustomerName = CustomerName;
     }
 
     
-
-    public String getCustAddr() {
-        return custAddr;
+    public String getCustomerName() {
+        return CustomerName;
     }
 
-    public void setCustAddr(String custAddr) {
-        this.custAddr = custAddr;
+    @Override
+    public String toString() {
+        return CustomerName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public ArrayList<Orders> getPastOrderList() {
+        return PastOrderList;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     
+
     
+    
+    
+    public void AddOrder()
+    {
+        
+    }    
 }
+
+

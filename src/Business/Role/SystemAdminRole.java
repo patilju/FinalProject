@@ -1,29 +1,29 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package Business.Role;
 
-import Business.Customer.CustomerDirectory;
-import Business.DeliveryMan.DeliveryManDirectory;
 import Business.EcoSystem;
-import Business.Order.Menu;
-import Business.Order.OrderDirectory;
-import Business.Restaurant.RestaurantDirectory;
-
 import Business.UserAccount.UserAccount;
-import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import javax.swing.JPanel;
+import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
- * @author nupoo
+ * @author Vini
  */
 public class SystemAdminRole extends Role{
+    private Role.RoleType roleType;
+    public SystemAdminRole() {
+        Role.RoleType roleType = Role.RoleType.SysAdmin;
+    }
 
   
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EcoSystem system,  CustomerDirectory customerDirectory, RestaurantDirectory restaurantDirectory,DeliveryManDirectory deliveryManDirectory,Menu menu, OrderDirectory orderDirectory) {
-        return new SystemAdminWorkAreaJPanel(userProcessContainer, system, customerDirectory, restaurantDirectory, deliveryManDirectory,menu,orderDirectory);
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EcoSystem system) {
+        return new SystemAdminWorkAreaJPanel(userProcessContainer, system);
     }
     
 }
+

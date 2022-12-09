@@ -1,5 +1,6 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package Business.WorkQueue;
@@ -9,11 +10,10 @@ import java.util.Date;
 
 /**
  *
- * @author nupoo
+ * @author Vini
  */
-public abstract class WorkRequest {
-
-    private String message;
+public class WorkRequest {
+     private String message;
     private UserAccount sender;
     private UserAccount receiver;
     private String status;
@@ -71,4 +71,5 @@ public abstract class WorkRequest {
     public void setResolveDate(Date resolveDate) {
         this.resolveDate = resolveDate;
     }
+
 }

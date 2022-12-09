@@ -1,22 +1,24 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package Business.UserAccount;
 
 import Business.Employee.Employee;
 import Business.Role.Role;
+import Business.SupplierEmp.SupplierEmp;
 import Business.WorkQueue.WorkQueue;
 
 /**
  *
- * @author nupoo
+ * @author Vini
  */
 public class UserAccount {
-    
-    private String username;
+   private String username;
     private String password;
     private Employee employee;
+    //private SupplierEmp supplierEmp;
     private Role role;
     private WorkQueue workQueue;
 
@@ -63,6 +65,8 @@ public class UserAccount {
     }
 
     
+
+    
     
     @Override
     public String toString() {
@@ -71,4 +75,5 @@ public class UserAccount {
     
     
     
+ 
 }

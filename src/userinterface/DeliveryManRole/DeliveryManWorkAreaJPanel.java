@@ -3,59 +3,88 @@
  * and open the template in the editor.
  */
 package userinterface.DeliveryManRole;
-
-import Business.DeliveryMan.DeliveryManDirectory;
+import Business.DeliveryMan.DeliveryMan;
 import Business.EcoSystem;
-import Business.Order.Order;
-import Business.Order.OrderDirectory;
+import Business.Employee.Employee;
+import Business.Orders.Orders;
+import Business.Pharmacy.Pharmacy;
 
 import Business.UserAccount.UserAccount;
+import Business.WorkQueue.WorkRequest;
+import java.awt.CardLayout;
+import java.time.format.DateTimeFormatter;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raunak
+ * @author juile
  */
 public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
     private UserAccount userAccount;
+    private Pharmacy pharmacy;
+    private DeliveryMan deliveryMan;
     
     
     /**
      * Creates new form LabAssistantWorkAreaJPanel
      */
-    public DeliveryManWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem business, DeliveryManDirectory deliveryManDirectory, OrderDirectory orderDirectory) {
+    public DeliveryManWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, EcoSystem business) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;
         this.business = business;
-             
-        populateTable();
+        
+        for(Pharmacy p : business.getPharmacyDirectory().getPharmacyList())
+        {
+            if(p.findDeliveryMan(account.getEmployee().getName()) != null)
+            {
+                this.deliveryMan = p.findDeliveryMan(account.getEmployee().getName());
+                this.pharmacy = p;
+                break;
+            }
+        }
+        lblDeliveryMan.setText("Orders to be delivered by " + this.deliveryMan);
+        
+//        if(workRequestJTable.getRowCount() > 0)
+//        {
+            populateTable();
+//        }
     }
     
     public void populateTable(){
-        DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
-        model.setRowCount(0);
-        for (Order order : business.getOrderDirectory().getOrderDir()) {
-            if (order.getDeliveryMan() != null) {
-                if (order.getDeliveryMan().getDeliveryID().equalsIgnoreCase(userAccount.getEmployee().getName())) {
-                    Object[] row = new Object[6];
-                     row[0] = order.getOrderNo();
-                     row[1] = order.getStatus();
-                     row[2] = order.getSender();
-                     row[3] = order.getRestaurant().getRestAddress();
-                     row[4] = order.getCustomer().getCustAddr();
-                     row[5] = order.getMessage();
-                    
-                    model.addRow(row);
+        if(pharmacy.getOrderDirectory() != null)
+        {
+            DefaultTableModel dtm = (DefaultTableModel)DMWorkRequestTable.getModel();
+            dtm.setRowCount(0);
+            for(Orders o : pharmacy.getOrderDirectory().getOrderList())
+            {
+                if(o.getDeliveryMan().equals(deliveryMan))
+                {
+                    Object[] row = new Object[dtm.getColumnCount()];
+                    row[0] = o;
+                    row[1] = o.getTotalAmount();
+                    row[2] = o.getMessage();
+                    row[3] = o.getDeliveryMan();
+                    if(o.isStatus())
+                    {
+                        row[4] = "Yes";
+                    }
+                    else
+                    {
+                        row[4] = "No";
+                    }
+                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+                    row[5] = o.getOrderDate().format(formatter);
+                    dtm.addRow(row);
                 }
             }
-        }
+        }        
     }
 
     /**
@@ -67,19 +96,25 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        processJButton = new javax.swing.JButton();
         refreshJButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        workRequestJTable = new javax.swing.JTable();
-        btnConfirm = new javax.swing.JButton();
-        btnDeliComplete = new javax.swing.JButton();
-        lblDeliDetails = new javax.swing.JLabel();
+        DMWorkRequestTable = new javax.swing.JTable();
+        lblDeliveryMan = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 204));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(255, 255, 255));
 
-        refreshJButton.setBackground(new java.awt.Color(204, 255, 255));
-        refreshJButton.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        refreshJButton.setForeground(new java.awt.Color(0, 51, 51));
+        processJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        processJButton.setText("Process");
+        processJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        processJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                processJButtonActionPerformed(evt);
+            }
+        });
+
+        refreshJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         refreshJButton.setText("Refresh");
         refreshJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -87,24 +122,18 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 55, -1, -1));
 
-        workRequestJTable.setBackground(new java.awt.Color(255, 255, 204));
-        workRequestJTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        workRequestJTable.setForeground(new java.awt.Color(0, 51, 51));
-        workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
+        DMWorkRequestTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        DMWorkRequestTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+
             },
             new String [] {
-                "Order No", "Order Status", "Ordered By", "Restaurant Address", "Customer Address", "Customer Feedback"
+                "Order ID", "Order Price", "Message", "Delivery Man Name", "Status", "Order Date"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
+                java.lang.Object.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class
             };
             boolean[] canEdit = new boolean [] {
                 false, false, false, false, false, false
@@ -118,97 +147,96 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(workRequestJTable);
+        jScrollPane1.setViewportView(DMWorkRequestTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 96, 790, 130));
+        lblDeliveryMan.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        lblDeliveryMan.setText("<>");
 
-        btnConfirm.setBackground(new java.awt.Color(255, 255, 204));
-        btnConfirm.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnConfirm.setForeground(new java.awt.Color(0, 51, 51));
-        btnConfirm.setText("Confirm Pickup");
-        btnConfirm.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnConfirm.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnConfirmActionPerformed(evt);
-            }
-        });
-        add(btnConfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 140, 35));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (4).png"))); // NOI18N
 
-        btnDeliComplete.setBackground(new java.awt.Color(204, 255, 255));
-        btnDeliComplete.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnDeliComplete.setForeground(new java.awt.Color(0, 51, 51));
-        btnDeliComplete.setText("Delivery Complete");
-        btnDeliComplete.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnDeliComplete.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeliCompleteActionPerformed(evt);
-            }
-        });
-        add(btnDeliComplete, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 140, 33));
-
-        lblDeliDetails.setBackground(new java.awt.Color(204, 255, 255));
-        lblDeliDetails.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        lblDeliDetails.setForeground(new java.awt.Color(0, 51, 51));
-        lblDeliDetails.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblDeliDetails.setText("Delivery Information");
-        add(lblDeliDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 25, -1, -1));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(1360, 1360, 1360)
+                .addComponent(processJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(1360, 1360, 1360)
+                .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(lblDeliveryMan, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1410, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1500, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addComponent(processJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(lblDeliveryMan, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1100, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
+
+        int selectedRow = DMWorkRequestTable.getSelectedRow();
+        if (selectedRow >= 0)
+        {
+            if((DMWorkRequestTable.getValueAt(selectedRow, 1)) == null)
+            {
+                JOptionPane.showMessageDialog(null,"Order is not live anymore!", "Warning", JOptionPane.WARNING_MESSAGE);
+                return;
+            }
+            else
+            {
+                Orders o = (Orders) DMWorkRequestTable.getValueAt(selectedRow, 0);
+                ProcessWorkRequestJPanel fs = new ProcessWorkRequestJPanel(userProcessContainer, o);
+                userProcessContainer.add("SysAdminManageEmployees", fs);
+                CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+                layout.next(userProcessContainer);
+            }
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+    }//GEN-LAST:event_processJButtonActionPerformed
+
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
-        populateTable();
-        btnDeliComplete.setVisible(true);
+        if(DMWorkRequestTable.getRowCount() > 0)
+        {
+            populateTable();
+            JOptionPane.showMessageDialog(null, "Table refreshed!");
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"Nothing to refresh!", "Warning", JOptionPane.WARNING_MESSAGE);
+        }
     }//GEN-LAST:event_refreshJButtonActionPerformed
 
-    private void btnConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmActionPerformed
-        // TODO add your handling code here:
-                int selectedRow = workRequestJTable.getSelectedRow();
-
-        if (selectedRow < 0) {
-            JOptionPane.showMessageDialog(null, "Please select a row!");
-            return;
-        }
-        String orderStatus = (String) workRequestJTable.getValueAt(selectedRow, 1);
-        String selectedOrderId = (String) workRequestJTable.getValueAt(selectedRow, 0);
-       if(orderStatus.equals("Completed")){
-           btnDeliComplete.setVisible(false);
-           JOptionPane.showMessageDialog(null, "Order has already been completed!");
-       }
-       else{
-           
-           btnDeliComplete.setVisible(true);
-        Order order = business.getOrderDirectory().fetchOrders(selectedOrderId);
-        order.setStatus("Out For Delivery");
-        JOptionPane.showMessageDialog(null, "Order has been updated!");
-        populateTable();
-       }
-    }//GEN-LAST:event_btnConfirmActionPerformed
-
-    private void btnDeliCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeliCompleteActionPerformed
-        int selectedRow = workRequestJTable.getSelectedRow();
-
-        if (selectedRow < 0) {
-            JOptionPane.showMessageDialog(null, "Please select a row first!");
-            return;
-        }
-
-        String selectedOrderId = (String) workRequestJTable.getValueAt(selectedRow, 0);
-        Order order = business.getOrderDirectory().fetchOrders(selectedOrderId);
-
-        if (order.getStatus().trim().equalsIgnoreCase("Out For Delivery")) {
-            order.setStatus("Completed");
-            JOptionPane.showMessageDialog(null, "Order has been updated!");
-            populateTable();
-        } else {
-            JOptionPane.showMessageDialog(null, "Kindly confirm the order pick-up before confirming delivery!");
-        }
-    }//GEN-LAST:event_btnDeliCompleteActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnConfirm;
-    private javax.swing.JButton btnDeliComplete;
+    private javax.swing.JTable DMWorkRequestTable;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblDeliDetails;
+    private javax.swing.JLabel lblDeliveryMan;
+    private javax.swing.JButton processJButton;
     private javax.swing.JButton refreshJButton;
-    private javax.swing.JTable workRequestJTable;
     // End of variables declaration//GEN-END:variables
 }

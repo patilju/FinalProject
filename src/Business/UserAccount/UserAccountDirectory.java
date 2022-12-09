@@ -1,20 +1,21 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package Business.UserAccount;
 
 import Business.Employee.Employee;
 import Business.Role.Role;
+import Business.SupplierEmp.SupplierEmp;
 import java.util.ArrayList;
 
 /**
  *
- * @author nupoo
+ * @author Vini
  */
 public class UserAccountDirectory {
-    
-    private ArrayList<UserAccount> userAccountList;
+  private ArrayList<UserAccount> userAccountList;
 
     public UserAccountDirectory() {
         userAccountList = new ArrayList();
@@ -32,44 +33,46 @@ public class UserAccountDirectory {
         return null;
     }
     
-    public UserAccount createUserAccount(String username, String password, Employee employee, Role role){
+    public UserAccount createUserAccount(String username, String password, Employee employee,Role role){
         UserAccount userAccount = new UserAccount();
         userAccount.setUsername(username);
         userAccount.setPassword(password);
         userAccount.setEmployee(employee);
+        // userAccount.setSupplierEmp(supplierEmp);
         userAccount.setRole(role);
         userAccountList.add(userAccount);
         return userAccount;
     }
     
-     public UserAccount getUserByEmployeeNo(String employeeNo) {
-        for (UserAccount user : userAccountList) {
-            if (user.getEmployee().getName().equalsIgnoreCase(employeeNo)) {
-                return user;
-            }
-        }
-        return null;
-    }
-
-    public void removeAllAccounts() {
-        for (int i = 0; i < userAccountList.size(); i++) {
-            if (!userAccountList.get(i).getUsername().equalsIgnoreCase("admin")) {
-                userAccountList.remove(i);
-            }
-        }
-
-        for (int i = 0; i < userAccountList.size(); i++) {
-            System.out.println(userAccountList.get(i).getEmployee());
-        }
-    }
-
-    public boolean checkIfUsernameIsUnique(String username) {
-        for (UserAccount ua : userAccountList) {
-            if (ua.getUsername().equals(username)) {
+    public boolean checkIfUsernameIsUnique(String username){
+        for (UserAccount ua : userAccountList){
+            if (ua.getUsername().equals(username))
                 return false;
-            }
         }
         return true;
     }
 
+    public UserAccount findEmployee(Employee employee)
+    {
+        for (UserAccount ua : userAccountList)
+            if (ua.getEmployee() == employee){
+                return ua;
+            }
+        return null;
+    }
+    
+    /*public UserAccount findSupplierEmp(SupplierEmp supplierEmp)
+    {
+        for (UserAccount ua : userAccountList)
+            if (ua.getSupplierEmp() == supplierEmp){
+                return ua;
+            }
+        return null;
+    }*/
+    
+    public void deleteUserAccount(UserAccount ua)
+    {
+        userAccountList.remove(ua);
+    }
+  
 }

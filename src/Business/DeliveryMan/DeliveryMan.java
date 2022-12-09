@@ -7,36 +7,53 @@ package Business.DeliveryMan;
 
 /**
  *
- * @author dhrit
+ * @author Vini
  */
 public class DeliveryMan {
-    private String deliveryID;
-    private String deliName;
-    private String deliPhoneNo;
+  private String name;
+    private String phone;
+    private String address;
+    private int id;
+    private static int count = 1;
 
-    public String getDeliveryID() {
-        return deliveryID;
+    public DeliveryMan() {
+        id = count;
+        count++;
     }
 
-    public void setDeliveryID(String deliveryID) {
-        this.deliveryID = deliveryID;
+    public int getId() {
+        return id;
     }
 
-    public String getDeliName() {
-        return deliName;
-    }
-
-    public void setDeliName(String deliName) {
-        this.deliName = deliName;
-    }
-
-    public String getDeliPhoneNo() {
-        return deliPhoneNo;
-    }
-
-    public void setDeliPhoneNo(String deliPhoneNo) {
-        this.deliPhoneNo = deliPhoneNo;
+    public void setName(String name) {
+        this.name = name;
     }
 
     
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }    
+
+  
 }

@@ -5,72 +5,30 @@
  */
 package Business.DeliveryMan;
 
-import Business.EcoSystem;
 import java.util.ArrayList;
 
 /**
  *
- * @author dhrit
+ * @author Vini
  */
 public class DeliveryManDirectory {
-    private ArrayList<DeliveryMan> deliveryManDirectory;
+   private ArrayList<DeliveryMan> deliveryManList;
 
-    public DeliveryManDirectory(){
-        deliveryManDirectory = new ArrayList<DeliveryMan>();
+    public DeliveryManDirectory() {
+        deliveryManList = new ArrayList();
     }
 
-    public ArrayList<DeliveryMan> getDeliveryManDirectory() {
-        return deliveryManDirectory;
+    public ArrayList<DeliveryMan> getDeliveryManList() {
+        return deliveryManList;
     }
-
-    public void setDeliveryManDirectory(ArrayList<DeliveryMan> deliveryManDirectory) {
-        this.deliveryManDirectory = deliveryManDirectory;
-    }
-    public DeliveryMan addDeliveryMan(DeliveryMan deliveryMan){
-        deliveryMan.setDeliveryID("DeliveryMan "+(deliveryManDirectory.size()+1));
-        deliveryManDirectory.add(deliveryMan);
+    
+    public DeliveryMan createDeliveryMan(String name, String phone, String address){
+        DeliveryMan deliveryMan = new DeliveryMan();
+        deliveryMan.setName(name);
+        deliveryMan.setPhone(phone);
+        deliveryMan.setAddress(address);
+        deliveryManList.add(deliveryMan);
         return deliveryMan;
-    }
-    
-    public void deleteDeliveryMan(int index,EcoSystem system){
-        String id = deliveryManDirectory.get(index).getDeliveryID();
-        for(int i =0; i <system.getUserAccountDirectory().getUserAccountList().size();i++){
-            if(system.getUserAccountDirectory().getUserAccountList().get(i).getEmployee().getName().equalsIgnoreCase(id)){
-                system.getUserAccountDirectory().getUserAccountList().remove(i);
-            }
-        }
-        deliveryManDirectory.remove(index);
-    }
-    
-    public DeliveryMan getDeliveryManById(int index){
-        return deliveryManDirectory.get(index);
-    }
-    
-    public boolean isContactNoUnique(String phone){
-        for(DeliveryMan deliveryMan: deliveryManDirectory){
-            if(deliveryMan.getDeliPhoneNo().equalsIgnoreCase(phone)){
-                return false;
-            }
-        }
-        return true;
-    }
-    
-    
-    public void updateDeliveryMan(String id,String name,String phone){
-        for(DeliveryMan deliveryMan: deliveryManDirectory){
-            if(deliveryMan.getDeliveryID().equalsIgnoreCase(id)){
-                deliveryMan.setDeliName(name);
-                deliveryMan.setDeliPhoneNo(phone);
-            }
-        }
-    }
-    
-    public DeliveryMan getDeliveryMan(String id){
-        for(DeliveryMan deliveryMan: deliveryManDirectory){
-            if(deliveryMan.getDeliveryID().equalsIgnoreCase(id)){
-                return deliveryMan;
-            }
-        }
-        return null;
-    }
+    }    
+ 
 }

@@ -4,28 +4,31 @@
  */
 package userinterface.DeliveryManRole;
 
-import Business.WorkQueue.LabTestWorkRequest;
+import Business.Orders.Orders;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JPanel;
+import javax.swing.JOptionPane;
 
 /**
  *
- * @author raunak
+ * @author juile
  */
 
 
 public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
 
     JPanel userProcessContainer;
-    LabTestWorkRequest request;
+    Orders orders;
     /**
      * Creates new form ProcessWorkRequestJPanel
      */
-    public ProcessWorkRequestJPanel(JPanel userProcessContainer, LabTestWorkRequest request) {
+    public ProcessWorkRequestJPanel(JPanel userProcessContainer, Orders o) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
-        this.request = request;
+        this.orders = o;
+        PWRStatusComboBox.addItem("Delivered");
+        PWRStatusComboBox.addItem("Not Delivered");        
     }
 
     /**
@@ -37,82 +40,83 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        submitJButton = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        resultJTextField = new javax.swing.JTextField();
-        backJButton = new javax.swing.JButton();
+        PWRSubmitButton = new javax.swing.JButton();
+        ResultLabel = new javax.swing.JLabel();
+        PWRBackButton = new javax.swing.JButton();
+        PWRStatusComboBox = new javax.swing.JComboBox<>();
+        jLabel2 = new javax.swing.JLabel();
 
-        submitJButton.setText("Submit Result");
-        submitJButton.addActionListener(new java.awt.event.ActionListener() {
+        setBackground(new java.awt.Color(255, 255, 255));
+        setLayout(null);
+
+        PWRSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PWRSubmitButton.setForeground(new java.awt.Color(0, 102, 102));
+        PWRSubmitButton.setText("Submit Result");
+        PWRSubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PWRSubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                submitJButtonActionPerformed(evt);
+                PWRSubmitButtonActionPerformed(evt);
             }
         });
+        add(PWRSubmitButton);
+        PWRSubmitButton.setBounds(360, 118, 131, 50);
 
-        jLabel1.setText("Result");
+        ResultLabel.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        ResultLabel.setText("Result");
+        add(ResultLabel);
+        ResultLabel.setBounds(47, 39, 80, 40);
 
-        backJButton.setText("Back");
-        backJButton.addActionListener(new java.awt.event.ActionListener() {
+        PWRBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PWRBackButton.setForeground(new java.awt.Color(0, 102, 102));
+        PWRBackButton.setText("Back");
+        PWRBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PWRBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backJButtonActionPerformed(evt);
+                PWRBackButtonActionPerformed(evt);
             }
         });
+        add(PWRBackButton);
+        PWRBackButton.setBounds(150, 120, 80, 50);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(backJButton)
-                    .addComponent(jLabel1))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(resultJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
-                        .addComponent(submitJButton)
-                        .addGap(63, 63, 63))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(resultJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(submitJButton)
-                    .addComponent(backJButton))
-                .addContainerGap(169, Short.MAX_VALUE))
-        );
+        PWRStatusComboBox.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        add(PWRStatusComboBox);
+        PWRStatusComboBox.setBounds(144, 35, 380, 50);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (3).png"))); // NOI18N
+        add(jLabel2);
+        jLabel2.setBounds(0, 0, 1480, 810);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
+    private void PWRSubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PWRSubmitButtonActionPerformed
+        switch(PWRStatusComboBox.getSelectedIndex())
+        {
+            case 0 : orders.setStatus(true);
+            break;
+            case 1 : orders.setStatus(false);
+            break;
+        }
+        System.out.println(PWRStatusComboBox.getSelectedIndex());
+        System.out.println(orders.isStatus());
+        System.out.println(orders.getTotalAmount());
+        JOptionPane.showMessageDialog(null, "Order status updated successfully!");
+    }//GEN-LAST:event_PWRSubmitButtonActionPerformed
+
+    private void PWRBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PWRBackButtonActionPerformed
 
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
         DeliveryManWorkAreaJPanel dwjp = (DeliveryManWorkAreaJPanel) component;
         dwjp.populateTable();
-        
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_backJButtonActionPerformed
-
-    private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
-        request.setTestResult(resultJTextField.getText());
-        request.setStatus("Completed");
-    }//GEN-LAST:event_submitJButtonActionPerformed
+    }//GEN-LAST:event_PWRBackButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton backJButton;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField resultJTextField;
-    private javax.swing.JButton submitJButton;
+    private javax.swing.JButton PWRBackButton;
+    private javax.swing.JComboBox<String> PWRStatusComboBox;
+    private javax.swing.JButton PWRSubmitButton;
+    private javax.swing.JLabel ResultLabel;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
