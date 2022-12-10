@@ -16,7 +16,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class AdminManageOrders extends javax.swing.JPanel {
 
@@ -29,17 +29,17 @@ public class AdminManageOrders extends javax.swing.JPanel {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.pharmacy = pharmacy;
-        btnAssignDeliveryMan.setEnabled(false);
-        comboDeliveryMen.setEnabled(false);
+        PharmacyAMOAssignDeliveryManButton.setEnabled(false);
+        PharmacyAMOCombo.setEnabled(false);
        
-        valueLabel.setText(pharmacy.getName());
+        PharmacyAMOvalueLabel2.setText(pharmacy.getName());
         populateTable();
-        comboDeliveryMen.addItem("");
+        PharmacyAMOCombo.addItem("");
         System.out.println(pharmacy.getDeliveryManDirectory().getDeliveryManList().size());
         for(DeliveryMan dm : pharmacy.getDeliveryManDirectory().getDeliveryManList())
         {
             System.out.println(dm.getName());
-            comboDeliveryMen.addItem(dm.getName());
+            PharmacyAMOCombo.addItem(dm.getName());
         }
     }
 
@@ -52,39 +52,39 @@ public class AdminManageOrders extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnAssignDeliveryMan = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        PharmacyAMOAssignDeliveryManButton = new javax.swing.JButton();
+        PharmacyAMOCurrentOrdersLabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblOrders = new javax.swing.JTable();
-        valueLabel = new javax.swing.JLabel();
-        enterpriseLabel = new javax.swing.JLabel();
-        btnDelete = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
-        comboDeliveryMen = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
+        PharmacyTable2 = new javax.swing.JTable();
+        PharmacyAMOvalueLabel2 = new javax.swing.JLabel();
+        PharmacyAMOLabel2 = new javax.swing.JLabel();
+        PharmacyAMODeleteButton = new javax.swing.JButton();
+        PharmacyAMOBackButton2 = new javax.swing.JButton();
+        PharmacyAMOCombo = new javax.swing.JComboBox<>();
+        PharmacyAMOLabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        btnAssignDeliveryMan.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnAssignDeliveryMan.setText("Assign Delivery Man");
-        btnAssignDeliveryMan.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnAssignDeliveryMan.addActionListener(new java.awt.event.ActionListener() {
+        PharmacyAMOAssignDeliveryManButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAMOAssignDeliveryManButton.setText("Assign Delivery Man");
+        PharmacyAMOAssignDeliveryManButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyAMOAssignDeliveryManButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAssignDeliveryManActionPerformed(evt);
+                PharmacyAMOAssignDeliveryManButtonActionPerformed(evt);
             }
         });
-        add(btnAssignDeliveryMan);
-        btnAssignDeliveryMan.setBounds(1138, 333, 210, 50);
+        add(PharmacyAMOAssignDeliveryManButton);
+        PharmacyAMOAssignDeliveryManButton.setBounds(1138, 333, 210, 50);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel1.setText("Current Orders");
-        add(jLabel1);
-        jLabel1.setBounds(238, 87, 97, 17);
+        PharmacyAMOCurrentOrdersLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        PharmacyAMOCurrentOrdersLabel.setText("Current Orders");
+        add(PharmacyAMOCurrentOrdersLabel);
+        PharmacyAMOCurrentOrdersLabel.setBounds(238, 87, 97, 17);
 
-        tblOrders.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        tblOrders.setModel(new javax.swing.table.DefaultTableModel(
+        PharmacyTable2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -100,69 +100,69 @@ public class AdminManageOrders extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        tblOrders.addMouseListener(new java.awt.event.MouseAdapter() {
+        PharmacyTable2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tblOrdersMouseClicked(evt);
+                PharmacyTable2MouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(tblOrders);
+        jScrollPane1.setViewportView(PharmacyTable2);
 
         add(jScrollPane1);
         jScrollPane1.setBounds(25, 122, 1430, 84);
 
-        valueLabel.setBackground(new java.awt.Color(204, 204, 255));
-        valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        valueLabel.setText("<value>");
-        add(valueLabel);
-        valueLabel.setBounds(308, 39, 282, 30);
+        PharmacyAMOvalueLabel2.setBackground(new java.awt.Color(204, 204, 255));
+        PharmacyAMOvalueLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyAMOvalueLabel2.setText("<value>");
+        add(PharmacyAMOvalueLabel2);
+        PharmacyAMOvalueLabel2.setBounds(308, 39, 282, 30);
 
-        enterpriseLabel.setBackground(new java.awt.Color(204, 204, 255));
-        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        enterpriseLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        enterpriseLabel.setText("Pharmacy");
-        add(enterpriseLabel);
-        enterpriseLabel.setBounds(10, 39, 292, 30);
+        PharmacyAMOLabel2.setBackground(new java.awt.Color(204, 204, 255));
+        PharmacyAMOLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyAMOLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        PharmacyAMOLabel2.setText("Pharmacy");
+        add(PharmacyAMOLabel2);
+        PharmacyAMOLabel2.setBounds(10, 39, 292, 30);
 
-        btnDelete.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnDelete.setText("Delete");
-        btnDelete.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+        PharmacyAMODeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAMODeleteButton.setText("Delete");
+        PharmacyAMODeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyAMODeleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteActionPerformed(evt);
+                PharmacyAMODeleteButtonActionPerformed(evt);
             }
         });
-        add(btnDelete);
-        btnDelete.setBounds(1129, 223, 220, 50);
+        add(PharmacyAMODeleteButton);
+        PharmacyAMODeleteButton.setBounds(1129, 223, 220, 50);
 
-        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnBack.setText("< Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        PharmacyAMOBackButton2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAMOBackButton2.setText("< Back");
+        PharmacyAMOBackButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyAMOBackButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                PharmacyAMOBackButton2ActionPerformed(evt);
             }
         });
-        add(btnBack);
-        btnBack.setBounds(25, 224, 100, 40);
+        add(PharmacyAMOBackButton2);
+        PharmacyAMOBackButton2.setBounds(25, 224, 100, 40);
 
-        comboDeliveryMen.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        add(comboDeliveryMen);
-        comboDeliveryMen.setBounds(820, 280, 220, 60);
+        PharmacyAMOCombo.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        add(PharmacyAMOCombo);
+        PharmacyAMOCombo.setBounds(820, 280, 220, 60);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (11).png"))); // NOI18N
-        add(jLabel2);
-        jLabel2.setBounds(0, 10, 1460, 770);
+        PharmacyAMOLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (11).png"))); // NOI18N
+        add(PharmacyAMOLabel);
+        PharmacyAMOLabel.setBounds(0, 10, 1460, 770);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAssignDeliveryManActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignDeliveryManActionPerformed
+    private void PharmacyAMOAssignDeliveryManButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyAMOAssignDeliveryManButtonActionPerformed
         // TODO add your handling code here:
-        int selectedRow = tblOrders.getSelectedRow();
+        int selectedRow = PharmacyTable2.getSelectedRow();
         if (selectedRow >= 0)
         {
-            Orders orders = (Orders) tblOrders.getValueAt(selectedRow, 0);
-            if(comboDeliveryMen.getSelectedItem() != "")
+            Orders orders = (Orders) PharmacyTable2.getValueAt(selectedRow, 0);
+            if(PharmacyAMOCombo.getSelectedItem() != "")
             {
-                String dmName = comboDeliveryMen.getSelectedItem().toString();
+                String dmName = PharmacyAMOCombo.getSelectedItem().toString();
                 DeliveryMan dm = pharmacy.findDeliveryMan(dmName);
                 orders.setDeliveryMan(dm);
                 JOptionPane.showMessageDialog(null, "Delivery man assigned successfully!");
@@ -179,25 +179,25 @@ public class AdminManageOrders extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_btnAssignDeliveryManActionPerformed
+    }//GEN-LAST:event_PharmacyAMOAssignDeliveryManButtonActionPerformed
 
-    private void tblOrdersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblOrdersMouseClicked
+    private void PharmacyTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PharmacyTable2MouseClicked
         // TODO add your handling code here:
-        int selectedRow = tblOrders.getSelectedRow();
+        int selectedRow = PharmacyTable2.getSelectedRow();
         if (selectedRow >= 0)
         {
-            comboDeliveryMen.setEnabled(true);
-            btnDelete.setEnabled(true);
-            btnAssignDeliveryMan.setEnabled(true);
+            PharmacyAMOCombo.setEnabled(true);
+            PharmacyAMODeleteButton.setEnabled(true);
+            PharmacyAMOAssignDeliveryManButton.setEnabled(true);
         }
-    }//GEN-LAST:event_tblOrdersMouseClicked
+    }//GEN-LAST:event_PharmacyTable2MouseClicked
 
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+    private void PharmacyAMODeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyAMODeleteButtonActionPerformed
         // TODO add your handling code here:
-        int selectedRow = tblOrders.getSelectedRow();
+        int selectedRow = PharmacyTable2.getSelectedRow();
         if (selectedRow >= 0)
         {
-            Orders orders = (Orders) tblOrders.getValueAt(selectedRow, 0);
+            Orders orders = (Orders) PharmacyTable2.getValueAt(selectedRow, 0);
             pharmacy.deleteOrder(orders);
             JOptionPane.showMessageDialog(null, "Order deleted successfully!");
             populateTable();
@@ -207,31 +207,31 @@ public class AdminManageOrders extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_btnDeleteActionPerformed
+    }//GEN-LAST:event_PharmacyAMODeleteButtonActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void PharmacyAMOBackButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyAMOBackButton2ActionPerformed
         // TODO add your handling code here:
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_PharmacyAMOBackButton2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAssignDeliveryMan;
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnDelete;
-    private javax.swing.JComboBox<String> comboDeliveryMen;
-    private javax.swing.JLabel enterpriseLabel;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton PharmacyAMOAssignDeliveryManButton;
+    private javax.swing.JButton PharmacyAMOBackButton2;
+    private javax.swing.JComboBox<String> PharmacyAMOCombo;
+    private javax.swing.JLabel PharmacyAMOCurrentOrdersLabel;
+    private javax.swing.JButton PharmacyAMODeleteButton;
+    private javax.swing.JLabel PharmacyAMOLabel;
+    private javax.swing.JLabel PharmacyAMOLabel2;
+    private javax.swing.JLabel PharmacyAMOvalueLabel2;
+    private javax.swing.JTable PharmacyTable2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tblOrders;
-    private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables
 
     private void populateTable() {
-       DefaultTableModel dtm = (DefaultTableModel)tblOrders.getModel();
+       DefaultTableModel dtm = (DefaultTableModel)PharmacyTable2.getModel();
         dtm.setRowCount(0);
         if(pharmacy.getOrderDirectory().getOrderList() != null)
         {
@@ -241,7 +241,7 @@ public class AdminManageOrders extends javax.swing.JPanel {
                 {
                     Object[] row = new Object[dtm.getColumnCount()];
                     row[0] = orders;
-                    row[1] = orders.getCustomer().getCustomerName();
+                    row[1] = orders.getCustomer().getName();
                     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
                     row[2] = orders.getOrderDate().format(formatter);
                     if(orders.getDeliveryMan() == null)
@@ -258,8 +258,8 @@ public class AdminManageOrders extends javax.swing.JPanel {
         }
         if(dtm.getRowCount() == 0)
             {
-                comboDeliveryMen.setEnabled(false);
-                btnAssignDeliveryMan.setEnabled(false);
+                PharmacyAMOCombo.setEnabled(false);
+                PharmacyAMOAssignDeliveryManButton.setEnabled(false);
             }
     }
 }

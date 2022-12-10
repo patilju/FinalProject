@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class PharmacyRequestJPanel extends javax.swing.JPanel {
 private JPanel userProcessContainer;
@@ -27,8 +27,8 @@ private JPanel userProcessContainer;
          this.userProcessContainer = userProcessContainer;
         
         this.so = so;
-        enterpriseLabel.setText("OrderID: " + so);
-        messageJTextField.setText(so.getMessage());
+        PharmacyRLabel1.setText("OrderID: " + so);
+        PharmacyRText1.setText(so.getMessage());
     }
 
     /**
@@ -40,63 +40,61 @@ private JPanel userProcessContainer;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        requestTestJButton = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        messageJTextField = new javax.swing.JTextField();
-        backJButton = new javax.swing.JButton();
-        enterpriseLabel = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        PharmacyRSubmitButton = new javax.swing.JButton();
+        PharmacyRLabel2 = new javax.swing.JLabel();
+        PharmacyRText1 = new javax.swing.JTextField();
+        PharmacyRBackButton = new javax.swing.JButton();
+        PharmacyRLabel1 = new javax.swing.JLabel();
+        PharmacyRLabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        requestTestJButton.setBackground(new java.awt.Color(255, 255, 255));
-        requestTestJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        requestTestJButton.setText("Submit Message");
-        requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
+        PharmacyRSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyRSubmitButton.setText("Submit Message");
+        PharmacyRSubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                requestTestJButtonActionPerformed(evt);
+                PharmacyRSubmitButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton);
-        requestTestJButton.setBounds(1040, 330, 170, 60);
+        add(PharmacyRSubmitButton);
+        PharmacyRSubmitButton.setBounds(1040, 330, 170, 60);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel1.setText("                   Message: ");
-        add(jLabel1);
-        jLabel1.setBounds(730, 100, 170, 60);
+        PharmacyRLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyRLabel2.setText("                   Message: ");
+        add(PharmacyRLabel2);
+        PharmacyRLabel2.setBounds(730, 100, 170, 60);
 
-        messageJTextField.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        messageJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(messageJTextField);
-        messageJTextField.setBounds(970, 100, 290, 60);
+        PharmacyRText1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyRText1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyRText1);
+        PharmacyRText1.setBounds(970, 100, 290, 60);
 
-        backJButton.setBackground(new java.awt.Color(255, 255, 255));
-        backJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        backJButton.setText("<<Back");
-        backJButton.addActionListener(new java.awt.event.ActionListener() {
+        PharmacyRBackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyRBackButton.setText("<<Back");
+        PharmacyRBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backJButtonActionPerformed(evt);
+                PharmacyRBackButtonActionPerformed(evt);
             }
         });
-        add(backJButton);
-        backJButton.setBounds(630, 330, 170, 60);
+        add(PharmacyRBackButton);
+        PharmacyRBackButton.setBounds(630, 330, 170, 60);
 
-        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        enterpriseLabel.setText("<>");
-        add(enterpriseLabel);
-        enterpriseLabel.setBounds(45, 90, 170, 30);
+        PharmacyRLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        PharmacyRLabel1.setText("<>");
+        add(PharmacyRLabel1);
+        PharmacyRLabel1.setBounds(45, 90, 170, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (6).png"))); // NOI18N
-        add(jLabel2);
-        jLabel2.setBounds(10, 0, 1530, 860);
+        PharmacyRLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (6).png"))); // NOI18N
+        add(PharmacyRLabel);
+        PharmacyRLabel.setBounds(10, 0, 1530, 860);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
+    private void PharmacyRSubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyRSubmitButtonActionPerformed
 
-        if(messageJTextField.getText() != "")
+        if(PharmacyRText1.getText() != "")
         {
-            so.setMessage(messageJTextField.getText());
+            so.setMessage(PharmacyRText1.getText());
             JOptionPane.showMessageDialog(null, "Message updated successfully");
         }
         else
@@ -104,9 +102,9 @@ private JPanel userProcessContainer;
             JOptionPane.showMessageDialog(null,"Message cannot be empty!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_requestTestJButtonActionPerformed
+    }//GEN-LAST:event_PharmacyRSubmitButtonActionPerformed
 
-    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
+    private void PharmacyRBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyRBackButtonActionPerformed
 
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
@@ -115,15 +113,15 @@ private JPanel userProcessContainer;
         dwjp.populateRequestTable();
         CardLayout layout = (CardLayout)userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_backJButtonActionPerformed
+    }//GEN-LAST:event_PharmacyRBackButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton backJButton;
-    private javax.swing.JLabel enterpriseLabel;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField messageJTextField;
-    private javax.swing.JButton requestTestJButton;
+    private javax.swing.JButton PharmacyRBackButton;
+    private javax.swing.JLabel PharmacyRLabel;
+    private javax.swing.JLabel PharmacyRLabel1;
+    private javax.swing.JLabel PharmacyRLabel2;
+    private javax.swing.JButton PharmacyRSubmitButton;
+    private javax.swing.JTextField PharmacyRText1;
     // End of variables declaration//GEN-END:variables
 }

@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class PharmacySummaryJPanel extends javax.swing.JPanel {
 private JPanel userProcessContainer;
@@ -38,7 +38,7 @@ private JPanel userProcessContainer;
         this.system = system;
         System.out.println(system.getPharmacyDirectory().getPharmacyList());
         this.pharmacy = pharmacy;
-        enterpriseLabel.setText(this.pharmacy + "'s orders");
+        PharmacySLabel1.setText(this.pharmacy + "'s orders");
         populateRequestTable();
     }
 
@@ -53,11 +53,11 @@ private JPanel userProcessContainer;
 
         jScrollPane1 = new javax.swing.JScrollPane();
         workRequestJTable = new javax.swing.JTable();
-        requestTestJButton = new javax.swing.JButton();
-        refreshTestJButton = new javax.swing.JButton();
-        enterpriseLabel = new javax.swing.JLabel();
-        btnBack = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        PharmacySAddButton = new javax.swing.JButton();
+        PharmacySRefreshButton = new javax.swing.JButton();
+        PharmacySLabel1 = new javax.swing.JLabel();
+        PharmacySBackButton = new javax.swing.JButton();
+        PharmacySLabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
@@ -91,53 +91,50 @@ private JPanel userProcessContainer;
         add(jScrollPane1);
         jScrollPane1.setBounds(10, 148, 1430, 110);
 
-        requestTestJButton.setBackground(new java.awt.Color(255, 255, 255));
-        requestTestJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        requestTestJButton.setText("Add Message >");
-        requestTestJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
+        PharmacySAddButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacySAddButton.setText("Add Message >");
+        PharmacySAddButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacySAddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                requestTestJButtonActionPerformed(evt);
+                PharmacySAddButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton);
-        requestTestJButton.setBounds(1235, 300, 200, 50);
+        add(PharmacySAddButton);
+        PharmacySAddButton.setBounds(1235, 300, 200, 50);
 
-        refreshTestJButton.setBackground(new java.awt.Color(255, 255, 255));
-        refreshTestJButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        refreshTestJButton.setText("Refresh");
-        refreshTestJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
+        PharmacySRefreshButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacySRefreshButton.setText("Refresh");
+        PharmacySRefreshButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacySRefreshButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                refreshTestJButtonActionPerformed(evt);
+                PharmacySRefreshButtonActionPerformed(evt);
             }
         });
-        add(refreshTestJButton);
-        refreshTestJButton.setBounds(1236, 30, 200, 60);
+        add(PharmacySRefreshButton);
+        PharmacySRefreshButton.setBounds(1236, 30, 200, 60);
 
-        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
-        enterpriseLabel.setText("<>");
-        add(enterpriseLabel);
-        enterpriseLabel.setBounds(24, 113, 251, 30);
+        PharmacySLabel1.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
+        PharmacySLabel1.setText("<>");
+        add(PharmacySLabel1);
+        PharmacySLabel1.setBounds(24, 113, 251, 30);
 
-        btnBack.setBackground(new java.awt.Color(255, 255, 255));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnBack.setText("< Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        PharmacySBackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacySBackButton.setText("< Back");
+        PharmacySBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacySBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                PharmacySBackButtonActionPerformed(evt);
             }
         });
-        add(btnBack);
-        btnBack.setBounds(10, 282, 180, 60);
+        add(PharmacySBackButton);
+        PharmacySBackButton.setBounds(10, 282, 180, 60);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Pharmacy_Summary_Image.jpg"))); // NOI18N
-        add(jLabel1);
-        jLabel1.setBounds(180, 190, 1420, 780);
+        PharmacySLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Pharmacy_Summary_Image.jpg"))); // NOI18N
+        add(PharmacySLabel);
+        PharmacySLabel.setBounds(180, 190, 1420, 780);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
+    private void PharmacySAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacySAddButtonActionPerformed
 
         int selectedRow = workRequestJTable.getSelectedRow();
         if (selectedRow >= 0)
@@ -161,9 +158,9 @@ private JPanel userProcessContainer;
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_requestTestJButtonActionPerformed
+    }//GEN-LAST:event_PharmacySAddButtonActionPerformed
 
-    private void refreshTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshTestJButtonActionPerformed
+    private void PharmacySRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacySRefreshButtonActionPerformed
         if(workRequestJTable.getRowCount() > 0)
         {
             populateRequestTable();
@@ -173,23 +170,23 @@ private JPanel userProcessContainer;
         {
             JOptionPane.showMessageDialog(null,"Nothing to refresh!", "Warning", JOptionPane.WARNING_MESSAGE);
         }
-    }//GEN-LAST:event_refreshTestJButtonActionPerformed
+    }//GEN-LAST:event_PharmacySRefreshButtonActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void PharmacySBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacySBackButtonActionPerformed
         // TODO add your handling code here:
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_PharmacySBackButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JLabel enterpriseLabel;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton PharmacySAddButton;
+    private javax.swing.JButton PharmacySBackButton;
+    private javax.swing.JLabel PharmacySLabel;
+    private javax.swing.JLabel PharmacySLabel1;
+    private javax.swing.JButton PharmacySRefreshButton;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton refreshTestJButton;
-    private javax.swing.JButton requestTestJButton;
     private javax.swing.JTable workRequestJTable;
     // End of variables declaration//GEN-END:variables
 public void populateRequestTable() {
@@ -198,8 +195,8 @@ public void populateRequestTable() {
             DefaultTableModel dtm = (DefaultTableModel)workRequestJTable.getModel();
             dtm.setRowCount(0);
             
-            refreshTestJButton.setEnabled(true);
-            requestTestJButton.setEnabled(true);
+            PharmacySRefreshButton.setEnabled(true);
+            PharmacySAddButton.setEnabled(true);
             int count = 1;
             for(SupplierOrders so : pharmacy.getPastSupplierOrderList())
             {

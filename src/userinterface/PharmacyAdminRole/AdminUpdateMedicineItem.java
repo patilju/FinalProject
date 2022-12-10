@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class AdminUpdateMedicineItem extends javax.swing.JPanel {
 
@@ -29,8 +29,8 @@ public class AdminUpdateMedicineItem extends javax.swing.JPanel {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.medicineItem = mi;
-        txtName.setText(mi.getName());
-        jSpinPrice.setValue(mi.getPrice());
+        PharmacyAUMINameText.setText(mi.getName());
+        PharmacyAUMIPriceSpin.setValue(mi.getPrice());
     }
 
     /**
@@ -42,81 +42,79 @@ public class AdminUpdateMedicineItem extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jSpinPrice = new javax.swing.JSpinner();
-        btnSubmit = new javax.swing.JButton();
-        enterpriseLabel = new javax.swing.JLabel();
-        btnBack = new javax.swing.JButton();
-        txtName = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        PharmacyAUMINameLabel = new javax.swing.JLabel();
+        PharmacyAUMIPriceLabel = new javax.swing.JLabel();
+        PharmacyAUMIPriceSpin = new javax.swing.JSpinner();
+        PharmacyAMUISubmitButton = new javax.swing.JButton();
+        PharmacyAMUIUpdateMedicineLabel = new javax.swing.JLabel();
+        PharmacyAUMIBackButton = new javax.swing.JButton();
+        PharmacyAUMINameText = new javax.swing.JTextField();
+        PharmacyAMUILabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel2.setText("             Name:");
-        add(jLabel2);
-        jLabel2.setBounds(51, 88, 80, 50);
+        PharmacyAUMINameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAUMINameLabel.setText("             Name:");
+        add(PharmacyAUMINameLabel);
+        PharmacyAUMINameLabel.setBounds(51, 88, 80, 50);
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel3.setText("               Price:");
-        add(jLabel3);
-        jLabel3.setBounds(47, 165, 80, 50);
+        PharmacyAUMIPriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAUMIPriceLabel.setText("               Price:");
+        add(PharmacyAUMIPriceLabel);
+        PharmacyAUMIPriceLabel.setBounds(47, 165, 80, 50);
 
-        jSpinPrice.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jSpinPrice.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jSpinPrice);
-        jSpinPrice.setBounds(147, 165, 460, 60);
+        PharmacyAUMIPriceSpin.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyAUMIPriceSpin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyAUMIPriceSpin);
+        PharmacyAUMIPriceSpin.setBounds(147, 165, 460, 60);
 
-        btnSubmit.setBackground(new java.awt.Color(255, 255, 255));
-        btnSubmit.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnSubmit.setText("Submit");
-        btnSubmit.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
+        PharmacyAMUISubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAMUISubmitButton.setText("Submit");
+        PharmacyAMUISubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyAMUISubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSubmitActionPerformed(evt);
+                PharmacyAMUISubmitButtonActionPerformed(evt);
             }
         });
-        add(btnSubmit);
-        btnSubmit.setBounds(430, 290, 170, 60);
+        add(PharmacyAMUISubmitButton);
+        PharmacyAMUISubmitButton.setBounds(430, 290, 170, 60);
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        enterpriseLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        enterpriseLabel.setText("Update Medicine");
-        add(enterpriseLabel);
-        enterpriseLabel.setBounds(233, 35, 197, 30);
+        PharmacyAMUIUpdateMedicineLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        PharmacyAMUIUpdateMedicineLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PharmacyAMUIUpdateMedicineLabel.setText("Update Medicine");
+        add(PharmacyAMUIUpdateMedicineLabel);
+        PharmacyAMUIUpdateMedicineLabel.setBounds(233, 35, 197, 30);
 
-        btnBack.setBackground(new java.awt.Color(255, 255, 255));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnBack.setText("< Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        PharmacyAUMIBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAUMIBackButton.setText("< Back");
+        PharmacyAUMIBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyAUMIBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                PharmacyAUMIBackButtonActionPerformed(evt);
             }
         });
-        add(btnBack);
-        btnBack.setBounds(150, 290, 110, 60);
+        add(PharmacyAUMIBackButton);
+        PharmacyAUMIBackButton.setBounds(150, 290, 110, 60);
 
-        txtName.setEditable(false);
-        txtName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(txtName);
-        txtName.setBounds(147, 87, 460, 60);
+        PharmacyAUMINameText.setEditable(false);
+        PharmacyAUMINameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyAUMINameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyAUMINameText);
+        PharmacyAUMINameText.setBounds(147, 87, 460, 60);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Update_Medicine_Image_Final.png"))); // NOI18N
-        add(jLabel1);
-        jLabel1.setBounds(10, 20, 1460, 790);
+        PharmacyAMUILabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAMUILabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Update_Medicine_Image_Final.png"))); // NOI18N
+        add(PharmacyAMUILabel);
+        PharmacyAMUILabel.setBounds(10, 20, 1460, 790);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
+    private void PharmacyAMUISubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyAMUISubmitButtonActionPerformed
         // TODO add your handling code here:
 
-        if((Integer)jSpinPrice.getValue() > 0)
+        if((Integer)PharmacyAUMIPriceSpin.getValue() > 0)
         {
-            medicineItem.setPrice((Integer)jSpinPrice.getValue());
+            medicineItem.setPrice((Integer)PharmacyAUMIPriceSpin.getValue());
             JOptionPane.showMessageDialog(null, "Medicine " + medicineItem.getName()+ " updated successfully!");
         }
         else
@@ -124,9 +122,9 @@ public class AdminUpdateMedicineItem extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Price must be greater than 0!", "Warning", JOptionPane.WARNING_MESSAGE);
         }
 
-    }//GEN-LAST:event_btnSubmitActionPerformed
+    }//GEN-LAST:event_PharmacyAMUISubmitButtonActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void PharmacyAUMIBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyAUMIBackButtonActionPerformed
         // TODO add your handling code here:
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
@@ -135,17 +133,17 @@ public class AdminUpdateMedicineItem extends javax.swing.JPanel {
         dwjp.populateTable();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_PharmacyAUMIBackButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnSubmit;
-    private javax.swing.JLabel enterpriseLabel;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JSpinner jSpinPrice;
-    private javax.swing.JTextField txtName;
+    private javax.swing.JLabel PharmacyAMUILabel;
+    private javax.swing.JButton PharmacyAMUISubmitButton;
+    private javax.swing.JLabel PharmacyAMUIUpdateMedicineLabel;
+    private javax.swing.JButton PharmacyAUMIBackButton;
+    private javax.swing.JLabel PharmacyAUMINameLabel;
+    private javax.swing.JTextField PharmacyAUMINameText;
+    private javax.swing.JLabel PharmacyAUMIPriceLabel;
+    private javax.swing.JSpinner PharmacyAUMIPriceSpin;
     // End of variables declaration//GEN-END:variables
 }
