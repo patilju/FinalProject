@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class SupplierOrdersDirectory {
     private ArrayList<SupplierOrders> supplierOrderList;

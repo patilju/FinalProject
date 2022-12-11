@@ -16,14 +16,14 @@ import Business.SupplierOrders.SupplierOrdersDirectory;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class Supplier {
-    private String name;
-    private String address;
-    private String email;
-    private String phone;
-    private int id;
+    private String SupplierName;
+    private String SupplierAddress;
+    private String SupplierEmail;
+    private String SupplierContactNo;
+    private int SupplierId;
     private static int count = 1;
     private SupplierDeliveryManDirectory supplierDeliveryManDirectory;
     private EmployeeDirectory employeeDirectory;
@@ -31,7 +31,7 @@ public class Supplier {
     private SupplierMedicineCatalog supplierMedicineCatalog;
 
     public Supplier() {
-        id = count;
+        SupplierId = count;
         count++;
         this.supplierDeliveryManDirectory = new SupplierDeliveryManDirectory();
         this.employeeDirectory = new EmployeeDirectory();
@@ -39,12 +39,12 @@ public class Supplier {
         this.supplierMedicineCatalog = new SupplierMedicineCatalog();
     }
     
-    public String getAddress() {
-        return address;
+    public String getSupplierAddress() {
+        return SupplierAddress;
     }
 
-    public int getId() {
-        return id;
+    public int getSupplierId() {
+        return SupplierId;
     }
 
     public SupplierDeliveryManDirectory getSupplierDeliveryManDirectory() {
@@ -55,38 +55,38 @@ public class Supplier {
         return employeeDirectory;
     }
     
-    public void setName(String name) {
-        this.name = name;
+    public void setSupplierName(String SupplierName) {
+        this.SupplierName = SupplierName;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setSupplierAddress(String SupplierAddress) {
+        this.SupplierAddress = SupplierAddress;
     }
 
-    public String getName() {
-        return name;
+    public String getSupplierName() {
+        return SupplierName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getSupplierEmail() {
+        return SupplierEmail;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setSupplierEmail(String SupplierEmail) {
+        this.SupplierEmail = SupplierEmail;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getSupplierContactNo() {
+        return SupplierContactNo;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setSupplierContactNo(String SupplierContactNo) {
+        this.SupplierContactNo = SupplierContactNo;
     }
     
 
     @Override
     public String toString() {
-        return name;
+        return SupplierName;
     }
 
     public SupplierOrdersDirectory getSupplierOrderDirectory() {
@@ -106,7 +106,7 @@ public class Supplier {
     {
         for(SupplierDeliveryMan sdm : this.supplierDeliveryManDirectory.getSupplierDeliveryManList())
         {
-            if(sdm.getName().equals(name))
+            if(sdm.getSupplierDmName().equals(name))
             {
                 return sdm;
             }

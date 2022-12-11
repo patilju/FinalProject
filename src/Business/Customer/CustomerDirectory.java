@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class CustomerDirectory {
   private ArrayList<Customer> customerList;
@@ -21,8 +21,8 @@ public class CustomerDirectory {
     public Customer createCustomer(String name, String address, String phone){
         Customer customer = new Customer();
         customer.setCustomerName(name);
-        customer.setAddress(address);
-        customer.setPhone(phone);
+        customer.setCustomerAddress(address);
+        customer.setCustomerContactNo(phone);
 
         customerList.add(customer);
         return customer;

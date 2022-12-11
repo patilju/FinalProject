@@ -7,52 +7,52 @@ package Business.SupplierDeliveryMan;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class SupplierDeliveryMan {
-  private String name;
-    private String phone;
-    private String address;
-    private int id;
+  private String SupplierDmName;
+    private String SupplierDmContact;
+    private String SupplierDmAddress;
+    private int SupplierDmId;
     private static int count = 1;
 
     public SupplierDeliveryMan() {
-        id = count;
+        SupplierDmId = count;
         count++;
     }
 
-    public int getId() {
-        return id;
+    public int getSupplierDmId() {
+        return SupplierDmId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSupplierDmName(String SupplierDmName) {
+        this.SupplierDmName = SupplierDmName;
     }
 
     
-    public String getName() {
-        return name;
+    public String getSupplierDmName() {
+        return SupplierDmName;
     }
 
     @Override
     public String toString() {
-        return name;
+        return SupplierDmName;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getSupplierDmContact() {
+        return SupplierDmContact;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setSupplierDmContact(String SupplierDmContact) {
+        this.SupplierDmContact = SupplierDmContact;
     }
 
-    public String getAddress() {
-        return address;
+    public String getSupplierDmAddress() {
+        return SupplierDmAddress;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setSupplierDmAddress(String SupplierDmAddress) {
+        this.SupplierDmAddress = SupplierDmAddress;
     }    
 
   

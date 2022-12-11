@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class SupplierMedicineCatalog {
      private ArrayList<SupplierMedicineItem> suppliermedicineCatalogList;
@@ -24,7 +24,7 @@ public class SupplierMedicineCatalog {
     
     public boolean checkIfSupplierMedicineItemIsUnique(String name){
         for (SupplierMedicineItem smi : suppliermedicineCatalogList){
-            if (smi.getName() == name)
+            if (smi.getSupplierMedicineName() == name)
                 return false;
         }
         return true;

@@ -7,52 +7,52 @@ package Business.SupplierEmp;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class SupplierEmp {
-    private String name;
-    private String address;
-    private String phone;    
-    private int id;
+    private String SupplierEmpName;
+    private String SupplierEmpAddress;
+    private String SupplierEmpContact;    
+    private int SupplierEmpId;
     private static int count = 1;
 
     public SupplierEmp() {
-        id = count;
+        SupplierEmpId = count;
         count++;
     }
 
-    public int getId() {
-        return id;
+    public int getSupplierEmpId() {
+        return SupplierEmpId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSupplierEmpName(String SupplierEmpName) {
+        this.SupplierEmpName = SupplierEmpName;
     }
 
     
-    public String getName() {
-        return name;
+    public String getSupplierEmpName() {
+        return SupplierEmpName;
     }
 
-    public String getAddress() {
-        return address;
+    public String getSupplierEmpAddress() {
+        return SupplierEmpAddress;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setSupplierEmpAddress(String SupplierEmpAddress) {
+        this.SupplierEmpAddress = SupplierEmpAddress;
     }
     
-    public String getPhone() {
-        return phone;
+    public String getSupplierEmpContact() {
+        return SupplierEmpContact;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setSupplierEmpContact(String SupplierEmpContact) {
+        this.SupplierEmpContact = SupplierEmpContact;
     } 
 
     @Override
     public String toString() {
-        return name;
+        return SupplierEmpName;
     }
  
 

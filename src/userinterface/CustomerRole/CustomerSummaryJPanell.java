@@ -38,7 +38,7 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
         for(Customer c : system.getCustomerDirectory().getCustomerList() )
         {
             
-                if(c.getCustomerName() == null ? user.getEmployee().getName() == null : c.getCustomerName().equals(user.getEmployee().getName()))
+                if(c.getCustomerName() == null ? user.getEmployee().getEmployeeName() == null : c.getCustomerName().equals(user.getEmployee().getEmployeeName()))
                 {
                     this.customer = c;
                 }

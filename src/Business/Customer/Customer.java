@@ -10,26 +10,26 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class Customer {
     private String CustomerName;
-    private int id;
-    private String address;
-    private String phone;
+    private int CustomerId;
+    private String CustomerAddress;
+    private String CustomerContactNo;
    
 
     private static int count = 1;
     private ArrayList<Orders> PastOrderList;
 
     public Customer() {
-        id = count;
+        CustomerId = count;
         count++;
         this.PastOrderList = new ArrayList<Orders>();
     }
 
-    public int getId() {
-        return id;
+    public int getCustomerId() {
+        return CustomerId;
     }
 
     public void setCustomerName(String CustomerName) {
@@ -46,24 +46,24 @@ public class Customer {
         return CustomerName;
     }
 
-    public String getAddress() {
-        return address;
+    public String getCustomerAddress() {
+        return CustomerAddress;
     }
 
     public ArrayList<Orders> getPastOrderList() {
         return PastOrderList;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setCustomerAddress(String CustomerAddress) {
+        this.CustomerAddress = CustomerAddress;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getCustomerContactNo() {
+        return CustomerContactNo;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setCustomerContactNo(String CustomerContactNo) {
+        this.CustomerContactNo = CustomerContactNo;
     }
 
     

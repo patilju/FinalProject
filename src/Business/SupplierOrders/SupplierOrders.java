@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class SupplierOrders {
     private Pharmacy pharmacy;
@@ -78,7 +78,7 @@ public class SupplierOrders {
         int sum = 0;
         for(SupplierMedicineItem smi : this.getSupplierMedicineItemList())
         {
-            sum = sum + smi.getPrice();
+            sum = sum + smi.getSupplierMedicinePrice();
         }
         this.totalAmount = sum;
         return sum;

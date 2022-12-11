@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class SupplierDirectory {
   private ArrayList<Supplier> supplierList;
@@ -25,8 +25,8 @@ public class SupplierDirectory {
         Supplier supplier = new Supplier();
         if(this.checkIfSupplierIsUnique(name))
         {
-            supplier.setName(name);
-            supplier.setAddress(address);
+            supplier.setSupplierName(name);
+            supplier.setSupplierAddress(address);
             supplierList.add(supplier);
             return supplier;
         }
@@ -39,7 +39,7 @@ public class SupplierDirectory {
     
     public boolean checkIfSupplierIsUnique(String supplier){
         for (Supplier s : supplierList){
-            if (s.getName().equals(supplier))
+            if (s.getSupplierName().equals(supplier))
                 return false;
         }
         return true;
@@ -63,7 +63,7 @@ public class SupplierDirectory {
     {
         for(Supplier s : supplierList)
         {
-            if(s.getName().equals(name))
+            if(s.getSupplierName().equals(name))
             {
                 return s;
             }

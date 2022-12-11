@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class SupplierDeliveryManDirectory {
     private ArrayList<SupplierDeliveryMan> supplierDeliveryManList;
@@ -25,9 +25,9 @@ public class SupplierDeliveryManDirectory {
     
     public SupplierDeliveryMan createSupplierDeliveryMan(String name, String phone, String address){
         SupplierDeliveryMan supplierDeliveryMan = new SupplierDeliveryMan();
-        supplierDeliveryMan.setName(name);
-        supplierDeliveryMan.setPhone(phone);
-        supplierDeliveryMan.setAddress(address);
+        supplierDeliveryMan.setSupplierDmName(name);
+        supplierDeliveryMan.setSupplierDmContact(phone);
+        supplierDeliveryMan.setSupplierDmAddress(address);
         supplierDeliveryManList.add(supplierDeliveryMan);
         return supplierDeliveryMan;
     }    

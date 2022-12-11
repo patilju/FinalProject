@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class PharmacyDirectory {
     private ArrayList<Pharmacy> pharmacyList;
@@ -23,8 +23,8 @@ public class PharmacyDirectory {
         Pharmacy pharmacy = new Pharmacy();
         if(this.checkIfPharmacyIsUnique(name))
         {
-            pharmacy.setName(name);
-            pharmacy.setAddress(address);
+            pharmacy.setPharmacyName(name);
+            pharmacy.setPharmacyAddress(address);
             pharmacyList.add(pharmacy);
             return pharmacy;
         }
@@ -37,7 +37,7 @@ public class PharmacyDirectory {
     
     public boolean checkIfPharmacyIsUnique(String pharmacy){
         for (Pharmacy p : pharmacyList){
-            if (p.getName().equals(pharmacy))
+            if (p.getPharmacyName().equals(pharmacy))
                 return false;
         }
         return true;
@@ -61,7 +61,7 @@ public class PharmacyDirectory {
     {
         for(Pharmacy p : pharmacyList)
         {
-            if(p.getName().equals(name))
+            if(p.getPharmacyName().equals(name))
             {
                 return p;
             }

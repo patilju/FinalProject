@@ -7,43 +7,43 @@ package Business.SupplierMedicineItem;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class SupplierMedicineItem {
-   private int id;
-    private String name;
-    private int price;
+   private int SupplierMedicineId;
+    private String SupplierMedicineName;
+    private int SupplierMedicinePrice;
     private static int count = 1;
 
     public SupplierMedicineItem(String name, int price) {
-        id = count;
+        SupplierMedicineId = count;
         count++;
-        this.name = name;
-        this.price = price;
+        this.SupplierMedicineName = name;
+        this.SupplierMedicinePrice = price;
     }
 
-    public int getId() {
-        return id;
+    public int getSupplierMedicineId() {
+        return SupplierMedicineId;
     }
 
-    public String getName() {
-        return name;
+    public String getSupplierMedicineName() {
+        return SupplierMedicineName;
     }
 
-    public int getPrice() {
-        return price;
+    public int getSupplierMedicinePrice() {
+        return SupplierMedicinePrice;
     }
 
      
     
     @Override
     public String toString() {
-        return name;
+        return SupplierMedicineName;
     }
     
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setSupplierMedicinePrice(int SupplierMedicinePrice) {
+        this.SupplierMedicinePrice = SupplierMedicinePrice;
     }
     
  

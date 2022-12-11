@@ -42,9 +42,9 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         
         for(Pharmacy p : business.getPharmacyDirectory().getPharmacyList())
         {
-            if(p.findDeliveryMan(account.getEmployee().getName()) != null)
+            if(p.findDeliveryMan(account.getEmployee().getEmployeeName()) != null)
             {
-                this.deliveryMan = p.findDeliveryMan(account.getEmployee().getName());
+                this.deliveryMan = p.findDeliveryMan(account.getEmployee().getEmployeeName());
                 this.pharmacy = p;
                 break;
             }

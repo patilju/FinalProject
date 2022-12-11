@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class EmployeeDirectory {
      private ArrayList<Employee> employeeList;
@@ -26,9 +26,9 @@ public class EmployeeDirectory {
         if(this.checkIfEmployeeIsUnique(name))
         {
         Employee employee = new Employee();
-        employee.setName(name);
-        employee.setAddress(address);
-        employee.setPhone(phone);
+        employee.setEmployeeName(name);
+        employee.setEmployeeAddress(address);
+        employee.setEmployeeContactNo(phone);
         employeeList.add(employee);
         return employee;
     }
@@ -37,7 +37,7 @@ public class EmployeeDirectory {
 
     public boolean checkIfEmployeeIsUnique(String username){
         for (Employee ua : employeeList){
-            if (ua.getName().equals(username))
+            if (ua.getEmployeeName().equals(username))
                 return false;
         }
         return true;

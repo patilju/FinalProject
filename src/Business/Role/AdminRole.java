@@ -12,7 +12,7 @@ import userinterface.PharmacyAdminRole.AdminWorkAreaJPanel;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class AdminRole extends Role{
     private RoleType roleType;

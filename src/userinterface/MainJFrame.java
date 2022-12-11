@@ -61,7 +61,7 @@ public class MainJFrame extends javax.swing.JFrame {
         loginJLabel = new javax.swing.JLabel();
         logoutButton = new javax.swing.JButton();
         container = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -134,7 +134,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addComponent(loginButton)
                 .addGap(18, 18, 18)
                 .addComponent(logoutButton)
-                .addContainerGap(401, Short.MAX_VALUE))
+                .addContainerGap(581, Short.MAX_VALUE))
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
@@ -142,11 +142,13 @@ public class MainJFrame extends javax.swing.JFrame {
         container.setBackground(new java.awt.Color(255, 255, 255));
         container.setLayout(new java.awt.CardLayout());
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/online pharmacy store.jpg"))); // NOI18N
-        jLabel4.setMaximumSize(new java.awt.Dimension(1024, 680));
-        jLabel4.setMinimumSize(new java.awt.Dimension(1024, 680));
-        jLabel4.setPreferredSize(new java.awt.Dimension(1024, 80));
-        container.add(jLabel4, "card2");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/online pharmacy store.jpg"))); // NOI18N
+        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel1.setMaximumSize(new java.awt.Dimension(1000, 860));
+        jLabel1.setMinimumSize(new java.awt.Dimension(1000, 860));
+        jLabel1.setPreferredSize(new java.awt.Dimension(1000, 860));
+        container.add(jLabel1, "card2");
+        jLabel1.getAccessibleContext().setAccessibleName("");
 
         jSplitPane1.setRightComponent(container);
 
@@ -171,20 +173,20 @@ public class MainJFrame extends javax.swing.JFrame {
            if(user.getRole().toString() == "Business.Role.SystemAdminRole")
            {
                 Employee e = user.getEmployee();
-                JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Admin!");
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Admin!");
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
                 logoutButton.setEnabled(true);
-                SystemAdminWorkAreaJPanel sawajp = new SystemAdminWorkAreaJPanel(container, system);
-                container.add("SysAdminPanel",sawajp);
+                SystemAdminWorkAreaJPanel S = new SystemAdminWorkAreaJPanel(container, system);
+                container.add("SysAdminPanel",S);
                 CardLayout cardlayout = (CardLayout) container.getLayout();
                 cardlayout.next(container);
            }
            else if(user.getRole().toString() == "Business.Role.AdminRole")
            {
                 Employee e = user.getEmployee();
-                JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Pharmacy Manager!");
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Pharmacy Manager!");
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
@@ -197,7 +199,7 @@ public class MainJFrame extends javax.swing.JFrame {
            else if(user.getRole().toString() == "Business.Role.SupplierAdminRole")
            {
                 Employee e = user.getEmployee();
-                JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Supplier Manager!");
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Supplier Manager!");
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
@@ -210,7 +212,7 @@ public class MainJFrame extends javax.swing.JFrame {
            else if(user.getRole().toString() == "Business.Role.CustomerRole")
            {
                 Employee e = user.getEmployee();
-                JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Customer!");
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Customer!");
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
@@ -223,7 +225,7 @@ public class MainJFrame extends javax.swing.JFrame {
            else if(user.getRole().toString() == "Business.Role.SupplierDeliveryManRole")
            {
                 Employee e = user.getEmployee();
-                JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Customer!");
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Customer!");
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
@@ -236,7 +238,7 @@ public class MainJFrame extends javax.swing.JFrame {
            else
            {
                 Employee e = user.getEmployee();
-                JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Delivery Man!");
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Delivery Man!");
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
@@ -327,7 +329,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JPasswordField PasswordText;
     private javax.swing.JLabel UserNameLabel;
     private javax.swing.JPanel container;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JButton loginButton;

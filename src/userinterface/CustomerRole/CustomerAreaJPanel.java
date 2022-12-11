@@ -38,7 +38,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         for(Customer c : system.getCustomerDirectory().getCustomerList() )
         {
             
-                if(c.getCustomerName() == null ? useraccount.getEmployee().getName() == null : c.getCustomerName().equals(useraccount.getEmployee().getName()))
+                if(c.getCustomerName() == null ? useraccount.getEmployee().getEmployeeName() == null : c.getCustomerName().equals(useraccount.getEmployee().getEmployeeName()))
                 {
                     this.customer = c;
                 }
@@ -46,14 +46,14 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         }
         
         CustomerNametext.setText(this.customer.getCustomerName());
-        CustomerAddressText.setText(this.customer.getAddress());
-        CustomerContactText.setText(this.customer.getPhone());
+        CustomerAddressText.setText(this.customer.getCustomerAddress());
+        CustomerContactText.setText(this.customer.getCustomerContactNo());
         
         valueLabel.setText(this.customer.getCustomerName());
         PharmacyComboBox.addItem("");
         for(Pharmacy p : system.getPharmacyDirectory().getPharmacyList())
         {
-            PharmacyComboBox.addItem(p.getName());
+            PharmacyComboBox.addItem(p.getPharmacyName());
         }
     }    
     /**
@@ -211,12 +211,12 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         }
         else
         {
-            customer.setAddress(CustomerAddressText.getText());
-            customer.setPhone(CustomerContactText.getText());
+            customer.setCustomerAddress(CustomerAddressText.getText());
+            customer.setCustomerContactNo(CustomerContactText.getText());
           
                     
         }
-        valueLabel.setText(pharmacy.getName());
+        valueLabel.setText(pharmacy.getPharmacyName());
     }//GEN-LAST:event_SubmitOrdersButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

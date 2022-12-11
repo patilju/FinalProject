@@ -7,43 +7,43 @@ package Business.MedicineItems;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class MedicineItem {
-  private int id;
-    private String name;
-    private int price;
+  private int MedicineId;
+    private String MedicineName;
+    private int MedicinePrice;
     private static int count = 1;
 
     public MedicineItem(String name, int price) {
-        id = count;
+        MedicineId = count;
         count++;
-        this.name = name;
-        this.price = price;
+        this.MedicineName = name;
+        this.MedicinePrice = price;
     }
 
-    public int getId() {
-        return id;
+    public int getMedicineId() {
+        return MedicineId;
     }
 
-    public String getName() {
-        return name;
+    public String getMedicineName() {
+        return MedicineName;
     }
 
-    public int getPrice() {
-        return price;
+    public int getMedicinePrice() {
+        return MedicinePrice;
     }
 
      
     
     @Override
     public String toString() {
-        return name;
+        return MedicineName;
     }
     
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setMedicinePrice(int MedicinePrice) {
+        this.MedicinePrice = MedicinePrice;
     }
     
 }

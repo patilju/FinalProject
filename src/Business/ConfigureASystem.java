@@ -7,25 +7,24 @@ import Business.UserAccount.UserAccount;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class ConfigureASystem {
     
     public static EcoSystem configure(){
         
         EcoSystem system = EcoSystem.getInstance();
-        
-        //Create a network
-        //create an enterprise
-        //initialize some organizations
-        //have some employees 
-        //create user account
-        
-        
-        Employee employee = system.getEmployeeDirectory().createEmployee("RRH", "SomeAddress", "SomePhone");
-                //SupplierEmp supplierEmp = system.getSupplierEmpDirectory().createSupplierEmp("RRH", "SomeAddress", "SomePhone");
+        /*
+        Create a network
+        create an enterprise
+        add organizations
+        add employees 
+        create user account
+        */
+        Employee employee = system.getEmployeeDirectory().createEmployee("to", "SomeAddress", "SomePhone");
+               
 
-        UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+        UserAccount ua = system.getUserAccountDirectory().createUserAccount("a", "a", employee, new SystemAdminRole());
         
         return system;
     }

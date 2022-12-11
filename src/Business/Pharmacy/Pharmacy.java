@@ -19,11 +19,11 @@ import java.util.ArrayList;
  * @author Vini
  */
 public class Pharmacy {
-    private String name;
-    private String address;
-    private String email;
-    private String phone;
-    private int id;
+    private String PharmacyName;
+    private String PharmacyAddress;
+    private String PharmacyEmail;
+    private String PharmacyContactNo;
+    private int PharmacyId;
     private static int count = 1;
     private DeliveryManDirectory deliveryManDirectory;
     private EmployeeDirectory employeeDirectory;
@@ -32,7 +32,7 @@ public class Pharmacy {
     private ArrayList<SupplierOrders> PastSupplierOrderList;
     
     public Pharmacy() {
-        id = count;
+        PharmacyId = count;
         count++;
         this.deliveryManDirectory = new DeliveryManDirectory();
         this.employeeDirectory = new EmployeeDirectory();
@@ -41,12 +41,12 @@ public class Pharmacy {
         this.PastSupplierOrderList = new ArrayList<SupplierOrders>();
     }
     
-    public String getAddress() {
-        return address;
+    public String getPharmacyAddress() {
+        return PharmacyAddress;
     }
 
-    public int getId() {
-        return id;
+    public int getPharmacyId() {
+        return PharmacyId;
     }
 
     public DeliveryManDirectory getDeliveryManDirectory() {
@@ -57,38 +57,38 @@ public class Pharmacy {
         return employeeDirectory;
     }
     
-    public void setName(String name) {
-        this.name = name;
+    public void setPharmacyName(String PharmacyName) {
+        this.PharmacyName = PharmacyName;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setPharmacyAddress(String PharmacyAddress) {
+        this.PharmacyAddress = PharmacyAddress;
     }
 
-    public String getName() {
-        return name;
+    public String getPharmacyName() {
+        return PharmacyName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getPharmacyEmail() {
+        return PharmacyEmail;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPharmacyEmail(String PharmacyEmail) {
+        this.PharmacyEmail = PharmacyEmail;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getPharmacyContactNo() {
+        return PharmacyContactNo;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPharmacyContactNo(String PharmacyContactNo) {
+        this.PharmacyContactNo = PharmacyContactNo;
     }
     
 
     @Override
     public String toString() {
-        return name;
+        return PharmacyName;
     }
 
     public OrderDirectory getOrderDirectory() {
@@ -112,7 +112,7 @@ public class Pharmacy {
     {
         for(DeliveryMan dm : this.deliveryManDirectory.getDeliveryManList())
         {
-            if(dm.getName().equals(name))
+            if(dm.getDeliveryManName().equals(name))
             {
                 return dm;
             }

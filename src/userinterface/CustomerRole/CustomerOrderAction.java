@@ -36,7 +36,7 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         this.customer = customer;
         this.pharma = pharmacy;
-        CustomerPharmacyNameLabel.setText("Pharmacy: " +this.pharma.getName());
+        CustomerPharmacyNameLabel.setText("Pharmacy: " +this.pharma.getPharmacyName());
         populateMedicine(); 
         populateOrder();
         if(COAOrderTable.getRowCount() <= 0)
@@ -207,8 +207,8 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             MedicineItem mi2 = (MedicineItem) MedicineTable.getValueAt(selectedRow, 1);
            
             cart.add(mi2);
-            JOptionPane.showMessageDialog(null, "Medicine Item " + mi2.getName()+ " added to cart successfully!");
-            totalAmount = totalAmount + mi2.getPrice();
+            JOptionPane.showMessageDialog(null, "Medicine Item " + mi2.getMedicineName()+ " added to cart successfully!");
+            totalAmount = totalAmount + mi2.getMedicinePrice();
             populateOrder();
         }
         else
@@ -226,8 +226,8 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             MedicineItem mi1 = (MedicineItem) COAOrderTable.getValueAt(selectedRow1, 1);
             //order.deleteFoodItem(fi);
             cart.remove(mi1);
-            JOptionPane.showMessageDialog(null, "Medicine Item " + mi1.getName()+ " deleted from cart successfully!");
-            totalAmount = totalAmount - mi1.getPrice();
+            JOptionPane.showMessageDialog(null, "Medicine Item " + mi1.getMedicineName()+ " deleted from cart successfully!");
+            totalAmount = totalAmount - mi1.getMedicinePrice();
             populateOrder();
         }
         else
@@ -284,9 +284,9 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             for(MedicineItem mi : pharma.getMedicineCatalog().getMedicineItemList())
             {
                 Object[] row = new Object[dtm.getColumnCount()];
-                row[0] = mi.getId();
+                row[0] = mi.getMedicineId();
                 row[1] = mi;
-                row[2] = mi.getPrice();
+                row[2] = mi.getMedicinePrice();
                 dtm.addRow(row);
             }
         }
@@ -310,7 +310,7 @@ public class CustomerOrderAction extends javax.swing.JPanel {
                 Object[] row = new Object[dtm.getColumnCount()];
                 row[0] = count;
                 row[1] = mi3;
-                row[2] =  mi3.getPrice();
+                row[2] =  mi3.getMedicinePrice();
                 dtm.addRow(row);
                 count++;
             }

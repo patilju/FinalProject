@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class Orders {
   private Customer customer;
@@ -77,7 +77,7 @@ public class Orders {
         int sum = 0;
         for(MedicineItem mi : this.getMedicineItemList())
         {
-            sum = sum + mi.getPrice();
+            sum = sum + mi.getMedicinePrice();
         }
         this.totalAmount = sum;
         return sum;

@@ -7,52 +7,52 @@ package Business.Employee;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class Employee {
-   private String name;
-    private String address;
-    private String phone;    
-    private int id;
+   private String EmployeeName;
+    private String EmployeeAddress;
+    private String EmployeeContactNo;    
+    private int EmployeeId;
     private static int count = 1;
 
     public Employee() {
-        id = count;
+        EmployeeId = count;
         count++;
     }
 
-    public int getId() {
-        return id;
+    public int getEmployeeId() {
+        return EmployeeId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmployeeName(String EmployeeName) {
+        this.EmployeeName = EmployeeName;
     }
 
     
-    public String getName() {
-        return name;
+    public String getEmployeeName() {
+        return EmployeeName;
     }
 
-    public String getAddress() {
-        return address;
+    public String getEmployeeAddress() {
+        return EmployeeAddress;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setEmployeeAddress(String EmployeeAddress) {
+        this.EmployeeAddress = EmployeeAddress;
     }
     
-    public String getPhone() {
-        return phone;
+    public String getEmployeeContactNo() {
+        return EmployeeContactNo;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setEmployeeContactNo(String EmployeeContactNo) {
+        this.EmployeeContactNo = EmployeeContactNo;
     } 
 
     @Override
     public String toString() {
-        return name;
+        return EmployeeName;
     }
  
 }

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Vini
+ * @author juile
  */
 public class DeliveryManDirectory {
    private ArrayList<DeliveryMan> deliveryManList;
@@ -24,9 +24,9 @@ public class DeliveryManDirectory {
     
     public DeliveryMan createDeliveryMan(String name, String phone, String address){
         DeliveryMan deliveryMan = new DeliveryMan();
-        deliveryMan.setName(name);
-        deliveryMan.setPhone(phone);
-        deliveryMan.setAddress(address);
+        deliveryMan.setDeliveryManName(name);
+        deliveryMan.setDeliveryManContactNo(phone);
+        deliveryMan.setDeliveryManaAddress(address);
         deliveryManList.add(deliveryMan);
         return deliveryMan;
     }    

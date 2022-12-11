@@ -12,7 +12,7 @@ import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class SystemAdminRole extends Role{
     private Role.RoleType roleType;
