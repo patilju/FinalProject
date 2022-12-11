@@ -17,6 +17,15 @@ public class Customer {
     private int CustomerId;
     private String CustomerAddress;
     private String CustomerContactNo;
+    private String emailId;
+
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
    
 
     private static int count = 1;
