@@ -54,22 +54,35 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/RequestLabTestJPanel.java
         requestTestJButton.setBackground(new java.awt.Color(255, 255, 255));
         requestTestJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         requestTestJButton.setText("Submit Message");
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
+=======
+        RLTrequestTestSubmitButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        RLTrequestTestSubmitButton.setText("Submit Message");
+        RLTrequestTestSubmitButton.addActionListener(new java.awt.event.ActionListener() {
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/RequestLabTestJPanel.java
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestTestJButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/RequestLabTestJPanel.java
         add(requestTestJButton);
         requestTestJButton.setBounds(370, 100, 130, 30);
+=======
+        add(RLTrequestTestSubmitButton);
+        RLTrequestTestSubmitButton.setBounds(560, 170, 200, 40);
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/RequestLabTestJPanel.java
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel1.setText("Message: ");
         add(jLabel1);
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/RequestLabTestJPanel.java
         jLabel1.setBounds(70, 26, 80, 50);
 
         messageJTextField.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -81,10 +94,23 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         backJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
+=======
+        jLabel1.setBounds(180, 80, 80, 50);
+
+        RLTMessageText.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        RLTMessageText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(RLTMessageText);
+        RLTMessageText.setBounds(260, 80, 320, 40);
+
+        RLTBackButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        RLTBackButton.setText("<<Back");
+        RLTBackButton.addActionListener(new java.awt.event.ActionListener() {
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/RequestLabTestJPanel.java
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/RequestLabTestJPanel.java
         add(backJButton);
         backJButton.setBounds(180, 100, 120, 30);
 
@@ -92,6 +118,15 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         enterpriseLabel.setText("<>");
         add(enterpriseLabel);
         enterpriseLabel.setBounds(10, 10, 170, 30);
+=======
+        add(RLTBackButton);
+        RLTBackButton.setBounds(50, 170, 190, 40);
+
+        RLTenterpriseLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        RLTenterpriseLabel.setText("<>");
+        add(RLTenterpriseLabel);
+        RLTenterpriseLabel.setBounds(20, 10, 230, 30);
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/RequestLabTestJPanel.java
         add(jLabel2);
         jLabel2.setBounds(30, 50, 0, 0);
 

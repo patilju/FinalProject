@@ -38,7 +38,8 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         for(Customer c : system.getCustomerDirectory().getCustomerList() )
         {
             
-                if(c.getCustomerName() == null ? useraccount.getEmployee().getName() == null : c.getCustomerName().equals(useraccount.getEmployee().getName()))
+                if(c.getCustomerName() == null ? useraccount.getEmployee().getEmployeeName() == null : c.getCustomerName().equals(useraccount.getEmployee().getEmployeeName()))
+
                 {
                     this.customer = c;
                 }
@@ -46,14 +47,18 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         }
         
         CustomerNametext.setText(this.customer.getCustomerName());
-        CustomerAddressText.setText(this.customer.getAddress());
-        CustomerContactText.setText(this.customer.getPhone());
+
+        CustomerAddressText.setText(this.customer.getCustomerAddress());
+        CustomerContactText.setText(this.customer.getCustomerContactNo());
+
         
         valueLabel.setText(this.customer.getCustomerName());
         PharmacyComboBox.addItem("");
         for(Pharmacy p : system.getPharmacyDirectory().getPharmacyList())
         {
-            PharmacyComboBox.addItem(p.getName());
+
+            PharmacyComboBox.addItem(p.getPharmacyName());
+
         }
     }    
     /**
@@ -82,28 +87,33 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
+
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
-        CustomerAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        CustomerAddressLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         CustomerAddressLabel.setText("Address:");
         add(CustomerAddressLabel);
-        CustomerAddressLabel.setBounds(111, 273, 110, 20);
+        CustomerAddressLabel.setBounds(80, 570, 110, 20);
+
 
         CustomerAddressText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         CustomerAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(CustomerAddressText);
-        CustomerAddressText.setBounds(261, 273, 150, 17);
 
-        CustomerNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        CustomerAddressText.setBounds(250, 570, 180, 20);
+
+        CustomerNameLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         CustomerNameLabel.setText("Name:");
         add(CustomerNameLabel);
-        CustomerNameLabel.setBounds(111, 193, 120, 15);
+        CustomerNameLabel.setBounds(80, 370, 120, 17);
 
-        CustomerWorkAreaLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        CustomerWorkAreaLabel.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
         CustomerWorkAreaLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         CustomerWorkAreaLabel.setText("Customer Work Area");
         add(CustomerWorkAreaLabel);
-        CustomerWorkAreaLabel.setBounds(41, 0, 580, 29);
+        CustomerWorkAreaLabel.setBounds(510, 40, 580, 42);
+
 
         PharmacyComboBox.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         PharmacyComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -113,25 +123,27 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(PharmacyComboBox);
-        PharmacyComboBox.setBounds(241, 94, 170, 21);
 
-        WelcomeLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyComboBox.setBounds(210, 200, 230, 30);
+
+        WelcomeLabel.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         WelcomeLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         WelcomeLabel.setText("Welcome! ");
         add(WelcomeLabel);
-        WelcomeLabel.setBounds(160, 55, 108, 21);
+        WelcomeLabel.setBounds(70, 110, 130, 28);
 
-        UpdateDetailLabels.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        UpdateDetailLabels.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         UpdateDetailLabels.setText("Customer details");
         add(UpdateDetailLabels);
-        UpdateDetailLabels.setBounds(211, 149, 150, 17);
+        UpdateDetailLabels.setBounds(170, 280, 130, 30);
 
-        valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        valueLabel.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         valueLabel.setText("<value>");
         add(valueLabel);
-        valueLabel.setBounds(286, 55, 118, 21);
+        valueLabel.setBounds(230, 110, 118, 28);
 
-        ReviewOrdersButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        ReviewOrdersButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+
         ReviewOrdersButton.setText("Review Orders");
         ReviewOrdersButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         ReviewOrdersButton.addActionListener(new java.awt.event.ActionListener() {
@@ -140,32 +152,37 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(ReviewOrdersButton);
-        ReviewOrdersButton.setBounds(120, 330, 118, 30);
 
-        PharmacyLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        ReviewOrdersButton.setBounds(70, 680, 160, 40);
+
+        PharmacyLabel.setBackground(new java.awt.Color(255, 255, 255));
+        PharmacyLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         PharmacyLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PharmacyLabel.setText("Choose a Pharmacy:");
+        PharmacyLabel.setText("Select a Pharmacy:");
         add(PharmacyLabel);
-        PharmacyLabel.setBounds(124, 96, 107, 21);
+        PharmacyLabel.setBounds(-20, 190, 270, 50);
 
-        CustomerContactNoLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        CustomerContactNoLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         CustomerContactNoLabel.setText("Phone:");
         add(CustomerContactNoLabel);
-        CustomerContactNoLabel.setBounds(110, 225, 110, 30);
+        CustomerContactNoLabel.setBounds(80, 460, 110, 30);
         CustomerContactNoLabel.getAccessibleContext().setAccessibleName("Contact No:");
 
         CustomerNametext.setEditable(false);
+        CustomerNametext.setBackground(new java.awt.Color(255, 255, 255));
         CustomerNametext.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         CustomerNametext.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(CustomerNametext);
-        CustomerNametext.setBounds(261, 183, 150, 17);
+        CustomerNametext.setBounds(250, 370, 180, 20);
 
         CustomerContactText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         CustomerContactText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(CustomerContactText);
-        CustomerContactText.setBounds(261, 231, 150, 17);
 
-        SubmitOrdersButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        CustomerContactText.setBounds(250, 470, 180, 20);
+
+        SubmitOrdersButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+
         SubmitOrdersButton.setText("Submit");
         SubmitOrdersButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SubmitOrdersButton.addActionListener(new java.awt.event.ActionListener() {
@@ -174,11 +191,13 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(SubmitOrdersButton);
-        SubmitOrdersButton.setBounds(290, 330, 118, 30);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (1).png"))); // NOI18N
+        SubmitOrdersButton.setBounds(250, 680, 160, 40);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/online-pharmacy-vector-concept-design.jpg"))); // NOI18N
         add(jLabel7);
-        jLabel7.setBounds(0, 10, 1440, 790);
+        jLabel7.setBounds(280, 120, 1150, 680);
+
     }// </editor-fold>//GEN-END:initComponents
 
     private void PharmacyComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyComboBoxActionPerformed
@@ -211,12 +230,14 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         }
         else
         {
-            customer.setAddress(CustomerAddressText.getText());
-            customer.setPhone(CustomerContactText.getText());
+
+            customer.setCustomerAddress(CustomerAddressText.getText());
+            customer.setCustomerContactNo(CustomerContactText.getText());
           
                     
         }
-        valueLabel.setText(pharmacy.getName());
+        valueLabel.setText(pharmacy.getPharmacyName());
+
     }//GEN-LAST:event_SubmitOrdersButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

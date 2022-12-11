@@ -64,12 +64,19 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         txtAmount = new javax.swing.JTextField();
         btnDelete = new javax.swing.JButton();
         btnOrder = new javax.swing.JButton();
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
         btnBack = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+=======
+        COABackButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
 
         setBackground(new java.awt.Color(255, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
         lblPharmacy.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         lblPharmacy.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPharmacy.setText("<value>");
@@ -78,6 +85,17 @@ public class CustomerOrderAction extends javax.swing.JPanel {
 
         tblOrder.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         tblOrder.setModel(new javax.swing.table.DefaultTableModel(
+=======
+        CustomerPharmacyNameLabel.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        CustomerPharmacyNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CustomerPharmacyNameLabel.setText("<value>");
+        add(CustomerPharmacyNameLabel);
+        CustomerPharmacyNameLabel.setBounds(30, 0, 530, 40);
+
+        COAOrderTable.setBackground(new java.awt.Color(255, 204, 204));
+        COAOrderTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        COAOrderTable.setModel(new javax.swing.table.DefaultTableModel(
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
             new Object [][] {
 
             },
@@ -96,10 +114,16 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tblOrder);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(21, 236, 670, 104);
+        jScrollPane1.setBounds(40, 610, 1250, 130);
 
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
         tblMedicine.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         tblMedicine.setModel(new javax.swing.table.DefaultTableModel(
+=======
+        MedicineTable.setBackground(new java.awt.Color(255, 204, 204));
+        MedicineTable.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        MedicineTable.setModel(new javax.swing.table.DefaultTableModel(
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
             new Object [][] {
 
             },
@@ -115,25 +139,47 @@ public class CustomerOrderAction extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
         tblMedicine.addMouseListener(new java.awt.event.MouseAdapter() {
+=======
+        MedicineTable.setSelectionForeground(new java.awt.Color(102, 204, 255));
+        MedicineTable.addMouseListener(new java.awt.event.MouseAdapter() {
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tblMedicineMouseClicked(evt);
             }
         });
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
         jScrollPane2.setViewportView(tblMedicine);
+=======
+        jScrollPane2.setViewportView(MedicineTable);
+        if (MedicineTable.getColumnModel().getColumnCount() > 0) {
+            MedicineTable.getColumnModel().getColumn(2).setHeaderValue("Medicine Price");
+        }
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
 
         add(jScrollPane2);
-        jScrollPane2.setBounds(20, 79, 670, 104);
+        jScrollPane2.setBounds(40, 60, 1250, 210);
 
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
         btnAddItem.setBackground(new java.awt.Color(255, 255, 255));
         btnAddItem.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         btnAddItem.setText("Add Item to Order");
         btnAddItem.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAddItem.addActionListener(new java.awt.event.ActionListener() {
+=======
+        AddMedicineItemButton.setBackground(new java.awt.Color(0, 0, 0));
+        AddMedicineItemButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        AddMedicineItemButton.setForeground(new java.awt.Color(255, 255, 255));
+        AddMedicineItemButton.setText("Add Item to Order");
+        AddMedicineItemButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        AddMedicineItemButton.addActionListener(new java.awt.event.ActionListener() {
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddItemActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
         add(btnAddItem);
         btnAddItem.setBounds(300, 190, 157, 37);
 
@@ -153,15 +199,53 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         btnDelete.setText("Delete Item");
         btnDelete.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
+=======
+        add(AddMedicineItemButton);
+        AddMedicineItemButton.setBounds(40, 290, 230, 37);
+
+        COATotalAmountLabel.setBackground(new java.awt.Color(255, 255, 255));
+        COATotalAmountLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        COATotalAmountLabel.setText("Total Amount:");
+        add(COATotalAmountLabel);
+        COATotalAmountLabel.setBounds(500, 750, 140, 40);
+
+        COAOrderTotalAmountText.setEditable(false);
+        COAOrderTotalAmountText.setBackground(new java.awt.Color(204, 204, 204));
+        COAOrderTotalAmountText.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        COAOrderTotalAmountText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        COAOrderTotalAmountText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                COAOrderTotalAmountTextActionPerformed(evt);
+            }
+        });
+        add(COAOrderTotalAmountText);
+        COAOrderTotalAmountText.setBounds(640, 750, 220, 40);
+
+        COADeleteItemButton.setBackground(new java.awt.Color(0, 0, 0));
+        COADeleteItemButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        COADeleteItemButton.setForeground(new java.awt.Color(255, 255, 255));
+        COADeleteItemButton.setText("Delete Item");
+        COADeleteItemButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        COADeleteItemButton.addActionListener(new java.awt.event.ActionListener() {
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
         add(btnDelete);
         btnDelete.setBounds(110, 360, 69, 36);
 
         btnOrder.setBackground(new java.awt.Color(255, 255, 255));
         btnOrder.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        add(COADeleteItemButton);
+        COADeleteItemButton.setBounds(40, 750, 160, 40);
+
+        btnOrder.setBackground(new java.awt.Color(0, 0, 0));
+        btnOrder.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btnOrder.setForeground(new java.awt.Color(255, 255, 255));
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
         btnOrder.setText("Confirm Order");
         btnOrder.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnOrder.addActionListener(new java.awt.event.ActionListener() {
@@ -170,23 +254,48 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             }
         });
         add(btnOrder);
-        btnOrder.setBounds(530, 400, 159, 21);
+        btnOrder.setBounds(1130, 750, 159, 40);
 
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
         btnBack.setBackground(new java.awt.Color(255, 255, 255));
         btnBack.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         btnBack.setText("< Back");
         btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
+=======
+        COABackButton.setBackground(new java.awt.Color(0, 0, 0));
+        COABackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        COABackButton.setForeground(new java.awt.Color(255, 255, 255));
+        COABackButton.setText("< Back");
+        COABackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        COABackButton.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                COABackButtonFocusLost(evt);
+            }
+        });
+        COABackButton.addActionListener(new java.awt.event.ActionListener() {
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
         add(btnBack);
         btnBack.setBounds(30, 360, 60, 40);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (2).png"))); // NOI18N
         add(jLabel2);
         jLabel2.setBounds(400, 10, 1070, 790);
+=======
+        add(COABackButton);
+        COABackButton.setBounds(40, 360, 130, 40);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/customer2nd.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jLabel1.setToolTipText("");
+        add(jLabel1);
+        jLabel1.setBounds(20, 0, 1290, 840);
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblMedicineMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblMedicineMouseClicked
@@ -255,6 +364,10 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_btnBackActionPerformed
 
+    private void COAOrderTotalAmountTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_COAOrderTotalAmountTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_COAOrderTotalAmountTextActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddItem;
@@ -262,7 +375,10 @@ public class CustomerOrderAction extends javax.swing.JPanel {
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnOrder;
     private javax.swing.JLabel jLabel1;
+<<<<<<< Updated upstream:OnlinePharmacyDhritiWIP/src/userinterface/CustomerRole/CustomerOrderAction.java
     private javax.swing.JLabel jLabel2;
+=======
+>>>>>>> Stashed changes:src/userinterface/CustomerRole/CustomerOrderAction.java
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblPharmacy;
