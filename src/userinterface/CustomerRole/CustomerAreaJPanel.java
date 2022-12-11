@@ -39,6 +39,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         {
             
                 if(c.getCustomerName() == null ? useraccount.getEmployee().getEmployeeName() == null : c.getCustomerName().equals(useraccount.getEmployee().getEmployeeName()))
+
                 {
                     this.customer = c;
                 }
@@ -46,14 +47,18 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         }
         
         CustomerNametext.setText(this.customer.getCustomerName());
+
         CustomerAddressText.setText(this.customer.getCustomerAddress());
         CustomerContactText.setText(this.customer.getCustomerContactNo());
+
         
         valueLabel.setText(this.customer.getCustomerName());
         PharmacyComboBox.addItem("");
         for(Pharmacy p : system.getPharmacyDirectory().getPharmacyList())
         {
+
             PharmacyComboBox.addItem(p.getPharmacyName());
+
         }
     }    
     /**
@@ -82,6 +87,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
+
         setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
@@ -90,9 +96,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         add(CustomerAddressLabel);
         CustomerAddressLabel.setBounds(80, 570, 110, 20);
 
+
         CustomerAddressText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         CustomerAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(CustomerAddressText);
+
         CustomerAddressText.setBounds(250, 570, 180, 20);
 
         CustomerNameLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -106,6 +114,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         add(CustomerWorkAreaLabel);
         CustomerWorkAreaLabel.setBounds(510, 40, 580, 42);
 
+
         PharmacyComboBox.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         PharmacyComboBox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         PharmacyComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -114,6 +123,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(PharmacyComboBox);
+
         PharmacyComboBox.setBounds(210, 200, 230, 30);
 
         WelcomeLabel.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -133,6 +143,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         valueLabel.setBounds(230, 110, 118, 28);
 
         ReviewOrdersButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+
         ReviewOrdersButton.setText("Review Orders");
         ReviewOrdersButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         ReviewOrdersButton.addActionListener(new java.awt.event.ActionListener() {
@@ -141,6 +152,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(ReviewOrdersButton);
+
         ReviewOrdersButton.setBounds(70, 680, 160, 40);
 
         PharmacyLabel.setBackground(new java.awt.Color(255, 255, 255));
@@ -166,9 +178,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         CustomerContactText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         CustomerContactText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(CustomerContactText);
+
         CustomerContactText.setBounds(250, 470, 180, 20);
 
         SubmitOrdersButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+
         SubmitOrdersButton.setText("Submit");
         SubmitOrdersButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SubmitOrdersButton.addActionListener(new java.awt.event.ActionListener() {
@@ -177,11 +191,13 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(SubmitOrdersButton);
+
         SubmitOrdersButton.setBounds(250, 680, 160, 40);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/online-pharmacy-vector-concept-design.jpg"))); // NOI18N
         add(jLabel7);
         jLabel7.setBounds(280, 120, 1150, 680);
+
     }// </editor-fold>//GEN-END:initComponents
 
     private void PharmacyComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyComboBoxActionPerformed
@@ -214,12 +230,14 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         }
         else
         {
+
             customer.setCustomerAddress(CustomerAddressText.getText());
             customer.setCustomerContactNo(CustomerContactText.getText());
           
                     
         }
         valueLabel.setText(pharmacy.getPharmacyName());
+
     }//GEN-LAST:event_SubmitOrdersButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
