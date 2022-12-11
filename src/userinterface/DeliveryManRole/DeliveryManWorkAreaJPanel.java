@@ -42,9 +42,9 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         
         for(Pharmacy p : business.getPharmacyDirectory().getPharmacyList())
         {
-            if(p.findDeliveryMan(account.getEmployee().getName()) != null)
+            if(p.findDeliveryMan(account.getEmployee().getEmployeeName()) != null)
             {
-                this.deliveryMan = p.findDeliveryMan(account.getEmployee().getName());
+                this.deliveryMan = p.findDeliveryMan(account.getEmployee().getEmployeeName());
                 this.pharmacy = p;
                 break;
             }
@@ -152,7 +152,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         lblDeliveryMan.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblDeliveryMan.setText("<>");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (4).png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/DeliveryManWorkArea-Dhriti.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

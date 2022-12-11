@@ -82,7 +82,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         add(PWRStatusComboBox);
         PWRStatusComboBox.setBounds(144, 35, 380, 50);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (3).png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ProcessWorkRequestJPanel.jpg"))); // NOI18N
         add(jLabel2);
         jLabel2.setBounds(0, 0, 1480, 810);
     }// </editor-fold>//GEN-END:initComponents

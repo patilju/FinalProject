@@ -36,7 +36,7 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         this.customer = customer;
         this.pharma = pharmacy;
-        CustomerPharmacyNameLabel.setText("Pharmacy: " +this.pharma.getName());
+        CustomerPharmacyNameLabel.setText("Pharmacy: " +this.pharma.getPharmacyName());
         populateMedicine(); 
         populateOrder();
         if(COAOrderTable.getRowCount() <= 0)
@@ -74,7 +74,7 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         CustomerPharmacyNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         CustomerPharmacyNameLabel.setText("<value>");
         add(CustomerPharmacyNameLabel);
-        CustomerPharmacyNameLabel.setBounds(120, 20, 481, 30);
+        CustomerPharmacyNameLabel.setBounds(80, 10, 481, 30);
 
         COAOrderTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         COAOrderTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -185,9 +185,9 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         add(COABackButton);
         COABackButton.setBounds(30, 360, 60, 40);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (2).png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/CustomerOrderAction-Dhriti.jpg"))); // NOI18N
         add(jLabel2);
-        jLabel2.setBounds(400, 10, 1070, 790);
+        jLabel2.setBounds(10, 0, 1460, 800);
     }// </editor-fold>//GEN-END:initComponents
 
     private void MedicineTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MedicineTableMouseClicked
@@ -207,8 +207,8 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             MedicineItem mi2 = (MedicineItem) MedicineTable.getValueAt(selectedRow, 1);
            
             cart.add(mi2);
-            JOptionPane.showMessageDialog(null, "Medicine Item " + mi2.getName()+ " added to cart successfully!");
-            totalAmount = totalAmount + mi2.getPrice();
+            JOptionPane.showMessageDialog(null, "Medicine Item " + mi2.getMedicineName()+ " added to cart successfully!");
+            totalAmount = totalAmount + mi2.getMedicinePrice();
             populateOrder();
         }
         else
@@ -226,8 +226,8 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             MedicineItem mi1 = (MedicineItem) COAOrderTable.getValueAt(selectedRow1, 1);
             //order.deleteFoodItem(fi);
             cart.remove(mi1);
-            JOptionPane.showMessageDialog(null, "Medicine Item " + mi1.getName()+ " deleted from cart successfully!");
-            totalAmount = totalAmount - mi1.getPrice();
+            JOptionPane.showMessageDialog(null, "Medicine Item " + mi1.getMedicineName()+ " deleted from cart successfully!");
+            totalAmount = totalAmount - mi1.getMedicinePrice();
             populateOrder();
         }
         else
@@ -284,9 +284,9 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             for(MedicineItem mi : pharma.getMedicineCatalog().getMedicineItemList())
             {
                 Object[] row = new Object[dtm.getColumnCount()];
-                row[0] = mi.getId();
+                row[0] = mi.getMedicineId();
                 row[1] = mi;
-                row[2] = mi.getPrice();
+                row[2] = mi.getMedicinePrice();
                 dtm.addRow(row);
             }
         }
@@ -310,7 +310,7 @@ public class CustomerOrderAction extends javax.swing.JPanel {
                 Object[] row = new Object[dtm.getColumnCount()];
                 row[0] = count;
                 row[1] = mi3;
-                row[2] =  mi3.getPrice();
+                row[2] =  mi3.getMedicinePrice();
                 dtm.addRow(row);
                 count++;
             }

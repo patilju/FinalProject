@@ -172,7 +172,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/icon/MicrosoftTeams-image (4).png"/>
+          <Image iconType="3" name="/icon/DeliveryManWorkArea-Dhriti.jpg"/>
         </Property>
       </Properties>
     </Component>

@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author dhrit
  */
 public class AdminManageSupplierMedicine extends javax.swing.JPanel {
 
@@ -27,11 +27,11 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.supplier = supplier;
-        btnDelete.setEnabled(false);
-        btnManage.setEnabled(false);
-        txtName.setEnabled(false);
-        jSpinPrice.setEnabled(false);
-        valueLabel.setText(supplier.getName());
+        SupplierAdminAMSMButton1.setEnabled(false);
+        SupplierAdminAMSMButton2.setEnabled(false);
+        SupplierAdminAMSMNameText.setEnabled(false);
+        SupplierAdminAMSMPriceSpin.setEnabled(false);
+        SupplierAdminAMSMLabel3.setText(supplier.getSupplierName());
         populateTable();
     }
 
@@ -44,42 +44,42 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        valueLabel = new javax.swing.JLabel();
-        enterpriseLabel = new javax.swing.JLabel();
-        jSpinPrice = new javax.swing.JSpinner();
+        SupplierAdminAMSMLabel3 = new javax.swing.JLabel();
+        SupplierAdminAMSMLabel1 = new javax.swing.JLabel();
+        SupplierAdminAMSMPriceSpin = new javax.swing.JSpinner();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblMedicineCatalog = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
-        txtName = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        btnDelete = new javax.swing.JButton();
-        btnManage = new javax.swing.JButton();
-        btnCreate = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
-        btnSubmit = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        SupplierAdminAMSMTable = new javax.swing.JTable();
+        SupplierAdminAMSMLabel2 = new javax.swing.JLabel();
+        SupplierAdminAMSMNameText = new javax.swing.JTextField();
+        SupplierAdminAMSMNameLabel = new javax.swing.JLabel();
+        SupplierAdminAMSMPriceLabel = new javax.swing.JLabel();
+        SupplierAdminAMSMButton1 = new javax.swing.JButton();
+        SupplierAdminAMSMButton2 = new javax.swing.JButton();
+        SupplierAdminAMSMButton3 = new javax.swing.JButton();
+        SupplierAdminAMSMButton4 = new javax.swing.JButton();
+        SupplierAdminAMSMButton5 = new javax.swing.JButton();
+        SupplierAdminAMSMLabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        valueLabel.setText("<value>");
-        add(valueLabel);
-        valueLabel.setBounds(450, 23, 282, 30);
+        SupplierAdminAMSMLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMLabel3.setText("<value>");
+        add(SupplierAdminAMSMLabel3);
+        SupplierAdminAMSMLabel3.setBounds(450, 23, 282, 30);
 
-        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        enterpriseLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        enterpriseLabel.setText("Supplier");
-        add(enterpriseLabel);
-        enterpriseLabel.setBounds(152, 23, 292, 30);
+        SupplierAdminAMSMLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMLabel1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        SupplierAdminAMSMLabel1.setText("Supplier");
+        add(SupplierAdminAMSMLabel1);
+        SupplierAdminAMSMLabel1.setBounds(152, 23, 292, 30);
 
-        jSpinPrice.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(jSpinPrice);
-        jSpinPrice.setBounds(470, 390, 340, 60);
+        SupplierAdminAMSMPriceSpin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(SupplierAdminAMSMPriceSpin);
+        SupplierAdminAMSMPriceSpin.setBounds(470, 390, 340, 60);
 
-        tblMedicineCatalog.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        tblMedicineCatalog.setModel(new javax.swing.table.DefaultTableModel(
+        SupplierAdminAMSMTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        SupplierAdminAMSMTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -95,119 +95,114 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        tblMedicineCatalog.addMouseListener(new java.awt.event.MouseAdapter() {
+        SupplierAdminAMSMTable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tblMedicineCatalogMouseClicked(evt);
+                SupplierAdminAMSMTableMouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(tblMedicineCatalog);
+        jScrollPane1.setViewportView(SupplierAdminAMSMTable);
 
         add(jScrollPane1);
         jScrollPane1.setBounds(270, 130, 1170, 140);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel1.setText("                         Medicine");
-        add(jLabel1);
-        jLabel1.setBounds(100, 20, 200, 50);
+        SupplierAdminAMSMLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMLabel2.setText("                         Medicine");
+        add(SupplierAdminAMSMLabel2);
+        SupplierAdminAMSMLabel2.setBounds(100, 20, 200, 50);
 
-        txtName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        txtName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(txtName);
-        txtName.setBounds(470, 300, 340, 60);
+        SupplierAdminAMSMNameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        SupplierAdminAMSMNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(SupplierAdminAMSMNameText);
+        SupplierAdminAMSMNameText.setBounds(470, 300, 340, 60);
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel2.setText("                      Name:");
-        add(jLabel2);
-        jLabel2.setBounds(213, 300, 160, 27);
+        SupplierAdminAMSMNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMNameLabel.setText("                      Name:");
+        add(SupplierAdminAMSMNameLabel);
+        SupplierAdminAMSMNameLabel.setBounds(213, 300, 160, 27);
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel3.setText("                        Price:");
-        add(jLabel3);
-        jLabel3.setBounds(213, 400, 170, 40);
+        SupplierAdminAMSMPriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMPriceLabel.setText("                        Price:");
+        add(SupplierAdminAMSMPriceLabel);
+        SupplierAdminAMSMPriceLabel.setBounds(213, 400, 170, 40);
 
-        btnDelete.setBackground(new java.awt.Color(255, 255, 255));
-        btnDelete.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnDelete.setText("Delete Item");
-        btnDelete.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+        SupplierAdminAMSMButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMButton1.setText("Delete Item");
+        SupplierAdminAMSMButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SupplierAdminAMSMButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteActionPerformed(evt);
+                SupplierAdminAMSMButton1ActionPerformed(evt);
             }
         });
-        add(btnDelete);
-        btnDelete.setBounds(30, 170, 190, 50);
+        add(SupplierAdminAMSMButton1);
+        SupplierAdminAMSMButton1.setBounds(30, 170, 190, 50);
 
-        btnManage.setBackground(new java.awt.Color(255, 255, 255));
-        btnManage.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnManage.setText("View  Item ");
-        btnManage.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnManage.addActionListener(new java.awt.event.ActionListener() {
+        SupplierAdminAMSMButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMButton2.setText("View  Item ");
+        SupplierAdminAMSMButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SupplierAdminAMSMButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageActionPerformed(evt);
+                SupplierAdminAMSMButton2ActionPerformed(evt);
             }
         });
-        add(btnManage);
-        btnManage.setBounds(30, 290, 190, 50);
+        add(SupplierAdminAMSMButton2);
+        SupplierAdminAMSMButton2.setBounds(30, 290, 190, 50);
 
-        btnCreate.setBackground(new java.awt.Color(255, 255, 255));
-        btnCreate.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnCreate.setText("Add New Medicine>");
-        btnCreate.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnCreate.addActionListener(new java.awt.event.ActionListener() {
+        SupplierAdminAMSMButton3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMButton3.setText("Add New Medicine>");
+        SupplierAdminAMSMButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SupplierAdminAMSMButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCreateActionPerformed(evt);
+                SupplierAdminAMSMButton3ActionPerformed(evt);
             }
         });
-        add(btnCreate);
-        btnCreate.setBounds(30, 410, 190, 50);
+        add(SupplierAdminAMSMButton3);
+        SupplierAdminAMSMButton3.setBounds(30, 410, 190, 50);
 
-        btnBack.setBackground(new java.awt.Color(255, 255, 255));
-        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnBack.setText("< Back");
-        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        SupplierAdminAMSMButton4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMButton4.setText("< Back");
+        SupplierAdminAMSMButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SupplierAdminAMSMButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                SupplierAdminAMSMButton4ActionPerformed(evt);
             }
         });
-        add(btnBack);
-        btnBack.setBounds(30, 550, 180, 50);
+        add(SupplierAdminAMSMButton4);
+        SupplierAdminAMSMButton4.setBounds(30, 550, 180, 50);
 
-        btnSubmit.setBackground(new java.awt.Color(255, 255, 255));
-        btnSubmit.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnSubmit.setText("Submit");
-        btnSubmit.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
+        SupplierAdminAMSMButton5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMButton5.setText("Submit");
+        SupplierAdminAMSMButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SupplierAdminAMSMButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSubmitActionPerformed(evt);
+                SupplierAdminAMSMButton5ActionPerformed(evt);
             }
         });
-        add(btnSubmit);
-        btnSubmit.setBounds(470, 550, 210, 50);
+        add(SupplierAdminAMSMButton5);
+        SupplierAdminAMSMButton5.setBounds(470, 550, 210, 50);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MANAGESupplier_FINAL_IMAGE.jpg"))); // NOI18N
-        add(jLabel4);
-        jLabel4.setBounds(0, 0, 1460, 960);
+        SupplierAdminAMSMLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/AdminManageSupplierMedicine.jpg"))); // NOI18N
+        add(SupplierAdminAMSMLabel);
+        SupplierAdminAMSMLabel.setBounds(0, 0, 1460, 960);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tblMedicineCatalogMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblMedicineCatalogMouseClicked
+    private void SupplierAdminAMSMTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SupplierAdminAMSMTableMouseClicked
         // TODO add your handling code here:
-        int selectedRow = tblMedicineCatalog.getSelectedRow();
+        int selectedRow = SupplierAdminAMSMTable.getSelectedRow();
         if (selectedRow >= 0)
         {
-            btnDelete.setEnabled(true);
-            btnManage.setEnabled(true);
+            SupplierAdminAMSMButton1.setEnabled(true);
+            SupplierAdminAMSMButton2.setEnabled(true);
         }
-    }//GEN-LAST:event_tblMedicineCatalogMouseClicked
+    }//GEN-LAST:event_SupplierAdminAMSMTableMouseClicked
 
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+    private void SupplierAdminAMSMButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminAMSMButton1ActionPerformed
         // TODO add your handling code here:
-        int selectedRow = tblMedicineCatalog.getSelectedRow();
+        int selectedRow = SupplierAdminAMSMTable.getSelectedRow();
         if (selectedRow >= 0)
         {
-            SupplierMedicineItem smi = (SupplierMedicineItem) tblMedicineCatalog.getValueAt(selectedRow, 1);
+            SupplierMedicineItem smi = (SupplierMedicineItem) SupplierAdminAMSMTable.getValueAt(selectedRow, 1);
             supplier.getSupplierMedicineCatalog().deleteSupplierMedicineItem(smi);
-            JOptionPane.showMessageDialog(null, "Medicine " + smi.getName()+ " deleted successfully!");
+            JOptionPane.showMessageDialog(null, "Medicine " + smi.getSupplierMedicineName()+ " deleted successfully!");
             populateTable();
         }
         else
@@ -215,14 +210,14 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_btnDeleteActionPerformed
+    }//GEN-LAST:event_SupplierAdminAMSMButton1ActionPerformed
 
-    private void btnManageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageActionPerformed
+    private void SupplierAdminAMSMButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminAMSMButton2ActionPerformed
         // TODO add your handling code here:
-        int selectedRow = tblMedicineCatalog.getSelectedRow();
+        int selectedRow = SupplierAdminAMSMTable.getSelectedRow();
         if (selectedRow >= 0)
         {
-            SupplierMedicineItem smi = (SupplierMedicineItem) tblMedicineCatalog.getValueAt(selectedRow, 1);
+            SupplierMedicineItem smi = (SupplierMedicineItem) SupplierAdminAMSMTable.getValueAt(selectedRow, 1);
             AdminUpdateSupplierMedicineItem fs = new AdminUpdateSupplierMedicineItem(userProcessContainer, smi);
             userProcessContainer.add("SysAdminManageEmployees", fs);
             CardLayout layout = (CardLayout) userProcessContainer.getLayout();
@@ -233,38 +228,38 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_btnManageActionPerformed
+    }//GEN-LAST:event_SupplierAdminAMSMButton2ActionPerformed
 
-    private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
+    private void SupplierAdminAMSMButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminAMSMButton3ActionPerformed
         // TODO add your handling code here:
-        btnCreate.setEnabled(false);
-        txtName.setEnabled(true);
-        jSpinPrice.setEnabled(true);
-        btnSubmit.setEnabled(true);
-    }//GEN-LAST:event_btnCreateActionPerformed
+        SupplierAdminAMSMButton3.setEnabled(false);
+        SupplierAdminAMSMNameText.setEnabled(true);
+        SupplierAdminAMSMPriceSpin.setEnabled(true);
+        SupplierAdminAMSMButton5.setEnabled(true);
+    }//GEN-LAST:event_SupplierAdminAMSMButton3ActionPerformed
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void SupplierAdminAMSMButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminAMSMButton4ActionPerformed
         // TODO add your handling code here:
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_SupplierAdminAMSMButton4ActionPerformed
 
-    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
+    private void SupplierAdminAMSMButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminAMSMButton5ActionPerformed
         // TODO add your handling code here:
         if(validateThis())
         {
-            if(supplier.getSupplierMedicineCatalog().checkIfSupplierMedicineItemIsUnique(txtName.getText()))
+            if(supplier.getSupplierMedicineCatalog().checkIfSupplierMedicineItemIsUnique(SupplierAdminAMSMNameText.getText()))
             {
-                SupplierMedicineItem smi = supplier.getSupplierMedicineCatalog().createSupplierMedicineItem(txtName.getText(), (Integer)jSpinPrice.getValue());
-                JOptionPane.showMessageDialog(null, "Medicine Item " + smi.getName()+ " created successfully!");
+                SupplierMedicineItem smi = supplier.getSupplierMedicineCatalog().createSupplierMedicineItem(SupplierAdminAMSMNameText.getText(), (Integer)SupplierAdminAMSMPriceSpin.getValue());
+                JOptionPane.showMessageDialog(null, "Medicine Item " + smi.getSupplierMedicineName()+ " created successfully!");
                 populateTable();
-                btnCreate.setEnabled(true);
-                txtName.setText("");
-                txtName.setEnabled(false);
-                jSpinPrice.setValue(0);
-                jSpinPrice.setEnabled(false);
-                btnSubmit.setEnabled(false);
+                SupplierAdminAMSMButton3.setEnabled(true);
+                SupplierAdminAMSMNameText.setText("");
+                SupplierAdminAMSMNameText.setEnabled(false);
+                SupplierAdminAMSMPriceSpin.setValue(0);
+                SupplierAdminAMSMPriceSpin.setEnabled(false);
+                SupplierAdminAMSMButton5.setEnabled(false);
             }
             else
             {
@@ -275,55 +270,55 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         {
             return;
         }
-    }//GEN-LAST:event_btnSubmitActionPerformed
+    }//GEN-LAST:event_SupplierAdminAMSMButton5ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnCreate;
-    private javax.swing.JButton btnDelete;
-    private javax.swing.JButton btnManage;
-    private javax.swing.JButton btnSubmit;
-    private javax.swing.JLabel enterpriseLabel;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JButton SupplierAdminAMSMButton1;
+    private javax.swing.JButton SupplierAdminAMSMButton2;
+    private javax.swing.JButton SupplierAdminAMSMButton3;
+    private javax.swing.JButton SupplierAdminAMSMButton4;
+    private javax.swing.JButton SupplierAdminAMSMButton5;
+    private javax.swing.JLabel SupplierAdminAMSMLabel;
+    private javax.swing.JLabel SupplierAdminAMSMLabel1;
+    private javax.swing.JLabel SupplierAdminAMSMLabel2;
+    private javax.swing.JLabel SupplierAdminAMSMLabel3;
+    private javax.swing.JLabel SupplierAdminAMSMNameLabel;
+    private javax.swing.JTextField SupplierAdminAMSMNameText;
+    private javax.swing.JLabel SupplierAdminAMSMPriceLabel;
+    private javax.swing.JSpinner SupplierAdminAMSMPriceSpin;
+    private javax.swing.JTable SupplierAdminAMSMTable;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSpinner jSpinPrice;
-    private javax.swing.JTable tblMedicineCatalog;
-    private javax.swing.JTextField txtName;
-    private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables
 
 public void populateTable() {
-        DefaultTableModel dtm = (DefaultTableModel)tblMedicineCatalog.getModel();
+        DefaultTableModel dtm = (DefaultTableModel)SupplierAdminAMSMTable.getModel();
         dtm.setRowCount(0);
         if(supplier.getSupplierMedicineCatalog().getSupplierMedicineItemList() != null)
         {
             for(SupplierMedicineItem smi : supplier.getSupplierMedicineCatalog().getSupplierMedicineItemList())
             {
                 Object[] row = new Object[dtm.getColumnCount()];
-                row[0] = smi.getId();
+                row[0] = smi.getSupplierMedicineId();
                 row[1] = smi;
-                row[2] = smi.getPrice();
+                row[2] = smi.getSupplierMedicinePrice();
                 dtm.addRow(row);
             }
         }
         if(dtm.getRowCount() == 0)
             {
-                btnDelete.setEnabled(false);
-                btnManage.setEnabled(false);
+                SupplierAdminAMSMButton1.setEnabled(false);
+                SupplierAdminAMSMButton2.setEnabled(false);
             }
     }
 
     private boolean validateThis() {
-        if("".equals(txtName.getText()))
+        if("".equals(SupplierAdminAMSMNameText.getText()))
         {
             JOptionPane.showMessageDialog(null,"Name cannot be empty!", "Warning", JOptionPane.WARNING_MESSAGE);
             return false;
         }
-        else if((Integer)jSpinPrice.getValue() <= 0)
+        else if((Integer)SupplierAdminAMSMPriceSpin.getValue() <= 0)
         {
             JOptionPane.showMessageDialog(null,"Price must be above 0!", "Warning", JOptionPane.WARNING_MESSAGE);
             return false;

@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Vini
+ * @author nupoorkorde
  */
 public class SystemAdminManagePharmacy extends javax.swing.JPanel {
 
@@ -37,12 +37,12 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
         this.userProcessContainerSAMR = userProcessContainer;
         this.ecosystem = ecosystem;
         this.user = user;
-        txtNameSAMR.setEnabled(false);
-        txtAddressSAMR.setEnabled(false);
+        SystemAMPNameText.setEnabled(false);
+        SystemAMPAddressText.setEnabled(false);
 
-        btnSubmitSAMR.setEnabled(false);
-        btnDeleteSAMR.setEnabled(false);
-        btnManageSAMR.setEnabled(false);
+        SystemAMPSubmitButton.setEnabled(false);
+        SystemAMPDeleteButton.setEnabled(false);
+        SystemAMPViewButton.setEnabled(false);
         populateTable();
     }
 
@@ -55,111 +55,107 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnDeleteSAMR = new javax.swing.JButton();
-        btnNewPharmacy = new javax.swing.JButton();
-        txtNameSAMR = new javax.swing.JTextField();
-        txtAddressSAMR = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        btnSubmitSAMR = new javax.swing.JButton();
-        btnManageSAMR = new javax.swing.JButton();
-        btnBackSAMR = new javax.swing.JButton();
-        lblTitle = new javax.swing.JLabel();
+        SystemAMPDeleteButton = new javax.swing.JButton();
+        SystemAMPCreateButton = new javax.swing.JButton();
+        SystemAMPNameText = new javax.swing.JTextField();
+        SystemAMPAddressText = new javax.swing.JTextField();
+        SystemAMPNameLabel = new javax.swing.JLabel();
+        SystemAMPAddressLabel = new javax.swing.JLabel();
+        SystemAMPSubmitButton = new javax.swing.JButton();
+        SystemAMPViewButton = new javax.swing.JButton();
+        SystemAMPBackButton = new javax.swing.JButton();
+        SystemAMPLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblPharmacy = new javax.swing.JTable();
-        jSeparator1 = new javax.swing.JSeparator();
-        jLabel3 = new javax.swing.JLabel();
+        SystemAMPTable = new javax.swing.JTable();
+        SystemAMPSeparator = new javax.swing.JSeparator();
+        SystemAMPLabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        btnDeleteSAMR.setBackground(new java.awt.Color(255, 255, 255));
-        btnDeleteSAMR.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnDeleteSAMR.setText("Delete Pharmacy");
-        btnDeleteSAMR.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnDeleteSAMR.addActionListener(new java.awt.event.ActionListener() {
+        SystemAMPDeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMPDeleteButton.setText("Delete Pharmacy");
+        SystemAMPDeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SystemAMPDeleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteSAMRActionPerformed(evt);
+                SystemAMPDeleteButtonActionPerformed(evt);
             }
         });
-        add(btnDeleteSAMR);
-        btnDeleteSAMR.setBounds(10, 135, 120, 44);
+        add(SystemAMPDeleteButton);
+        SystemAMPDeleteButton.setBounds(10, 135, 120, 44);
 
-        btnNewPharmacy.setBackground(new java.awt.Color(255, 255, 255));
-        btnNewPharmacy.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnNewPharmacy.setText("Create Pharmacy ");
-        btnNewPharmacy.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnNewPharmacy.addActionListener(new java.awt.event.ActionListener() {
+        SystemAMPCreateButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMPCreateButton.setText("Create Pharmacy ");
+        SystemAMPCreateButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SystemAMPCreateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNewPharmacyActionPerformed(evt);
+                SystemAMPCreateButtonActionPerformed(evt);
             }
         });
-        add(btnNewPharmacy);
-        btnNewPharmacy.setBounds(10, 189, 120, 43);
+        add(SystemAMPCreateButton);
+        SystemAMPCreateButton.setBounds(10, 189, 120, 43);
 
-        txtNameSAMR.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(txtNameSAMR);
-        txtNameSAMR.setBounds(427, 187, 228, 22);
+        SystemAMPNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(SystemAMPNameText);
+        SystemAMPNameText.setBounds(427, 187, 228, 18);
 
-        txtAddressSAMR.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txtAddressSAMR.addActionListener(new java.awt.event.ActionListener() {
+        SystemAMPAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        SystemAMPAddressText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtAddressSAMRActionPerformed(evt);
+                SystemAMPAddressTextActionPerformed(evt);
             }
         });
-        add(txtAddressSAMR);
-        txtAddressSAMR.setBounds(427, 218, 228, 22);
+        add(SystemAMPAddressText);
+        SystemAMPAddressText.setBounds(427, 218, 228, 18);
 
-        jLabel1.setText("Pharmacy Name:");
-        add(jLabel1);
-        jLabel1.setBounds(265, 191, 144, 18);
+        SystemAMPNameLabel.setText("Pharmacy Name:");
+        add(SystemAMPNameLabel);
+        SystemAMPNameLabel.setBounds(265, 191, 144, 18);
 
-        jLabel2.setText("Address:");
-        add(jLabel2);
-        jLabel2.setBounds(265, 221, 144, 20);
+        SystemAMPAddressLabel.setText("Address:");
+        add(SystemAMPAddressLabel);
+        SystemAMPAddressLabel.setBounds(265, 221, 144, 16);
 
-        btnSubmitSAMR.setBackground(new java.awt.Color(255, 255, 255));
-        btnSubmitSAMR.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnSubmitSAMR.setText("Submit");
-        btnSubmitSAMR.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnSubmitSAMR.addActionListener(new java.awt.event.ActionListener() {
+        SystemAMPSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMPSubmitButton.setText("Submit");
+        SystemAMPSubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SystemAMPSubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSubmitSAMRActionPerformed(evt);
+                SystemAMPSubmitButtonActionPerformed(evt);
             }
         });
-        add(btnSubmitSAMR);
-        btnSubmitSAMR.setBounds(551, 270, 104, 34);
+        add(SystemAMPSubmitButton);
+        SystemAMPSubmitButton.setBounds(551, 270, 104, 34);
 
-        btnManageSAMR.setBackground(new java.awt.Color(255, 255, 255));
-        btnManageSAMR.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnManageSAMR.setText("View Pharmacy");
-        btnManageSAMR.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnManageSAMR.addActionListener(new java.awt.event.ActionListener() {
+        SystemAMPViewButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMPViewButton.setText("View Pharmacy");
+        SystemAMPViewButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SystemAMPViewButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageSAMRActionPerformed(evt);
+                SystemAMPViewButtonActionPerformed(evt);
             }
         });
-        add(btnManageSAMR);
-        btnManageSAMR.setBounds(10, 84, 120, 45);
+        add(SystemAMPViewButton);
+        SystemAMPViewButton.setBounds(10, 84, 120, 45);
 
-        btnBackSAMR.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnBackSAMR.setText("< Back");
-        btnBackSAMR.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnBackSAMR.addActionListener(new java.awt.event.ActionListener() {
+        SystemAMPBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMPBackButton.setText("< Back");
+        SystemAMPBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SystemAMPBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackSAMRActionPerformed(evt);
+                SystemAMPBackButtonActionPerformed(evt);
             }
         });
-        add(btnBackSAMR);
-        btnBackSAMR.setBounds(10, 20, 79, 21);
+        add(SystemAMPBackButton);
+        SystemAMPBackButton.setBounds(10, 20, 79, 21);
 
-        lblTitle.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
-        lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitle.setText("Manage Pharmacy");
-        add(lblTitle);
-        lblTitle.setBounds(123, 18, 445, 29);
+        SystemAMPLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        SystemAMPLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SystemAMPLabel1.setText("Manage Pharmacy");
+        add(SystemAMPLabel1);
+        SystemAMPLabel1.setBounds(123, 18, 445, 29);
 
-        tblPharmacy.setModel(new javax.swing.table.DefaultTableModel(
+        SystemAMPTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -175,33 +171,33 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        tblPharmacy.addMouseListener(new java.awt.event.MouseAdapter() {
+        SystemAMPTable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tblPharmacyMouseClicked(evt);
+                SystemAMPTableMouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(tblPharmacy);
+        jScrollPane1.setViewportView(SystemAMPTable);
 
         add(jScrollPane1);
         jScrollPane1.setBounds(178, 81, 477, 95);
 
-        jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        add(jSeparator1);
-        jSeparator1.setBounds(161, 11, 11, 293);
+        SystemAMPSeparator.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        add(SystemAMPSeparator);
+        SystemAMPSeparator.setBounds(161, 11, 11, 293);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Admin_Manage-Pharmacy.png"))); // NOI18N
-        add(jLabel3);
-        jLabel3.setBounds(170, 10, 500, 460);
+        SystemAMPLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemAdminManagePharmacy.png"))); // NOI18N
+        add(SystemAMPLabel);
+        SystemAMPLabel.setBounds(-350, 20, 1330, 520);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnDeleteSAMRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteSAMRActionPerformed
+    private void SystemAMPDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMPDeleteButtonActionPerformed
         // TODO add your handling code here:
-        int selectedRowSAMR = tblPharmacy.getSelectedRow();
+        int selectedRowSAMR = SystemAMPTable.getSelectedRow();
         if (selectedRowSAMR >= 0)
         {
-            Pharmacy selectedPharmacy = (Pharmacy) tblPharmacy.getValueAt(selectedRowSAMR, 1);
+            Pharmacy selectedPharmacy = (Pharmacy) SystemAMPTable.getValueAt(selectedRowSAMR, 1);
             ecosystem.getPharmacyDirectory().deletePharmacy(selectedPharmacy);
-            JOptionPane.showMessageDialog(null, "Pharmacy " + selectedPharmacy.getName()+ " deleted successfully!");
+            JOptionPane.showMessageDialog(null, "Pharmacy " + selectedPharmacy.getPharmacyName()+ " deleted successfully!");
             populateTable();
         }
         else
@@ -209,47 +205,47 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_btnDeleteSAMRActionPerformed
+    }//GEN-LAST:event_SystemAMPDeleteButtonActionPerformed
 
-    private void btnNewPharmacyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewPharmacyActionPerformed
+    private void SystemAMPCreateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMPCreateButtonActionPerformed
         // TODO add your handling code here:
-        btnNewPharmacy.setEnabled(false);
-        txtNameSAMR.setEnabled(true);
-        txtAddressSAMR.setEnabled(true);
-        btnSubmitSAMR.setEnabled(true);
-    }//GEN-LAST:event_btnNewPharmacyActionPerformed
+        SystemAMPCreateButton.setEnabled(false);
+        SystemAMPNameText.setEnabled(true);
+        SystemAMPAddressText.setEnabled(true);
+        SystemAMPSubmitButton.setEnabled(true);
+    }//GEN-LAST:event_SystemAMPCreateButtonActionPerformed
 
-    private void txtAddressSAMRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAddressSAMRActionPerformed
+    private void SystemAMPAddressTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMPAddressTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtAddressSAMRActionPerformed
+    }//GEN-LAST:event_SystemAMPAddressTextActionPerformed
 
-    private void btnSubmitSAMRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitSAMRActionPerformed
+    private void SystemAMPSubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMPSubmitButtonActionPerformed
         // TODO add your handling code here:
-        Pharmacy p = ecosystem.getPharmacyDirectory().createPharmacy(txtNameSAMR.getText(), txtAddressSAMR.getText());
+        Pharmacy p = ecosystem.getPharmacyDirectory().createPharmacy(SystemAMPNameText.getText(), SystemAMPAddressText.getText());
         if(p == null)
         {
-            JOptionPane.showMessageDialog(null,"Pharmacy " + txtNameSAMR.getText() + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null,"Pharmacy " + SystemAMPNameText.getText() + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
         else
         {
-            JOptionPane.showMessageDialog(null, "Pharmacy created successfully as " + p.getName());
-            btnNewPharmacy.setEnabled(true);
-            txtNameSAMR.setEnabled(false);
-            txtAddressSAMR.setEnabled(false);
-            btnSubmitSAMR.setEnabled(false);
-            txtNameSAMR.setText("");
-            txtAddressSAMR.setText("");
+            JOptionPane.showMessageDialog(null, "Pharmacy created successfully as " + p.getPharmacyName());
+            SystemAMPCreateButton.setEnabled(true);
+            SystemAMPNameText.setEnabled(false);
+            SystemAMPAddressText.setEnabled(false);
+            SystemAMPSubmitButton.setEnabled(false);
+            SystemAMPNameText.setText("");
+            SystemAMPAddressText.setText("");
         }
         populateTable();
-    }//GEN-LAST:event_btnSubmitSAMRActionPerformed
+    }//GEN-LAST:event_SystemAMPSubmitButtonActionPerformed
 
-    private void btnManageSAMRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageSAMRActionPerformed
+    private void SystemAMPViewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMPViewButtonActionPerformed
         // TODO add your handling code here:
-        int selectedRow = tblPharmacy.getSelectedRow();
+        int selectedRow = SystemAMPTable.getSelectedRow();
         if (selectedRow >= 0)
         {
-            Pharmacy selectedPharmacy = (Pharmacy) tblPharmacy.getValueAt(selectedRow, 1);
+            Pharmacy selectedPharmacy = (Pharmacy) SystemAMPTable.getValueAt(selectedRow, 1);
             SystemManageEmployees fs = new SystemManageEmployees(userProcessContainerSAMR, selectedPharmacy, ecosystem);
             userProcessContainerSAMR.add("SysAdminManageEmployees", fs);
             CardLayout layout = (CardLayout) userProcessContainerSAMR.getLayout();
@@ -260,9 +256,9 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_btnManageSAMRActionPerformed
+    }//GEN-LAST:event_SystemAMPViewButtonActionPerformed
 
-    private void btnBackSAMRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackSAMRActionPerformed
+    private void SystemAMPBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMPBackButtonActionPerformed
         // TODO add your handling code here:
         userProcessContainerSAMR.remove(this);
         Component[] componentArray = userProcessContainerSAMR.getComponents();
@@ -271,38 +267,38 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
         //dwjp.populateTree();
         CardLayout layout = (CardLayout) userProcessContainerSAMR.getLayout();
         layout.previous(userProcessContainerSAMR);
-    }//GEN-LAST:event_btnBackSAMRActionPerformed
+    }//GEN-LAST:event_SystemAMPBackButtonActionPerformed
 
-    private void tblPharmacyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblPharmacyMouseClicked
+    private void SystemAMPTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SystemAMPTableMouseClicked
         // TODO add your handling code here:
-        int selectedRow = tblPharmacy.getSelectedRow();
+        int selectedRow = SystemAMPTable.getSelectedRow();
         if (selectedRow >= 0)
         {
-            btnDeleteSAMR.setEnabled(true);
-            btnManageSAMR.setEnabled(true);
+            SystemAMPDeleteButton.setEnabled(true);
+            SystemAMPViewButton.setEnabled(true);
         }
-    }//GEN-LAST:event_tblPharmacyMouseClicked
+    }//GEN-LAST:event_SystemAMPTableMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBackSAMR;
-    private javax.swing.JButton btnDeleteSAMR;
-    private javax.swing.JButton btnManageSAMR;
-    private javax.swing.JButton btnNewPharmacy;
-    private javax.swing.JButton btnSubmitSAMR;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel SystemAMPAddressLabel;
+    private javax.swing.JTextField SystemAMPAddressText;
+    private javax.swing.JButton SystemAMPBackButton;
+    private javax.swing.JButton SystemAMPCreateButton;
+    private javax.swing.JButton SystemAMPDeleteButton;
+    private javax.swing.JLabel SystemAMPLabel;
+    private javax.swing.JLabel SystemAMPLabel1;
+    private javax.swing.JLabel SystemAMPNameLabel;
+    private javax.swing.JTextField SystemAMPNameText;
+    private javax.swing.JSeparator SystemAMPSeparator;
+    private javax.swing.JButton SystemAMPSubmitButton;
+    private javax.swing.JTable SystemAMPTable;
+    private javax.swing.JButton SystemAMPViewButton;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JLabel lblTitle;
-    private javax.swing.JTable tblPharmacy;
-    private javax.swing.JTextField txtAddressSAMR;
-    private javax.swing.JTextField txtNameSAMR;
     // End of variables declaration//GEN-END:variables
 
     private void populateTable() {
-        DefaultTableModel dtm = (DefaultTableModel)tblPharmacy.getModel();
+        DefaultTableModel dtm = (DefaultTableModel)SystemAMPTable.getModel();
         dtm.setRowCount(0);
         int count1 = 1;
         if(ecosystem.getPharmacyDirectory().getPharmacyList() != null)
@@ -310,16 +306,16 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
             for(Pharmacy p : ecosystem.getPharmacyDirectory().getPharmacyList())
             {
                 Object[] row = new Object[dtm.getColumnCount()];
-                row[0] = p.getId();
+                row[0] = p.getPharmacyId();
                 row[1] = p;
-                row[2] = p.getAddress();
+                row[2] = p.getPharmacyAddress();
                 dtm.addRow(row);
                 count1++;
             }
         }
         else
         {
-            tblPharmacy.setEnabled(false);
+            SystemAMPTable.setEnabled(false);
         }
     }
 }

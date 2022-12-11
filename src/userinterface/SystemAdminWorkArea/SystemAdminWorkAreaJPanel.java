@@ -21,7 +21,7 @@ import javax.swing.tree.DefaultTreeModel;
 
 /**
  *
- * @author Vini
+ * @author nupoorkorde
  */
 public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -110,11 +110,11 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jSplitPane = new javax.swing.JSplitPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        btnManageCustomersSAWAP = new javax.swing.JButton();
-        btnManagePharmacySAWAP = new javax.swing.JButton();
-        BtnManageSupplier = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        SystemAWALabel1 = new javax.swing.JLabel();
+        SystemAWACustomerButton = new javax.swing.JButton();
+        SystemAWAPharmacyButton = new javax.swing.JButton();
+        SystemAWASupplierButton = new javax.swing.JButton();
+        SystemAWALabel = new javax.swing.JLabel();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -138,85 +138,83 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("Admin Panel");
-        jPanel2.add(jLabel2);
-        jLabel2.setBounds(243, 11, 150, 31);
+        SystemAWALabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        SystemAWALabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        SystemAWALabel1.setText("Admin Panel");
+        jPanel2.add(SystemAWALabel1);
+        SystemAWALabel1.setBounds(243, 11, 150, 31);
 
-        btnManageCustomersSAWAP.setBackground(new java.awt.Color(255, 255, 255));
-        btnManageCustomersSAWAP.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnManageCustomersSAWAP.setText("Manage Customers");
-        btnManageCustomersSAWAP.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnManageCustomersSAWAP.addActionListener(new java.awt.event.ActionListener() {
+        SystemAWACustomerButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAWACustomerButton.setText("Manage Customers");
+        SystemAWACustomerButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SystemAWACustomerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageCustomersSAWAPActionPerformed(evt);
+                SystemAWACustomerButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageCustomersSAWAP);
-        btnManageCustomersSAWAP.setBounds(10, 95, 130, 35);
+        jPanel2.add(SystemAWACustomerButton);
+        SystemAWACustomerButton.setBounds(10, 95, 130, 35);
 
-        btnManagePharmacySAWAP.setBackground(new java.awt.Color(255, 255, 255));
-        btnManagePharmacySAWAP.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnManagePharmacySAWAP.setText("Manage Pharmacy");
-        btnManagePharmacySAWAP.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnManagePharmacySAWAP.addActionListener(new java.awt.event.ActionListener() {
+        SystemAWAPharmacyButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAWAPharmacyButton.setText("Manage Pharmacy");
+        SystemAWAPharmacyButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SystemAWAPharmacyButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManagePharmacySAWAPActionPerformed(evt);
+                SystemAWAPharmacyButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManagePharmacySAWAP);
-        btnManagePharmacySAWAP.setBounds(10, 179, 130, 35);
+        jPanel2.add(SystemAWAPharmacyButton);
+        SystemAWAPharmacyButton.setBounds(10, 179, 130, 35);
 
-        BtnManageSupplier.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        BtnManageSupplier.setText("Manage Supplier");
-        BtnManageSupplier.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        BtnManageSupplier.addActionListener(new java.awt.event.ActionListener() {
+        SystemAWASupplierButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAWASupplierButton.setText("Manage Supplier");
+        SystemAWASupplierButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SystemAWASupplierButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnManageSupplierActionPerformed(evt);
+                SystemAWASupplierButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(BtnManageSupplier);
-        BtnManageSupplier.setBounds(10, 278, 130, 37);
+        jPanel2.add(SystemAWASupplierButton);
+        SystemAWASupplierButton.setBounds(10, 278, 130, 37);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Manage_WORK_AREA_FINAL.jpg"))); // NOI18N
-        jPanel2.add(jLabel3);
-        jLabel3.setBounds(0, 0, 1500, 910);
+        SystemAWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemAdminWorkAreaJPanel.jpg"))); // NOI18N
+        jPanel2.add(SystemAWALabel);
+        SystemAWALabel.setBounds(200, -90, 1500, 910);
 
         jSplitPane.setRightComponent(jPanel2);
 
         add(jSplitPane, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnManageCustomersSAWAPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageCustomersSAWAPActionPerformed
+    private void SystemAWACustomerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAWACustomerButtonActionPerformed
         SystemAdminManageCustomers uc = new SystemAdminManageCustomers(userProcessContainerSAWAP, ecosystemSAWAP);
         userProcessContainerSAWAP.add("UserCustomer", uc);
         CardLayout layout = (CardLayout)this.userProcessContainerSAWAP.getLayout();
         layout.next(userProcessContainerSAWAP);
-    }//GEN-LAST:event_btnManageCustomersSAWAPActionPerformed
+    }//GEN-LAST:event_SystemAWACustomerButtonActionPerformed
 
-    private void btnManagePharmacySAWAPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManagePharmacySAWAPActionPerformed
+    private void SystemAWAPharmacyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAWAPharmacyButtonActionPerformed
         SystemAdminManagePharmacy um = new SystemAdminManagePharmacy(userProcessContainerSAWAP, ecosystemSAWAP);
         userProcessContainerSAWAP.add("UserManager", um);
         CardLayout layout = (CardLayout)this.userProcessContainerSAWAP.getLayout();
         layout.next(userProcessContainerSAWAP);
-    }//GEN-LAST:event_btnManagePharmacySAWAPActionPerformed
+    }//GEN-LAST:event_SystemAWAPharmacyButtonActionPerformed
 
-    private void BtnManageSupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnManageSupplierActionPerformed
+    private void SystemAWASupplierButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAWASupplierButtonActionPerformed
         // TODO add your handling code here:
         SystemAdminManageSupplier ms = new SystemAdminManageSupplier(userProcessContainerSAWAP, ecosystemSAWAP);
         userProcessContainerSAWAP.add("UserSupplier", ms);
         CardLayout layout = (CardLayout)this.userProcessContainerSAWAP.getLayout();
         layout.next(userProcessContainerSAWAP);
-    }//GEN-LAST:event_BtnManageSupplierActionPerformed
+    }//GEN-LAST:event_SystemAWASupplierButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BtnManageSupplier;
-    private javax.swing.JButton btnManageCustomersSAWAP;
-    private javax.swing.JButton btnManagePharmacySAWAP;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton SystemAWACustomerButton;
+    private javax.swing.JLabel SystemAWALabel;
+    private javax.swing.JLabel SystemAWALabel1;
+    private javax.swing.JButton SystemAWAPharmacyButton;
+    private javax.swing.JButton SystemAWASupplierButton;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSplitPane jSplitPane;

@@ -64,17 +64,17 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
             }
         });
         add(RLTrequestTestSubmitButton);
-        RLTrequestTestSubmitButton.setBounds(370, 100, 130, 30);
+        RLTrequestTestSubmitButton.setBounds(590, 170, 130, 30);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel1.setText("Message: ");
         add(jLabel1);
-        jLabel1.setBounds(70, 26, 80, 50);
+        jLabel1.setBounds(160, 80, 80, 50);
 
         RLTMessageText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         RLTMessageText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(RLTMessageText);
-        RLTMessageText.setBounds(180, 26, 320, 40);
+        RLTMessageText.setBounds(260, 80, 320, 40);
 
         RLTBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         RLTBackButton.setText("<<Back");
@@ -84,7 +84,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
             }
         });
         add(RLTBackButton);
-        RLTBackButton.setBounds(180, 100, 120, 30);
+        RLTBackButton.setBounds(50, 170, 120, 30);
 
         RLTenterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         RLTenterpriseLabel.setText("<>");
@@ -93,7 +93,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         add(jLabel2);
         jLabel2.setBounds(30, 50, 0, 0);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (6).png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/CustomerRequestLabText-Dhriti.jpg"))); // NOI18N
         add(jLabel3);
         jLabel3.setBounds(0, 6, 1410, 780);
     }// </editor-fold>//GEN-END:initComponents

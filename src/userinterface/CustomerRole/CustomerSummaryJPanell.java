@@ -38,7 +38,7 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
         for(Customer c : system.getCustomerDirectory().getCustomerList() )
         {
             
-                if(c.getCustomerName() == null ? user.getEmployee().getName() == null : c.getCustomerName().equals(user.getEmployee().getName()))
+                if(c.getCustomerName() == null ? user.getEmployee().getEmployeeName() == null : c.getCustomerName().equals(user.getEmployee().getEmployeeName()))
                 {
                     this.customer = c;
                 }
@@ -134,7 +134,7 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
         add(CSBackButton);
         CSBackButton.setBounds(10, 199, 80, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Pharmacy_Summary_Image.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/CustomerOrderSummary-Dhriti.jpg"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(0, 160, 1480, 620);
     }// </editor-fold>//GEN-END:initComponents
