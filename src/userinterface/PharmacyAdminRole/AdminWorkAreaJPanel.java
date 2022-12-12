@@ -66,6 +66,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         PharmacyAWAOrderMedicineButton = new javax.swing.JButton();
         PharmacyAWALabel = new javax.swing.JLabel();
 
+<<<<<<< Updated upstream
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
@@ -87,6 +88,30 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         PharmacyAWALabel3.setBounds(430, 80, 61, 21);
 
         PharmacyAWAManageMedicineButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        setBackground(new java.awt.Color(0, 204, 204));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
+        setLayout(null);
+
+        PharmacyAWALabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        PharmacyAWALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PharmacyAWALabel1.setText("Admin Work Area");
+        add(PharmacyAWALabel1);
+        PharmacyAWALabel1.setBounds(410, 0, 600, 60);
+
+        PharmacyAWALabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyAWALabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        PharmacyAWALabel2.setText("Pharmacy");
+        add(PharmacyAWALabel2);
+        PharmacyAWALabel2.setBounds(550, 70, 120, 22);
+
+        PharmacyAWALabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyAWALabel3.setText("<value>");
+        add(PharmacyAWALabel3);
+        PharmacyAWALabel3.setBounds(700, 70, 100, 22);
+
+        PharmacyAWAManageMedicineButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyAWAManageMedicineButton.setText("Manage Medicine");
         PharmacyAWAManageMedicineButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAWAManageMedicineButton.addActionListener(new java.awt.event.ActionListener() {
@@ -95,9 +120,15 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(PharmacyAWAManageMedicineButton);
+<<<<<<< Updated upstream
         PharmacyAWAManageMedicineButton.setBounds(400, 150, 160, 60);
 
         PharmacyAWAViewOrderButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        PharmacyAWAManageMedicineButton.setBounds(580, 140, 210, 40);
+
+        PharmacyAWAViewOrderButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyAWAViewOrderButton.setText("View Orders");
         PharmacyAWAViewOrderButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAWAViewOrderButton.addActionListener(new java.awt.event.ActionListener() {
@@ -106,6 +137,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(PharmacyAWAViewOrderButton);
+<<<<<<< Updated upstream
         PharmacyAWAViewOrderButton.setBounds(150, 150, 170, 60);
 
         PharmacyAWANameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -122,13 +154,37 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         PharmacyAWAAddressLabel.setText("                                        Address:");
         add(PharmacyAWAAddressLabel);
         PharmacyAWAAddressLabel.setBounds(110, 380, 170, 50);
+=======
+        PharmacyAWAViewOrderButton.setBounds(60, 140, 230, 40);
+
+        PharmacyAWANameLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        PharmacyAWANameLabel.setText("                Pharmacy Name:");
+        add(PharmacyAWANameLabel);
+        PharmacyAWANameLabel.setBounds(50, 270, 210, 50);
+
+        PharmacyAWANameText.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        PharmacyAWANameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyAWANameText);
+        PharmacyAWANameText.setBounds(280, 270, 340, 50);
+
+        PharmacyAWAAddressLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        PharmacyAWAAddressLabel.setText("                                        Address:");
+        add(PharmacyAWAAddressLabel);
+        PharmacyAWAAddressLabel.setBounds(620, 270, 390, 50);
+>>>>>>> Stashed changes
 
         PharmacyAWAAddressText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         PharmacyAWAAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(PharmacyAWAAddressText);
+<<<<<<< Updated upstream
         PharmacyAWAAddressText.setBounds(330, 380, 340, 50);
 
         PharmacyAWASubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        PharmacyAWAAddressText.setBounds(920, 270, 340, 50);
+
+        PharmacyAWASubmitButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyAWASubmitButton.setText("Submit");
         PharmacyAWASubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAWASubmitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -137,9 +193,15 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(PharmacyAWASubmitButton);
+<<<<<<< Updated upstream
         PharmacyAWASubmitButton.setBounds(370, 530, 180, 60);
 
         PharmacyAWAOrderMedicineButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        PharmacyAWASubmitButton.setBounds(560, 420, 260, 40);
+
+        PharmacyAWAOrderMedicineButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyAWAOrderMedicineButton.setText("Order Medicines From Supplier");
         PharmacyAWAOrderMedicineButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,11 +209,19 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(PharmacyAWAOrderMedicineButton);
+<<<<<<< Updated upstream
         PharmacyAWAOrderMedicineButton.setBounds(630, 150, 199, 60);
 
         PharmacyAWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharmacyAdminWorkArea.jpg"))); // NOI18N
         add(PharmacyAWALabel);
         PharmacyAWALabel.setBounds(80, 0, 1380, 810);
+=======
+        PharmacyAWAOrderMedicineButton.setBounds(1030, 140, 250, 40);
+
+        PharmacyAWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/pharmacyyyyyyy.jpg"))); // NOI18N
+        add(PharmacyAWALabel);
+        PharmacyAWALabel.setBounds(120, 480, 1100, 370);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void PharmacyAWAManageMedicineButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyAWAManageMedicineButtonActionPerformed

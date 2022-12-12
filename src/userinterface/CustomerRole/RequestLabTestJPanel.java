@@ -54,9 +54,16 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         setLayout(null);
 
         RLTrequestTestSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
+        setLayout(null);
+
+        RLTrequestTestSubmitButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         RLTrequestTestSubmitButton.setText("Submit Message");
         RLTrequestTestSubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,6 +71,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
             }
         });
         add(RLTrequestTestSubmitButton);
+<<<<<<< Updated upstream
         RLTrequestTestSubmitButton.setBounds(590, 170, 130, 30);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -72,11 +80,25 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         jLabel1.setBounds(160, 80, 80, 50);
 
         RLTMessageText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+=======
+        RLTrequestTestSubmitButton.setBounds(560, 170, 200, 40);
+
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setText("Message: ");
+        add(jLabel1);
+        jLabel1.setBounds(180, 80, 80, 50);
+
+        RLTMessageText.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+>>>>>>> Stashed changes
         RLTMessageText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(RLTMessageText);
         RLTMessageText.setBounds(260, 80, 320, 40);
 
+<<<<<<< Updated upstream
         RLTBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        RLTBackButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         RLTBackButton.setText("<<Back");
         RLTBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,12 +106,21 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
             }
         });
         add(RLTBackButton);
+<<<<<<< Updated upstream
         RLTBackButton.setBounds(50, 170, 120, 30);
 
         RLTenterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         RLTenterpriseLabel.setText("<>");
         add(RLTenterpriseLabel);
         RLTenterpriseLabel.setBounds(10, 10, 170, 30);
+=======
+        RLTBackButton.setBounds(50, 170, 190, 40);
+
+        RLTenterpriseLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        RLTenterpriseLabel.setText("<>");
+        add(RLTenterpriseLabel);
+        RLTenterpriseLabel.setBounds(20, 10, 230, 30);
+>>>>>>> Stashed changes
         add(jLabel2);
         jLabel2.setBounds(30, 50, 0, 0);
 

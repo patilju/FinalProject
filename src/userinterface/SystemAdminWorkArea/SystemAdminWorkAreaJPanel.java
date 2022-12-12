@@ -116,6 +116,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         SystemAWASupplierButton = new javax.swing.JButton();
         SystemAWALabel = new javax.swing.JLabel();
 
+<<<<<<< Updated upstream
+=======
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
+>>>>>>> Stashed changes
         setLayout(new java.awt.BorderLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
@@ -142,7 +146,11 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         SystemAWALabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         SystemAWALabel1.setText("Admin Panel");
         jPanel2.add(SystemAWALabel1);
+<<<<<<< Updated upstream
         SystemAWALabel1.setBounds(243, 11, 150, 31);
+=======
+        SystemAWALabel1.setBounds(550, 30, 310, 70);
+>>>>>>> Stashed changes
 
         SystemAWACustomerButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAWACustomerButton.setText("Manage Customers");
@@ -153,7 +161,11 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(SystemAWACustomerButton);
+<<<<<<< Updated upstream
         SystemAWACustomerButton.setBounds(10, 95, 130, 35);
+=======
+        SystemAWACustomerButton.setBounds(260, 180, 130, 90);
+>>>>>>> Stashed changes
 
         SystemAWAPharmacyButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAWAPharmacyButton.setText("Manage Pharmacy");
@@ -164,7 +176,11 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(SystemAWAPharmacyButton);
+<<<<<<< Updated upstream
         SystemAWAPharmacyButton.setBounds(10, 179, 130, 35);
+=======
+        SystemAWAPharmacyButton.setBounds(550, 180, 130, 80);
+>>>>>>> Stashed changes
 
         SystemAWASupplierButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAWASupplierButton.setText("Manage Supplier");
@@ -175,11 +191,19 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         jPanel2.add(SystemAWASupplierButton);
+<<<<<<< Updated upstream
         SystemAWASupplierButton.setBounds(10, 278, 130, 37);
 
         SystemAWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemAdminWorkAreaJPanel.jpg"))); // NOI18N
         jPanel2.add(SystemAWALabel);
         SystemAWALabel.setBounds(200, -90, 1500, 910);
+=======
+        SystemAWASupplierButton.setBounds(880, 180, 130, 80);
+
+        SystemAWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemAdminWorkAreaJPanel.jpg"))); // NOI18N
+        jPanel2.add(SystemAWALabel);
+        SystemAWALabel.setBounds(250, 150, 1500, 910);
+>>>>>>> Stashed changes
 
         jSplitPane.setRightComponent(jPanel2);
 

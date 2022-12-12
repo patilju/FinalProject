@@ -103,7 +103,11 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
+<<<<<<< Updated upstream
         SupplierDMWATable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+=======
+        SupplierDMWATable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         SupplierDMWATable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -130,6 +134,7 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
         jScrollPane1.setViewportView(SupplierDMWATable);
 
         add(jScrollPane1);
+<<<<<<< Updated upstream
         jScrollPane1.setBounds(126, 176, 910, 100);
 
         SupplierDMWALabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -138,6 +143,16 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
         SupplierDMWALabel1.setBounds(88, 68, 400, 20);
 
         SupplierDMWAProcessButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        jScrollPane1.setBounds(60, 60, 970, 150);
+
+        SupplierDMWALabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierDMWALabel1.setText("<>");
+        add(SupplierDMWALabel1);
+        SupplierDMWALabel1.setBounds(80, 20, 400, 20);
+
+        SupplierDMWAProcessButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+>>>>>>> Stashed changes
         SupplierDMWAProcessButton.setText("Process");
         SupplierDMWAProcessButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierDMWAProcessButton.addActionListener(new java.awt.event.ActionListener() {
@@ -146,9 +161,15 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
             }
         });
         add(SupplierDMWAProcessButton);
+<<<<<<< Updated upstream
         SupplierDMWAProcessButton.setBounds(926, 294, 110, 50);
 
         SupplierDMWARefreshButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        SupplierDMWAProcessButton.setBounds(60, 230, 210, 30);
+
+        SupplierDMWARefreshButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+>>>>>>> Stashed changes
         SupplierDMWARefreshButton.setText("Refresh");
         SupplierDMWARefreshButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierDMWARefreshButton.addActionListener(new java.awt.event.ActionListener() {
@@ -157,11 +178,19 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
             }
         });
         add(SupplierDMWARefreshButton);
+<<<<<<< Updated upstream
         SupplierDMWARefreshButton.setBounds(946, 128, 90, 30);
 
         SupplierDMWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/delivery1234.jpg"))); // NOI18N
         add(SupplierDMWALabel);
         SupplierDMWALabel.setBounds(0, 80, 1080, 700);
+=======
+        SupplierDMWARefreshButton.setBounds(280, 230, 200, 30);
+
+        SupplierDMWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/blue-pill-background.png"))); // NOI18N
+        add(SupplierDMWALabel);
+        SupplierDMWALabel.setBounds(0, 0, 1130, 880);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void SupplierDMWAProcessButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierDMWAProcessButtonActionPerformed

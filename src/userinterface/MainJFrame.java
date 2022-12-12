@@ -61,6 +61,7 @@ public class MainJFrame extends javax.swing.JFrame {
         loginJLabel = new javax.swing.JLabel();
         logoutButton = new javax.swing.JButton();
         container = new javax.swing.JPanel();
+<<<<<<< Updated upstream
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -70,12 +71,24 @@ public class MainJFrame extends javax.swing.JFrame {
         loginButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         loginButton.setText("Login");
         loginButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+=======
+        jLabel1 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 153, 153));
+
+        loginButton.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        loginButton.setText("Login");
+        loginButton.setBorder(new javax.swing.border.MatteBorder(null));
+>>>>>>> Stashed changes
         loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginButtonActionPerformed(evt);
             }
         });
 
+<<<<<<< Updated upstream
         userNameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         userNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -89,6 +102,21 @@ public class MainJFrame extends javax.swing.JFrame {
         PasswordLabel.setText("Password");
 
         logoutButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        userNameText.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        userNameText.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+
+        PasswordText.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        PasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        UserNameLabel.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        UserNameLabel.setText("User Name");
+
+        PasswordLabel.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        PasswordLabel.setText("Password");
+
+        logoutButton.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         logoutButton.setText("Logout");
         logoutButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         logoutButton.setEnabled(false);
@@ -134,7 +162,11 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addComponent(loginButton)
                 .addGap(18, 18, 18)
                 .addComponent(logoutButton)
+<<<<<<< Updated upstream
                 .addContainerGap(401, Short.MAX_VALUE))
+=======
+                .addContainerGap(557, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
@@ -142,11 +174,22 @@ public class MainJFrame extends javax.swing.JFrame {
         container.setBackground(new java.awt.Color(255, 255, 255));
         container.setLayout(new java.awt.CardLayout());
 
+<<<<<<< Updated upstream
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/online pharmacy store.jpg"))); // NOI18N
         jLabel4.setMaximumSize(new java.awt.Dimension(1024, 680));
         jLabel4.setMinimumSize(new java.awt.Dimension(1024, 680));
         jLabel4.setPreferredSize(new java.awt.Dimension(1024, 80));
         container.add(jLabel4, "card2");
+=======
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MainFrame123.jpeg"))); // NOI18N
+        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel1.setMaximumSize(new java.awt.Dimension(1000, 860));
+        jLabel1.setMinimumSize(new java.awt.Dimension(1000, 860));
+        jLabel1.setPreferredSize(new java.awt.Dimension(1000, 860));
+        container.add(jLabel1, "card2");
+        jLabel1.getAccessibleContext().setAccessibleName("");
+>>>>>>> Stashed changes
 
         jSplitPane1.setRightComponent(container);
 
@@ -171,20 +214,33 @@ public class MainJFrame extends javax.swing.JFrame {
            if(user.getRole().toString() == "Business.Role.SystemAdminRole")
            {
                 Employee e = user.getEmployee();
+<<<<<<< Updated upstream
                 JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Admin!");
+=======
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Admin!");
+>>>>>>> Stashed changes
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
                 logoutButton.setEnabled(true);
+<<<<<<< Updated upstream
                 SystemAdminWorkAreaJPanel sawajp = new SystemAdminWorkAreaJPanel(container, system);
                 container.add("SysAdminPanel",sawajp);
+=======
+                SystemAdminWorkAreaJPanel S = new SystemAdminWorkAreaJPanel(container, system);
+                container.add("SysAdminPanel",S);
+>>>>>>> Stashed changes
                 CardLayout cardlayout = (CardLayout) container.getLayout();
                 cardlayout.next(container);
            }
            else if(user.getRole().toString() == "Business.Role.AdminRole")
            {
                 Employee e = user.getEmployee();
+<<<<<<< Updated upstream
                 JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Pharmacy Manager!");
+=======
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Pharmacy Manager!");
+>>>>>>> Stashed changes
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
@@ -197,7 +253,11 @@ public class MainJFrame extends javax.swing.JFrame {
            else if(user.getRole().toString() == "Business.Role.SupplierAdminRole")
            {
                 Employee e = user.getEmployee();
+<<<<<<< Updated upstream
                 JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Supplier Manager!");
+=======
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Supplier Manager!");
+>>>>>>> Stashed changes
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
@@ -210,7 +270,11 @@ public class MainJFrame extends javax.swing.JFrame {
            else if(user.getRole().toString() == "Business.Role.CustomerRole")
            {
                 Employee e = user.getEmployee();
+<<<<<<< Updated upstream
                 JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Customer!");
+=======
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Customer!");
+>>>>>>> Stashed changes
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
@@ -223,7 +287,11 @@ public class MainJFrame extends javax.swing.JFrame {
            else if(user.getRole().toString() == "Business.Role.SupplierDeliveryManRole")
            {
                 Employee e = user.getEmployee();
+<<<<<<< Updated upstream
                 JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Customer!");
+=======
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Customer!");
+>>>>>>> Stashed changes
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
@@ -236,7 +304,11 @@ public class MainJFrame extends javax.swing.JFrame {
            else
            {
                 Employee e = user.getEmployee();
+<<<<<<< Updated upstream
                 JOptionPane.showMessageDialog(null, "Access Granted " + e.getName() + " - Delivery Man!");
+=======
+                JOptionPane.showMessageDialog(null, "Access Granted " + e.getEmployeeName() + " - Delivery Man!");
+>>>>>>> Stashed changes
                 loginButton.setEnabled(false);
                 userNameText.setEnabled(false);
                 PasswordText.setEnabled(false);
@@ -327,7 +399,11 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JPasswordField PasswordText;
     private javax.swing.JLabel UserNameLabel;
     private javax.swing.JPanel container;
+<<<<<<< Updated upstream
     private javax.swing.JLabel jLabel4;
+=======
+    private javax.swing.JLabel jLabel1;
+>>>>>>> Stashed changes
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JButton loginButton;

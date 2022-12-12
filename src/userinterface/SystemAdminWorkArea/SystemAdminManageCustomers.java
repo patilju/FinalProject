@@ -6,6 +6,10 @@
 package userinterface.SystemAdminWorkArea;
 
 import Business.Customer.Customer;
+<<<<<<< Updated upstream
+=======
+import Business.Customer.EmailValidation;
+>>>>>>> Stashed changes
 import Business.DeliveryMan.DeliveryMan;
 import Business.EcoSystem;
 import Business.Employee.Employee;
@@ -46,6 +50,10 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
         SystemAMCSubmitButton.setEnabled(false);
         SystemAMCDeleteButton.setEnabled(false);
         SystemAMCViewButton.setEnabled(false);
+<<<<<<< Updated upstream
+=======
+         emailIDField.setEnabled(false);
+>>>>>>> Stashed changes
         populateTable();
     }
 
@@ -66,6 +74,11 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
         SystemAMCLabel1 = new javax.swing.JLabel();
         SystemAMCDeleteButton = new javax.swing.JButton();
         SystemAMCNameLabel = new javax.swing.JLabel();
+<<<<<<< Updated upstream
+=======
+        emailIDField = new javax.swing.JTextField();
+        SystemAMCAddressLabel1 = new javax.swing.JLabel();
+>>>>>>> Stashed changes
         SystemAMCCreateButton = new javax.swing.JButton();
         SystemAMCNameText = new javax.swing.JTextField();
         SystemAMCUsernameText = new javax.swing.JTextField();
@@ -74,6 +87,10 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
         SystemAMCPhoneNumberLabel = new javax.swing.JLabel();
         SystemAMCConfirmPasswordText = new javax.swing.JTextField();
         SystemAMCAddressLabel = new javax.swing.JLabel();
+<<<<<<< Updated upstream
+=======
+        SendEmailButton = new javax.swing.JButton();
+>>>>>>> Stashed changes
         SystemAMCUsernameLabel = new javax.swing.JLabel();
         SystemAMCAddressText = new javax.swing.JTextField();
         SystemAMCPasswordLabel = new javax.swing.JLabel();
@@ -81,30 +98,51 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
         SystemAMCSeparator = new javax.swing.JSeparator();
         SystemAMCLabel = new javax.swing.JLabel();
 
+<<<<<<< Updated upstream
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
         SystemAMCBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAMCBackButton.setText("< Back");
         SystemAMCBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+=======
+        setBackground(new java.awt.Color(153, 204, 255));
+        setLayout(null);
+
+        SystemAMCBackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCBackButton.setText("< Back");
+        SystemAMCBackButton.setBorder(new javax.swing.border.MatteBorder(null));
+>>>>>>> Stashed changes
         SystemAMCBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SystemAMCBackButtonActionPerformed(evt);
             }
         });
         add(SystemAMCBackButton);
+<<<<<<< Updated upstream
         SystemAMCBackButton.setBounds(10, 24, 61, 23);
 
         SystemAMCSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAMCSubmitButton.setText("Submit");
         SystemAMCSubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+=======
+        SystemAMCBackButton.setBounds(10, 24, 140, 40);
+
+        SystemAMCSubmitButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCSubmitButton.setText("Register");
+        SystemAMCSubmitButton.setBorder(new javax.swing.border.MatteBorder(null));
+>>>>>>> Stashed changes
         SystemAMCSubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SystemAMCSubmitButtonActionPerformed(evt);
             }
         });
         add(SystemAMCSubmitButton);
+<<<<<<< Updated upstream
         SystemAMCSubmitButton.setBounds(423, 477, 259, 40);
+=======
+        SystemAMCSubmitButton.setBounds(430, 750, 259, 40);
+>>>>>>> Stashed changes
 
         SystemAMCTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         SystemAMCTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -132,17 +170,26 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
         jScrollPane1.setViewportView(SystemAMCTable);
 
         add(jScrollPane1);
+<<<<<<< Updated upstream
         jScrollPane1.setBounds(205, 79, 1030, 133);
 
         SystemAMCViewButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAMCViewButton.setText("View Customer ");
         SystemAMCViewButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+=======
+        jScrollPane1.setBounds(200, 160, 1030, 120);
+
+        SystemAMCViewButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCViewButton.setText("View Customer ");
+        SystemAMCViewButton.setBorder(new javax.swing.border.MatteBorder(null));
+>>>>>>> Stashed changes
         SystemAMCViewButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SystemAMCViewButtonActionPerformed(evt);
             }
         });
         add(SystemAMCViewButton);
+<<<<<<< Updated upstream
         SystemAMCViewButton.setBounds(10, 80, 140, 59);
 
         SystemAMCLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -154,12 +201,26 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
         SystemAMCDeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAMCDeleteButton.setText("Delete Customer");
         SystemAMCDeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+=======
+        SystemAMCViewButton.setBounds(10, 160, 170, 59);
+
+        SystemAMCLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        SystemAMCLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SystemAMCLabel1.setText("Manage Customers");
+        add(SystemAMCLabel1);
+        SystemAMCLabel1.setBounds(420, 10, 470, 40);
+
+        SystemAMCDeleteButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCDeleteButton.setText("Delete Customer");
+        SystemAMCDeleteButton.setBorder(new javax.swing.border.MatteBorder(null));
+>>>>>>> Stashed changes
         SystemAMCDeleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SystemAMCDeleteButtonActionPerformed(evt);
             }
         });
         add(SystemAMCDeleteButton);
+<<<<<<< Updated upstream
         SystemAMCDeleteButton.setBounds(10, 150, 140, 58);
 
         SystemAMCNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -170,13 +231,44 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
         SystemAMCCreateButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAMCCreateButton.setText("Create Customer");
         SystemAMCCreateButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+=======
+        SystemAMCDeleteButton.setBounds(10, 340, 170, 58);
+
+        SystemAMCNameLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCNameLabel.setText("Name:");
+        add(SystemAMCNameLabel);
+        SystemAMCNameLabel.setBounds(230, 320, 176, 22);
+
+        emailIDField.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        emailIDField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        emailIDField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailIDFieldActionPerformed(evt);
+            }
+        });
+        add(emailIDField);
+        emailIDField.setBounds(430, 480, 259, 30);
+
+        SystemAMCAddressLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCAddressLabel1.setText("Email:");
+        add(SystemAMCAddressLabel1);
+        SystemAMCAddressLabel1.setBounds(230, 480, 176, 31);
+
+        SystemAMCCreateButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCCreateButton.setText("Create Customer");
+        SystemAMCCreateButton.setBorder(new javax.swing.border.MatteBorder(null));
+>>>>>>> Stashed changes
         SystemAMCCreateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SystemAMCCreateButtonActionPerformed(evt);
             }
         });
         add(SystemAMCCreateButton);
+<<<<<<< Updated upstream
         SystemAMCCreateButton.setBounds(10, 230, 140, 54);
+=======
+        SystemAMCCreateButton.setBounds(10, 520, 170, 60);
+>>>>>>> Stashed changes
 
         SystemAMCNameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SystemAMCNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -186,31 +278,53 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
             }
         });
         add(SystemAMCNameText);
+<<<<<<< Updated upstream
         SystemAMCNameText.setBounds(423, 354, 259, 31);
+=======
+        SystemAMCNameText.setBounds(430, 310, 259, 31);
+>>>>>>> Stashed changes
 
         SystemAMCUsernameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SystemAMCUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemAMCUsernameText);
+<<<<<<< Updated upstream
         SystemAMCUsernameText.setBounds(423, 230, 259, 32);
+=======
+        SystemAMCUsernameText.setBounds(430, 590, 259, 32);
+>>>>>>> Stashed changes
 
         SystemAMCPhoneNumberText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SystemAMCPhoneNumberText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemAMCPhoneNumberText);
+<<<<<<< Updated upstream
         SystemAMCPhoneNumberText.setBounds(423, 391, 259, 30);
+=======
+        SystemAMCPhoneNumberText.setBounds(430, 360, 259, 30);
+>>>>>>> Stashed changes
 
         SystemAMCPasswordText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SystemAMCPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemAMCPasswordText);
+<<<<<<< Updated upstream
         SystemAMCPasswordText.setBounds(423, 273, 259, 38);
 
         SystemAMCPhoneNumberLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAMCPhoneNumberLabel.setText("Phone Number:");
         add(SystemAMCPhoneNumberLabel);
         SystemAMCPhoneNumberLabel.setBounds(214, 391, 176, 30);
+=======
+        SystemAMCPasswordText.setBounds(430, 640, 259, 30);
+
+        SystemAMCPhoneNumberLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCPhoneNumberLabel.setText("Phone Number:");
+        add(SystemAMCPhoneNumberLabel);
+        SystemAMCPhoneNumberLabel.setBounds(230, 360, 176, 30);
+>>>>>>> Stashed changes
 
         SystemAMCConfirmPasswordText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SystemAMCConfirmPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemAMCConfirmPasswordText);
+<<<<<<< Updated upstream
         SystemAMCConfirmPasswordText.setBounds(423, 317, 259, 31);
 
         SystemAMCAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -222,6 +336,30 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
         SystemAMCUsernameLabel.setText("Username: ");
         add(SystemAMCUsernameLabel);
         SystemAMCUsernameLabel.setBounds(214, 230, 168, 32);
+=======
+        SystemAMCConfirmPasswordText.setBounds(430, 690, 259, 31);
+
+        SystemAMCAddressLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCAddressLabel.setText("Address:");
+        add(SystemAMCAddressLabel);
+        SystemAMCAddressLabel.setBounds(230, 420, 176, 31);
+
+        SendEmailButton.setBackground(new java.awt.Color(255, 204, 153));
+        SendEmailButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        SendEmailButton.setText("Get Credendials");
+        SendEmailButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SendEmailButtonActionPerformed(evt);
+            }
+        });
+        add(SendEmailButton);
+        SendEmailButton.setBounds(480, 530, 160, 30);
+
+        SystemAMCUsernameLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCUsernameLabel.setText("Username: ");
+        add(SystemAMCUsernameLabel);
+        SystemAMCUsernameLabel.setBounds(230, 590, 168, 32);
+>>>>>>> Stashed changes
 
         SystemAMCAddressText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SystemAMCAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -231,6 +369,7 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
             }
         });
         add(SystemAMCAddressText);
+<<<<<<< Updated upstream
         SystemAMCAddressText.setBounds(423, 427, 259, 30);
 
         SystemAMCPasswordLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -242,14 +381,33 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
         SystemAMCConfirmPasswordLabel.setText("Confirm Password:");
         add(SystemAMCConfirmPasswordLabel);
         SystemAMCConfirmPasswordLabel.setBounds(214, 317, 176, 31);
+=======
+        SystemAMCAddressText.setBounds(430, 420, 259, 30);
+
+        SystemAMCPasswordLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCPasswordLabel.setText("Password: ");
+        add(SystemAMCPasswordLabel);
+        SystemAMCPasswordLabel.setBounds(230, 640, 176, 38);
+
+        SystemAMCConfirmPasswordLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SystemAMCConfirmPasswordLabel.setText("Confirm Password:");
+        add(SystemAMCConfirmPasswordLabel);
+        SystemAMCConfirmPasswordLabel.setBounds(230, 690, 176, 31);
+>>>>>>> Stashed changes
 
         SystemAMCSeparator.setOrientation(javax.swing.SwingConstants.VERTICAL);
         add(SystemAMCSeparator);
         SystemAMCSeparator.setBounds(168, 11, 13, 506);
 
+<<<<<<< Updated upstream
         SystemAMCLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemAdminManageCustomers.png"))); // NOI18N
         add(SystemAMCLabel);
         SystemAMCLabel.setBounds(10, 20, 1240, 780);
+=======
+        SystemAMCLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/png-transparent-create-account-illustration-thumbnail.png"))); // NOI18N
+        add(SystemAMCLabel);
+        SystemAMCLabel.setBounds(790, 290, 380, 510);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void SystemAMCBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMCBackButtonActionPerformed
@@ -264,15 +422,29 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
     }//GEN-LAST:event_SystemAMCBackButtonActionPerformed
 
     private void SystemAMCSubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMCSubmitButtonActionPerformed
+<<<<<<< Updated upstream
         // TODO add your handling code here:
+=======
+        String pass2 = "1234";
+        String CustomerUserName = EmailValidation.generateUserName(SystemAMCNameText.getText());
+        String CustomrPassword = EmailValidation.generatePassword(SystemAMCNameText.getText().concat(pass2));
+        
+>>>>>>> Stashed changes
         if(validateThisSAMC())
         {
             Employee e = ecosystem.getEmployeeDirectory().createEmployee(SystemAMCNameText.getText(), SystemAMCAddressText.getText(), SystemAMCPhoneNumberText.getText());
            // SupplierEmp se = ecosystem.getSupplierEmpDirectory().createSupplierEmp(txtNameSAMC.getText(), txtAddressSAMC.getText(), txtPhoneSAMC.getText());
 
+<<<<<<< Updated upstream
             UserAccount ua = ecosystem.getUserAccountDirectory().createUserAccount(SystemAMCUsernameText.getText(), SystemAMCPasswordText.getText(), e, new CustomerRole());
             if(ua != null)
             {
+=======
+            UserAccount ua = ecosystem.getUserAccountDirectory().createUserAccount(CustomerUserName, CustomrPassword, e, new CustomerRole());
+            if(ua != null)
+            {
+               
+>>>>>>> Stashed changes
                 Customer c = ecosystem.getCustomerDirectory().createCustomer(SystemAMCNameText.getText(), SystemAMCAddressText.getText(), SystemAMCPhoneNumberText.getText());
                 JOptionPane.showMessageDialog(null, "Customer account created successfully for " + c.getCustomerName());
                 populateTable();
@@ -289,6 +461,7 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
                 SystemAMCPhoneNumberText.setEnabled(false);
                 SystemAMCAddressText.setText("");
                 SystemAMCAddressText.setEnabled(false);
+<<<<<<< Updated upstream
                 SystemAMCSubmitButton.setEnabled(false);
             }
             else
@@ -298,6 +471,19 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
                 return;
             }
         }
+=======
+                 emailIDField.setEnabled(false);
+                SystemAMCSubmitButton.setEnabled(false);
+            }
+            else 
+            {
+                ecosystem.getEmployeeDirectory().deleteEmployee(e);
+                JOptionPane.showMessageDialog(null,"Username " + CustomerUserName + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
+                return;
+            }
+        }
+        
+>>>>>>> Stashed changes
         else
         {
             return;
@@ -352,10 +538,18 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
     private void SystemAMCCreateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMCCreateButtonActionPerformed
         // TODO add your handling code here:
         SystemAMCCreateButton.setEnabled(false);
+<<<<<<< Updated upstream
         SystemAMCUsernameText.setEnabled(true);
         SystemAMCPasswordText.setEnabled(true);
         SystemAMCConfirmPasswordText.setEnabled(true);
         SystemAMCNameText.setEnabled(true);
+=======
+        //SystemAMCUsernameText.setEnabled(true);
+        //SystemAMCPasswordText.setEnabled(true);
+        //SystemAMCConfirmPasswordText.setEnabled(true);
+        SystemAMCNameText.setEnabled(true);
+        emailIDField.setEnabled(true);
+>>>>>>> Stashed changes
         SystemAMCPhoneNumberText.setEnabled(true);
         SystemAMCAddressText.setEnabled(true);
         SystemAMCSubmitButton.setEnabled(true);
@@ -371,9 +565,59 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_SystemAMCNameTextActionPerformed
 
+<<<<<<< Updated upstream
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel SystemAMCAddressLabel;
+=======
+    private void emailIDFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailIDFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_emailIDFieldActionPerformed
+
+    private void SendEmailButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SendEmailButtonActionPerformed
+        // TODO add your handling code here:
+        SystemAMCUsernameText.setEnabled(true);
+        SystemAMCPasswordText.setEnabled(true);
+        SystemAMCConfirmPasswordText.setEnabled(true);
+        String pass2 = "1234";
+        String emailId = emailIDField.getText();
+        String CustomerUserName = SystemAMCNameText.getText();
+
+        String CustomerPassword = SystemAMCNameText.getText().concat(pass2);
+        String str1 = "Your USERNAME is: " + CustomerUserName;
+        String str2 = "Your PASSWORD is: " + CustomerPassword;
+        String Emailmsg = str1.concat(str2);
+
+        System.out.println("In between"+CustomerUserName+" "+CustomerPassword+" "+ emailId);
+        // boolean emailSent = EmailValidation.sendEmail(Emailmsg, emailId,CustomerUserName,CustomerPassword);
+        
+        if(validateThisSAMC2())
+        {
+        try
+        {
+            boolean emailSent = EmailValidation.sendEmail(Emailmsg, emailId,CustomerUserName,CustomerPassword);
+
+            if(!emailSent)
+            {
+                JOptionPane.showMessageDialog(null, "Please Enter a valid Email address! ","warning", JOptionPane.WARNING_MESSAGE);
+                // organization.getPersonDirectory().getVolunteerList().remove((Volunteer)person);
+                return;
+            }
+        }
+        catch(Exception e){
+            System.out.println("Please put valid EmailID");
+        }
+        //System.out.println(emailSent);
+        }
+        
+    }//GEN-LAST:event_SendEmailButtonActionPerformed
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton SendEmailButton;
+    private javax.swing.JLabel SystemAMCAddressLabel;
+    private javax.swing.JLabel SystemAMCAddressLabel1;
+>>>>>>> Stashed changes
     private javax.swing.JTextField SystemAMCAddressText;
     private javax.swing.JButton SystemAMCBackButton;
     private javax.swing.JLabel SystemAMCConfirmPasswordLabel;
@@ -394,6 +638,10 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
     private javax.swing.JLabel SystemAMCUsernameLabel;
     private javax.swing.JTextField SystemAMCUsernameText;
     private javax.swing.JButton SystemAMCViewButton;
+<<<<<<< Updated upstream
+=======
+    private javax.swing.JTextField emailIDField;
+>>>>>>> Stashed changes
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
@@ -440,4 +688,25 @@ public class SystemAdminManageCustomers extends javax.swing.JPanel {
             return true;
         }
     }
+<<<<<<< Updated upstream
+=======
+    private boolean validateThisSAMC2() {
+        String regex = "\\d{10}";
+        if( ("".equals(SystemAMCNameText.getText())) || ("".equals(SystemAMCPhoneNumberText.getText())) || ("".equals(SystemAMCAddressText.getText())))
+        {
+            JOptionPane.showMessageDialog(null,"Please fill all details!", "Warning", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+       
+        else if(!(SystemAMCPhoneNumberText.getText().matches(regex)))
+        {
+            JOptionPane.showMessageDialog(null,"Mobile no. can have only 10 digits!", "Warning", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+>>>>>>> Stashed changes
 }

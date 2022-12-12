@@ -54,6 +54,7 @@ public class AdminUpdateSupplierMedicineItem extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
+<<<<<<< Updated upstream
         SupplierAdminAUSMLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         SupplierAdminAUSMLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SupplierAdminAUSMLabel1.setText("Update Medicine");
@@ -61,6 +62,15 @@ public class AdminUpdateSupplierMedicineItem extends javax.swing.JPanel {
         SupplierAdminAUSMLabel1.setBounds(447, 10, 610, 90);
 
         SupplierAdminAUSMBackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        SupplierAdminAUSMLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        SupplierAdminAUSMLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SupplierAdminAUSMLabel1.setText("Update Medicine");
+        add(SupplierAdminAUSMLabel1);
+        SupplierAdminAUSMLabel1.setBounds(420, 0, 610, 90);
+
+        SupplierAdminAUSMBackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminAUSMBackButton.setText("< Back");
         SupplierAdminAUSMBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAUSMBackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -69,6 +79,7 @@ public class AdminUpdateSupplierMedicineItem extends javax.swing.JPanel {
             }
         });
         add(SupplierAdminAUSMBackButton);
+<<<<<<< Updated upstream
         SupplierAdminAUSMBackButton.setBounds(420, 460, 180, 60);
 
         SupplierAdminAUSMNameText.setEditable(false);
@@ -86,13 +97,38 @@ public class AdminUpdateSupplierMedicineItem extends javax.swing.JPanel {
         SupplierAdminAUSMPriceLabel.setText("                                                                     Price:");
         add(SupplierAdminAUSMPriceLabel);
         SupplierAdminAUSMPriceLabel.setBounds(350, 320, 420, 50);
+=======
+        SupplierAdminAUSMBackButton.setBounds(480, 710, 130, 50);
+
+        SupplierAdminAUSMNameText.setEditable(false);
+        SupplierAdminAUSMNameText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        SupplierAdminAUSMNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(SupplierAdminAUSMNameText);
+        SupplierAdminAUSMNameText.setBounds(650, 470, 320, 50);
+
+        SupplierAdminAUSMNameLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminAUSMNameLabel.setText("                                                      Name:");
+        add(SupplierAdminAUSMNameLabel);
+        SupplierAdminAUSMNameLabel.setBounds(230, 470, 340, 60);
+
+        SupplierAdminAUSMPriceLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminAUSMPriceLabel.setText("                                                                     Price:");
+        add(SupplierAdminAUSMPriceLabel);
+        SupplierAdminAUSMPriceLabel.setBounds(160, 580, 420, 50);
+>>>>>>> Stashed changes
 
         SupplierAdminAUSMPriceSpin.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SupplierAdminAUSMPriceSpin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SupplierAdminAUSMPriceSpin);
+<<<<<<< Updated upstream
         SupplierAdminAUSMPriceSpin.setBounds(850, 310, 320, 60);
 
         SupplierAdminAUSMSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        SupplierAdminAUSMPriceSpin.setBounds(650, 570, 320, 60);
+
+        SupplierAdminAUSMSubmitButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminAUSMSubmitButton.setText("Submit");
         SupplierAdminAUSMSubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAUSMSubmitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -101,11 +137,19 @@ public class AdminUpdateSupplierMedicineItem extends javax.swing.JPanel {
             }
         });
         add(SupplierAdminAUSMSubmitButton);
+<<<<<<< Updated upstream
         SupplierAdminAUSMSubmitButton.setBounds(820, 460, 200, 60);
 
         SupplierAdminAUSMLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ADMINsss.png"))); // NOI18N
         add(SupplierAdminAUSMLabel);
         SupplierAdminAUSMLabel.setBounds(10, -160, 1520, 800);
+=======
+        SupplierAdminAUSMSubmitButton.setBounds(830, 700, 140, 50);
+
+        SupplierAdminAUSMLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ADMINsss.png"))); // NOI18N
+        add(SupplierAdminAUSMLabel);
+        SupplierAdminAUSMLabel.setBounds(420, 80, 600, 350);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void SupplierAdminAUSMBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminAUSMBackButtonActionPerformed

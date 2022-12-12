@@ -75,6 +75,7 @@ JPanel userProcessContainer;
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
+<<<<<<< Updated upstream
         SupplierAdminSAWALabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         SupplierAdminSAWALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SupplierAdminSAWALabel1.setText("My Work Area - Administrative Role");
@@ -113,6 +114,46 @@ JPanel userProcessContainer;
         SupplierAdminSAWAAddressText.setBounds(770, 410, 400, 70);
 
         SupplierAdminSAWAViewButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        SupplierAdminSAWALabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        SupplierAdminSAWALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SupplierAdminSAWALabel1.setText("My Work Area - Administrative Role");
+        add(SupplierAdminSAWALabel1);
+        SupplierAdminSAWALabel1.setBounds(260, 20, 980, 60);
+
+        SupplierAdminSAWALabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminSAWALabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        SupplierAdminSAWALabel2.setText("Supplier");
+        add(SupplierAdminSAWALabel2);
+        SupplierAdminSAWALabel2.setBounds(540, 100, 170, 40);
+
+        SupplierAdminSAWALabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminSAWALabel3.setText("<value>");
+        add(SupplierAdminSAWALabel3);
+        SupplierAdminSAWALabel3.setBounds(730, 100, 200, 40);
+
+        SupplierAdminSAWALabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminSAWALabel4.setText("             Supplier Name:");
+        add(SupplierAdminSAWALabel4);
+        SupplierAdminSAWALabel4.setBounds(380, 500, 210, 70);
+
+        SupplierAdminSAWANameText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        SupplierAdminSAWANameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(SupplierAdminSAWANameText);
+        SupplierAdminSAWANameText.setBounds(650, 490, 400, 70);
+
+        SupplierAdminSAWALabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminSAWALabel5.setText("                                 Address:");
+        add(SupplierAdminSAWALabel5);
+        SupplierAdminSAWALabel5.setBounds(280, 620, 290, 60);
+
+        SupplierAdminSAWAAddressText.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
+        SupplierAdminSAWAAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(SupplierAdminSAWAAddressText);
+        SupplierAdminSAWAAddressText.setBounds(650, 610, 400, 70);
+
+        SupplierAdminSAWAViewButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminSAWAViewButton.setText("View Orders");
         SupplierAdminSAWAViewButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,9 +161,15 @@ JPanel userProcessContainer;
             }
         });
         add(SupplierAdminSAWAViewButton);
+<<<<<<< Updated upstream
         SupplierAdminSAWAViewButton.setBounds(420, 150, 210, 70);
 
         SupplierAdminSAWAManageButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        SupplierAdminSAWAViewButton.setBounds(130, 180, 240, 60);
+
+        SupplierAdminSAWAManageButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminSAWAManageButton.setText("Manage Medicine");
         SupplierAdminSAWAManageButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,9 +177,15 @@ JPanel userProcessContainer;
             }
         });
         add(SupplierAdminSAWAManageButton);
+<<<<<<< Updated upstream
         SupplierAdminSAWAManageButton.setBounds(800, 160, 230, 70);
 
         SupplierAdminSAWASubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        SupplierAdminSAWAManageButton.setBounds(130, 300, 240, 60);
+
+        SupplierAdminSAWASubmitButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminSAWASubmitButton.setText("Submit");
         SupplierAdminSAWASubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,11 +193,19 @@ JPanel userProcessContainer;
             }
         });
         add(SupplierAdminSAWASubmitButton);
+<<<<<<< Updated upstream
         SupplierAdminSAWASubmitButton.setBounds(660, 610, 170, 70);
 
         SupplierAdminSAWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SUPP.png"))); // NOI18N
         add(SupplierAdminSAWALabel);
         SupplierAdminSAWALabel.setBounds(10, 10, 1450, 790);
+=======
+        SupplierAdminSAWASubmitButton.setBounds(580, 740, 240, 40);
+
+        SupplierAdminSAWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SUPP.png"))); // NOI18N
+        add(SupplierAdminSAWALabel);
+        SupplierAdminSAWALabel.setBounds(440, 170, 610, 290);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void SupplierAdminSAWAManageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminSAWAManageButtonActionPerformed

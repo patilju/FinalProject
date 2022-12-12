@@ -67,7 +67,11 @@ public class AdminManageMedicine extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
+<<<<<<< Updated upstream
         PharmacyAMMDeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        PharmacyAMMDeleteButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyAMMDeleteButton.setText("Delete Item");
         PharmacyAMMDeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAMMDeleteButton.addActionListener(new java.awt.event.ActionListener() {
@@ -76,9 +80,15 @@ public class AdminManageMedicine extends javax.swing.JPanel {
             }
         });
         add(PharmacyAMMDeleteButton);
+<<<<<<< Updated upstream
         PharmacyAMMDeleteButton.setBounds(40, 110, 132, 35);
 
         PharmacyAMMViewButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        PharmacyAMMDeleteButton.setBounds(822, 80, 150, 35);
+
+        PharmacyAMMViewButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyAMMViewButton.setText("View  Item ");
         PharmacyAMMViewButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAMMViewButton.addActionListener(new java.awt.event.ActionListener() {
@@ -87,9 +97,15 @@ public class AdminManageMedicine extends javax.swing.JPanel {
             }
         });
         add(PharmacyAMMViewButton);
+<<<<<<< Updated upstream
         PharmacyAMMViewButton.setBounds(40, 160, 132, 38);
 
         PharmacyAMMAddButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        PharmacyAMMViewButton.setBounds(822, 170, 150, 38);
+
+        PharmacyAMMAddButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyAMMAddButton.setText("Add New Medicine>");
         PharmacyAMMAddButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAMMAddButton.addActionListener(new java.awt.event.ActionListener() {
@@ -98,6 +114,7 @@ public class AdminManageMedicine extends javax.swing.JPanel {
             }
         });
         add(PharmacyAMMAddButton);
+<<<<<<< Updated upstream
         PharmacyAMMAddButton.setBounds(40, 210, 132, 37);
 
         PharmacyAMMNameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -129,6 +146,39 @@ public class AdminManageMedicine extends javax.swing.JPanel {
         PharmacyAMMPriceSpin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(PharmacyAMMPriceSpin);
         PharmacyAMMPriceSpin.setBounds(273, 245, 320, 30);
+=======
+        PharmacyAMMAddButton.setBounds(822, 260, 150, 37);
+
+        PharmacyAMMNameText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        PharmacyAMMNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyAMMNameText);
+        PharmacyAMMNameText.setBounds(180, 350, 320, 30);
+
+        PharmacyAMMNameLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        PharmacyAMMNameLabel.setText("Name:");
+        add(PharmacyAMMNameLabel);
+        PharmacyAMMNameLabel.setBounds(70, 350, 60, 27);
+
+        PharmacyAMMLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyAMMLabel1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        PharmacyAMMLabel1.setText("Pharmacy");
+        add(PharmacyAMMLabel1);
+        PharmacyAMMLabel1.setBounds(200, 30, 292, 30);
+
+        PharmacyAMMPriceLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        PharmacyAMMPriceLabel.setText("Price:");
+        add(PharmacyAMMPriceLabel);
+        PharmacyAMMPriceLabel.setBounds(70, 440, 70, 30);
+
+        PharmacyAMMvalueLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyAMMvalueLabel1.setText("<value>");
+        add(PharmacyAMMvalueLabel1);
+        PharmacyAMMvalueLabel1.setBounds(510, 30, 282, 30);
+
+        PharmacyAMMPriceSpin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyAMMPriceSpin);
+        PharmacyAMMPriceSpin.setBounds(180, 440, 320, 30);
+>>>>>>> Stashed changes
 
         PharmacyTable1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         PharmacyTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -156,9 +206,15 @@ public class AdminManageMedicine extends javax.swing.JPanel {
         jScrollPane1.setViewportView(PharmacyTable1);
 
         add(jScrollPane1);
+<<<<<<< Updated upstream
         jScrollPane1.setBounds(190, 110, 710, 84);
 
         PharmacyAMMSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        jScrollPane1.setBounds(30, 120, 590, 120);
+
+        PharmacyAMMSubmitButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyAMMSubmitButton.setText("Submit");
         PharmacyAMMSubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAMMSubmitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -167,6 +223,7 @@ public class AdminManageMedicine extends javax.swing.JPanel {
             }
         });
         add(PharmacyAMMSubmitButton);
+<<<<<<< Updated upstream
         PharmacyAMMSubmitButton.setBounds(273, 296, 149, 31);
 
         PharmacyAMMMedicineLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -175,6 +232,16 @@ public class AdminManageMedicine extends javax.swing.JPanel {
         PharmacyAMMMedicineLabel.setBounds(160, 86, 74, 17);
 
         PharmacyAMMBackButton1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+=======
+        PharmacyAMMSubmitButton.setBounds(180, 550, 149, 31);
+
+        PharmacyAMMMedicineLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyAMMMedicineLabel.setText("Medicine");
+        add(PharmacyAMMMedicineLabel);
+        PharmacyAMMMedicineLabel.setBounds(280, 90, 110, 30);
+
+        PharmacyAMMBackButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyAMMBackButton1.setText("< Back");
         PharmacyAMMBackButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAMMBackButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -183,7 +250,11 @@ public class AdminManageMedicine extends javax.swing.JPanel {
             }
         });
         add(PharmacyAMMBackButton1);
+<<<<<<< Updated upstream
         PharmacyAMMBackButton1.setBounds(40, 260, 130, 40);
+=======
+        PharmacyAMMBackButton1.setBounds(30, 30, 130, 40);
+>>>>>>> Stashed changes
 
         PharmacyAMMLabel.setBackground(new java.awt.Color(255, 255, 255));
         PharmacyAMMLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/adminmanagemedicine.png"))); // NOI18N

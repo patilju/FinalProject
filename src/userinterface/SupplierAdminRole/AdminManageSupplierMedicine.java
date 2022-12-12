@@ -63,6 +63,7 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
+<<<<<<< Updated upstream
         SupplierAdminAMSMLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         SupplierAdminAMSMLabel3.setText("<value>");
         add(SupplierAdminAMSMLabel3);
@@ -73,6 +74,18 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         SupplierAdminAMSMLabel1.setText("Supplier");
         add(SupplierAdminAMSMLabel1);
         SupplierAdminAMSMLabel1.setBounds(152, 23, 292, 30);
+=======
+        SupplierAdminAMSMLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminAMSMLabel3.setText("<value>");
+        add(SupplierAdminAMSMLabel3);
+        SupplierAdminAMSMLabel3.setBounds(470, 10, 282, 30);
+
+        SupplierAdminAMSMLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminAMSMLabel1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        SupplierAdminAMSMLabel1.setText("Supplier");
+        add(SupplierAdminAMSMLabel1);
+        SupplierAdminAMSMLabel1.setBounds(160, 10, 292, 30);
+>>>>>>> Stashed changes
 
         SupplierAdminAMSMPriceSpin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SupplierAdminAMSMPriceSpin);
@@ -105,16 +118,26 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         add(jScrollPane1);
         jScrollPane1.setBounds(270, 130, 1170, 140);
 
+<<<<<<< Updated upstream
         SupplierAdminAMSMLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         SupplierAdminAMSMLabel2.setText("                         Medicine");
         add(SupplierAdminAMSMLabel2);
         SupplierAdminAMSMLabel2.setBounds(100, 20, 200, 50);
 
         SupplierAdminAMSMNameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+=======
+        SupplierAdminAMSMLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminAMSMLabel2.setText("                         Medicine");
+        add(SupplierAdminAMSMLabel2);
+        SupplierAdminAMSMLabel2.setBounds(60, 50, 240, 50);
+
+        SupplierAdminAMSMNameText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminAMSMNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SupplierAdminAMSMNameText);
         SupplierAdminAMSMNameText.setBounds(470, 300, 340, 60);
 
+<<<<<<< Updated upstream
         SupplierAdminAMSMNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         SupplierAdminAMSMNameLabel.setText("                      Name:");
         add(SupplierAdminAMSMNameLabel);
@@ -126,6 +149,19 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         SupplierAdminAMSMPriceLabel.setBounds(213, 400, 170, 40);
 
         SupplierAdminAMSMButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        SupplierAdminAMSMNameLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminAMSMNameLabel.setText("                      Name:");
+        add(SupplierAdminAMSMNameLabel);
+        SupplierAdminAMSMNameLabel.setBounds(213, 300, 210, 27);
+
+        SupplierAdminAMSMPriceLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SupplierAdminAMSMPriceLabel.setText("                        Price:");
+        add(SupplierAdminAMSMPriceLabel);
+        SupplierAdminAMSMPriceLabel.setBounds(213, 400, 180, 40);
+
+        SupplierAdminAMSMButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminAMSMButton1.setText("Delete Item");
         SupplierAdminAMSMButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSMButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -136,7 +172,11 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         add(SupplierAdminAMSMButton1);
         SupplierAdminAMSMButton1.setBounds(30, 170, 190, 50);
 
+<<<<<<< Updated upstream
         SupplierAdminAMSMButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        SupplierAdminAMSMButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminAMSMButton2.setText("View  Item ");
         SupplierAdminAMSMButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSMButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -147,7 +187,11 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         add(SupplierAdminAMSMButton2);
         SupplierAdminAMSMButton2.setBounds(30, 290, 190, 50);
 
+<<<<<<< Updated upstream
         SupplierAdminAMSMButton3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        SupplierAdminAMSMButton3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminAMSMButton3.setText("Add New Medicine>");
         SupplierAdminAMSMButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSMButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -158,7 +202,11 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         add(SupplierAdminAMSMButton3);
         SupplierAdminAMSMButton3.setBounds(30, 410, 190, 50);
 
+<<<<<<< Updated upstream
         SupplierAdminAMSMButton4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        SupplierAdminAMSMButton4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminAMSMButton4.setText("< Back");
         SupplierAdminAMSMButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSMButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -167,9 +215,15 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
             }
         });
         add(SupplierAdminAMSMButton4);
+<<<<<<< Updated upstream
         SupplierAdminAMSMButton4.setBounds(30, 550, 180, 50);
 
         SupplierAdminAMSMButton5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        SupplierAdminAMSMButton4.setBounds(30, 550, 190, 50);
+
+        SupplierAdminAMSMButton5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         SupplierAdminAMSMButton5.setText("Submit");
         SupplierAdminAMSMButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSMButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -180,9 +234,15 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         add(SupplierAdminAMSMButton5);
         SupplierAdminAMSMButton5.setBounds(470, 550, 210, 50);
 
+<<<<<<< Updated upstream
         SupplierAdminAMSMLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/AdminManageSupplierMedicine.jpg"))); // NOI18N
         add(SupplierAdminAMSMLabel);
         SupplierAdminAMSMLabel.setBounds(0, 0, 1460, 960);
+=======
+        SupplierAdminAMSMLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dreamstime_l_53316586.jpg"))); // NOI18N
+        add(SupplierAdminAMSMLabel);
+        SupplierAdminAMSMLabel.setBounds(0, 0, 1500, 960);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void SupplierAdminAMSMTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SupplierAdminAMSMTableMouseClicked

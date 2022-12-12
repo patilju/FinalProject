@@ -82,12 +82,20 @@ public class SystemUpdateSupplierEmployee extends javax.swing.JPanel {
         SystemUSENameText.setEditable(false);
         SystemUSENameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUSENameText);
+<<<<<<< Updated upstream
         SystemUSENameText.setBounds(312, 202, 160, 18);
+=======
+        SystemUSENameText.setBounds(600, 220, 170, 20);
+>>>>>>> Stashed changes
 
         SystemUSEPasswordLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUSEPasswordLabel.setText("Password: ");
         add(SystemUSEPasswordLabel);
+<<<<<<< Updated upstream
         SystemUSEPasswordLabel.setBounds(150, 117, 144, 15);
+=======
+        SystemUSEPasswordLabel.setBounds(460, 130, 150, 20);
+>>>>>>> Stashed changes
 
         SystemUSEBackButton.setText("< Back");
         SystemUSEBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -97,36 +105,64 @@ public class SystemUpdateSupplierEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemUSEBackButton);
+<<<<<<< Updated upstream
         SystemUSEBackButton.setBounds(228, 428, 42, 22);
+=======
+        SystemUSEBackButton.setBounds(462, 440, 100, 30);
+>>>>>>> Stashed changes
 
         SystemUSERadio1.setText("Supploer Manager");
         SystemUSERadio1.setEnabled(false);
         add(SystemUSERadio1);
+<<<<<<< Updated upstream
         SystemUSERadio1.setBounds(312, 334, 160, 21);
 
         SystemUSEPhoneNumberText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUSEPhoneNumberText);
         SystemUSEPhoneNumberText.setBounds(312, 246, 160, 18);
+=======
+        SystemUSERadio1.setBounds(600, 350, 170, 30);
+
+        SystemUSEPhoneNumberText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(SystemUSEPhoneNumberText);
+        SystemUSEPhoneNumberText.setBounds(600, 260, 170, 20);
+>>>>>>> Stashed changes
 
         SystemUSEConfirmPasswordLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUSEConfirmPasswordLabel.setText("Confirm Password:");
         add(SystemUSEConfirmPasswordLabel);
+<<<<<<< Updated upstream
         SystemUSEConfirmPasswordLabel.setBounds(150, 164, 144, 15);
+=======
+        SystemUSEConfirmPasswordLabel.setBounds(460, 170, 150, 20);
+>>>>>>> Stashed changes
 
         SystemUSEUsernameText.setEditable(false);
         SystemUSEUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUSEUsernameText);
+<<<<<<< Updated upstream
         SystemUSEUsernameText.setBounds(312, 70, 160, 18);
+=======
+        SystemUSEUsernameText.setBounds(600, 80, 170, 20);
+>>>>>>> Stashed changes
 
         SystemUSERadio2.setText("Delivery Man");
         SystemUSERadio2.setEnabled(false);
         add(SystemUSERadio2);
+<<<<<<< Updated upstream
         SystemUSERadio2.setBounds(312, 381, 160, 21);
+=======
+        SystemUSERadio2.setBounds(600, 400, 170, 30);
+>>>>>>> Stashed changes
 
         SystemUSEPhoneNumberLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUSEPhoneNumberLabel.setText("Phone Number:");
         add(SystemUSEPhoneNumberLabel);
+<<<<<<< Updated upstream
         SystemUSEPhoneNumberLabel.setBounds(150, 249, 144, 15);
+=======
+        SystemUSEPhoneNumberLabel.setBounds(460, 260, 150, 20);
+>>>>>>> Stashed changes
 
         SystemUSESubmitButton.setText("Submit");
         SystemUSESubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -136,15 +172,24 @@ public class SystemUpdateSupplierEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemUSESubmitButton);
+<<<<<<< Updated upstream
         SystemUSESubmitButton.setBounds(312, 428, 160, 22);
 
         SystemUSEPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUSEPasswordText);
         SystemUSEPasswordText.setBounds(312, 114, 160, 18);
+=======
+        SystemUSESubmitButton.setBounds(600, 440, 170, 30);
+
+        SystemUSEPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(SystemUSEPasswordText);
+        SystemUSEPasswordText.setBounds(600, 130, 170, 20);
+>>>>>>> Stashed changes
 
         SystemUSEAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUSEAddressLabel.setText("Address:");
         add(SystemUSEAddressLabel);
+<<<<<<< Updated upstream
         SystemUSEAddressLabel.setBounds(150, 293, 144, 15);
 
         SystemUSEConfirmPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -154,30 +199,61 @@ public class SystemUpdateSupplierEmployee extends javax.swing.JPanel {
         SystemUSEAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUSEAddressText);
         SystemUSEAddressText.setBounds(312, 290, 160, 18);
+=======
+        SystemUSEAddressLabel.setBounds(460, 300, 150, 20);
+
+        SystemUSEConfirmPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(SystemUSEConfirmPasswordText);
+        SystemUSEConfirmPasswordText.setBounds(600, 170, 170, 20);
+
+        SystemUSEAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(SystemUSEAddressText);
+        SystemUSEAddressText.setBounds(600, 300, 170, 20);
+>>>>>>> Stashed changes
 
         SystemUSEUsernameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUSEUsernameLabel.setText("Username: ");
         add(SystemUSEUsernameLabel);
+<<<<<<< Updated upstream
         SystemUSEUsernameLabel.setBounds(150, 73, 144, 15);
+=======
+        SystemUSEUsernameLabel.setBounds(460, 80, 150, 20);
+>>>>>>> Stashed changes
 
         SystemUSENameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUSENameLabel.setText("Name:");
         add(SystemUSENameLabel);
+<<<<<<< Updated upstream
         SystemUSENameLabel.setBounds(150, 205, 144, 15);
+=======
+        SystemUSENameLabel.setBounds(460, 220, 150, 20);
+>>>>>>> Stashed changes
 
         SystemUSERoleLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUSERoleLabel.setText("Role:");
         add(SystemUSERoleLabel);
+<<<<<<< Updated upstream
         SystemUSERoleLabel.setBounds(158, 338, 144, 15);
+=======
+        SystemUSERoleLabel.setBounds(460, 350, 150, 20);
+>>>>>>> Stashed changes
 
         SystemUSELabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         SystemUSELabel1.setText("Update Employee Information");
         add(SystemUSELabel1);
+<<<<<<< Updated upstream
         SystemUSELabel1.setBounds(159, 11, 330, 29);
 
         SystemUSELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemUpdateSupplierEmployee.jpg"))); // NOI18N
         add(SystemUSELabel);
         SystemUSELabel.setBounds(-10, 10, 1410, 800);
+=======
+        SystemUSELabel1.setBounds(450, 10, 330, 29);
+
+        SystemUSELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemUpdateSupplierEmployee.jpg"))); // NOI18N
+        add(SystemUSELabel);
+        SystemUSELabel.setBounds(280, 490, 700, 310);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void SystemUSEBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemUSEBackButtonActionPerformed

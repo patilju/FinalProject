@@ -87,12 +87,20 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         CustomerAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         CustomerAddressLabel.setText("Address:");
         add(CustomerAddressLabel);
+<<<<<<< Updated upstream
         CustomerAddressLabel.setBounds(111, 273, 110, 20);
+=======
+        CustomerAddressLabel.setBounds(80, 460, 110, 20);
+>>>>>>> Stashed changes
 
         CustomerAddressText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         CustomerAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(CustomerAddressText);
+<<<<<<< Updated upstream
         CustomerAddressText.setBounds(261, 273, 150, 17);
+=======
+        CustomerAddressText.setBounds(250, 460, 180, 20);
+>>>>>>> Stashed changes
 
         CustomerNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         CustomerNameLabel.setText("Name:");
@@ -140,7 +148,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(ReviewOrdersButton);
+<<<<<<< Updated upstream
         ReviewOrdersButton.setBounds(120, 330, 118, 30);
+=======
+        ReviewOrdersButton.setBounds(50, 550, 160, 40);
+>>>>>>> Stashed changes
 
         PharmacyLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         PharmacyLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -151,7 +163,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         CustomerContactNoLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         CustomerContactNoLabel.setText("Phone:");
         add(CustomerContactNoLabel);
+<<<<<<< Updated upstream
         CustomerContactNoLabel.setBounds(110, 225, 110, 30);
+=======
+        CustomerContactNoLabel.setBounds(80, 410, 110, 30);
+>>>>>>> Stashed changes
         CustomerContactNoLabel.getAccessibleContext().setAccessibleName("Contact No:");
 
         CustomerNametext.setEditable(false);
@@ -163,7 +179,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         CustomerContactText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         CustomerContactText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(CustomerContactText);
+<<<<<<< Updated upstream
         CustomerContactText.setBounds(261, 231, 150, 17);
+=======
+        CustomerContactText.setBounds(250, 410, 180, 20);
+>>>>>>> Stashed changes
 
         SubmitOrdersButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SubmitOrdersButton.setText("Submit");
@@ -174,7 +194,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(SubmitOrdersButton);
+<<<<<<< Updated upstream
         SubmitOrdersButton.setBounds(290, 330, 118, 30);
+=======
+        SubmitOrdersButton.setBounds(270, 550, 160, 40);
+>>>>>>> Stashed changes
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/CustomerArea-Dhriti.jpg"))); // NOI18N
         add(jLabel7);

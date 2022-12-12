@@ -89,6 +89,10 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
+<<<<<<< Updated upstream
+=======
+        SystemAMSEBackButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         SystemAMSEBackButton.setText("Back");
         SystemAMSEBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,8 +100,14 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemAMSEBackButton);
+<<<<<<< Updated upstream
         SystemAMSEBackButton.setBounds(20, 65, 84, 23);
 
+=======
+        SystemAMSEBackButton.setBounds(30, 40, 100, 30);
+
+        SystemAMSEViewButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         SystemAMSEViewButton.setText("View");
         SystemAMSEViewButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,8 +115,14 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemAMSEViewButton);
+<<<<<<< Updated upstream
         SystemAMSEViewButton.setBounds(20, 112, 84, 23);
 
+=======
+        SystemAMSEViewButton.setBounds(30, 130, 100, 40);
+
+        SystemAMSEDeleteButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         SystemAMSEDeleteButton.setText("Delete");
         SystemAMSEDeleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,8 +130,14 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemAMSEDeleteButton);
+<<<<<<< Updated upstream
         SystemAMSEDeleteButton.setBounds(20, 152, 84, 23);
 
+=======
+        SystemAMSEDeleteButton.setBounds(190, 130, 100, 40);
+
+        SystemAMSECreateButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         SystemAMSECreateButton.setText("Create");
         SystemAMSECreateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,8 +145,14 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemAMSECreateButton);
+<<<<<<< Updated upstream
         SystemAMSECreateButton.setBounds(20, 199, 84, 23);
 
+=======
+        SystemAMSECreateButton.setBounds(360, 130, 100, 40);
+
+        SystemAMSESubmitButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         SystemAMSESubmitButton.setText("Submit");
         SystemAMSESubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -132,8 +160,14 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemAMSESubmitButton);
+<<<<<<< Updated upstream
         SystemAMSESubmitButton.setBounds(270, 610, 120, 40);
 
+=======
+        SystemAMSESubmitButton.setBounds(790, 740, 120, 40);
+
+        SystemAMSETable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         SystemAMSETable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -161,6 +195,7 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
         jScrollPane1.setViewportView(SystemAMSETable);
 
         add(jScrollPane1);
+<<<<<<< Updated upstream
         jScrollPane1.setBounds(148, 65, 800, 136);
 
         SystemAMSELabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -176,6 +211,24 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
         add(SystemAMSEPhoneNumberLabel);
         SystemAMSEPhoneNumberLabel.setBounds(106, 402, 120, 16);
 
+=======
+        jScrollPane1.setBounds(590, 100, 550, 136);
+
+        SystemAMSELabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        SystemAMSELabel1.setText("Manage Employee");
+        add(SystemAMSELabel1);
+        SystemAMSELabel1.setBounds(490, 10, 240, 28);
+        add(SystemAMSEUsernameText);
+        SystemAMSEUsernameText.setBounds(820, 260, 300, 27);
+        add(SystemAMSEPhoneNumberText);
+        SystemAMSEPhoneNumberText.setBounds(820, 490, 300, 27);
+
+        SystemAMSEPhoneNumberLabel.setText("Phone Number:");
+        add(SystemAMSEPhoneNumberLabel);
+        SystemAMSEPhoneNumberLabel.setBounds(670, 500, 120, 16);
+
+        SystemAMSERoleRadio2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         SystemAMSERoleRadio2.setText("Delivery Man");
         SystemAMSERoleRadio2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -183,6 +236,7 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemAMSERoleRadio2);
+<<<<<<< Updated upstream
         SystemAMSERoleRadio2.setBounds(260, 540, 119, 21);
         add(SystemAMSEPasswordText);
         SystemAMSEPasswordText.setBounds(260, 270, 300, 22);
@@ -215,6 +269,44 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
         add(SystemAMSEConfirmPasswordLabel);
         SystemAMSEConfirmPasswordLabel.setBounds(94, 312, 140, 27);
 
+=======
+        SystemAMSERoleRadio2.setBounds(850, 690, 119, 20);
+        add(SystemAMSEPasswordText);
+        SystemAMSEPasswordText.setBounds(820, 320, 300, 22);
+        add(SystemAMSEConfirmPasswordText);
+        SystemAMSEConfirmPasswordText.setBounds(820, 360, 300, 28);
+
+        SystemAMSEAddressLabel.setText("        Address:");
+        add(SystemAMSEAddressLabel);
+        SystemAMSEAddressLabel.setBounds(650, 560, 110, 16);
+
+        SystemAMSEUsernameLabel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        SystemAMSEUsernameLabel.setText("Username: ");
+        add(SystemAMSEUsernameLabel);
+        SystemAMSEUsernameLabel.setBounds(670, 270, 100, 25);
+        add(SystemAMSEAddressText);
+        SystemAMSEAddressText.setBounds(820, 560, 300, 28);
+
+        SystemAMSEPasswordLabel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        SystemAMSEPasswordLabel.setText("Password: ");
+        add(SystemAMSEPasswordLabel);
+        SystemAMSEPasswordLabel.setBounds(670, 320, 80, 25);
+
+        SystemAMSERoleLabel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        SystemAMSERoleLabel.setText("      Role:");
+        add(SystemAMSERoleLabel);
+        SystemAMSERoleLabel.setBounds(690, 650, 70, 14);
+
+        SystemAMSENameLabel.setText("     Name:");
+        add(SystemAMSENameLabel);
+        SystemAMSENameLabel.setBounds(660, 430, 80, 16);
+
+        SystemAMSEConfirmPasswordLabel.setText("Confirm Password:");
+        add(SystemAMSEConfirmPasswordLabel);
+        SystemAMSEConfirmPasswordLabel.setBounds(670, 370, 140, 27);
+
+        SystemAMSERoleRadio1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         SystemAMSERoleRadio1.setText("Supplier Manager");
         SystemAMSERoleRadio1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -222,6 +314,7 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemAMSERoleRadio1);
+<<<<<<< Updated upstream
         SystemAMSERoleRadio1.setBounds(260, 500, 116, 19);
         add(SystemAMSENameText);
         SystemAMSENameText.setBounds(260, 350, 300, 30);
@@ -229,6 +322,15 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
         SystemAMSELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemManageEmployees.jpg"))); // NOI18N
         add(SystemAMSELabel);
         SystemAMSELabel.setBounds(0, 0, 1330, 800);
+=======
+        SystemAMSERoleRadio1.setBounds(850, 650, 120, 19);
+        add(SystemAMSENameText);
+        SystemAMSENameText.setBounds(820, 420, 300, 30);
+
+        SystemAMSELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemManageEmployees.jpg"))); // NOI18N
+        add(SystemAMSELabel);
+        SystemAMSELabel.setBounds(-10, 250, 570, 520);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void SystemAMSERoleRadio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSERoleRadio2ActionPerformed

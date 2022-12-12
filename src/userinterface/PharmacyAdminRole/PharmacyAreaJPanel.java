@@ -80,6 +80,7 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
         PharmacyALabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         setLayout(null);
 
         PharmacyALabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -119,12 +120,58 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
         PharmacyALabel1.setBounds(370, 10, 580, 40);
 
         jComboSupplier.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+=======
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
+        setLayout(null);
+
+        PharmacyALabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyALabel3.setText("<value>");
+        add(PharmacyALabel3);
+        PharmacyALabel3.setBounds(670, 70, 150, 40);
+
+        PharmacyALabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyALabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PharmacyALabel4.setText("Choose a Supplier:");
+        add(PharmacyALabel4);
+        PharmacyALabel4.setBounds(800, 130, 210, 50);
+
+        PharmacyAAddressLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyAAddressLabel.setText("                     Address:");
+        add(PharmacyAAddressLabel);
+        PharmacyAAddressLabel.setBounds(780, 420, 230, 50);
+
+        PharmacyANameText.setEditable(false);
+        PharmacyANameText.setBackground(new java.awt.Color(255, 255, 255));
+        PharmacyANameText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        PharmacyANameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyANameText);
+        PharmacyANameText.setBounds(1050, 300, 400, 50);
+
+        PharmacyAAddressText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        PharmacyAAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyAAddressText);
+        PharmacyAAddressText.setBounds(1050, 410, 400, 50);
+
+        PharmacyANameLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyANameLabel.setText("                  Name:");
+        add(PharmacyANameLabel);
+        PharmacyANameLabel.setBounds(800, 310, 210, 40);
+
+        PharmacyALabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        PharmacyALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PharmacyALabel1.setText("Pharmacy Work Area");
+        add(PharmacyALabel1);
+        PharmacyALabel1.setBounds(380, 10, 580, 40);
+
+        jComboSupplier.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+>>>>>>> Stashed changes
         jComboSupplier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboSupplierActionPerformed(evt);
             }
         });
         add(jComboSupplier);
+<<<<<<< Updated upstream
         jComboSupplier.setBounds(520, 120, 410, 50);
 
         PharmacyALabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -139,6 +186,22 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
         PharmacyALabel5.setBounds(360, 210, 320, 50);
 
         PharmacyAReviewButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        jComboSupplier.setBounds(1040, 130, 410, 50);
+
+        PharmacyALabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyALabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        PharmacyALabel2.setText("Welcome! ");
+        add(PharmacyALabel2);
+        PharmacyALabel2.setBounds(490, 70, 150, 40);
+
+        PharmacyALabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyALabel5.setText("                            Update Details");
+        add(PharmacyALabel5);
+        PharmacyALabel5.setBounds(1020, 220, 360, 50);
+
+        PharmacyAReviewButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyAReviewButton.setText("Review Orders");
         PharmacyAReviewButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAReviewButton.addActionListener(new java.awt.event.ActionListener() {
@@ -147,9 +210,15 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(PharmacyAReviewButton);
+<<<<<<< Updated upstream
         PharmacyAReviewButton.setBounds(420, 590, 150, 70);
 
         PharmacyASubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        PharmacyAReviewButton.setBounds(1020, 520, 190, 50);
+
+        PharmacyASubmitButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyASubmitButton.setText("Submit");
         PharmacyASubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyASubmitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -158,9 +227,15 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(PharmacyASubmitButton);
+<<<<<<< Updated upstream
         PharmacyASubmitButton.setBounds(850, 590, 150, 60);
 
         PharmacyALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharmacyArea.jpg"))); // NOI18N
+=======
+        PharmacyASubmitButton.setBounds(1290, 520, 160, 50);
+
+        PharmacyALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/DKKK.jpg"))); // NOI18N
+>>>>>>> Stashed changes
         add(PharmacyALabel);
         PharmacyALabel.setBounds(0, 10, 1480, 790);
     }// </editor-fold>//GEN-END:initComponents

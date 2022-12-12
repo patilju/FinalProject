@@ -59,7 +59,12 @@ private JPanel userProcessContainer;
         PharmacySBackButton = new javax.swing.JButton();
         PharmacySLabel = new javax.swing.JLabel();
 
+<<<<<<< Updated upstream
         setBackground(new java.awt.Color(255, 255, 255));
+=======
+        setBackground(new java.awt.Color(0, 153, 204));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
+>>>>>>> Stashed changes
         setLayout(null);
 
         workRequestJTable.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -89,9 +94,15 @@ private JPanel userProcessContainer;
         jScrollPane1.setViewportView(workRequestJTable);
 
         add(jScrollPane1);
+<<<<<<< Updated upstream
         jScrollPane1.setBounds(10, 148, 1430, 110);
 
         PharmacySAddButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        jScrollPane1.setBounds(10, 130, 1430, 110);
+
+        PharmacySAddButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         PharmacySAddButton.setText("Add Message >");
         PharmacySAddButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacySAddButton.addActionListener(new java.awt.event.ActionListener() {
@@ -100,9 +111,15 @@ private JPanel userProcessContainer;
             }
         });
         add(PharmacySAddButton);
+<<<<<<< Updated upstream
         PharmacySAddButton.setBounds(1235, 300, 200, 50);
 
         PharmacySRefreshButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        PharmacySAddButton.setBounds(1230, 260, 210, 40);
+
+        PharmacySRefreshButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         PharmacySRefreshButton.setText("Refresh");
         PharmacySRefreshButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacySRefreshButton.addActionListener(new java.awt.event.ActionListener() {
@@ -111,6 +128,7 @@ private JPanel userProcessContainer;
             }
         });
         add(PharmacySRefreshButton);
+<<<<<<< Updated upstream
         PharmacySRefreshButton.setBounds(1236, 30, 200, 60);
 
         PharmacySLabel1.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
@@ -119,6 +137,16 @@ private JPanel userProcessContainer;
         PharmacySLabel1.setBounds(24, 113, 251, 30);
 
         PharmacySBackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        PharmacySRefreshButton.setBounds(1236, 30, 200, 40);
+
+        PharmacySLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacySLabel1.setText("<>");
+        add(PharmacySLabel1);
+        PharmacySLabel1.setBounds(20, 30, 251, 30);
+
+        PharmacySBackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         PharmacySBackButton.setText("< Back");
         PharmacySBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacySBackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -127,11 +155,19 @@ private JPanel userProcessContainer;
             }
         });
         add(PharmacySBackButton);
+<<<<<<< Updated upstream
         PharmacySBackButton.setBounds(10, 282, 180, 60);
 
         PharmacySLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharmacySummary.jpg"))); // NOI18N
         add(PharmacySLabel);
         PharmacySLabel.setBounds(180, 190, 1420, 780);
+=======
+        PharmacySBackButton.setBounds(10, 260, 190, 40);
+
+        PharmacySLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/pharmacy summary.jpg"))); // NOI18N
+        add(PharmacySLabel);
+        PharmacySLabel.setBounds(240, 200, 1420, 710);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void PharmacySAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacySAddButtonActionPerformed
