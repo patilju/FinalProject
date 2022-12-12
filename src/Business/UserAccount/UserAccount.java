@@ -12,13 +12,14 @@ import Business.WorkQueue.WorkQueue;
 
 /**
  *
- * @author juile
+ * @author Vini
  */
 public class UserAccount {
    private String username;
     private String password;
     private Employee employee;
-   private Role role;
+    //private SupplierEmp supplierEmp;
+    private Role role;
     private WorkQueue workQueue;
 
     public UserAccount() {

@@ -64,10 +64,11 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
         CSBackButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 204, 0));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
-        CSWorkrequestTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        CSWorkrequestTable.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         CSWorkrequestTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -94,9 +95,11 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
         jScrollPane1.setViewportView(CSWorkrequestTable);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(10, 84, 1470, 97);
+        jScrollPane1.setBounds(0, 70, 1490, 160);
 
-        requestTestJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        requestTestJButton.setBackground(new java.awt.Color(0, 0, 0));
+        requestTestJButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
         requestTestJButton.setText("Add Message >");
         requestTestJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -105,9 +108,11 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
             }
         });
         add(requestTestJButton);
-        requestTestJButton.setBounds(1330, 210, 84, 39);
+        requestTestJButton.setBounds(1240, 250, 210, 40);
 
-        refreshTestJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        refreshTestJButton.setBackground(new java.awt.Color(0, 0, 0));
+        refreshTestJButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        refreshTestJButton.setForeground(new java.awt.Color(255, 255, 255));
         refreshTestJButton.setText("Refresh");
         refreshTestJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -116,14 +121,16 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
             }
         });
         add(refreshTestJButton);
-        refreshTestJButton.setBounds(892, 4, 76, 21);
+        refreshTestJButton.setBounds(1240, 20, 210, 40);
 
         CSenterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
         CSenterpriseLabel.setText("<>");
         add(CSenterpriseLabel);
-        CSenterpriseLabel.setBounds(24, 36, 251, 30);
+        CSenterpriseLabel.setBounds(10, 20, 440, 40);
 
-        CSBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        CSBackButton.setBackground(new java.awt.Color(0, 0, 0));
+        CSBackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        CSBackButton.setForeground(new java.awt.Color(255, 255, 255));
         CSBackButton.setText("< Back");
         CSBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         CSBackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -132,11 +139,12 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
             }
         });
         add(CSBackButton);
-        CSBackButton.setBounds(10, 199, 80, 30);
+        CSBackButton.setBounds(10, 250, 190, 40);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Pharmacy_Summary_Image.jpg"))); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/photo-1585435557343-3b092031a831.jpg"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(0, 160, 1480, 620);
+        jLabel1.setBounds(480, 370, 1000, 460);
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed

@@ -67,28 +67,29 @@ public class AdminManageSupplierOrders extends javax.swing.JPanel {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (17) supplie_Order.png"))); // NOI18N
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(102, 204, 255));
+        setMinimumSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
         SupplierAdminAMSOLabel3.setBackground(new java.awt.Color(204, 204, 255));
-        SupplierAdminAMSOLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        SupplierAdminAMSOLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         SupplierAdminAMSOLabel3.setText("<value>");
         add(SupplierAdminAMSOLabel3);
-        SupplierAdminAMSOLabel3.setBounds(740, 10, 320, 40);
+        SupplierAdminAMSOLabel3.setBounds(680, 10, 320, 40);
 
         SupplierAdminAMSOLabel2.setBackground(new java.awt.Color(204, 204, 255));
-        SupplierAdminAMSOLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        SupplierAdminAMSOLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         SupplierAdminAMSOLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         SupplierAdminAMSOLabel2.setText("Supplier");
         add(SupplierAdminAMSOLabel2);
-        SupplierAdminAMSOLabel2.setBounds(360, 0, 310, 50);
+        SupplierAdminAMSOLabel2.setBounds(350, 10, 310, 40);
 
-        SupplierAdminAMSOLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSOLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSOLabel1.setText("                Current Orders");
         add(SupplierAdminAMSOLabel1);
-        SupplierAdminAMSOLabel1.setBounds(272, 36, 240, 50);
+        SupplierAdminAMSOLabel1.setBounds(520, 50, 240, 50);
 
-        SupplierAdminAMSODeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSODeleteButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSODeleteButton.setText("Delete");
         SupplierAdminAMSODeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSODeleteButton.addActionListener(new java.awt.event.ActionListener() {
@@ -97,9 +98,9 @@ public class AdminManageSupplierOrders extends javax.swing.JPanel {
             }
         });
         add(SupplierAdminAMSODeleteButton);
-        SupplierAdminAMSODeleteButton.setBounds(1099, 273, 220, 60);
+        SupplierAdminAMSODeleteButton.setBounds(1270, 280, 220, 50);
 
-        SupplierAdminAMSOBackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSOBackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSOBackButton.setText("< Back");
         SupplierAdminAMSOBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSOBackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -108,13 +109,13 @@ public class AdminManageSupplierOrders extends javax.swing.JPanel {
             }
         });
         add(SupplierAdminAMSOBackButton);
-        SupplierAdminAMSOBackButton.setBounds(10, 260, 110, 60);
+        SupplierAdminAMSOBackButton.setBounds(20, 270, 150, 50);
 
-        SupplierAdminAMSOCombo.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SupplierAdminAMSOCombo.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         add(SupplierAdminAMSOCombo);
-        SupplierAdminAMSOCombo.setBounds(560, 280, 159, 43);
+        SupplierAdminAMSOCombo.setBounds(360, 290, 190, 40);
 
-        SupplierAdminAMSOAssignButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSOAssignButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSOAssignButton.setText("Assign Delivery Man");
         SupplierAdminAMSOAssignButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSOAssignButton.addActionListener(new java.awt.event.ActionListener() {
@@ -123,9 +124,9 @@ public class AdminManageSupplierOrders extends javax.swing.JPanel {
             }
         });
         add(SupplierAdminAMSOAssignButton);
-        SupplierAdminAMSOAssignButton.setBounds(1098, 423, 220, 60);
+        SupplierAdminAMSOAssignButton.setBounds(710, 290, 220, 50);
 
-        SupplierAdminAMSOTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        SupplierAdminAMSOTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         SupplierAdminAMSOTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -150,11 +151,11 @@ public class AdminManageSupplierOrders extends javax.swing.JPanel {
         jScrollPane1.setViewportView(SupplierAdminAMSOTable);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(10, 84, 1480, 130);
+        jScrollPane1.setBounds(10, 110, 1480, 130);
 
-        SupplierAdminAMSOLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (17) supplie_Order.png"))); // NOI18N
+        SupplierAdminAMSOLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharmacyAdminManageMedicine-Dhriti.jpeg"))); // NOI18N
         add(SupplierAdminAMSOLabel);
-        SupplierAdminAMSOLabel.setBounds(0, 70, 1500, 720);
+        SupplierAdminAMSOLabel.setBounds(10, 180, 1110, 790);
     }// </editor-fold>//GEN-END:initComponents
 
     private void SupplierAdminAMSODeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminAMSODeleteButtonActionPerformed

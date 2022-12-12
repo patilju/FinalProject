@@ -63,11 +63,12 @@ public class AdminManageOrders extends javax.swing.JPanel {
         PharmacyAMOCombo = new javax.swing.JComboBox<>();
         PharmacyAMOLabel = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 204, 204));
         setForeground(new java.awt.Color(255, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
-        PharmacyAMOAssignDeliveryManButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAMOAssignDeliveryManButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyAMOAssignDeliveryManButton.setText("Assign Delivery Man");
         PharmacyAMOAssignDeliveryManButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAMOAssignDeliveryManButton.addActionListener(new java.awt.event.ActionListener() {
@@ -76,12 +77,12 @@ public class AdminManageOrders extends javax.swing.JPanel {
             }
         });
         add(PharmacyAMOAssignDeliveryManButton);
-        PharmacyAMOAssignDeliveryManButton.setBounds(1138, 333, 210, 50);
+        PharmacyAMOAssignDeliveryManButton.setBounds(770, 270, 210, 50);
 
-        PharmacyAMOCurrentOrdersLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        PharmacyAMOCurrentOrdersLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyAMOCurrentOrdersLabel.setText("Current Orders");
         add(PharmacyAMOCurrentOrdersLabel);
-        PharmacyAMOCurrentOrdersLabel.setBounds(238, 87, 97, 17);
+        PharmacyAMOCurrentOrdersLabel.setBounds(670, 90, 150, 22);
 
         PharmacyTable2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         PharmacyTable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -108,22 +109,22 @@ public class AdminManageOrders extends javax.swing.JPanel {
         jScrollPane1.setViewportView(PharmacyTable2);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(25, 122, 1430, 84);
+        jScrollPane1.setBounds(25, 122, 1430, 90);
 
         PharmacyAMOvalueLabel2.setBackground(new java.awt.Color(204, 204, 255));
-        PharmacyAMOvalueLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyAMOvalueLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyAMOvalueLabel2.setText("<value>");
         add(PharmacyAMOvalueLabel2);
-        PharmacyAMOvalueLabel2.setBounds(308, 39, 282, 30);
+        PharmacyAMOvalueLabel2.setBounds(850, 10, 260, 30);
 
         PharmacyAMOLabel2.setBackground(new java.awt.Color(204, 204, 255));
-        PharmacyAMOLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyAMOLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyAMOLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         PharmacyAMOLabel2.setText("Pharmacy");
         add(PharmacyAMOLabel2);
-        PharmacyAMOLabel2.setBounds(10, 39, 292, 30);
+        PharmacyAMOLabel2.setBounds(530, 10, 292, 30);
 
-        PharmacyAMODeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAMODeleteButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyAMODeleteButton.setText("Delete");
         PharmacyAMODeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAMODeleteButton.addActionListener(new java.awt.event.ActionListener() {
@@ -132,9 +133,9 @@ public class AdminManageOrders extends javax.swing.JPanel {
             }
         });
         add(PharmacyAMODeleteButton);
-        PharmacyAMODeleteButton.setBounds(1129, 223, 220, 50);
+        PharmacyAMODeleteButton.setBounds(1250, 220, 210, 50);
 
-        PharmacyAMOBackButton2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAMOBackButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyAMOBackButton2.setText("< Back");
         PharmacyAMOBackButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAMOBackButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -143,15 +144,15 @@ public class AdminManageOrders extends javax.swing.JPanel {
             }
         });
         add(PharmacyAMOBackButton2);
-        PharmacyAMOBackButton2.setBounds(25, 224, 100, 40);
+        PharmacyAMOBackButton2.setBounds(25, 224, 160, 40);
 
         PharmacyAMOCombo.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         add(PharmacyAMOCombo);
-        PharmacyAMOCombo.setBounds(820, 280, 220, 60);
+        PharmacyAMOCombo.setBounds(490, 270, 220, 50);
 
-        PharmacyAMOLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (11).png"))); // NOI18N
+        PharmacyAMOLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharmacyAdminManageOrders-Dhriti.jpg"))); // NOI18N
         add(PharmacyAMOLabel);
-        PharmacyAMOLabel.setBounds(0, 10, 1460, 770);
+        PharmacyAMOLabel.setBounds(320, 350, 1140, 430);
     }// </editor-fold>//GEN-END:initComponents
 
     private void PharmacyAMOAssignDeliveryManButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyAMOAssignDeliveryManButtonActionPerformed

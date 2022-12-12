@@ -47,7 +47,7 @@ JPanel userProcessContainer;
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        SupplierPDWASubmitResultButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SupplierPDWASubmitResultButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierPDWASubmitResultButton.setText("Submit Result");
         SupplierPDWASubmitResultButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierPDWASubmitResultButton.addActionListener(new java.awt.event.ActionListener() {
@@ -56,14 +56,14 @@ JPanel userProcessContainer;
             }
         });
         add(SupplierPDWASubmitResultButton);
-        SupplierPDWASubmitResultButton.setBounds(340, 120, 131, 38);
+        SupplierPDWASubmitResultButton.setBounds(691, 260, 170, 38);
 
-        SupplierPDWALabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SupplierPDWALabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierPDWALabel1.setText("Result");
         add(SupplierPDWALabel1);
-        SupplierPDWALabel1.setBounds(40, 54, 90, 30);
+        SupplierPDWALabel1.setBounds(390, 140, 90, 40);
 
-        SupplierPDWABackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SupplierPDWABackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierPDWABackButton.setText("Back");
         SupplierPDWABackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierPDWABackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -72,16 +72,16 @@ JPanel userProcessContainer;
             }
         });
         add(SupplierPDWABackButton);
-        SupplierPDWABackButton.setBounds(150, 130, 80, 30);
+        SupplierPDWABackButton.setBounds(290, 260, 110, 40);
 
-        SupplierPDWAText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        SupplierPDWAText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         SupplierPDWAText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SupplierPDWAText);
-        SupplierPDWAText.setBounds(145, 49, 320, 40);
+        SupplierPDWAText.setBounds(510, 140, 320, 40);
 
-        SupplierPDWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (3).png"))); // NOI18N
+        SupplierPDWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SupplierProcessDeliveryWorkArea.jpg"))); // NOI18N
         add(SupplierPDWALabel);
-        SupplierPDWALabel.setBounds(0, 0, 1130, 740);
+        SupplierPDWALabel.setBounds(260, 320, 580, 410);
     }// </editor-fold>//GEN-END:initComponents
 
     private void SupplierPDWASubmitResultButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierPDWASubmitResultButtonActionPerformed

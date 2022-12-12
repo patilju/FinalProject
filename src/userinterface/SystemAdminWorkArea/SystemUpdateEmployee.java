@@ -90,17 +90,17 @@ public class SystemUpdateEmployee extends javax.swing.JPanel {
         SystemUELabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SystemUELabel1.setText("Update Employees");
         add(SystemUELabel1);
-        SystemUELabel1.setBounds(98, 29, 266, 24);
+        SystemUELabel1.setBounds(490, 10, 266, 24);
 
         SystemUENameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUENameLabel.setText("Name:");
         add(SystemUENameLabel);
-        SystemUENameLabel.setBounds(19, 214, 144, 15);
+        SystemUENameLabel.setBounds(450, 220, 144, 15);
 
         SystemUENameText.setEditable(false);
         SystemUENameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUENameText);
-        SystemUENameText.setBounds(209, 208, 160, 18);
+        SystemUENameText.setBounds(680, 210, 160, 18);
 
         SystemUEBackButton.setText("< Back");
         SystemUEBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -110,70 +110,70 @@ public class SystemUpdateEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemUEBackButton);
-        SystemUEBackButton.setBounds(136, 404, 42, 22);
+        SystemUEBackButton.setBounds(460, 440, 120, 22);
 
         SystemUEPhoneNumberText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUEPhoneNumberText);
-        SystemUEPhoneNumberText.setBounds(209, 248, 160, 18);
+        SystemUEPhoneNumberText.setBounds(680, 260, 160, 18);
 
         SystemUEUsernameText.setEditable(false);
         SystemUEUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUEUsernameText);
-        SystemUEUsernameText.setBounds(209, 79, 160, 18);
+        SystemUEUsernameText.setBounds(680, 90, 160, 18);
 
         SystemUEPhoneNumberLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUEPhoneNumberLabel.setText("Phone Number:");
         add(SystemUEPhoneNumberLabel);
-        SystemUEPhoneNumberLabel.setBounds(19, 254, 144, 15);
+        SystemUEPhoneNumberLabel.setBounds(450, 260, 144, 15);
 
         SystemUEPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUEPasswordText);
-        SystemUEPasswordText.setBounds(209, 128, 160, 18);
+        SystemUEPasswordText.setBounds(680, 130, 160, 18);
 
         SystemUEAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUEAddressLabel.setText("Address:");
         add(SystemUEAddressLabel);
-        SystemUEAddressLabel.setBounds(19, 294, 144, 15);
+        SystemUEAddressLabel.setBounds(450, 300, 144, 15);
 
         SystemUEConfirmPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUEConfirmPasswordText);
-        SystemUEConfirmPasswordText.setBounds(209, 168, 160, 18);
+        SystemUEConfirmPasswordText.setBounds(680, 170, 160, 18);
 
         SystemUEAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemUEAddressText);
-        SystemUEAddressText.setBounds(209, 288, 160, 18);
+        SystemUEAddressText.setBounds(680, 300, 160, 18);
 
         SystemUEUsernameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUEUsernameLabel.setText("Username: ");
         add(SystemUEUsernameLabel);
-        SystemUEUsernameLabel.setBounds(19, 85, 144, 15);
+        SystemUEUsernameLabel.setBounds(450, 90, 144, 15);
 
         SystemUERoleLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUERoleLabel.setText("Role:");
         add(SystemUERoleLabel);
-        SystemUERoleLabel.setBounds(19, 337, 144, 15);
+        SystemUERoleLabel.setBounds(450, 350, 144, 15);
 
         SystemUEPasswordLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUEPasswordLabel.setText("Password: ");
         add(SystemUEPasswordLabel);
-        SystemUEPasswordLabel.setBounds(19, 134, 144, 15);
+        SystemUEPasswordLabel.setBounds(450, 130, 144, 15);
 
         buttonGroup1.add(SystemUERadio1);
         SystemUERadio1.setText("Pharmacy Manager");
         SystemUERadio1.setEnabled(false);
         add(SystemUERadio1);
-        SystemUERadio1.setBounds(209, 328, 160, 21);
+        SystemUERadio1.setBounds(680, 350, 160, 21);
 
         SystemUEConfirmPasswordLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemUEConfirmPasswordLabel.setText("Confirm Password:");
         add(SystemUEConfirmPasswordLabel);
-        SystemUEConfirmPasswordLabel.setBounds(19, 174, 144, 15);
+        SystemUEConfirmPasswordLabel.setBounds(450, 180, 144, 15);
 
         buttonGroup1.add(SystemUERadio2);
         SystemUERadio2.setText("Delivery Man");
         SystemUERadio2.setEnabled(false);
         add(SystemUERadio2);
-        SystemUERadio2.setBounds(209, 357, 160, 21);
+        SystemUERadio2.setBounds(680, 380, 160, 21);
 
         SystemUESubmitButton.setText("Submit");
         SystemUESubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -183,13 +183,13 @@ public class SystemUpdateEmployee extends javax.swing.JPanel {
             }
         });
         add(SystemUESubmitButton);
-        SystemUESubmitButton.setBounds(209, 404, 160, 22);
+        SystemUESubmitButton.setBounds(660, 440, 160, 22);
         add(SystemUELabel2);
         SystemUELabel2.setBounds(19, 11, 0, 99);
 
-        SystemUELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Manage_Emplyee_Final_IMAGE.png"))); // NOI18N
+        SystemUELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemUpdateEmployee.jpg"))); // NOI18N
         add(SystemUELabel);
-        SystemUELabel.setBounds(0, 0, 1230, 800);
+        SystemUELabel.setBounds(300, 440, 650, 360);
     }// </editor-fold>//GEN-END:initComponents
 
     private void SystemUEBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemUEBackButtonActionPerformed

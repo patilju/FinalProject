@@ -17,7 +17,7 @@ public class Customer {
     private int CustomerId;
     private String CustomerAddress;
     private String CustomerContactNo;
-    private String emailId;
+   private String emailId;
 
     public String getEmailId() {
         return emailId;
@@ -26,7 +26,6 @@ public class Customer {
     public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
-   
 
     private static int count = 1;
     private ArrayList<Orders> PastOrderList;

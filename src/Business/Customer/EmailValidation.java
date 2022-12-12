@@ -8,6 +8,7 @@ package Business.Customer;
  *
  * @author juile
  */
+
 import java.util.Properties;
 import java.util.Random;
 import javax.mail.Authenticator;
@@ -21,30 +22,23 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.mail.PasswordAuthentication;
 import javax.swing.JOptionPane;
-
 public class EmailValidation {
-  
-    private static final String smtpHostName = "smtp.gmail.com"; 
+     private static final String smtpHostName = "smtp.gmail.com"; 
     private static final String smtpPortNo = "587"; 
-     private static StringBuilder emailMsgTxt ;
+    private static StringBuilder emailMsgTxt ;
         
-        private static String emailSubText = "Thank you!";
-        private static String emailFromAdd = "juileepatil84@gmail.com";
-        private static String pass2="uyvpxpsnmshaxohy";
+    private static String emailSubText = "Thank you!";
+    private static String emailFromAdd = "juileepatil84@gmail.com";
+    private static String pass2="uyvpxpsnmshaxohy";
     
-
-    public static String generatePassword(String name)
+    
+      public static String generatePassword(String name)
     {
         try
         {
-     // Random random = new Random();
-      //String value = String.valueOf(random.nextInt(10000));
-      //String value1 = String.valueOf(random.nextInt(100));
-        StringBuilder sb = new StringBuilder();
-       // sb.append(value1);
-        sb.append(name);
-       // sb.append(value);
-        System.out.println(">>>>password>>>>>"+sb.toString());
+     StringBuilder sb = new StringBuilder();
+     sb.append(name);
+     System.out.println(">>>>password>>>>>"+sb.toString());
          return sb.toString();
         }
         catch(Exception e)
@@ -53,16 +47,12 @@ public class EmailValidation {
         }
         return null;
     }
-    
-    public static String generateUserName(String name)
+     public static String generateUserName(String name)
     {
         try
         {
-     // Random random = new Random();
-      //String value1 = String.valueOf(random.nextInt(100));
-        StringBuilder sb = new StringBuilder();
-       // sb.append(value1);
-        sb.append(name);
+         StringBuilder sb = new StringBuilder();
+         sb.append(name);
         System.out.println(">>>>username>>>>"+sb.toString());
          return sb.toString();
     }
@@ -72,11 +62,7 @@ public class EmailValidation {
         }
         return null;
     }
-      
-
- // Send Email                   
-    
-    public static boolean sendEmail(String msg, String emailId, String userName, String password) throws Exception
+   public static boolean sendEmail(String msg, String emailId, String userName, String password) throws Exception
     {
         System.out.println("Preparing to send email");
       boolean isSent = true;
@@ -146,6 +132,7 @@ System.out.println("debug 6");
      
     }
     
-   
-
-   }
+    
+    
+    
+}

@@ -51,26 +51,27 @@ public class AdminUpdateMedicineItem extends javax.swing.JPanel {
         PharmacyAUMINameText = new javax.swing.JTextField();
         PharmacyAMUILabel = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(204, 204, 204));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
-        PharmacyAUMINameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAUMINameLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyAUMINameLabel.setText("             Name:");
         add(PharmacyAUMINameLabel);
-        PharmacyAUMINameLabel.setBounds(51, 88, 80, 50);
+        PharmacyAUMINameLabel.setBounds(20, 260, 130, 50);
 
-        PharmacyAUMIPriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAUMIPriceLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyAUMIPriceLabel.setText("               Price:");
         add(PharmacyAUMIPriceLabel);
-        PharmacyAUMIPriceLabel.setBounds(47, 165, 80, 50);
+        PharmacyAUMIPriceLabel.setBounds(10, 370, 140, 50);
 
-        PharmacyAUMIPriceSpin.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyAUMIPriceSpin.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         PharmacyAUMIPriceSpin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(PharmacyAUMIPriceSpin);
-        PharmacyAUMIPriceSpin.setBounds(147, 165, 460, 60);
+        PharmacyAUMIPriceSpin.setBounds(200, 370, 370, 50);
 
-        PharmacyAMUISubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        PharmacyAMUISubmitButton.setText("Submit");
+        PharmacyAMUISubmitButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyAMUISubmitButton.setText("Update");
         PharmacyAMUISubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAMUISubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,15 +79,15 @@ public class AdminUpdateMedicineItem extends javax.swing.JPanel {
             }
         });
         add(PharmacyAMUISubmitButton);
-        PharmacyAMUISubmitButton.setBounds(430, 290, 170, 60);
+        PharmacyAMUISubmitButton.setBounds(300, 540, 170, 60);
 
-        PharmacyAMUIUpdateMedicineLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        PharmacyAMUIUpdateMedicineLabel.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         PharmacyAMUIUpdateMedicineLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         PharmacyAMUIUpdateMedicineLabel.setText("Update Medicine");
         add(PharmacyAMUIUpdateMedicineLabel);
-        PharmacyAMUIUpdateMedicineLabel.setBounds(233, 35, 197, 30);
+        PharmacyAMUIUpdateMedicineLabel.setBounds(200, 120, 220, 40);
 
-        PharmacyAUMIBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PharmacyAUMIBackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyAUMIBackButton.setText("< Back");
         PharmacyAUMIBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAUMIBackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -95,18 +96,19 @@ public class AdminUpdateMedicineItem extends javax.swing.JPanel {
             }
         });
         add(PharmacyAUMIBackButton);
-        PharmacyAUMIBackButton.setBounds(150, 290, 110, 60);
+        PharmacyAUMIBackButton.setBounds(80, 540, 150, 60);
 
         PharmacyAUMINameText.setEditable(false);
-        PharmacyAUMINameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyAUMINameText.setBackground(new java.awt.Color(255, 255, 255));
+        PharmacyAUMINameText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         PharmacyAUMINameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(PharmacyAUMINameText);
-        PharmacyAUMINameText.setBounds(147, 87, 460, 60);
+        PharmacyAUMINameText.setBounds(200, 260, 370, 50);
 
         PharmacyAMUILabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        PharmacyAMUILabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Update_Medicine_Image_Final.png"))); // NOI18N
+        PharmacyAMUILabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/UPDATEMEDIIIII.png"))); // NOI18N
         add(PharmacyAMUILabel);
-        PharmacyAMUILabel.setBounds(10, 20, 1460, 790);
+        PharmacyAMUILabel.setBounds(730, 120, 710, 680);
     }// </editor-fold>//GEN-END:initComponents
 
     private void PharmacyAMUISubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyAMUISubmitButtonActionPerformed

@@ -65,9 +65,9 @@ public class MainJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 204, 153));
+        jPanel1.setBackground(new java.awt.Color(255, 153, 153));
 
-        loginButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        loginButton.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         loginButton.setText("Login");
         loginButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         loginButton.addActionListener(new java.awt.event.ActionListener() {
@@ -76,19 +76,19 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
-        userNameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        userNameText.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         userNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        PasswordText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PasswordText.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         PasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        UserNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        UserNameLabel.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         UserNameLabel.setText("User Name");
 
-        PasswordLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        PasswordLabel.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         PasswordLabel.setText("Password");
 
-        logoutButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        logoutButton.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         logoutButton.setText("Logout");
         logoutButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         logoutButton.setEnabled(false);
@@ -134,7 +134,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addComponent(loginButton)
                 .addGap(18, 18, 18)
                 .addComponent(logoutButton)
-                .addContainerGap(581, Short.MAX_VALUE))
+                .addContainerGap(553, Short.MAX_VALUE))
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
@@ -142,7 +142,8 @@ public class MainJFrame extends javax.swing.JFrame {
         container.setBackground(new java.awt.Color(255, 255, 255));
         container.setLayout(new java.awt.CardLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/online pharmacy store.jpg"))); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MainFrame123.jpeg"))); // NOI18N
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel1.setMaximumSize(new java.awt.Dimension(1000, 860));
         jLabel1.setMinimumSize(new java.awt.Dimension(1000, 860));

@@ -65,34 +65,34 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
         add(SystemAMSNameText);
-        SystemAMSNameText.setBounds(336, 179, 228, 22);
+        SystemAMSNameText.setBounds(260, 320, 228, 22);
 
         SystemAMSNameLabel.setText("Supplier Name:");
         add(SystemAMSNameLabel);
-        SystemAMSNameLabel.setBounds(188, 183, 144, 18);
+        SystemAMSNameLabel.setBounds(140, 320, 144, 18);
 
         SystemAMSAddressLabel.setText("Address:");
         add(SystemAMSAddressLabel);
-        SystemAMSAddressLabel.setBounds(188, 245, 144, 16);
+        SystemAMSAddressLabel.setBounds(140, 380, 144, 16);
 
         SystemAMSLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         SystemAMSLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SystemAMSLabel1.setText("Manage Supplier");
         add(SystemAMSLabel1);
-        SystemAMSLabel1.setBounds(123, 18, 445, 29);
+        SystemAMSLabel1.setBounds(300, 10, 445, 29);
 
-        SystemAMSDeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMSDeleteButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         SystemAMSDeleteButton.setText("Delete");
-        SystemAMSDeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SystemAMSDeleteButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         SystemAMSDeleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SystemAMSDeleteButtonActionPerformed(evt);
             }
         });
         add(SystemAMSDeleteButton);
-        SystemAMSDeleteButton.setBounds(21, 179, 41, 21);
+        SystemAMSDeleteButton.setBounds(220, 120, 80, 40);
 
-        SystemAMSViewButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMSViewButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         SystemAMSViewButton.setText("View");
         SystemAMSViewButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SystemAMSViewButton.addActionListener(new java.awt.event.ActionListener() {
@@ -101,9 +101,9 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
             }
         });
         add(SystemAMSViewButton);
-        SystemAMSViewButton.setBounds(18, 132, 80, 21);
+        SystemAMSViewButton.setBounds(110, 120, 80, 40);
 
-        SystemAMSCreateButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMSCreateButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         SystemAMSCreateButton.setText("Create");
         SystemAMSCreateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,9 +111,9 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
             }
         });
         add(SystemAMSCreateButton);
-        SystemAMSCreateButton.setBounds(21, 226, 72, 22);
+        SystemAMSCreateButton.setBounds(340, 120, 90, 40);
 
-        SystemAMSBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMSBackButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         SystemAMSBackButton.setText("Back");
         SystemAMSBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SystemAMSBackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -122,7 +122,7 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
             }
         });
         add(SystemAMSBackButton);
-        SystemAMSBackButton.setBounds(18, 92, 80, 21);
+        SystemAMSBackButton.setBounds(10, 60, 80, 40);
 
         SystemAMSTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -151,7 +151,7 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
         jScrollPane2.setViewportView(SystemAMSTable);
 
         add(jScrollPane2);
-        jScrollPane2.setBounds(188, 65, 500, 96);
+        jScrollPane2.setBounds(10, 200, 530, 96);
 
         SystemAMSSubmitButton.setText("Submit");
         SystemAMSSubmitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -160,13 +160,13 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
             }
         });
         add(SystemAMSSubmitButton);
-        SystemAMSSubmitButton.setBounds(353, 279, 72, 23);
+        SystemAMSSubmitButton.setBounds(232, 430, 90, 40);
         add(SystemAMSAddressText);
-        SystemAMSAddressText.setBounds(336, 242, 236, 22);
+        SystemAMSAddressText.setBounds(260, 380, 236, 22);
 
-        SystemAMSLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (14).png"))); // NOI18N
+        SystemAMSLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemAdminManageSupplierEmployee.jpg"))); // NOI18N
         add(SystemAMSLabel);
-        SystemAMSLabel.setBounds(180, 150, 740, 340);
+        SystemAMSLabel.setBounds(550, 160, 450, 330);
     }// </editor-fold>//GEN-END:initComponents
 
     private void SystemAMSDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSDeleteButtonActionPerformed

@@ -92,40 +92,40 @@ public class SystemManageEmployees extends javax.swing.JPanel {
         SystemMEPhoneNumberLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemMEPhoneNumberLabel.setText("Phone Number:");
         add(SystemMEPhoneNumberLabel);
-        SystemMEPhoneNumberLabel.setBounds(170, 334, 144, 15);
+        SystemMEPhoneNumberLabel.setBounds(130, 460, 144, 15);
 
         SystemMEConfirmPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemMEConfirmPasswordText);
-        SystemMEConfirmPasswordText.setBounds(318, 261, 200, 18);
+        SystemMEConfirmPasswordText.setBounds(250, 370, 200, 18);
 
         SystemMEAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemMEAddressLabel.setText("Address:");
         add(SystemMEAddressLabel);
-        SystemMEAddressLabel.setBounds(170, 378, 144, 15);
+        SystemMEAddressLabel.setBounds(130, 510, 144, 15);
 
         SystemMEUsernameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemMEUsernameLabel.setText("Username: ");
         add(SystemMEUsernameLabel);
-        SystemMEUsernameLabel.setBounds(170, 193, 144, 25);
+        SystemMEUsernameLabel.setBounds(130, 280, 144, 25);
 
         SystemMEAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemMEAddressText);
-        SystemMEAddressText.setBounds(318, 375, 200, 18);
+        SystemMEAddressText.setBounds(250, 510, 200, 18);
 
         SystemMEPasswordLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemMEPasswordLabel.setText("Password: ");
         add(SystemMEPasswordLabel);
-        SystemMEPasswordLabel.setBounds(170, 230, 144, 25);
+        SystemMEPasswordLabel.setBounds(130, 320, 144, 25);
 
         SystemMERoleLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemMERoleLabel.setText("Role:");
         add(SystemMERoleLabel);
-        SystemMERoleLabel.setBounds(170, 412, 144, 15);
+        SystemMERoleLabel.setBounds(130, 570, 144, 15);
 
         SystemMEConfirmPassowordLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemMEConfirmPassowordLabel.setText("Confirm Password:");
         add(SystemMEConfirmPassowordLabel);
-        SystemMEConfirmPassowordLabel.setBounds(170, 261, 144, 27);
+        SystemMEConfirmPassowordLabel.setBounds(130, 370, 144, 27);
 
         buttonGroup1.add(SystemMERadio1);
         SystemMERadio1.setText("Pharmacy Manager");
@@ -135,7 +135,7 @@ public class SystemManageEmployees extends javax.swing.JPanel {
             }
         });
         add(SystemMERadio1);
-        SystemMERadio1.setBounds(318, 419, 200, 19);
+        SystemMERadio1.setBounds(250, 570, 200, 19);
 
         SystemMEBackButton.setText("< Back");
         SystemMEBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -145,7 +145,7 @@ public class SystemManageEmployees extends javax.swing.JPanel {
             }
         });
         add(SystemMEBackButton);
-        SystemMEBackButton.setBounds(10, 249, 42, 22);
+        SystemMEBackButton.setBounds(10, 10, 100, 30);
 
         SystemMESubmitButton.setText("Submit");
         SystemMESubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -155,7 +155,7 @@ public class SystemManageEmployees extends javax.swing.JPanel {
             }
         });
         add(SystemMESubmitButton);
-        SystemMESubmitButton.setBounds(318, 503, 200, 44);
+        SystemMESubmitButton.setBounds(150, 660, 200, 44);
 
         buttonGroup1.add(SystemMERadio2);
         SystemMERadio2.setText("Delivery Man");
@@ -165,7 +165,7 @@ public class SystemManageEmployees extends javax.swing.JPanel {
             }
         });
         add(SystemMERadio2);
-        SystemMERadio2.setBounds(318, 456, 200, 21);
+        SystemMERadio2.setBounds(250, 610, 200, 21);
 
         SystemMETable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -191,7 +191,7 @@ public class SystemManageEmployees extends javax.swing.JPanel {
         jScrollPane1.setViewportView(SystemMETable);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(170, 84, 740, 97);
+        jScrollPane1.setBounds(330, 100, 740, 97);
 
         SystemMEViewButton.setText("View Employee ");
         SystemMEViewButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -201,13 +201,13 @@ public class SystemManageEmployees extends javax.swing.JPanel {
             }
         });
         add(SystemMEViewButton);
-        SystemMEViewButton.setBounds(10, 84, 131, 42);
+        SystemMEViewButton.setBounds(80, 80, 200, 40);
 
         SystemMELabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         SystemMELabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SystemMELabel1.setText("Manage Employees");
         add(SystemMELabel1);
-        SystemMELabel1.setBounds(101, 18, 445, 29);
+        SystemMELabel1.setBounds(340, 10, 445, 29);
 
         SystemMEDeleteButton.setText("Delete Employee");
         SystemMEDeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -217,12 +217,12 @@ public class SystemManageEmployees extends javax.swing.JPanel {
             }
         });
         add(SystemMEDeleteButton);
-        SystemMEDeleteButton.setBounds(10, 137, 131, 44);
+        SystemMEDeleteButton.setBounds(80, 140, 200, 40);
 
         SystemMENameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemMENameLabel.setText("Name:");
         add(SystemMENameLabel);
-        SystemMENameLabel.setBounds(170, 297, 144, 15);
+        SystemMENameLabel.setBounds(130, 410, 144, 15);
 
         SystemMECreateButton.setText("Create Employee ");
         SystemMECreateButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -232,28 +232,28 @@ public class SystemManageEmployees extends javax.swing.JPanel {
             }
         });
         add(SystemMECreateButton);
-        SystemMECreateButton.setBounds(10, 192, 98, 46);
+        SystemMECreateButton.setBounds(80, 200, 200, 40);
 
         SystemMENameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemMENameText);
-        SystemMENameText.setBounds(318, 294, 200, 18);
+        SystemMENameText.setBounds(250, 410, 200, 18);
 
         SystemMEUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemMEUsernameText);
-        SystemMEUsernameText.setBounds(318, 192, 200, 25);
+        SystemMEUsernameText.setBounds(250, 280, 200, 20);
 
         SystemMEPhoneNumberText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemMEPhoneNumberText);
-        SystemMEPhoneNumberText.setBounds(318, 331, 200, 18);
+        SystemMEPhoneNumberText.setBounds(250, 460, 200, 18);
 
         SystemMEPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemMEPasswordText);
-        SystemMEPasswordText.setBounds(318, 229, 200, 18);
+        SystemMEPasswordText.setBounds(250, 320, 200, 18);
 
         SystemMELabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        SystemMELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Manage_Emplyee_Final_IMAGE.png"))); // NOI18N
+        SystemMELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemManageEmployees.jpg"))); // NOI18N
         add(SystemMELabel);
-        SystemMELabel.setBounds(0, 0, 1230, 780);
+        SystemMELabel.setBounds(470, 0, 760, 780);
     }// </editor-fold>//GEN-END:initComponents
 
     private void SystemMERadio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemMERadio1ActionPerformed

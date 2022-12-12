@@ -54,9 +54,10 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
-        RLTrequestTestSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        RLTrequestTestSubmitButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         RLTrequestTestSubmitButton.setText("Submit Message");
         RLTrequestTestSubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,19 +65,19 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
             }
         });
         add(RLTrequestTestSubmitButton);
-        RLTrequestTestSubmitButton.setBounds(370, 100, 130, 30);
+        RLTrequestTestSubmitButton.setBounds(560, 170, 200, 40);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel1.setText("Message: ");
         add(jLabel1);
-        jLabel1.setBounds(70, 26, 80, 50);
+        jLabel1.setBounds(180, 80, 80, 50);
 
-        RLTMessageText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        RLTMessageText.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         RLTMessageText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(RLTMessageText);
-        RLTMessageText.setBounds(180, 26, 320, 40);
+        RLTMessageText.setBounds(260, 80, 320, 40);
 
-        RLTBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        RLTBackButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         RLTBackButton.setText("<<Back");
         RLTBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,16 +85,16 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
             }
         });
         add(RLTBackButton);
-        RLTBackButton.setBounds(180, 100, 120, 30);
+        RLTBackButton.setBounds(50, 170, 190, 40);
 
-        RLTenterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        RLTenterpriseLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         RLTenterpriseLabel.setText("<>");
         add(RLTenterpriseLabel);
-        RLTenterpriseLabel.setBounds(10, 10, 170, 30);
+        RLTenterpriseLabel.setBounds(20, 10, 230, 30);
         add(jLabel2);
         jLabel2.setBounds(30, 50, 0, 0);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (6).png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/CustomerRequestLabText-Dhriti.jpg"))); // NOI18N
         add(jLabel3);
         jLabel3.setBounds(0, 6, 1410, 780);
     }// </editor-fold>//GEN-END:initComponents

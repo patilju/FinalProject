@@ -71,16 +71,17 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
         PharmacyOALabel1 = new javax.swing.JLabel();
         PharmacyOALabel = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 204, 204));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
         PharmacyOAText.setEditable(false);
-        PharmacyOAText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyOAText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         PharmacyOAText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(PharmacyOAText);
-        PharmacyOAText.setBounds(1209, 490, 220, 50);
+        PharmacyOAText.setBounds(690, 760, 180, 40);
 
-        PharmacyOADeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOADeleteButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyOADeleteButton.setText("Delete Item");
         PharmacyOADeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyOADeleteButton.addActionListener(new java.awt.event.ActionListener() {
@@ -89,9 +90,9 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
             }
         });
         add(PharmacyOADeleteButton);
-        PharmacyOADeleteButton.setBounds(419, 496, 230, 50);
+        PharmacyOADeleteButton.setBounds(30, 760, 240, 30);
 
-        PharmacyOConfirmButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOConfirmButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyOConfirmButton.setText("Confirm Order");
         PharmacyOConfirmButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyOConfirmButton.addActionListener(new java.awt.event.ActionListener() {
@@ -100,9 +101,9 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
             }
         });
         add(PharmacyOConfirmButton);
-        PharmacyOConfirmButton.setBounds(700, 490, 230, 50);
+        PharmacyOConfirmButton.setBounds(1230, 760, 230, 30);
 
-        PharmacyOABackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOABackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyOABackButton.setText("< Back");
         PharmacyOABackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyOABackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -111,7 +112,7 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
             }
         });
         add(PharmacyOABackButton);
-        PharmacyOABackButton.setBounds(120, 500, 230, 50);
+        PharmacyOABackButton.setBounds(30, 300, 220, 30);
 
         PharmacyOATable2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         PharmacyOATable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -133,9 +134,9 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
         jScrollPane1.setViewportView(PharmacyOATable2);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(10, 300, 1460, 140);
+        jScrollPane1.setBounds(30, 600, 1430, 140);
 
-        PharmacyOATable1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyOATable1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         PharmacyOATable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -160,10 +161,10 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
         jScrollPane2.setViewportView(PharmacyOATable1);
 
         add(jScrollPane2);
-        jScrollPane2.setBounds(10, 43, 1460, 120);
+        jScrollPane2.setBounds(30, 100, 1440, 130);
 
-        PharmacyOAAddButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        PharmacyOAAddButton.setText("Add Item to Order");
+        PharmacyOAAddButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyOAAddButton.setText("Add Medicines to Order");
         PharmacyOAAddButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyOAAddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,22 +172,23 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
             }
         });
         add(PharmacyOAAddButton);
-        PharmacyOAAddButton.setBounds(1230, 200, 240, 60);
+        PharmacyOAAddButton.setBounds(30, 250, 220, 30);
 
-        PharmacyOATotalLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOATotalLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyOATotalLabel.setText("               Total Amount:");
         add(PharmacyOATotalLabel);
-        PharmacyOATotalLabel.setBounds(1000, 490, 190, 50);
+        PharmacyOATotalLabel.setBounds(470, 760, 210, 40);
 
-        PharmacyOALabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOALabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         PharmacyOALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         PharmacyOALabel1.setText("<value>");
         add(PharmacyOALabel1);
-        PharmacyOALabel1.setBounds(70, 10, 481, 30);
+        PharmacyOALabel1.setBounds(560, 20, 481, 30);
 
-        PharmacyOALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Online-pharmacy-ORDER_IMAGES.jpg"))); // NOI18N
+        PharmacyOALabel.setBackground(new java.awt.Color(255, 255, 255));
+        PharmacyOALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharamcyOrderAction.jpg"))); // NOI18N
         add(PharmacyOALabel);
-        PharmacyOALabel.setBounds(0, 0, 1500, 860);
+        PharmacyOALabel.setBounds(420, 0, 1080, 860);
     }// </editor-fold>//GEN-END:initComponents
 
     private void PharmacyOADeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyOADeleteButtonActionPerformed

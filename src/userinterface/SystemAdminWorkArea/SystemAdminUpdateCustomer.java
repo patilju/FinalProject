@@ -74,7 +74,7 @@ public class SystemAdminUpdateCustomer extends javax.swing.JPanel {
             }
         });
         add(SystemAUCBackButton);
-        SystemAUCBackButton.setBounds(26, 24, 42, 21);
+        SystemAUCBackButton.setBounds(26, 24, 110, 30);
 
         SystemAUCSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAUCSubmitButton.setText("Submit");
@@ -85,48 +85,48 @@ public class SystemAdminUpdateCustomer extends javax.swing.JPanel {
             }
         });
         add(SystemAUCSubmitButton);
-        SystemAUCSubmitButton.setBounds(255, 191, 160, 39);
+        SystemAUCSubmitButton.setBounds(430, 250, 160, 39);
 
         SystemAUCLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         SystemAUCLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SystemAUCLabel1.setText("Update Customer");
         add(SystemAUCLabel1);
-        SystemAUCLabel1.setBounds(90, 10, 350, 29);
+        SystemAUCLabel1.setBounds(330, 20, 350, 29);
 
         SystemAUCNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAUCNameLabel.setText("Name:");
         add(SystemAUCNameLabel);
-        SystemAUCNameLabel.setBounds(65, 90, 144, 15);
+        SystemAUCNameLabel.setBounds(360, 90, 144, 15);
 
         SystemAUCNameText.setEditable(false);
         SystemAUCNameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SystemAUCNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemAUCNameText);
-        SystemAUCNameText.setBounds(255, 89, 160, 17);
+        SystemAUCNameText.setBounds(530, 90, 160, 17);
 
         SystemAUCPhoneNumberText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SystemAUCPhoneNumberText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemAUCPhoneNumberText);
-        SystemAUCPhoneNumberText.setBounds(255, 123, 160, 17);
+        SystemAUCPhoneNumberText.setBounds(530, 140, 160, 17);
 
         SystemAUCPhoneNumberLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAUCPhoneNumberLabel.setText("Phone Number:");
         add(SystemAUCPhoneNumberLabel);
-        SystemAUCPhoneNumberLabel.setBounds(65, 124, 144, 15);
+        SystemAUCPhoneNumberLabel.setBounds(360, 140, 144, 15);
 
         SystemAUCAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         SystemAUCAddressLabel.setText("Address:");
         add(SystemAUCAddressLabel);
-        SystemAUCAddressLabel.setBounds(65, 158, 144, 15);
+        SystemAUCAddressLabel.setBounds(360, 190, 144, 15);
 
         SystemAUCAddressText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SystemAUCAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemAUCAddressText);
-        SystemAUCAddressText.setBounds(255, 157, 160, 17);
+        SystemAUCAddressText.setBounds(530, 190, 160, 17);
 
-        SystemAUCLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Update_Customer.png"))); // NOI18N
+        SystemAUCLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemAdminUpdateCustomer.jpg"))); // NOI18N
         add(SystemAUCLabel);
-        SystemAUCLabel.setBounds(0, 80, 570, 350);
+        SystemAUCLabel.setBounds(200, 170, 850, 740);
     }// </editor-fold>//GEN-END:initComponents
 
     private void SystemAUCBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAUCBackButtonActionPerformed

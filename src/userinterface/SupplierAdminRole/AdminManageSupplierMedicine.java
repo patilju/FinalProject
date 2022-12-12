@@ -63,16 +63,16 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        SupplierAdminAMSMLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSMLabel3.setText("<value>");
         add(SupplierAdminAMSMLabel3);
-        SupplierAdminAMSMLabel3.setBounds(450, 23, 282, 30);
+        SupplierAdminAMSMLabel3.setBounds(470, 10, 282, 30);
 
-        SupplierAdminAMSMLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSMLabel1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         SupplierAdminAMSMLabel1.setText("Supplier");
         add(SupplierAdminAMSMLabel1);
-        SupplierAdminAMSMLabel1.setBounds(152, 23, 292, 30);
+        SupplierAdminAMSMLabel1.setBounds(160, 10, 292, 30);
 
         SupplierAdminAMSMPriceSpin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SupplierAdminAMSMPriceSpin);
@@ -105,27 +105,27 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         add(jScrollPane1);
         jScrollPane1.setBounds(270, 130, 1170, 140);
 
-        SupplierAdminAMSMLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSMLabel2.setText("                         Medicine");
         add(SupplierAdminAMSMLabel2);
-        SupplierAdminAMSMLabel2.setBounds(100, 20, 200, 50);
+        SupplierAdminAMSMLabel2.setBounds(60, 50, 240, 50);
 
-        SupplierAdminAMSMNameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        SupplierAdminAMSMNameText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         SupplierAdminAMSMNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SupplierAdminAMSMNameText);
         SupplierAdminAMSMNameText.setBounds(470, 300, 340, 60);
 
-        SupplierAdminAMSMNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMNameLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSMNameLabel.setText("                      Name:");
         add(SupplierAdminAMSMNameLabel);
-        SupplierAdminAMSMNameLabel.setBounds(213, 300, 160, 27);
+        SupplierAdminAMSMNameLabel.setBounds(213, 300, 210, 27);
 
-        SupplierAdminAMSMPriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMPriceLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSMPriceLabel.setText("                        Price:");
         add(SupplierAdminAMSMPriceLabel);
-        SupplierAdminAMSMPriceLabel.setBounds(213, 400, 170, 40);
+        SupplierAdminAMSMPriceLabel.setBounds(213, 400, 180, 40);
 
-        SupplierAdminAMSMButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSMButton1.setText("Delete Item");
         SupplierAdminAMSMButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSMButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -136,7 +136,7 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         add(SupplierAdminAMSMButton1);
         SupplierAdminAMSMButton1.setBounds(30, 170, 190, 50);
 
-        SupplierAdminAMSMButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSMButton2.setText("View  Item ");
         SupplierAdminAMSMButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSMButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -147,7 +147,7 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         add(SupplierAdminAMSMButton2);
         SupplierAdminAMSMButton2.setBounds(30, 290, 190, 50);
 
-        SupplierAdminAMSMButton3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMButton3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSMButton3.setText("Add New Medicine>");
         SupplierAdminAMSMButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSMButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -158,7 +158,7 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         add(SupplierAdminAMSMButton3);
         SupplierAdminAMSMButton3.setBounds(30, 410, 190, 50);
 
-        SupplierAdminAMSMButton4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMButton4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSMButton4.setText("< Back");
         SupplierAdminAMSMButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSMButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -167,9 +167,9 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
             }
         });
         add(SupplierAdminAMSMButton4);
-        SupplierAdminAMSMButton4.setBounds(30, 550, 180, 50);
+        SupplierAdminAMSMButton4.setBounds(30, 550, 190, 50);
 
-        SupplierAdminAMSMButton5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        SupplierAdminAMSMButton5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         SupplierAdminAMSMButton5.setText("Submit");
         SupplierAdminAMSMButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SupplierAdminAMSMButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -180,9 +180,9 @@ public class AdminManageSupplierMedicine extends javax.swing.JPanel {
         add(SupplierAdminAMSMButton5);
         SupplierAdminAMSMButton5.setBounds(470, 550, 210, 50);
 
-        SupplierAdminAMSMLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MANAGESupplier_FINAL_IMAGE.jpg"))); // NOI18N
+        SupplierAdminAMSMLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dreamstime_l_53316586.jpg"))); // NOI18N
         add(SupplierAdminAMSMLabel);
-        SupplierAdminAMSMLabel.setBounds(0, 0, 1460, 960);
+        SupplierAdminAMSMLabel.setBounds(0, 0, 1500, 960);
     }// </editor-fold>//GEN-END:initComponents
 
     private void SupplierAdminAMSMTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SupplierAdminAMSMTableMouseClicked

@@ -73,7 +73,7 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        SystemAMPDeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMPDeleteButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         SystemAMPDeleteButton.setText("Delete Pharmacy");
         SystemAMPDeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SystemAMPDeleteButton.addActionListener(new java.awt.event.ActionListener() {
@@ -82,9 +82,9 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
             }
         });
         add(SystemAMPDeleteButton);
-        SystemAMPDeleteButton.setBounds(10, 135, 120, 44);
+        SystemAMPDeleteButton.setBounds(200, 150, 120, 44);
 
-        SystemAMPCreateButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMPCreateButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         SystemAMPCreateButton.setText("Create Pharmacy ");
         SystemAMPCreateButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SystemAMPCreateButton.addActionListener(new java.awt.event.ActionListener() {
@@ -93,12 +93,14 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
             }
         });
         add(SystemAMPCreateButton);
-        SystemAMPCreateButton.setBounds(10, 189, 120, 43);
+        SystemAMPCreateButton.setBounds(350, 210, 120, 43);
 
+        SystemAMPNameText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         SystemAMPNameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(SystemAMPNameText);
-        SystemAMPNameText.setBounds(427, 187, 228, 18);
+        SystemAMPNameText.setBounds(210, 420, 228, 16);
 
+        SystemAMPAddressText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         SystemAMPAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         SystemAMPAddressText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,17 +108,19 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
             }
         });
         add(SystemAMPAddressText);
-        SystemAMPAddressText.setBounds(427, 218, 228, 18);
+        SystemAMPAddressText.setBounds(210, 470, 228, 16);
 
+        SystemAMPNameLabel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         SystemAMPNameLabel.setText("Pharmacy Name:");
         add(SystemAMPNameLabel);
-        SystemAMPNameLabel.setBounds(265, 191, 144, 18);
+        SystemAMPNameLabel.setBounds(80, 420, 144, 18);
 
+        SystemAMPAddressLabel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         SystemAMPAddressLabel.setText("Address:");
         add(SystemAMPAddressLabel);
-        SystemAMPAddressLabel.setBounds(265, 221, 144, 16);
+        SystemAMPAddressLabel.setBounds(80, 470, 144, 14);
 
-        SystemAMPSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMPSubmitButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         SystemAMPSubmitButton.setText("Submit");
         SystemAMPSubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SystemAMPSubmitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -125,9 +129,9 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
             }
         });
         add(SystemAMPSubmitButton);
-        SystemAMPSubmitButton.setBounds(551, 270, 104, 34);
+        SystemAMPSubmitButton.setBounds(200, 530, 150, 30);
 
-        SystemAMPViewButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMPViewButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         SystemAMPViewButton.setText("View Pharmacy");
         SystemAMPViewButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SystemAMPViewButton.addActionListener(new java.awt.event.ActionListener() {
@@ -136,9 +140,9 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
             }
         });
         add(SystemAMPViewButton);
-        SystemAMPViewButton.setBounds(10, 84, 120, 45);
+        SystemAMPViewButton.setBounds(70, 90, 110, 45);
 
-        SystemAMPBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        SystemAMPBackButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         SystemAMPBackButton.setText("< Back");
         SystemAMPBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         SystemAMPBackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -147,14 +151,15 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
             }
         });
         add(SystemAMPBackButton);
-        SystemAMPBackButton.setBounds(10, 20, 79, 21);
+        SystemAMPBackButton.setBounds(10, 20, 80, 30);
 
-        SystemAMPLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        SystemAMPLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         SystemAMPLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SystemAMPLabel1.setText("Manage Pharmacy");
         add(SystemAMPLabel1);
-        SystemAMPLabel1.setBounds(123, 18, 445, 29);
+        SystemAMPLabel1.setBounds(270, 10, 445, 29);
 
+        SystemAMPTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         SystemAMPTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -179,15 +184,15 @@ public class SystemAdminManagePharmacy extends javax.swing.JPanel {
         jScrollPane1.setViewportView(SystemAMPTable);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(178, 81, 477, 95);
+        jScrollPane1.setBounds(30, 300, 477, 95);
 
         SystemAMPSeparator.setOrientation(javax.swing.SwingConstants.VERTICAL);
         add(SystemAMPSeparator);
         SystemAMPSeparator.setBounds(161, 11, 11, 293);
 
-        SystemAMPLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Admin_Manage-Pharmacy.png"))); // NOI18N
+        SystemAMPLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/shutterstock_1381281389.jpg"))); // NOI18N
         add(SystemAMPLabel);
-        SystemAMPLabel.setBounds(170, 10, 500, 460);
+        SystemAMPLabel.setBounds(0, 0, 970, 600);
     }// </editor-fold>//GEN-END:initComponents
 
     private void SystemAMPDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMPDeleteButtonActionPerformed
