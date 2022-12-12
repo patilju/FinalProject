@@ -46,11 +46,20 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         PWRStatusComboBox = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
 
+<<<<<<< Updated upstream
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
         PWRSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         PWRSubmitButton.setForeground(new java.awt.Color(0, 102, 102));
+=======
+        setBackground(new java.awt.Color(0, 102, 153));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
+        setLayout(null);
+
+        PWRSubmitButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PWRSubmitButton.setForeground(new java.awt.Color(51, 0, 51));
+>>>>>>> Stashed changes
         PWRSubmitButton.setText("Submit Result");
         PWRSubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PWRSubmitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -59,6 +68,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
         add(PWRSubmitButton);
+<<<<<<< Updated upstream
         PWRSubmitButton.setBounds(360, 118, 131, 50);
 
         ResultLabel.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -68,6 +78,19 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
 
         PWRBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         PWRBackButton.setForeground(new java.awt.Color(0, 102, 102));
+=======
+        PWRSubmitButton.setBounds(600, 170, 170, 50);
+
+        ResultLabel.setBackground(new java.awt.Color(255, 255, 255));
+        ResultLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ResultLabel.setForeground(new java.awt.Color(255, 255, 255));
+        ResultLabel.setText("Result:");
+        add(ResultLabel);
+        ResultLabel.setBounds(260, 50, 90, 50);
+
+        PWRBackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PWRBackButton.setForeground(new java.awt.Color(102, 0, 0));
+>>>>>>> Stashed changes
         PWRBackButton.setText("Back");
         PWRBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PWRBackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -76,15 +99,27 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
             }
         });
         add(PWRBackButton);
+<<<<<<< Updated upstream
         PWRBackButton.setBounds(150, 120, 80, 50);
 
         PWRStatusComboBox.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         add(PWRStatusComboBox);
         PWRStatusComboBox.setBounds(144, 35, 380, 50);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (3).png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ProcessWorkRequestJPanel.jpg"))); // NOI18N
         add(jLabel2);
         jLabel2.setBounds(0, 0, 1480, 810);
+=======
+        PWRBackButton.setBounds(170, 170, 160, 50);
+
+        PWRStatusComboBox.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        add(PWRStatusComboBox);
+        PWRStatusComboBox.setBounds(350, 50, 380, 50);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ProcessWorkRequestJPanel.jpg"))); // NOI18N
+        add(jLabel2);
+        jLabel2.setBounds(160, 240, 620, 460);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void PWRSubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PWRSubmitButtonActionPerformed

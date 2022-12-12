@@ -1,4 +1,3 @@
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -49,137 +48,16 @@ private JPanel userProcessContainer;
         PharmacyRLabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         setLayout(null);
 
         PharmacyRSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        PharmacyRSubmitButton.setText("Submit Message");
-        PharmacyRSubmitButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PharmacyRSubmitButtonActionPerformed(evt);
-            }
-        });
-        add(PharmacyRSubmitButton);
-        PharmacyRSubmitButton.setBounds(1040, 330, 170, 60);
-
-        PharmacyRLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        PharmacyRLabel2.setText("                   Message: ");
-        add(PharmacyRLabel2);
-        PharmacyRLabel2.setBounds(730, 100, 170, 60);
-
-        PharmacyRText1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        PharmacyRText1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(PharmacyRText1);
-        PharmacyRText1.setBounds(970, 100, 290, 60);
-
-        PharmacyRBackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        PharmacyRBackButton.setText("<<Back");
-        PharmacyRBackButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PharmacyRBackButtonActionPerformed(evt);
-            }
-        });
-        add(PharmacyRBackButton);
-        PharmacyRBackButton.setBounds(630, 330, 170, 60);
-
-        PharmacyRLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        PharmacyRLabel1.setText("<>");
-        add(PharmacyRLabel1);
-        PharmacyRLabel1.setBounds(45, 90, 170, 30);
-
-        PharmacyRLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (6).png"))); // NOI18N
-        add(PharmacyRLabel);
-        PharmacyRLabel.setBounds(10, 0, 1530, 860);
-    }// </editor-fold>//GEN-END:initComponents
-
-    private void PharmacyRSubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyRSubmitButtonActionPerformed
-
-        if(PharmacyRText1.getText() != "")
-        {
-            so.setMessage(PharmacyRText1.getText());
-            JOptionPane.showMessageDialog(null, "Message updated successfully");
-        }
-        else
-        {
-            JOptionPane.showMessageDialog(null,"Message cannot be empty!", "Warning", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-    }//GEN-LAST:event_PharmacyRSubmitButtonActionPerformed
-
-    private void PharmacyRBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyRBackButtonActionPerformed
-
-        userProcessContainer.remove(this);
-        Component[] componentArray = userProcessContainer.getComponents();
-        Component component = componentArray[componentArray.length - 1];
-        PharmacySummaryJPanel dwjp = (PharmacySummaryJPanel) component;
-        dwjp.populateRequestTable();
-        CardLayout layout = (CardLayout)userProcessContainer.getLayout();
-        layout.previous(userProcessContainer);
-    }//GEN-LAST:event_PharmacyRBackButtonActionPerformed
-
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton PharmacyRBackButton;
-    private javax.swing.JLabel PharmacyRLabel;
-    private javax.swing.JLabel PharmacyRLabel1;
-    private javax.swing.JLabel PharmacyRLabel2;
-    private javax.swing.JButton PharmacyRSubmitButton;
-    private javax.swing.JTextField PharmacyRText1;
-    // End of variables declaration//GEN-END:variables
-}
 =======
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package userinterface.PharmacyAdminRole;
-
-import Business.Orders.Orders;
-import Business.SupplierOrders.SupplierOrders;
-import java.awt.CardLayout;
-import java.awt.Component;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
-/**
- *
- * @author dhrit
- */
-public class PharmacyRequestJPanel extends javax.swing.JPanel {
-private JPanel userProcessContainer;
-    private SupplierOrders so;
-    /**
-     * Creates new form PharmacyRequestJPanel
-     */
-    public PharmacyRequestJPanel(JPanel userProcessContainer, SupplierOrders so) {
-        initComponents();
-         this.userProcessContainer = userProcessContainer;
-        
-        this.so = so;
-        PharmacyRLabel1.setText("OrderID: " + so);
-        PharmacyRText1.setText(so.getMessage());
-    }
-
-    /**
-     * This method is called from within the constructor to initialize the form.
-     * WARNING: Do NOT modify this code. The content of this method is always
-     * regenerated by the Form Editor.
-     */
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
-
-        PharmacyRSubmitButton = new javax.swing.JButton();
-        PharmacyRLabel2 = new javax.swing.JLabel();
-        PharmacyRText1 = new javax.swing.JTextField();
-        PharmacyRBackButton = new javax.swing.JButton();
-        PharmacyRLabel1 = new javax.swing.JLabel();
-        PharmacyRLabel = new javax.swing.JLabel();
-
-        setBackground(new java.awt.Color(255, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         setLayout(null);
 
-        PharmacyRSubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyRSubmitButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyRSubmitButton.setText("Submit Message");
         PharmacyRSubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,6 +65,7 @@ private JPanel userProcessContainer;
             }
         });
         add(PharmacyRSubmitButton);
+<<<<<<< Updated upstream
         PharmacyRSubmitButton.setBounds(1040, 330, 170, 60);
 
         PharmacyRLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -200,6 +79,21 @@ private JPanel userProcessContainer;
         PharmacyRText1.setBounds(970, 100, 290, 60);
 
         PharmacyRBackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+=======
+        PharmacyRSubmitButton.setBounds(390, 240, 230, 60);
+
+        PharmacyRLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PharmacyRLabel2.setText("                   Message: ");
+        add(PharmacyRLabel2);
+        PharmacyRLabel2.setBounds(90, 110, 220, 60);
+
+        PharmacyRText1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        PharmacyRText1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyRText1);
+        PharmacyRText1.setBounds(340, 110, 290, 60);
+
+        PharmacyRBackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         PharmacyRBackButton.setText("<<Back");
         PharmacyRBackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -207,6 +101,7 @@ private JPanel userProcessContainer;
             }
         });
         add(PharmacyRBackButton);
+<<<<<<< Updated upstream
         PharmacyRBackButton.setBounds(630, 330, 170, 60);
 
         PharmacyRLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -214,9 +109,21 @@ private JPanel userProcessContainer;
         add(PharmacyRLabel1);
         PharmacyRLabel1.setBounds(45, 90, 170, 30);
 
-        PharmacyRLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (6).png"))); // NOI18N
+        PharmacyRLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharmacyRequest.jpg"))); // NOI18N
         add(PharmacyRLabel);
         PharmacyRLabel.setBounds(10, 0, 1530, 860);
+=======
+        PharmacyRBackButton.setBounds(90, 240, 220, 60);
+
+        PharmacyRLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        PharmacyRLabel1.setText("<>");
+        add(PharmacyRLabel1);
+        PharmacyRLabel1.setBounds(50, 50, 170, 30);
+
+        PharmacyRLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharmacyRequest.jpg"))); // NOI18N
+        add(PharmacyRLabel);
+        PharmacyRLabel.setBounds(200, 350, 360, 370);
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void PharmacyRSubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyRSubmitButtonActionPerformed
@@ -254,4 +161,3 @@ private JPanel userProcessContainer;
     private javax.swing.JTextField PharmacyRText1;
     // End of variables declaration//GEN-END:variables
 }
-

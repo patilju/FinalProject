@@ -94,12 +94,16 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         CustomerAddressLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         CustomerAddressLabel.setText("Address:");
         add(CustomerAddressLabel);
-        CustomerAddressLabel.setBounds(80, 570, 110, 20);
+
+        CustomerAddressLabel.setBounds(111, 273, 110, 20);
 
 
         CustomerAddressText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         CustomerAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(CustomerAddressText);
+
+        CustomerAddressText.setBounds(261, 273, 150, 17);
+
 
         CustomerAddressText.setBounds(250, 570, 180, 20);
 
@@ -153,6 +157,9 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         });
         add(ReviewOrdersButton);
 
+        ReviewOrdersButton.setBounds(120, 330, 118, 30);
+
+
         ReviewOrdersButton.setBounds(70, 680, 160, 40);
 
         PharmacyLabel.setBackground(new java.awt.Color(255, 255, 255));
@@ -165,7 +172,9 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         CustomerContactNoLabel.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         CustomerContactNoLabel.setText("Phone:");
         add(CustomerContactNoLabel);
-        CustomerContactNoLabel.setBounds(80, 460, 110, 30);
+
+        CustomerContactNoLabel.setBounds(110, 225, 110, 30);
+
         CustomerContactNoLabel.getAccessibleContext().setAccessibleName("Contact No:");
 
         CustomerNametext.setEditable(false);
@@ -178,6 +187,9 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         CustomerContactText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         CustomerContactText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(CustomerContactText);
+
+        CustomerContactText.setBounds(261, 231, 150, 17);
+
 
         CustomerContactText.setBounds(250, 470, 180, 20);
 
@@ -192,9 +204,8 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         });
         add(SubmitOrdersButton);
 
-        SubmitOrdersButton.setBounds(250, 680, 160, 40);
+        SubmitOrdersButton.setBounds(290, 330, 118, 30);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/online-pharmacy-vector-concept-design.jpg"))); // NOI18N
         add(jLabel7);
         jLabel7.setBounds(280, 120, 1150, 680);
 
