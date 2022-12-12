@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author nupoorkorde
+ * @author Vini
  */
 public class SystemUpdateSupplierEmployee extends javax.swing.JPanel {
 
@@ -31,19 +31,19 @@ public class SystemUpdateSupplierEmployee extends javax.swing.JPanel {
         this.employeeSUE = employee;
         this.ecosystemSUE = system;
         this.userSUE = ecosystemSUE.getUserAccountDirectory().findEmployee(employee);
-        SystemUSEUsernameText.setText(userSUE.getUsername());
-        SystemUSEPasswordText.setText(userSUE.getPassword());
-        SystemUSEConfirmPasswordText.setText(userSUE.getPassword());
-        SystemUSENameText.setText(employee.getEmployeeName());
-        SystemUSEPhoneNumberText.setText(employee.getEmployeeContactNo());
-        SystemUSEAddressText.setText(employee.getEmployeeAddress());
+        txtUsernameSUE.setText(userSUE.getUsername());
+        txtPasswordSUE.setText(userSUE.getPassword());
+        txtRePasswordSUE.setText(userSUE.getPassword());
+        txtNameSUE.setText(employee.getName());
+        txtPhoneSUE.setText(employee.getPhone());
+        txtAddressSUE.setText(employee.getAddress());
         if(this.userSUE.getRole().toString().equals("Business.Role.DeliverManRole"))
         {
-            SystemUSERadio2.setSelected(true);
+            radioBtnDeliverySUE.setSelected(true);
         }
         else
         {
-            SystemUSERadio1.setSelected(true);
+            radioBtnManagerSUE.setSelected(true);
         }
     }
 
@@ -56,266 +56,192 @@ public class SystemUpdateSupplierEmployee extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        SystemUSENameText = new javax.swing.JTextField();
-        SystemUSEPasswordLabel = new javax.swing.JLabel();
-        SystemUSEBackButton = new javax.swing.JButton();
-        SystemUSERadio1 = new javax.swing.JRadioButton();
-        SystemUSEPhoneNumberText = new javax.swing.JTextField();
-        SystemUSEConfirmPasswordLabel = new javax.swing.JLabel();
-        SystemUSEUsernameText = new javax.swing.JTextField();
-        SystemUSERadio2 = new javax.swing.JRadioButton();
-        SystemUSEPhoneNumberLabel = new javax.swing.JLabel();
-        SystemUSESubmitButton = new javax.swing.JButton();
-        SystemUSEPasswordText = new javax.swing.JTextField();
-        SystemUSEAddressLabel = new javax.swing.JLabel();
-        SystemUSEConfirmPasswordText = new javax.swing.JTextField();
-        SystemUSEAddressText = new javax.swing.JTextField();
-        SystemUSEUsernameLabel = new javax.swing.JLabel();
-        SystemUSENameLabel = new javax.swing.JLabel();
-        SystemUSERoleLabel = new javax.swing.JLabel();
-        SystemUSELabel1 = new javax.swing.JLabel();
-        SystemUSELabel = new javax.swing.JLabel();
+        txtNameSUE = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        btnBackSUE = new javax.swing.JButton();
+        radioBtnManagerSUE = new javax.swing.JRadioButton();
+        txtPhoneSUE = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        txtUsernameSUE = new javax.swing.JTextField();
+        radioBtnDeliverySUE = new javax.swing.JRadioButton();
+        jLabel5 = new javax.swing.JLabel();
+        btnSubmitSUE = new javax.swing.JButton();
+        txtPasswordSUE = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        txtRePasswordSUE = new javax.swing.JTextField();
+        txtAddressSUE = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        SystemUSENameText.setEditable(false);
-        SystemUSENameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SystemUSENameText);
-<<<<<<< Updated upstream
-        SystemUSENameText.setBounds(312, 202, 160, 18);
-=======
-        SystemUSENameText.setBounds(600, 220, 170, 20);
->>>>>>> Stashed changes
+        txtNameSUE.setEditable(false);
+        txtNameSUE.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtNameSUE);
+        txtNameSUE.setBounds(312, 202, 160, 22);
 
-        SystemUSEPasswordLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        SystemUSEPasswordLabel.setText("Password: ");
-        add(SystemUSEPasswordLabel);
-<<<<<<< Updated upstream
-        SystemUSEPasswordLabel.setBounds(150, 117, 144, 15);
-=======
-        SystemUSEPasswordLabel.setBounds(460, 130, 150, 20);
->>>>>>> Stashed changes
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel2.setText("Password: ");
+        add(jLabel2);
+        jLabel2.setBounds(150, 117, 144, 14);
 
-        SystemUSEBackButton.setText("< Back");
-        SystemUSEBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SystemUSEBackButton.addActionListener(new java.awt.event.ActionListener() {
+        btnBackSUE.setBackground(new java.awt.Color(255, 255, 255));
+        btnBackSUE.setText("< Back");
+        btnBackSUE.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBackSUE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemUSEBackButtonActionPerformed(evt);
+                btnBackSUEActionPerformed(evt);
             }
         });
-        add(SystemUSEBackButton);
-<<<<<<< Updated upstream
-        SystemUSEBackButton.setBounds(228, 428, 42, 22);
-=======
-        SystemUSEBackButton.setBounds(462, 440, 100, 30);
->>>>>>> Stashed changes
+        add(btnBackSUE);
+        btnBackSUE.setBounds(228, 428, 55, 27);
 
-        SystemUSERadio1.setText("Supploer Manager");
-        SystemUSERadio1.setEnabled(false);
-        add(SystemUSERadio1);
-<<<<<<< Updated upstream
-        SystemUSERadio1.setBounds(312, 334, 160, 21);
+        radioBtnManagerSUE.setText("Supploer Manager");
+        radioBtnManagerSUE.setEnabled(false);
+        add(radioBtnManagerSUE);
+        radioBtnManagerSUE.setBounds(312, 334, 160, 29);
 
-        SystemUSEPhoneNumberText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SystemUSEPhoneNumberText);
-        SystemUSEPhoneNumberText.setBounds(312, 246, 160, 18);
-=======
-        SystemUSERadio1.setBounds(600, 350, 170, 30);
+        txtPhoneSUE.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtPhoneSUE);
+        txtPhoneSUE.setBounds(312, 246, 160, 22);
 
-        SystemUSEPhoneNumberText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SystemUSEPhoneNumberText);
-        SystemUSEPhoneNumberText.setBounds(600, 260, 170, 20);
->>>>>>> Stashed changes
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel3.setText("Confirm Password:");
+        add(jLabel3);
+        jLabel3.setBounds(150, 164, 144, 14);
 
-        SystemUSEConfirmPasswordLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        SystemUSEConfirmPasswordLabel.setText("Confirm Password:");
-        add(SystemUSEConfirmPasswordLabel);
-<<<<<<< Updated upstream
-        SystemUSEConfirmPasswordLabel.setBounds(150, 164, 144, 15);
-=======
-        SystemUSEConfirmPasswordLabel.setBounds(460, 170, 150, 20);
->>>>>>> Stashed changes
+        txtUsernameSUE.setEditable(false);
+        txtUsernameSUE.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtUsernameSUE);
+        txtUsernameSUE.setBounds(312, 70, 160, 22);
 
-        SystemUSEUsernameText.setEditable(false);
-        SystemUSEUsernameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SystemUSEUsernameText);
-<<<<<<< Updated upstream
-        SystemUSEUsernameText.setBounds(312, 70, 160, 18);
-=======
-        SystemUSEUsernameText.setBounds(600, 80, 170, 20);
->>>>>>> Stashed changes
+        radioBtnDeliverySUE.setText("Delivery Man");
+        radioBtnDeliverySUE.setEnabled(false);
+        add(radioBtnDeliverySUE);
+        radioBtnDeliverySUE.setBounds(312, 381, 160, 29);
 
-        SystemUSERadio2.setText("Delivery Man");
-        SystemUSERadio2.setEnabled(false);
-        add(SystemUSERadio2);
-<<<<<<< Updated upstream
-        SystemUSERadio2.setBounds(312, 381, 160, 21);
-=======
-        SystemUSERadio2.setBounds(600, 400, 170, 30);
->>>>>>> Stashed changes
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel5.setText("Phone Number:");
+        add(jLabel5);
+        jLabel5.setBounds(150, 249, 144, 14);
 
-        SystemUSEPhoneNumberLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        SystemUSEPhoneNumberLabel.setText("Phone Number:");
-        add(SystemUSEPhoneNumberLabel);
-<<<<<<< Updated upstream
-        SystemUSEPhoneNumberLabel.setBounds(150, 249, 144, 15);
-=======
-        SystemUSEPhoneNumberLabel.setBounds(460, 260, 150, 20);
->>>>>>> Stashed changes
-
-        SystemUSESubmitButton.setText("Submit");
-        SystemUSESubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SystemUSESubmitButton.addActionListener(new java.awt.event.ActionListener() {
+        btnSubmitSUE.setBackground(new java.awt.Color(255, 255, 255));
+        btnSubmitSUE.setText("Submit");
+        btnSubmitSUE.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnSubmitSUE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemUSESubmitButtonActionPerformed(evt);
+                btnSubmitSUEActionPerformed(evt);
             }
         });
-        add(SystemUSESubmitButton);
-<<<<<<< Updated upstream
-        SystemUSESubmitButton.setBounds(312, 428, 160, 22);
+        add(btnSubmitSUE);
+        btnSubmitSUE.setBounds(312, 428, 160, 27);
 
-        SystemUSEPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SystemUSEPasswordText);
-        SystemUSEPasswordText.setBounds(312, 114, 160, 18);
-=======
-        SystemUSESubmitButton.setBounds(600, 440, 170, 30);
+        txtPasswordSUE.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtPasswordSUE);
+        txtPasswordSUE.setBounds(312, 114, 160, 22);
 
-        SystemUSEPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SystemUSEPasswordText);
-        SystemUSEPasswordText.setBounds(600, 130, 170, 20);
->>>>>>> Stashed changes
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel6.setText("Address:");
+        add(jLabel6);
+        jLabel6.setBounds(150, 293, 144, 14);
 
-        SystemUSEAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        SystemUSEAddressLabel.setText("Address:");
-        add(SystemUSEAddressLabel);
-<<<<<<< Updated upstream
-        SystemUSEAddressLabel.setBounds(150, 293, 144, 15);
+        txtRePasswordSUE.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtRePasswordSUE);
+        txtRePasswordSUE.setBounds(312, 158, 160, 22);
 
-        SystemUSEConfirmPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SystemUSEConfirmPasswordText);
-        SystemUSEConfirmPasswordText.setBounds(312, 158, 160, 18);
+        txtAddressSUE.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtAddressSUE);
+        txtAddressSUE.setBounds(312, 290, 160, 22);
 
-        SystemUSEAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SystemUSEAddressText);
-        SystemUSEAddressText.setBounds(312, 290, 160, 18);
-=======
-        SystemUSEAddressLabel.setBounds(460, 300, 150, 20);
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel1.setText("Username: ");
+        add(jLabel1);
+        jLabel1.setBounds(150, 73, 144, 14);
 
-        SystemUSEConfirmPasswordText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SystemUSEConfirmPasswordText);
-        SystemUSEConfirmPasswordText.setBounds(600, 170, 170, 20);
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel4.setText("Name:");
+        add(jLabel4);
+        jLabel4.setBounds(150, 205, 144, 14);
 
-        SystemUSEAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SystemUSEAddressText);
-        SystemUSEAddressText.setBounds(600, 300, 170, 20);
->>>>>>> Stashed changes
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel7.setText("Role:");
+        add(jLabel7);
+        jLabel7.setBounds(158, 338, 144, 14);
 
-        SystemUSEUsernameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        SystemUSEUsernameLabel.setText("Username: ");
-        add(SystemUSEUsernameLabel);
-<<<<<<< Updated upstream
-        SystemUSEUsernameLabel.setBounds(150, 73, 144, 15);
-=======
-        SystemUSEUsernameLabel.setBounds(460, 80, 150, 20);
->>>>>>> Stashed changes
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel8.setText("Update Employee Information");
+        add(jLabel8);
+        jLabel8.setBounds(159, 11, 330, 28);
 
-        SystemUSENameLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        SystemUSENameLabel.setText("Name:");
-        add(SystemUSENameLabel);
-<<<<<<< Updated upstream
-        SystemUSENameLabel.setBounds(150, 205, 144, 15);
-=======
-        SystemUSENameLabel.setBounds(460, 220, 150, 20);
->>>>>>> Stashed changes
-
-        SystemUSERoleLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        SystemUSERoleLabel.setText("Role:");
-        add(SystemUSERoleLabel);
-<<<<<<< Updated upstream
-        SystemUSERoleLabel.setBounds(158, 338, 144, 15);
-=======
-        SystemUSERoleLabel.setBounds(460, 350, 150, 20);
->>>>>>> Stashed changes
-
-        SystemUSELabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        SystemUSELabel1.setText("Update Employee Information");
-        add(SystemUSELabel1);
-<<<<<<< Updated upstream
-        SystemUSELabel1.setBounds(159, 11, 330, 29);
-
-        SystemUSELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemUpdateSupplierEmployee.jpg"))); // NOI18N
-        add(SystemUSELabel);
-        SystemUSELabel.setBounds(-10, 10, 1410, 800);
-=======
-        SystemUSELabel1.setBounds(450, 10, 330, 29);
-
-        SystemUSELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemUpdateSupplierEmployee.jpg"))); // NOI18N
-        add(SystemUSELabel);
-        SystemUSELabel.setBounds(280, 490, 700, 310);
->>>>>>> Stashed changes
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Manage_Emplyee_Final_IMAGE.png"))); // NOI18N
+        add(jLabel9);
+        jLabel9.setBounds(0, 0, 1410, 800);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SystemUSEBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemUSEBackButtonActionPerformed
+    private void btnBackSUEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackSUEActionPerformed
         // TODO add your handling code here:
         userProcessContainerSUE.remove(this);
         CardLayout layout = (CardLayout) userProcessContainerSUE.getLayout();
         layout.previous(userProcessContainerSUE);
-    }//GEN-LAST:event_SystemUSEBackButtonActionPerformed
+    }//GEN-LAST:event_btnBackSUEActionPerformed
 
-    private void SystemUSESubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemUSESubmitButtonActionPerformed
+    private void btnSubmitSUEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitSUEActionPerformed
         // TODO add your handling code here:
         if(validateThisSUE())
         {
-            userSUE.setPassword(SystemUSEPasswordText.getText());
-            employeeSUE.setEmployeeAddress(SystemUSEAddressText.getText());
-            employeeSUE.setEmployeeContactNo((SystemUSEPhoneNumberText.getText()));
-            JOptionPane.showMessageDialog(null, "Details for " + employeeSUE.getEmployeeName()+ " updated successfully!");
+            userSUE.setPassword(txtPasswordSUE.getText());
+            employeeSUE.setAddress(txtAddressSUE.getText());
+            employeeSUE.setPhone((txtPhoneSUE.getText()));
+            JOptionPane.showMessageDialog(null, "Details for " + employeeSUE.getName()+ " updated successfully!");
         }
         else
         {
             return;
         }
-    }//GEN-LAST:event_SystemUSESubmitButtonActionPerformed
+    }//GEN-LAST:event_btnSubmitSUEActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel SystemUSEAddressLabel;
-    private javax.swing.JTextField SystemUSEAddressText;
-    private javax.swing.JButton SystemUSEBackButton;
-    private javax.swing.JLabel SystemUSEConfirmPasswordLabel;
-    private javax.swing.JTextField SystemUSEConfirmPasswordText;
-    private javax.swing.JLabel SystemUSELabel;
-    private javax.swing.JLabel SystemUSELabel1;
-    private javax.swing.JLabel SystemUSENameLabel;
-    private javax.swing.JTextField SystemUSENameText;
-    private javax.swing.JLabel SystemUSEPasswordLabel;
-    private javax.swing.JTextField SystemUSEPasswordText;
-    private javax.swing.JLabel SystemUSEPhoneNumberLabel;
-    private javax.swing.JTextField SystemUSEPhoneNumberText;
-    private javax.swing.JRadioButton SystemUSERadio1;
-    private javax.swing.JRadioButton SystemUSERadio2;
-    private javax.swing.JLabel SystemUSERoleLabel;
-    private javax.swing.JButton SystemUSESubmitButton;
-    private javax.swing.JLabel SystemUSEUsernameLabel;
-    private javax.swing.JTextField SystemUSEUsernameText;
+    private javax.swing.JButton btnBackSUE;
+    private javax.swing.JButton btnSubmitSUE;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JRadioButton radioBtnDeliverySUE;
+    private javax.swing.JRadioButton radioBtnManagerSUE;
+    private javax.swing.JTextField txtAddressSUE;
+    private javax.swing.JTextField txtNameSUE;
+    private javax.swing.JTextField txtPasswordSUE;
+    private javax.swing.JTextField txtPhoneSUE;
+    private javax.swing.JTextField txtRePasswordSUE;
+    private javax.swing.JTextField txtUsernameSUE;
     // End of variables declaration//GEN-END:variables
 
 
 private boolean validateThisSUE() {
         String regex = "\\d{10}";
-        if(("".equals(SystemUSEPasswordText.getText())) || ("".equals(SystemUSEConfirmPasswordText.getText())) 
-                || ("".equals(SystemUSEPhoneNumberText.getText())) || ("".equals(SystemUSEAddressText.getText())))
+        if(("".equals(txtPasswordSUE.getText())) || ("".equals(txtRePasswordSUE.getText())) 
+                || ("".equals(txtPhoneSUE.getText())) || ("".equals(txtAddressSUE.getText())))
         {
             JOptionPane.showMessageDialog(null,"Please fill all details!", "Warning", JOptionPane.WARNING_MESSAGE);
             return false;
         }
-        else if(!(SystemUSEPasswordText.getText().equals(SystemUSEConfirmPasswordText.getText())))
+        else if(!(txtPasswordSUE.getText().equals(txtRePasswordSUE.getText())))
         {
             JOptionPane.showMessageDialog(null,"Passwords do not match!", "Warning", JOptionPane.WARNING_MESSAGE);
             return false;
         }
-        else if(!(SystemUSEPhoneNumberText.getText().matches(regex)))
+        else if(!(txtPhoneSUE.getText().matches(regex)))
         {
             JOptionPane.showMessageDialog(null,"Phone number must have only 10 digits!", "Warning", JOptionPane.WARNING_MESSAGE);
             return false;

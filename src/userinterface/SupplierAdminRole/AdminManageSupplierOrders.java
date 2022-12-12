@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author dhrit
+ * @author Vini
  */
 public class AdminManageSupplierOrders extends javax.swing.JPanel {
 
@@ -30,17 +30,17 @@ public class AdminManageSupplierOrders extends javax.swing.JPanel {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.supplier = supplier;
-        SupplierAdminAMSOAssignButton.setEnabled(false);
-        SupplierAdminAMSOCombo.setEnabled(false);
+        btnAssignDeliveryMan.setEnabled(false);
+        comboSupplierDeliveryMen.setEnabled(false);
        
-        SupplierAdminAMSOLabel3.setText(supplier.getSupplierName());
+        valueLabel.setText(supplier.getName());
         populateTable();
-        SupplierAdminAMSOCombo.addItem("");
+        comboSupplierDeliveryMen.addItem("");
         System.out.println(supplier.getSupplierDeliveryManDirectory().getSupplierDeliveryManList().size());
         for(SupplierDeliveryMan sdm : supplier.getSupplierDeliveryManDirectory().getSupplierDeliveryManList())
         {
-            System.out.println(sdm.getSupplierDmName());
-            SupplierAdminAMSOCombo.addItem(sdm.getSupplierDmName());
+            System.out.println(sdm.getName());
+            comboSupplierDeliveryMen.addItem(sdm.getName());
         }
     }
 
@@ -54,127 +54,79 @@ public class AdminManageSupplierOrders extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        SupplierAdminAMSOLabel3 = new javax.swing.JLabel();
-        SupplierAdminAMSOLabel2 = new javax.swing.JLabel();
-        SupplierAdminAMSOLabel1 = new javax.swing.JLabel();
-        SupplierAdminAMSODeleteButton = new javax.swing.JButton();
-        SupplierAdminAMSOBackButton = new javax.swing.JButton();
-        SupplierAdminAMSOCombo = new javax.swing.JComboBox<>();
-        SupplierAdminAMSOAssignButton = new javax.swing.JButton();
+        valueLabel = new javax.swing.JLabel();
+        enterpriseLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        btnDelete = new javax.swing.JButton();
+        btnBack = new javax.swing.JButton();
+        comboSupplierDeliveryMen = new javax.swing.JComboBox<>();
+        btnAssignDeliveryMan = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        SupplierAdminAMSOTable = new javax.swing.JTable();
-        SupplierAdminAMSOLabel = new javax.swing.JLabel();
+        tblOrders = new javax.swing.JTable();
+        jLabel3 = new javax.swing.JLabel();
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (17) supplie_Order.png"))); // NOI18N
 
-<<<<<<< Updated upstream
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-        SupplierAdminAMSOLabel3.setBackground(new java.awt.Color(204, 204, 255));
-        SupplierAdminAMSOLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        SupplierAdminAMSOLabel3.setText("<value>");
-        add(SupplierAdminAMSOLabel3);
-        SupplierAdminAMSOLabel3.setBounds(740, 10, 320, 40);
+        valueLabel.setBackground(new java.awt.Color(204, 204, 255));
+        valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        valueLabel.setText("<value>");
+        add(valueLabel);
+        valueLabel.setBounds(740, 10, 320, 40);
 
-        SupplierAdminAMSOLabel2.setBackground(new java.awt.Color(204, 204, 255));
-        SupplierAdminAMSOLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        SupplierAdminAMSOLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        SupplierAdminAMSOLabel2.setText("Supplier");
-        add(SupplierAdminAMSOLabel2);
-        SupplierAdminAMSOLabel2.setBounds(360, 0, 310, 50);
+        enterpriseLabel.setBackground(new java.awt.Color(204, 204, 255));
+        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        enterpriseLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        enterpriseLabel.setText("Supplier");
+        add(enterpriseLabel);
+        enterpriseLabel.setBounds(360, 0, 310, 50);
 
-        SupplierAdminAMSOLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        SupplierAdminAMSOLabel1.setText("                Current Orders");
-        add(SupplierAdminAMSOLabel1);
-        SupplierAdminAMSOLabel1.setBounds(272, 36, 240, 50);
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel1.setText("                Current Orders");
+        add(jLabel1);
+        jLabel1.setBounds(272, 36, 240, 50);
 
-        SupplierAdminAMSODeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        setBackground(new java.awt.Color(102, 204, 255));
-        setMinimumSize(new java.awt.Dimension(1000, 1000));
-        setLayout(null);
-
-        SupplierAdminAMSOLabel3.setBackground(new java.awt.Color(204, 204, 255));
-        SupplierAdminAMSOLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        SupplierAdminAMSOLabel3.setText("<value>");
-        add(SupplierAdminAMSOLabel3);
-        SupplierAdminAMSOLabel3.setBounds(680, 10, 320, 40);
-
-        SupplierAdminAMSOLabel2.setBackground(new java.awt.Color(204, 204, 255));
-        SupplierAdminAMSOLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        SupplierAdminAMSOLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        SupplierAdminAMSOLabel2.setText("Supplier");
-        add(SupplierAdminAMSOLabel2);
-        SupplierAdminAMSOLabel2.setBounds(350, 10, 310, 40);
-
-        SupplierAdminAMSOLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        SupplierAdminAMSOLabel1.setText("                Current Orders");
-        add(SupplierAdminAMSOLabel1);
-        SupplierAdminAMSOLabel1.setBounds(520, 50, 240, 50);
-
-        SupplierAdminAMSODeleteButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
-        SupplierAdminAMSODeleteButton.setText("Delete");
-        SupplierAdminAMSODeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SupplierAdminAMSODeleteButton.addActionListener(new java.awt.event.ActionListener() {
+        btnDelete.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnDelete.setText("Delete");
+        btnDelete.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplierAdminAMSODeleteButtonActionPerformed(evt);
+                btnDeleteActionPerformed(evt);
             }
         });
-        add(SupplierAdminAMSODeleteButton);
-<<<<<<< Updated upstream
-        SupplierAdminAMSODeleteButton.setBounds(1099, 273, 220, 60);
+        add(btnDelete);
+        btnDelete.setBounds(1099, 273, 220, 60);
 
-        SupplierAdminAMSOBackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        SupplierAdminAMSODeleteButton.setBounds(1270, 280, 220, 50);
-
-        SupplierAdminAMSOBackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
-        SupplierAdminAMSOBackButton.setText("< Back");
-        SupplierAdminAMSOBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SupplierAdminAMSOBackButton.addActionListener(new java.awt.event.ActionListener() {
+        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnBack.setText("< Back");
+        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplierAdminAMSOBackButtonActionPerformed(evt);
+                btnBackActionPerformed(evt);
             }
         });
-        add(SupplierAdminAMSOBackButton);
-<<<<<<< Updated upstream
-        SupplierAdminAMSOBackButton.setBounds(10, 260, 110, 60);
+        add(btnBack);
+        btnBack.setBounds(10, 260, 110, 60);
 
-        SupplierAdminAMSOCombo.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        add(SupplierAdminAMSOCombo);
-        SupplierAdminAMSOCombo.setBounds(560, 280, 159, 43);
+        comboSupplierDeliveryMen.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        add(comboSupplierDeliveryMen);
+        comboSupplierDeliveryMen.setBounds(560, 280, 159, 43);
 
-        SupplierAdminAMSOAssignButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        SupplierAdminAMSOBackButton.setBounds(20, 270, 150, 50);
-
-        SupplierAdminAMSOCombo.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        add(SupplierAdminAMSOCombo);
-        SupplierAdminAMSOCombo.setBounds(360, 290, 190, 40);
-
-        SupplierAdminAMSOAssignButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
-        SupplierAdminAMSOAssignButton.setText("Assign Delivery Man");
-        SupplierAdminAMSOAssignButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SupplierAdminAMSOAssignButton.addActionListener(new java.awt.event.ActionListener() {
+        btnAssignDeliveryMan.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnAssignDeliveryMan.setText("Assign Delivery Man");
+        btnAssignDeliveryMan.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAssignDeliveryMan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplierAdminAMSOAssignButtonActionPerformed(evt);
+                btnAssignDeliveryManActionPerformed(evt);
             }
         });
-        add(SupplierAdminAMSOAssignButton);
-<<<<<<< Updated upstream
-        SupplierAdminAMSOAssignButton.setBounds(1098, 423, 220, 60);
+        add(btnAssignDeliveryMan);
+        btnAssignDeliveryMan.setBounds(1098, 423, 220, 60);
 
-        SupplierAdminAMSOTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-=======
-        SupplierAdminAMSOAssignButton.setBounds(710, 290, 220, 50);
-
-        SupplierAdminAMSOTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
-        SupplierAdminAMSOTable.setModel(new javax.swing.table.DefaultTableModel(
+        tblOrders.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        tblOrders.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -190,35 +142,27 @@ public class AdminManageSupplierOrders extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        SupplierAdminAMSOTable.addMouseListener(new java.awt.event.MouseAdapter() {
+        tblOrders.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SupplierAdminAMSOTableMouseClicked(evt);
+                tblOrdersMouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(SupplierAdminAMSOTable);
+        jScrollPane1.setViewportView(tblOrders);
 
         add(jScrollPane1);
-<<<<<<< Updated upstream
         jScrollPane1.setBounds(10, 84, 1480, 130);
 
-        SupplierAdminAMSOLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/AdminManageSupplierOrders.jpg.jpg"))); // NOI18N
-        add(SupplierAdminAMSOLabel);
-        SupplierAdminAMSOLabel.setBounds(0, 70, 1500, 720);
-=======
-        jScrollPane1.setBounds(10, 110, 1480, 130);
-
-        SupplierAdminAMSOLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharmacyAdminManageMedicine-Dhriti.jpeg"))); // NOI18N
-        add(SupplierAdminAMSOLabel);
-        SupplierAdminAMSOLabel.setBounds(10, 180, 1110, 790);
->>>>>>> Stashed changes
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (17) supplie_Order.png"))); // NOI18N
+        add(jLabel3);
+        jLabel3.setBounds(0, 70, 1500, 720);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SupplierAdminAMSODeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminAMSODeleteButtonActionPerformed
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
-        int selectedRow = SupplierAdminAMSOTable.getSelectedRow();
+        int selectedRow = tblOrders.getSelectedRow();
         if (selectedRow >= 0)
         {
-            SupplierOrders supplierOrders = (SupplierOrders) SupplierAdminAMSOTable.getValueAt(selectedRow, 0);
+            SupplierOrders supplierOrders = (SupplierOrders) tblOrders.getValueAt(selectedRow, 0);
             supplier.deleteOrder(supplierOrders);
             JOptionPane.showMessageDialog(null, "Order deleted successfully!");
             populateTable();
@@ -228,24 +172,24 @@ public class AdminManageSupplierOrders extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_SupplierAdminAMSODeleteButtonActionPerformed
+    }//GEN-LAST:event_btnDeleteActionPerformed
 
-    private void SupplierAdminAMSOBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminAMSOBackButtonActionPerformed
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_SupplierAdminAMSOBackButtonActionPerformed
+    }//GEN-LAST:event_btnBackActionPerformed
 
-    private void SupplierAdminAMSOAssignButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminAMSOAssignButtonActionPerformed
+    private void btnAssignDeliveryManActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignDeliveryManActionPerformed
         // TODO add your handling code here:
-        int selectedRow = SupplierAdminAMSOTable.getSelectedRow();
+        int selectedRow = tblOrders.getSelectedRow();
         if (selectedRow >= 0)
         {
-            SupplierOrders supplierOrders = (SupplierOrders) SupplierAdminAMSOTable.getValueAt(selectedRow, 0);
-            if(SupplierAdminAMSOCombo.getSelectedItem() != "")
+            SupplierOrders supplierOrders = (SupplierOrders) tblOrders.getValueAt(selectedRow, 0);
+            if(comboSupplierDeliveryMen.getSelectedItem() != "")
             {
-                String dmName = SupplierAdminAMSOCombo.getSelectedItem().toString();
+                String dmName = comboSupplierDeliveryMen.getSelectedItem().toString();
                 SupplierDeliveryMan sdm = supplier.findSupplierDeliveryMan(dmName);
                 supplierOrders.setSupplierDeliveryMan(sdm);
                 JOptionPane.showMessageDialog(null, "Delivery man assigned successfully!");
@@ -262,37 +206,37 @@ public class AdminManageSupplierOrders extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_SupplierAdminAMSOAssignButtonActionPerformed
+    }//GEN-LAST:event_btnAssignDeliveryManActionPerformed
 
-    private void SupplierAdminAMSOTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SupplierAdminAMSOTableMouseClicked
+    private void tblOrdersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblOrdersMouseClicked
         // TODO add your handling code here:
-        int selectedRow = SupplierAdminAMSOTable.getSelectedRow();
+        int selectedRow = tblOrders.getSelectedRow();
         if (selectedRow >= 0)
         {
-            SupplierAdminAMSOCombo.setEnabled(true);
-            SupplierAdminAMSODeleteButton.setEnabled(true);
-            SupplierAdminAMSOAssignButton.setEnabled(true);
+            comboSupplierDeliveryMen.setEnabled(true);
+            btnDelete.setEnabled(true);
+            btnAssignDeliveryMan.setEnabled(true);
         }
-    }//GEN-LAST:event_SupplierAdminAMSOTableMouseClicked
+    }//GEN-LAST:event_tblOrdersMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton SupplierAdminAMSOAssignButton;
-    private javax.swing.JButton SupplierAdminAMSOBackButton;
-    private javax.swing.JComboBox<String> SupplierAdminAMSOCombo;
-    private javax.swing.JButton SupplierAdminAMSODeleteButton;
-    private javax.swing.JLabel SupplierAdminAMSOLabel;
-    private javax.swing.JLabel SupplierAdminAMSOLabel1;
-    private javax.swing.JLabel SupplierAdminAMSOLabel2;
-    private javax.swing.JLabel SupplierAdminAMSOLabel3;
-    private javax.swing.JTable SupplierAdminAMSOTable;
+    private javax.swing.JButton btnAssignDeliveryMan;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnDelete;
+    private javax.swing.JComboBox<String> comboSupplierDeliveryMen;
+    private javax.swing.JLabel enterpriseLabel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable tblOrders;
+    private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables
 
 
 private void populateTable() {
-       DefaultTableModel dtm = (DefaultTableModel)SupplierAdminAMSOTable.getModel();
+       DefaultTableModel dtm = (DefaultTableModel)tblOrders.getModel();
         dtm.setRowCount(0);
         if(supplier.getSupplierOrderDirectory().getSupplierOrderList() != null)
         {
@@ -302,7 +246,7 @@ private void populateTable() {
                 {
                     Object[] row = new Object[dtm.getColumnCount()];
                     row[0] = supplierOrders;
-                    row[1] = supplierOrders.getPharmacy().getPharmacyName();
+                    row[1] = supplierOrders.getPharmacy().getName();
                     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
                     row[2] = supplierOrders.getOrderDate().format(formatter);
                     if(supplierOrders.getSupplierDeliveryMan() == null)
@@ -311,7 +255,7 @@ private void populateTable() {
                     }
                     else
                     {
-                        row[3] = supplierOrders.getSupplierDeliveryMan().getSupplierDmName();
+                        row[3] = supplierOrders.getSupplierDeliveryMan().getName();
                     }
                     dtm.addRow(row);
                 }
@@ -319,8 +263,8 @@ private void populateTable() {
         }
         if(dtm.getRowCount() == 0)
             {
-                SupplierAdminAMSOCombo.setEnabled(false);
-                SupplierAdminAMSOAssignButton.setEnabled(false);
+                comboSupplierDeliveryMen.setEnabled(false);
+                btnAssignDeliveryMan.setEnabled(false);
             }
     }
 }

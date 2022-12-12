@@ -38,7 +38,7 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
         for(Customer c : system.getCustomerDirectory().getCustomerList() )
         {
             
-                if(c.getCustomerName() == null ? user.getEmployee().getEmployeeName() == null : c.getCustomerName().equals(user.getEmployee().getEmployeeName()))
+                if(c.getCustomerName() == null ? user.getEmployee().getName() == null : c.getCustomerName().equals(user.getEmployee().getName()))
                 {
                     this.customer = c;
                 }
@@ -64,18 +64,10 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
         CSBackButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-<<<<<<< Updated upstream
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
         CSWorkrequestTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-=======
-        setBackground(new java.awt.Color(255, 204, 0));
-        setPreferredSize(new java.awt.Dimension(1000, 1000));
-        setLayout(null);
-
-        CSWorkrequestTable.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
->>>>>>> Stashed changes
         CSWorkrequestTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -102,17 +94,9 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
         jScrollPane1.setViewportView(CSWorkrequestTable);
 
         add(jScrollPane1);
-<<<<<<< Updated upstream
         jScrollPane1.setBounds(10, 84, 1470, 97);
 
         requestTestJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        jScrollPane1.setBounds(0, 70, 1490, 160);
-
-        requestTestJButton.setBackground(new java.awt.Color(0, 0, 0));
-        requestTestJButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
->>>>>>> Stashed changes
         requestTestJButton.setText("Add Message >");
         requestTestJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -121,17 +105,9 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
             }
         });
         add(requestTestJButton);
-<<<<<<< Updated upstream
         requestTestJButton.setBounds(1330, 210, 84, 39);
 
         refreshTestJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        requestTestJButton.setBounds(1240, 250, 210, 40);
-
-        refreshTestJButton.setBackground(new java.awt.Color(0, 0, 0));
-        refreshTestJButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        refreshTestJButton.setForeground(new java.awt.Color(255, 255, 255));
->>>>>>> Stashed changes
         refreshTestJButton.setText("Refresh");
         refreshTestJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -140,26 +116,14 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
             }
         });
         add(refreshTestJButton);
-<<<<<<< Updated upstream
         refreshTestJButton.setBounds(892, 4, 76, 21);
-=======
-        refreshTestJButton.setBounds(1240, 20, 210, 40);
->>>>>>> Stashed changes
 
         CSenterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
         CSenterpriseLabel.setText("<>");
         add(CSenterpriseLabel);
-<<<<<<< Updated upstream
         CSenterpriseLabel.setBounds(24, 36, 251, 30);
 
         CSBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        CSenterpriseLabel.setBounds(10, 20, 440, 40);
-
-        CSBackButton.setBackground(new java.awt.Color(0, 0, 0));
-        CSBackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        CSBackButton.setForeground(new java.awt.Color(255, 255, 255));
->>>>>>> Stashed changes
         CSBackButton.setText("< Back");
         CSBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         CSBackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -168,20 +132,11 @@ public class CustomerSummaryJPanell extends javax.swing.JPanel {
             }
         });
         add(CSBackButton);
-<<<<<<< Updated upstream
         CSBackButton.setBounds(10, 199, 80, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/CustomerOrderSummary-Dhriti.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Pharmacy_Summary_Image.jpg"))); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(0, 160, 1480, 620);
-=======
-        CSBackButton.setBounds(10, 250, 190, 40);
-
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/photo-1585435557343-3b092031a831.jpg"))); // NOI18N
-        add(jLabel1);
-        jLabel1.setBounds(480, 370, 1000, 460);
->>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed

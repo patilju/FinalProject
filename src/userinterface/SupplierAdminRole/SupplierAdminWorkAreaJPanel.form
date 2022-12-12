@@ -23,100 +23,64 @@
     <Property name="useNullLayout" type="boolean" value="true"/>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="SupplierAdminSAWALabel1">
+    <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< Updated upstream
           <Font name="Times New Roman" size="24" style="1"/>
-=======
-          <Font name="Arial" size="24" style="1"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="My Work Area - Administrative Role"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="210" y="10" width="980" height="70"/>
-=======
-          <AbsoluteConstraints x="260" y="20" width="980" height="60"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SupplierAdminSAWALabel2">
+    <Component class="javax.swing.JLabel" name="enterpriseLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< Updated upstream
           <Font name="Times New Roman" size="18" style="1"/>
-=======
-          <Font name="Arial" size="18" style="1"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="horizontalAlignment" type="int" value="11"/>
         <Property name="text" type="java.lang.String" value="Supplier"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="490" y="90" width="180" height="40"/>
-=======
-          <AbsoluteConstraints x="540" y="100" width="170" height="40"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SupplierAdminSAWALabel3">
+    <Component class="javax.swing.JLabel" name="valueLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< Updated upstream
           <Font name="Times New Roman" size="18" style="1"/>
-=======
-          <Font name="Arial" size="18" style="1"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="text" type="java.lang.String" value="&lt;value&gt;"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="800" y="90" width="200" height="30"/>
-=======
-          <AbsoluteConstraints x="730" y="100" width="200" height="40"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SupplierAdminSAWALabel4">
+    <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< Updated upstream
           <Font name="Times New Roman" size="18" style="1"/>
-=======
-          <Font name="Arial" size="18" style="1"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="text" type="java.lang.String" value="             Supplier Name:"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="490" y="300" width="210" height="70"/>
-=======
-          <AbsoluteConstraints x="380" y="500" width="210" height="70"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="SupplierAdminSAWANameText">
+    <Component class="javax.swing.JTextField" name="txtName">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< Updated upstream
           <Font name="Times New Roman" size="12" style="0"/>
-=======
-          <Font name="Arial" size="12" style="0"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -126,43 +90,27 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="770" y="290" width="400" height="70"/>
-=======
-          <AbsoluteConstraints x="650" y="490" width="400" height="70"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SupplierAdminSAWALabel5">
+    <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< Updated upstream
           <Font name="Times New Roman" size="18" style="1"/>
-=======
-          <Font name="Arial" size="18" style="1"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="text" type="java.lang.String" value="                                 Address:"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
-          <AbsoluteConstraints x="400" y="410" width="290" height="60"/>
-=======
-          <AbsoluteConstraints x="280" y="620" width="290" height="60"/>
->>>>>>> Stashed changes
+          <AbsoluteConstraints x="420" y="410" width="290" height="60"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="SupplierAdminSAWAAddressText">
+    <Component class="javax.swing.JTextField" name="txtAddress">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< Updated upstream
           <Font name="Times New Roman" size="48" style="0"/>
-=======
-          <Font name="Arial" size="48" style="0"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -172,99 +120,67 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="770" y="410" width="400" height="70"/>
-=======
-          <AbsoluteConstraints x="650" y="610" width="400" height="70"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="SupplierAdminSAWAViewButton">
+    <Component class="javax.swing.JButton" name="btnViewOrder">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< Updated upstream
           <Font name="Times New Roman" size="18" style="1"/>
-=======
-          <Font name="Arial" size="18" style="1"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="text" type="java.lang.String" value="View Orders"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SupplierAdminSAWAViewButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnViewOrderActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="420" y="150" width="210" height="70"/>
-=======
-          <AbsoluteConstraints x="130" y="180" width="240" height="60"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="SupplierAdminSAWAManageButton">
+    <Component class="javax.swing.JButton" name="btnMedicineManage">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< Updated upstream
           <Font name="Times New Roman" size="18" style="1"/>
-=======
-          <Font name="Arial" size="18" style="1"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="text" type="java.lang.String" value="Manage Medicine"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SupplierAdminSAWAManageButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMedicineManageActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="800" y="160" width="230" height="70"/>
-=======
-          <AbsoluteConstraints x="130" y="300" width="240" height="60"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="SupplierAdminSAWASubmitButton">
+    <Component class="javax.swing.JButton" name="btnSubmit">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<< Updated upstream
           <Font name="Times New Roman" size="18" style="1"/>
-=======
-          <Font name="Arial" size="18" style="1"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="text" type="java.lang.String" value="Submit"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SupplierAdminSAWASubmitButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubmitActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="660" y="610" width="170" height="70"/>
-=======
-          <AbsoluteConstraints x="580" y="740" width="240" height="40"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SupplierAdminSAWALabel">
+    <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/icon/SUPP.png"/>
+          <Image iconType="3" name="/icon/ONLINE_ADMINISTRATIVE_FINAL_IMAGE.jpg"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="10" y="10" width="1450" height="790"/>
-=======
-          <AbsoluteConstraints x="440" y="170" width="610" height="290"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>

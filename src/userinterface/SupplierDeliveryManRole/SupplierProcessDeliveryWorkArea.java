@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author nupoorkorde
+ * @author Vini
  */
 public class SupplierProcessDeliveryWorkArea extends javax.swing.JPanel {
 JPanel userProcessContainer;
@@ -25,8 +25,8 @@ JPanel userProcessContainer;
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.supplierOrders = so;
-        SupplierPDWAText.addItem("Delivered");
-        SupplierPDWAText.addItem("Not Delivered");        
+        comboStatus.addItem("Delivered");
+        comboStatus.addItem("Not Delivered");        
     }
 
     /**
@@ -38,95 +38,69 @@ JPanel userProcessContainer;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        SupplierPDWASubmitResultButton = new javax.swing.JButton();
-        SupplierPDWALabel1 = new javax.swing.JLabel();
-        SupplierPDWABackButton = new javax.swing.JButton();
-        SupplierPDWAText = new javax.swing.JComboBox<>();
-        SupplierPDWALabel = new javax.swing.JLabel();
+        submitJButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        backJButton = new javax.swing.JButton();
+        comboStatus = new javax.swing.JComboBox<>();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-<<<<<<< Updated upstream
-        SupplierPDWASubmitResultButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        SupplierPDWASubmitResultButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
-        SupplierPDWASubmitResultButton.setText("Submit Result");
-        SupplierPDWASubmitResultButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SupplierPDWASubmitResultButton.addActionListener(new java.awt.event.ActionListener() {
+        submitJButton.setBackground(new java.awt.Color(255, 255, 255));
+        submitJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        submitJButton.setText("Submit Result");
+        submitJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplierPDWASubmitResultButtonActionPerformed(evt);
+                submitJButtonActionPerformed(evt);
             }
         });
-        add(SupplierPDWASubmitResultButton);
-<<<<<<< Updated upstream
-        SupplierPDWASubmitResultButton.setBounds(340, 120, 131, 38);
+        add(submitJButton);
+        submitJButton.setBounds(340, 120, 131, 38);
 
-        SupplierPDWALabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        SupplierPDWALabel1.setText("Result");
-        add(SupplierPDWALabel1);
-        SupplierPDWALabel1.setBounds(40, 54, 90, 30);
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel1.setText("Result");
+        add(jLabel1);
+        jLabel1.setBounds(40, 54, 90, 30);
 
-        SupplierPDWABackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        SupplierPDWASubmitResultButton.setBounds(691, 260, 170, 38);
-
-        SupplierPDWALabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        SupplierPDWALabel1.setText("Result");
-        add(SupplierPDWALabel1);
-        SupplierPDWALabel1.setBounds(390, 140, 90, 40);
-
-        SupplierPDWABackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
-        SupplierPDWABackButton.setText("Back");
-        SupplierPDWABackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SupplierPDWABackButton.addActionListener(new java.awt.event.ActionListener() {
+        backJButton.setBackground(new java.awt.Color(255, 255, 255));
+        backJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        backJButton.setText("Back");
+        backJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplierPDWABackButtonActionPerformed(evt);
+                backJButtonActionPerformed(evt);
             }
         });
-        add(SupplierPDWABackButton);
-<<<<<<< Updated upstream
-        SupplierPDWABackButton.setBounds(150, 130, 80, 30);
+        add(backJButton);
+        backJButton.setBounds(150, 130, 80, 30);
 
-        SupplierPDWAText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        SupplierPDWAText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SupplierPDWAText);
-        SupplierPDWAText.setBounds(145, 49, 320, 40);
+        comboStatus.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        comboStatus.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(comboStatus);
+        comboStatus.setBounds(145, 49, 320, 40);
 
-        SupplierPDWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SupplierProcessDeliveryWorkArea.jpg"))); // NOI18N
-        add(SupplierPDWALabel);
-        SupplierPDWALabel.setBounds(0, 0, 1130, 740);
-=======
-        SupplierPDWABackButton.setBounds(290, 260, 110, 40);
-
-        SupplierPDWAText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        SupplierPDWAText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SupplierPDWAText);
-        SupplierPDWAText.setBounds(510, 140, 320, 40);
-
-        SupplierPDWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SupplierProcessDeliveryWorkArea.jpg"))); // NOI18N
-        add(SupplierPDWALabel);
-        SupplierPDWALabel.setBounds(260, 320, 580, 410);
->>>>>>> Stashed changes
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (3).png"))); // NOI18N
+        add(jLabel2);
+        jLabel2.setBounds(0, 0, 1130, 740);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SupplierPDWASubmitResultButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierPDWASubmitResultButtonActionPerformed
-        switch(SupplierPDWAText.getSelectedIndex())
+    private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
+        switch(comboStatus.getSelectedIndex())
         {
             case 0 : supplierOrders.setStatus(true);
             break;
             case 1 : supplierOrders.setStatus(false);
             break;
         }
-        System.out.println(SupplierPDWAText.getSelectedIndex());
+        System.out.println(comboStatus.getSelectedIndex());
         System.out.println(supplierOrders.isStatus());
         System.out.println(supplierOrders.getTotalAmount());
         JOptionPane.showMessageDialog(null, "Order status updated successfully!");
-    }//GEN-LAST:event_SupplierPDWASubmitResultButtonActionPerformed
+    }//GEN-LAST:event_submitJButtonActionPerformed
 
-    private void SupplierPDWABackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierPDWABackButtonActionPerformed
+    private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
 
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
@@ -135,14 +109,14 @@ JPanel userProcessContainer;
         dwjp.populateTable();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_SupplierPDWABackButtonActionPerformed
+    }//GEN-LAST:event_backJButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton SupplierPDWABackButton;
-    private javax.swing.JLabel SupplierPDWALabel;
-    private javax.swing.JLabel SupplierPDWALabel1;
-    private javax.swing.JButton SupplierPDWASubmitResultButton;
-    private javax.swing.JComboBox<String> SupplierPDWAText;
+    private javax.swing.JButton backJButton;
+    private javax.swing.JComboBox<String> comboStatus;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton submitJButton;
     // End of variables declaration//GEN-END:variables
 }

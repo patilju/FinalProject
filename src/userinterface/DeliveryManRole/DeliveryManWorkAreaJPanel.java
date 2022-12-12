@@ -42,9 +42,9 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         
         for(Pharmacy p : business.getPharmacyDirectory().getPharmacyList())
         {
-            if(p.findDeliveryMan(account.getEmployee().getEmployeeName()) != null)
+            if(p.findDeliveryMan(account.getEmployee().getName()) != null)
             {
-                this.deliveryMan = p.findDeliveryMan(account.getEmployee().getEmployeeName());
+                this.deliveryMan = p.findDeliveryMan(account.getEmployee().getName());
                 this.pharmacy = p;
                 break;
             }
@@ -105,13 +105,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-<<<<<<< Updated upstream
         processJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        processJButton.setBackground(new java.awt.Color(0, 0, 0));
-        processJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        processJButton.setForeground(new java.awt.Color(255, 255, 255));
->>>>>>> Stashed changes
         processJButton.setText("Process");
         processJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         processJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -120,13 +114,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-<<<<<<< Updated upstream
         refreshJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        refreshJButton.setBackground(new java.awt.Color(0, 0, 0));
-        refreshJButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        refreshJButton.setForeground(new java.awt.Color(255, 255, 255));
->>>>>>> Stashed changes
         refreshJButton.setText("Refresh");
         refreshJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -135,12 +123,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-<<<<<<< Updated upstream
         DMWorkRequestTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-=======
-        DMWorkRequestTable.setBackground(new java.awt.Color(255, 204, 102));
-        DMWorkRequestTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
         DMWorkRequestTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -166,21 +149,16 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(DMWorkRequestTable);
 
-<<<<<<< Updated upstream
         lblDeliveryMan.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        lblDeliveryMan.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
         lblDeliveryMan.setText("<>");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/DeliveryManWorkArea-Dhriti.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (4).png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-<<<<<<< Updated upstream
                 .addGap(1360, 1360, 1360)
                 .addComponent(processJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
@@ -193,33 +171,10 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 .addGap(40, 40, 40)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1410, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1500, javax.swing.GroupLayout.PREFERRED_SIZE)
-=======
-                .addGap(40, 40, 40)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1410, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 876, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(lblDeliveryMan, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(139, 139, 139)
-                        .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(142, 142, 142)
-                        .addComponent(processJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(71, 71, 71))
->>>>>>> Stashed changes
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-<<<<<<< Updated upstream
                 .addGap(190, 190, 190)
                 .addComponent(processJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
@@ -234,25 +189,6 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1100, javax.swing.GroupLayout.PREFERRED_SIZE))
-=======
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(lblDeliveryMan, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(processJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(1073, 1073, 1073))
->>>>>>> Stashed changes
         );
     }// </editor-fold>//GEN-END:initComponents
 

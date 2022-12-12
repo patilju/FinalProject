@@ -18,7 +18,7 @@ import userinterface.PharmacyAdminRole.AdminManageOrders;
 
 /**
  *
- * @author dhrit
+ * @author Vini
  */
 public class SupplierAdminWorkAreaJPanel extends javax.swing.JPanel {
 JPanel userProcessContainer;
@@ -40,12 +40,12 @@ JPanel userProcessContainer;
                 if(user.getEmployee() == e)
                 {
                     this.supplier = r;
-                    SupplierAdminSAWALabel3.setText(r.getSupplierName());
+                    valueLabel.setText(r.getName());
                 }
             } 
         }
-        SupplierAdminSAWANameText.setText(this.supplier.getSupplierName());
-        SupplierAdminSAWAAddressText.setText(this.supplier.getSupplierAddress());
+        txtName.setText(this.supplier.getName());
+        txtAddress.setText(this.supplier.getAddress());
       
         //valueLabel.setText();
    
@@ -60,183 +60,122 @@ JPanel userProcessContainer;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        SupplierAdminSAWALabel1 = new javax.swing.JLabel();
-        SupplierAdminSAWALabel2 = new javax.swing.JLabel();
-        SupplierAdminSAWALabel3 = new javax.swing.JLabel();
-        SupplierAdminSAWALabel4 = new javax.swing.JLabel();
-        SupplierAdminSAWANameText = new javax.swing.JTextField();
-        SupplierAdminSAWALabel5 = new javax.swing.JLabel();
-        SupplierAdminSAWAAddressText = new javax.swing.JTextField();
-        SupplierAdminSAWAViewButton = new javax.swing.JButton();
-        SupplierAdminSAWAManageButton = new javax.swing.JButton();
-        SupplierAdminSAWASubmitButton = new javax.swing.JButton();
-        SupplierAdminSAWALabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        enterpriseLabel = new javax.swing.JLabel();
+        valueLabel = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtName = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        txtAddress = new javax.swing.JTextField();
+        btnViewOrder = new javax.swing.JButton();
+        btnMedicineManage = new javax.swing.JButton();
+        btnSubmit = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-<<<<<<< Updated upstream
-        SupplierAdminSAWALabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        SupplierAdminSAWALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SupplierAdminSAWALabel1.setText("My Work Area - Administrative Role");
-        add(SupplierAdminSAWALabel1);
-        SupplierAdminSAWALabel1.setBounds(210, 10, 980, 70);
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("My Work Area - Administrative Role");
+        add(jLabel1);
+        jLabel1.setBounds(210, 10, 980, 70);
 
-        SupplierAdminSAWALabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        SupplierAdminSAWALabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        SupplierAdminSAWALabel2.setText("Supplier");
-        add(SupplierAdminSAWALabel2);
-        SupplierAdminSAWALabel2.setBounds(490, 90, 180, 40);
+        enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        enterpriseLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        enterpriseLabel.setText("Supplier");
+        add(enterpriseLabel);
+        enterpriseLabel.setBounds(490, 90, 180, 40);
 
-        SupplierAdminSAWALabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        SupplierAdminSAWALabel3.setText("<value>");
-        add(SupplierAdminSAWALabel3);
-        SupplierAdminSAWALabel3.setBounds(800, 90, 200, 30);
+        valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        valueLabel.setText("<value>");
+        add(valueLabel);
+        valueLabel.setBounds(800, 90, 200, 30);
 
-        SupplierAdminSAWALabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        SupplierAdminSAWALabel4.setText("             Supplier Name:");
-        add(SupplierAdminSAWALabel4);
-        SupplierAdminSAWALabel4.setBounds(490, 300, 210, 70);
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel2.setText("             Supplier Name:");
+        add(jLabel2);
+        jLabel2.setBounds(490, 300, 210, 70);
 
-        SupplierAdminSAWANameText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        SupplierAdminSAWANameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SupplierAdminSAWANameText);
-        SupplierAdminSAWANameText.setBounds(770, 290, 400, 70);
+        txtName.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtName);
+        txtName.setBounds(770, 290, 400, 70);
 
-        SupplierAdminSAWALabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        SupplierAdminSAWALabel5.setText("                                 Address:");
-        add(SupplierAdminSAWALabel5);
-        SupplierAdminSAWALabel5.setBounds(400, 410, 290, 60);
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel3.setText("                                 Address:");
+        add(jLabel3);
+        jLabel3.setBounds(420, 410, 290, 60);
 
-        SupplierAdminSAWAAddressText.setFont(new java.awt.Font("Times New Roman", 0, 48)); // NOI18N
-        SupplierAdminSAWAAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SupplierAdminSAWAAddressText);
-        SupplierAdminSAWAAddressText.setBounds(770, 410, 400, 70);
+        txtAddress.setFont(new java.awt.Font("Times New Roman", 0, 48)); // NOI18N
+        txtAddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(txtAddress);
+        txtAddress.setBounds(770, 410, 400, 70);
 
-        SupplierAdminSAWAViewButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        SupplierAdminSAWALabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        SupplierAdminSAWALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SupplierAdminSAWALabel1.setText("My Work Area - Administrative Role");
-        add(SupplierAdminSAWALabel1);
-        SupplierAdminSAWALabel1.setBounds(260, 20, 980, 60);
-
-        SupplierAdminSAWALabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        SupplierAdminSAWALabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        SupplierAdminSAWALabel2.setText("Supplier");
-        add(SupplierAdminSAWALabel2);
-        SupplierAdminSAWALabel2.setBounds(540, 100, 170, 40);
-
-        SupplierAdminSAWALabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        SupplierAdminSAWALabel3.setText("<value>");
-        add(SupplierAdminSAWALabel3);
-        SupplierAdminSAWALabel3.setBounds(730, 100, 200, 40);
-
-        SupplierAdminSAWALabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        SupplierAdminSAWALabel4.setText("             Supplier Name:");
-        add(SupplierAdminSAWALabel4);
-        SupplierAdminSAWALabel4.setBounds(380, 500, 210, 70);
-
-        SupplierAdminSAWANameText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        SupplierAdminSAWANameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SupplierAdminSAWANameText);
-        SupplierAdminSAWANameText.setBounds(650, 490, 400, 70);
-
-        SupplierAdminSAWALabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        SupplierAdminSAWALabel5.setText("                                 Address:");
-        add(SupplierAdminSAWALabel5);
-        SupplierAdminSAWALabel5.setBounds(280, 620, 290, 60);
-
-        SupplierAdminSAWAAddressText.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
-        SupplierAdminSAWAAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(SupplierAdminSAWAAddressText);
-        SupplierAdminSAWAAddressText.setBounds(650, 610, 400, 70);
-
-        SupplierAdminSAWAViewButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
-        SupplierAdminSAWAViewButton.setText("View Orders");
-        SupplierAdminSAWAViewButton.addActionListener(new java.awt.event.ActionListener() {
+        btnViewOrder.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnViewOrder.setText("View Orders");
+        btnViewOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplierAdminSAWAViewButtonActionPerformed(evt);
+                btnViewOrderActionPerformed(evt);
             }
         });
-        add(SupplierAdminSAWAViewButton);
-<<<<<<< Updated upstream
-        SupplierAdminSAWAViewButton.setBounds(420, 150, 210, 70);
+        add(btnViewOrder);
+        btnViewOrder.setBounds(420, 150, 210, 70);
 
-        SupplierAdminSAWAManageButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        SupplierAdminSAWAViewButton.setBounds(130, 180, 240, 60);
-
-        SupplierAdminSAWAManageButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
-        SupplierAdminSAWAManageButton.setText("Manage Medicine");
-        SupplierAdminSAWAManageButton.addActionListener(new java.awt.event.ActionListener() {
+        btnMedicineManage.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnMedicineManage.setText("Manage Medicine");
+        btnMedicineManage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplierAdminSAWAManageButtonActionPerformed(evt);
+                btnMedicineManageActionPerformed(evt);
             }
         });
-        add(SupplierAdminSAWAManageButton);
-<<<<<<< Updated upstream
-        SupplierAdminSAWAManageButton.setBounds(800, 160, 230, 70);
+        add(btnMedicineManage);
+        btnMedicineManage.setBounds(800, 160, 230, 70);
 
-        SupplierAdminSAWASubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        SupplierAdminSAWAManageButton.setBounds(130, 300, 240, 60);
-
-        SupplierAdminSAWASubmitButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
-        SupplierAdminSAWASubmitButton.setText("Submit");
-        SupplierAdminSAWASubmitButton.addActionListener(new java.awt.event.ActionListener() {
+        btnSubmit.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnSubmit.setText("Submit");
+        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplierAdminSAWASubmitButtonActionPerformed(evt);
+                btnSubmitActionPerformed(evt);
             }
         });
-        add(SupplierAdminSAWASubmitButton);
-<<<<<<< Updated upstream
-        SupplierAdminSAWASubmitButton.setBounds(660, 610, 170, 70);
+        add(btnSubmit);
+        btnSubmit.setBounds(660, 610, 170, 70);
 
-        SupplierAdminSAWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SUPP.png"))); // NOI18N
-        add(SupplierAdminSAWALabel);
-        SupplierAdminSAWALabel.setBounds(10, 10, 1450, 790);
-=======
-        SupplierAdminSAWASubmitButton.setBounds(580, 740, 240, 40);
-
-        SupplierAdminSAWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SUPP.png"))); // NOI18N
-        add(SupplierAdminSAWALabel);
-        SupplierAdminSAWALabel.setBounds(440, 170, 610, 290);
->>>>>>> Stashed changes
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ONLINE_ADMINISTRATIVE_FINAL_IMAGE.jpg"))); // NOI18N
+        add(jLabel4);
+        jLabel4.setBounds(10, 10, 1450, 790);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SupplierAdminSAWAManageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminSAWAManageButtonActionPerformed
+    private void btnMedicineManageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMedicineManageActionPerformed
         // TODO add your handling code here:
         AdminManageSupplierMedicine amm = new AdminManageSupplierMedicine(userProcessContainer, supplier);
         userProcessContainer.add("UserCustomer", amm);
         CardLayout layout = (CardLayout)this.userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_SupplierAdminSAWAManageButtonActionPerformed
+    }//GEN-LAST:event_btnMedicineManageActionPerformed
 
-    private void SupplierAdminSAWAViewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminSAWAViewButtonActionPerformed
+    private void btnViewOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewOrderActionPerformed
         // TODO add your handling code here:
         AdminManageSupplierOrders amo = new AdminManageSupplierOrders(userProcessContainer, supplier);
         userProcessContainer.add("UserCustomer", amo);
         CardLayout layout = (CardLayout)this.userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_SupplierAdminSAWAViewButtonActionPerformed
+    }//GEN-LAST:event_btnViewOrderActionPerformed
 
-    private void SupplierAdminSAWASubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierAdminSAWASubmitButtonActionPerformed
+    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
         // TODO add your handling code here:
-        if(("".equals(SupplierAdminSAWANameText.getText())) || ("".equals(SupplierAdminSAWAAddressText.getText())))
+        if(("".equals(txtName.getText())) || ("".equals(txtAddress.getText())))
         {
             JOptionPane.showMessageDialog(null,"Please fill all values!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-        else if(SupplierAdminSAWANameText.getText() == null ? supplier.getSupplierName() != null : !SupplierAdminSAWANameText.getText().equals(supplier.getSupplierName()))
+        else if(txtName.getText() == null ? supplier.getName() != null : !txtName.getText().equals(supplier.getName()))
         {
-            if(system.getSupplierDirectory().checkIfSupplierIsUnique(SupplierAdminSAWANameText.getText()))
+            if(system.getSupplierDirectory().checkIfSupplierIsUnique(txtName.getText()))
             {
-                supplier.setSupplierName(SupplierAdminSAWANameText.getText());
-                supplier.setSupplierAddress(SupplierAdminSAWAAddressText.getText());
+                supplier.setName(txtName.getText());
+                supplier.setAddress(txtAddress.getText());
                 JOptionPane.showMessageDialog(null, "Supplier details updated!");
             }
             else
@@ -245,21 +184,21 @@ JPanel userProcessContainer;
                 return;
             }
         }
-        SupplierAdminSAWALabel3.setText(supplier.getSupplierName());
-    }//GEN-LAST:event_SupplierAdminSAWASubmitButtonActionPerformed
+        valueLabel.setText(supplier.getName());
+    }//GEN-LAST:event_btnSubmitActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField SupplierAdminSAWAAddressText;
-    private javax.swing.JLabel SupplierAdminSAWALabel;
-    private javax.swing.JLabel SupplierAdminSAWALabel1;
-    private javax.swing.JLabel SupplierAdminSAWALabel2;
-    private javax.swing.JLabel SupplierAdminSAWALabel3;
-    private javax.swing.JLabel SupplierAdminSAWALabel4;
-    private javax.swing.JLabel SupplierAdminSAWALabel5;
-    private javax.swing.JButton SupplierAdminSAWAManageButton;
-    private javax.swing.JTextField SupplierAdminSAWANameText;
-    private javax.swing.JButton SupplierAdminSAWASubmitButton;
-    private javax.swing.JButton SupplierAdminSAWAViewButton;
+    private javax.swing.JButton btnMedicineManage;
+    private javax.swing.JButton btnSubmit;
+    private javax.swing.JButton btnViewOrder;
+    private javax.swing.JLabel enterpriseLabel;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField txtAddress;
+    private javax.swing.JTextField txtName;
+    private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables
 }

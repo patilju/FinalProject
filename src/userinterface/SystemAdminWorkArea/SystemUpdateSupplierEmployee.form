@@ -23,7 +23,7 @@
     <Property name="useNullLayout" type="boolean" value="true"/>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="SystemUSENameText">
+    <Component class="javax.swing.JTextField" name="txtNameSUE">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -34,15 +34,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="312" y="202" width="160" height="-1"/>
-=======
-          <AbsoluteConstraints x="600" y="220" width="170" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SystemUSEPasswordLabel">
+    <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="1"/>
@@ -51,16 +47,15 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="150" y="117" width="144" height="-1"/>
-=======
-          <AbsoluteConstraints x="460" y="130" width="150" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="SystemUSEBackButton">
+    <Component class="javax.swing.JButton" name="btnBackSUE">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="&lt; Back"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
@@ -69,34 +64,26 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SystemUSEBackButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackSUEActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="228" y="428" width="-1" height="-1"/>
-=======
-          <AbsoluteConstraints x="462" y="440" width="100" height="30"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="SystemUSERadio1">
+    <Component class="javax.swing.JRadioButton" name="radioBtnManagerSUE">
       <Properties>
         <Property name="text" type="java.lang.String" value="Supploer Manager"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="312" y="334" width="160" height="-1"/>
-=======
-          <AbsoluteConstraints x="600" y="350" width="170" height="30"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="SystemUSEPhoneNumberText">
+    <Component class="javax.swing.JTextField" name="txtPhoneSUE">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -106,15 +93,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="312" y="246" width="160" height="-1"/>
-=======
-          <AbsoluteConstraints x="600" y="260" width="170" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SystemUSEConfirmPasswordLabel">
+    <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="1"/>
@@ -123,15 +106,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="150" y="164" width="144" height="-1"/>
-=======
-          <AbsoluteConstraints x="460" y="170" width="150" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="SystemUSEUsernameText">
+    <Component class="javax.swing.JTextField" name="txtUsernameSUE">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -142,30 +121,22 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="312" y="70" width="160" height="-1"/>
-=======
-          <AbsoluteConstraints x="600" y="80" width="170" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="SystemUSERadio2">
+    <Component class="javax.swing.JRadioButton" name="radioBtnDeliverySUE">
       <Properties>
         <Property name="text" type="java.lang.String" value="Delivery Man"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="312" y="381" width="160" height="-1"/>
-=======
-          <AbsoluteConstraints x="600" y="400" width="170" height="30"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SystemUSEPhoneNumberLabel">
+    <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="1"/>
@@ -174,16 +145,15 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="150" y="249" width="144" height="-1"/>
-=======
-          <AbsoluteConstraints x="460" y="260" width="150" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="SystemUSESubmitButton">
+    <Component class="javax.swing.JButton" name="btnSubmitSUE">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Submit"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
@@ -192,19 +162,15 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SystemUSESubmitButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubmitSUEActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="312" y="428" width="160" height="-1"/>
-=======
-          <AbsoluteConstraints x="600" y="440" width="170" height="30"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="SystemUSEPasswordText">
+    <Component class="javax.swing.JTextField" name="txtPasswordSUE">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -214,15 +180,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="312" y="114" width="160" height="-1"/>
-=======
-          <AbsoluteConstraints x="600" y="130" width="170" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SystemUSEAddressLabel">
+    <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="1"/>
@@ -231,15 +193,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="150" y="293" width="144" height="-1"/>
-=======
-          <AbsoluteConstraints x="460" y="300" width="150" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="SystemUSEConfirmPasswordText">
+    <Component class="javax.swing.JTextField" name="txtRePasswordSUE">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -249,15 +207,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="312" y="158" width="160" height="-1"/>
-=======
-          <AbsoluteConstraints x="600" y="170" width="170" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="SystemUSEAddressText">
+    <Component class="javax.swing.JTextField" name="txtAddressSUE">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -267,15 +221,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="312" y="290" width="160" height="-1"/>
-=======
-          <AbsoluteConstraints x="600" y="300" width="170" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SystemUSEUsernameLabel">
+    <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="1"/>
@@ -284,15 +234,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="150" y="73" width="144" height="-1"/>
-=======
-          <AbsoluteConstraints x="460" y="80" width="150" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SystemUSENameLabel">
+    <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="1"/>
@@ -301,15 +247,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="150" y="205" width="144" height="-1"/>
-=======
-          <AbsoluteConstraints x="460" y="220" width="150" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SystemUSERoleLabel">
+    <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="1"/>
@@ -318,15 +260,11 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="158" y="338" width="144" height="-1"/>
-=======
-          <AbsoluteConstraints x="460" y="350" width="150" height="20"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SystemUSELabel1">
+    <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="24" style="1"/>
@@ -335,27 +273,19 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
           <AbsoluteConstraints x="159" y="11" width="330" height="-1"/>
-=======
-          <AbsoluteConstraints x="450" y="10" width="330" height="-1"/>
->>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="SystemUSELabel">
+    <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/icon/SystemUpdateSupplierEmployee.jpg"/>
+          <Image iconType="3" name="/icon/Manage_Emplyee_Final_IMAGE.png"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< Updated upstream
-          <AbsoluteConstraints x="-10" y="10" width="1410" height="800"/>
-=======
-          <AbsoluteConstraints x="280" y="490" width="700" height="310"/>
->>>>>>> Stashed changes
+          <AbsoluteConstraints x="0" y="0" width="1410" height="800"/>
         </Constraint>
       </Constraints>
     </Component>

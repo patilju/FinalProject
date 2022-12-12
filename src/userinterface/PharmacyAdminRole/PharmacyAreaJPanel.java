@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -52,7 +53,7 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
         jComboSupplier.addItem("");
         for(Supplier s : system.getSupplierDirectory().getSupplierList())
         {
-            jComboSupplier.addItem(s.getSupplierName());
+            jComboSupplier.addItem(s.getName());
         }
     }
 
@@ -80,7 +81,6 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
         PharmacyALabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
-<<<<<<< Updated upstream
         setLayout(null);
 
         PharmacyALabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -120,58 +120,12 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
         PharmacyALabel1.setBounds(370, 10, 580, 40);
 
         jComboSupplier.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-=======
-        setPreferredSize(new java.awt.Dimension(1000, 1000));
-        setLayout(null);
-
-        PharmacyALabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PharmacyALabel3.setText("<value>");
-        add(PharmacyALabel3);
-        PharmacyALabel3.setBounds(670, 70, 150, 40);
-
-        PharmacyALabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PharmacyALabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PharmacyALabel4.setText("Choose a Supplier:");
-        add(PharmacyALabel4);
-        PharmacyALabel4.setBounds(800, 130, 210, 50);
-
-        PharmacyAAddressLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PharmacyAAddressLabel.setText("                     Address:");
-        add(PharmacyAAddressLabel);
-        PharmacyAAddressLabel.setBounds(780, 420, 230, 50);
-
-        PharmacyANameText.setEditable(false);
-        PharmacyANameText.setBackground(new java.awt.Color(255, 255, 255));
-        PharmacyANameText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        PharmacyANameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(PharmacyANameText);
-        PharmacyANameText.setBounds(1050, 300, 400, 50);
-
-        PharmacyAAddressText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        PharmacyAAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(PharmacyAAddressText);
-        PharmacyAAddressText.setBounds(1050, 410, 400, 50);
-
-        PharmacyANameLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PharmacyANameLabel.setText("                  Name:");
-        add(PharmacyANameLabel);
-        PharmacyANameLabel.setBounds(800, 310, 210, 40);
-
-        PharmacyALabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        PharmacyALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PharmacyALabel1.setText("Pharmacy Work Area");
-        add(PharmacyALabel1);
-        PharmacyALabel1.setBounds(380, 10, 580, 40);
-
-        jComboSupplier.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
         jComboSupplier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboSupplierActionPerformed(evt);
             }
         });
         add(jComboSupplier);
-<<<<<<< Updated upstream
         jComboSupplier.setBounds(520, 120, 410, 50);
 
         PharmacyALabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -186,22 +140,6 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
         PharmacyALabel5.setBounds(360, 210, 320, 50);
 
         PharmacyAReviewButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        jComboSupplier.setBounds(1040, 130, 410, 50);
-
-        PharmacyALabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PharmacyALabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        PharmacyALabel2.setText("Welcome! ");
-        add(PharmacyALabel2);
-        PharmacyALabel2.setBounds(490, 70, 150, 40);
-
-        PharmacyALabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PharmacyALabel5.setText("                            Update Details");
-        add(PharmacyALabel5);
-        PharmacyALabel5.setBounds(1020, 220, 360, 50);
-
-        PharmacyAReviewButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
         PharmacyAReviewButton.setText("Review Orders");
         PharmacyAReviewButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyAReviewButton.addActionListener(new java.awt.event.ActionListener() {
@@ -210,15 +148,9 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(PharmacyAReviewButton);
-<<<<<<< Updated upstream
         PharmacyAReviewButton.setBounds(420, 590, 150, 70);
 
         PharmacyASubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        PharmacyAReviewButton.setBounds(1020, 520, 190, 50);
-
-        PharmacyASubmitButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
         PharmacyASubmitButton.setText("Submit");
         PharmacyASubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyASubmitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -227,15 +159,9 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(PharmacyASubmitButton);
-<<<<<<< Updated upstream
         PharmacyASubmitButton.setBounds(850, 590, 150, 60);
 
-        PharmacyALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharmacyArea.jpg"))); // NOI18N
-=======
-        PharmacyASubmitButton.setBounds(1290, 520, 160, 50);
-
-        PharmacyALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/DKKK.jpg"))); // NOI18N
->>>>>>> Stashed changes
+        PharmacyALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Pharmacy_Work_Area_Final_Image.jpg"))); // NOI18N
         add(PharmacyALabel);
         PharmacyALabel.setBounds(0, 10, 1480, 790);
     }// </editor-fold>//GEN-END:initComponents
@@ -270,11 +196,11 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
         }
         else
         {
-            pharmacy.setPharmacyAddress(PharmacyAAddressText.getText());
+            pharmacy.setAddress(PharmacyAAddressText.getText());
            // pharmacy.setPhone(txtPhone.getText());
 
         }
-        PharmacyALabel3.setText(pharmacy.getPharmacyName());
+        PharmacyALabel3.setText(pharmacy.getName());
     }//GEN-LAST:event_PharmacyASubmitButtonActionPerformed
 
 
@@ -294,3 +220,226 @@ public class PharmacyAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> jComboSupplier;
     // End of variables declaration//GEN-END:variables
 }
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package userinterface.PharmacyAdminRole;
+
+import Business.EcoSystem;
+import Business.Pharmacy.Pharmacy;
+import Business.Supplier.Supplier;
+import Business.UserAccount.UserAccount;
+import java.awt.CardLayout;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+/**
+ *
+ * @author dhrit
+ */
+public class PharmacyAreaJPanel extends javax.swing.JPanel {
+
+    /**
+     * Creates new form PharmacyAreaJPanel
+     */
+    private JPanel userProcessContainer;
+    private UserAccount userAccount;
+    Pharmacy pharmacy;
+    EcoSystem system;
+    Supplier supplier;
+    public PharmacyAreaJPanel(JPanel userProcessContainer,UserAccount user, EcoSystem system, Pharmacy pharmacy) {
+        initComponents();
+        this.userProcessContainer = userProcessContainer;  
+        this.userAccount = user;
+        this.system = system;
+        this.pharmacy=pharmacy;
+        /*for(Pharmacy p : system.getPharmacyDirectory().getPharmacyList() )
+        {
+            
+                if(p.getName() == null ? useraccount.getEmployee().getName() == null : p.getName().equals(useraccount.getEmployee().getName()))
+                {
+                    this.pharmacy = p;
+                }
+           
+        }*/
+        
+       // txtName.setText(this.pharmacy.getName());
+      // system.printout()
+//        txtAddress.setText(this.pharmacy.getAddress());
+       // txtPhone.setText(this.pharmacy.getPhone());
+        
+        //valueLabel.setText(this.pharmacy.getName());
+        jComboSupplier.addItem("");
+        for(Supplier s : system.getSupplierDirectory().getSupplierList())
+        {
+            jComboSupplier.addItem(s.getName());
+        }
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        PharmacyALabel3 = new javax.swing.JLabel();
+        PharmacyALabel4 = new javax.swing.JLabel();
+        PharmacyAAddressLabel = new javax.swing.JLabel();
+        PharmacyANameText = new javax.swing.JTextField();
+        PharmacyAAddressText = new javax.swing.JTextField();
+        PharmacyANameLabel = new javax.swing.JLabel();
+        PharmacyALabel1 = new javax.swing.JLabel();
+        jComboSupplier = new javax.swing.JComboBox<>();
+        PharmacyALabel2 = new javax.swing.JLabel();
+        PharmacyALabel5 = new javax.swing.JLabel();
+        PharmacyAReviewButton = new javax.swing.JButton();
+        PharmacyASubmitButton = new javax.swing.JButton();
+        PharmacyALabel = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(255, 255, 255));
+        setLayout(null);
+
+        PharmacyALabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyALabel3.setText("<value>");
+        add(PharmacyALabel3);
+        PharmacyALabel3.setBounds(678, 60, 150, 40);
+
+        PharmacyALabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyALabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PharmacyALabel4.setText("Choose a Supplier:");
+        add(PharmacyALabel4);
+        PharmacyALabel4.setBounds(240, 120, 210, 50);
+
+        PharmacyAAddressLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyAAddressLabel.setText("                     Address:");
+        add(PharmacyAAddressLabel);
+        PharmacyAAddressLabel.setBounds(230, 420, 230, 50);
+
+        PharmacyANameText.setEditable(false);
+        PharmacyANameText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyANameText);
+        PharmacyANameText.setBounds(520, 300, 420, 50);
+
+        PharmacyAAddressText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyAAddressText);
+        PharmacyAAddressText.setBounds(520, 420, 420, 50);
+
+        PharmacyANameLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyANameLabel.setText("                  Name:");
+        add(PharmacyANameLabel);
+        PharmacyANameLabel.setBounds(250, 300, 210, 40);
+
+        PharmacyALabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        PharmacyALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PharmacyALabel1.setText("Pharmacy Work Area");
+        add(PharmacyALabel1);
+        PharmacyALabel1.setBounds(370, 10, 580, 40);
+
+        jComboSupplier.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jComboSupplier.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboSupplierActionPerformed(evt);
+            }
+        });
+        add(jComboSupplier);
+        jComboSupplier.setBounds(520, 120, 410, 50);
+
+        PharmacyALabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyALabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        PharmacyALabel2.setText("Welcome! ");
+        add(PharmacyALabel2);
+        PharmacyALabel2.setBounds(390, 60, 150, 40);
+
+        PharmacyALabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyALabel5.setText("                            Update Details");
+        add(PharmacyALabel5);
+        PharmacyALabel5.setBounds(360, 210, 320, 50);
+
+        PharmacyAReviewButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyAReviewButton.setText("Review Orders");
+        PharmacyAReviewButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyAReviewButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PharmacyAReviewButtonActionPerformed(evt);
+            }
+        });
+        add(PharmacyAReviewButton);
+        PharmacyAReviewButton.setBounds(420, 590, 150, 70);
+
+        PharmacyASubmitButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyASubmitButton.setText("Submit");
+        PharmacyASubmitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyASubmitButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PharmacyASubmitButtonActionPerformed(evt);
+            }
+        });
+        add(PharmacyASubmitButton);
+        PharmacyASubmitButton.setBounds(850, 590, 150, 60);
+
+        PharmacyALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Pharmacy_Work_Area_Final_Image.jpg"))); // NOI18N
+        add(PharmacyALabel);
+        PharmacyALabel.setBounds(0, 10, 1480, 790);
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jComboSupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboSupplierActionPerformed
+        // TODO add your handling code here:
+        if(jComboSupplier.getSelectedItem() != "")
+        {
+            String supp = jComboSupplier.getSelectedItem().toString();
+            supplier = system.getSupplierDirectory().findSupplier(supp);
+            PharmacyOrderAction poa = new PharmacyOrderAction(userProcessContainer, pharmacy, supplier);
+            userProcessContainer.add("CustomerOrder", poa);
+            CardLayout layout = (CardLayout)this.userProcessContainer.getLayout();
+            layout.next(userProcessContainer);
+        }
+    }//GEN-LAST:event_jComboSupplierActionPerformed
+
+    private void PharmacyAReviewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyAReviewButtonActionPerformed
+        // TODO add your handling code here:
+        PharmacySummaryJPanel lcj = new PharmacySummaryJPanel(userProcessContainer, userAccount, system, pharmacy);
+        userProcessContainer.add("PharmacyOrder", lcj);
+        CardLayout layout = (CardLayout)this.userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+    }//GEN-LAST:event_PharmacyAReviewButtonActionPerformed
+
+    private void PharmacyASubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyASubmitButtonActionPerformed
+        // TODO add your handling code here:
+        if((PharmacyAAddressText.getText() == "")  )
+        {
+            JOptionPane.showMessageDialog(null,"Please fill all values!", "Warning", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        else
+        {
+            pharmacy.setAddress(PharmacyAAddressText.getText());
+           // pharmacy.setPhone(txtPhone.getText());
+
+        }
+        PharmacyALabel3.setText(pharmacy.getName());
+    }//GEN-LAST:event_PharmacyASubmitButtonActionPerformed
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel PharmacyAAddressLabel;
+    private javax.swing.JTextField PharmacyAAddressText;
+    private javax.swing.JLabel PharmacyALabel;
+    private javax.swing.JLabel PharmacyALabel1;
+    private javax.swing.JLabel PharmacyALabel2;
+    private javax.swing.JLabel PharmacyALabel3;
+    private javax.swing.JLabel PharmacyALabel4;
+    private javax.swing.JLabel PharmacyALabel5;
+    private javax.swing.JLabel PharmacyANameLabel;
+    private javax.swing.JTextField PharmacyANameText;
+    private javax.swing.JButton PharmacyAReviewButton;
+    private javax.swing.JButton PharmacyASubmitButton;
+    private javax.swing.JComboBox<String> jComboSupplier;
+    // End of variables declaration//GEN-END:variables
+}
+

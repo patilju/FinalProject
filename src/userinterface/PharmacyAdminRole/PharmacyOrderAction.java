@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -38,7 +39,7 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         this.pharma = pharmacy;
         this.supplier = supplier;
-        PharmacyOALabel1.setText("Supplier: " +this.supplier.getSupplierName());
+        PharmacyOALabel1.setText("Supplier: " +this.supplier.getName());
         populateMedicine(); 
         populateOrder();
         if(PharmacyOATable2.getRowCount() <= 0)
@@ -71,7 +72,6 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
         PharmacyOALabel1 = new javax.swing.JLabel();
         PharmacyOALabel = new javax.swing.JLabel();
 
-<<<<<<< Updated upstream
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
@@ -82,19 +82,6 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
         PharmacyOAText.setBounds(1209, 490, 220, 50);
 
         PharmacyOADeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        setBackground(new java.awt.Color(0, 204, 204));
-        setPreferredSize(new java.awt.Dimension(1000, 1000));
-        setLayout(null);
-
-        PharmacyOAText.setEditable(false);
-        PharmacyOAText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        PharmacyOAText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        add(PharmacyOAText);
-        PharmacyOAText.setBounds(690, 760, 180, 40);
-
-        PharmacyOADeleteButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
         PharmacyOADeleteButton.setText("Delete Item");
         PharmacyOADeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyOADeleteButton.addActionListener(new java.awt.event.ActionListener() {
@@ -103,15 +90,9 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
             }
         });
         add(PharmacyOADeleteButton);
-<<<<<<< Updated upstream
         PharmacyOADeleteButton.setBounds(419, 496, 230, 50);
 
         PharmacyOConfirmButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        PharmacyOADeleteButton.setBounds(30, 760, 240, 30);
-
-        PharmacyOConfirmButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
         PharmacyOConfirmButton.setText("Confirm Order");
         PharmacyOConfirmButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyOConfirmButton.addActionListener(new java.awt.event.ActionListener() {
@@ -120,15 +101,9 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
             }
         });
         add(PharmacyOConfirmButton);
-<<<<<<< Updated upstream
         PharmacyOConfirmButton.setBounds(700, 490, 230, 50);
 
         PharmacyOABackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-=======
-        PharmacyOConfirmButton.setBounds(1230, 760, 230, 30);
-
-        PharmacyOABackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
->>>>>>> Stashed changes
         PharmacyOABackButton.setText("< Back");
         PharmacyOABackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyOABackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -137,11 +112,7 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
             }
         });
         add(PharmacyOABackButton);
-<<<<<<< Updated upstream
         PharmacyOABackButton.setBounds(120, 500, 230, 50);
-=======
-        PharmacyOABackButton.setBounds(30, 300, 220, 30);
->>>>>>> Stashed changes
 
         PharmacyOATable2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         PharmacyOATable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -163,15 +134,9 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
         jScrollPane1.setViewportView(PharmacyOATable2);
 
         add(jScrollPane1);
-<<<<<<< Updated upstream
         jScrollPane1.setBounds(10, 300, 1460, 140);
 
         PharmacyOATable1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-=======
-        jScrollPane1.setBounds(30, 600, 1430, 140);
-
-        PharmacyOATable1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
         PharmacyOATable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -196,17 +161,10 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
         jScrollPane2.setViewportView(PharmacyOATable1);
 
         add(jScrollPane2);
-<<<<<<< Updated upstream
         jScrollPane2.setBounds(10, 43, 1460, 120);
 
         PharmacyOAAddButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         PharmacyOAAddButton.setText("Add Item to Order");
-=======
-        jScrollPane2.setBounds(30, 100, 1440, 130);
-
-        PharmacyOAAddButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PharmacyOAAddButton.setText("Add Medicines to Order");
->>>>>>> Stashed changes
         PharmacyOAAddButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PharmacyOAAddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -214,7 +172,6 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
             }
         });
         add(PharmacyOAAddButton);
-<<<<<<< Updated upstream
         PharmacyOAAddButton.setBounds(1230, 200, 240, 60);
 
         PharmacyOATotalLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -228,28 +185,9 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
         add(PharmacyOALabel1);
         PharmacyOALabel1.setBounds(70, 10, 481, 30);
 
-        PharmacyOALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharamcyOrderAction.jpg"))); // NOI18N
+        PharmacyOALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Online-pharmacy-ORDER_IMAGES.jpg"))); // NOI18N
         add(PharmacyOALabel);
         PharmacyOALabel.setBounds(0, 0, 1500, 860);
-=======
-        PharmacyOAAddButton.setBounds(30, 250, 220, 30);
-
-        PharmacyOATotalLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PharmacyOATotalLabel.setText("               Total Amount:");
-        add(PharmacyOATotalLabel);
-        PharmacyOATotalLabel.setBounds(470, 760, 210, 40);
-
-        PharmacyOALabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        PharmacyOALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PharmacyOALabel1.setText("<value>");
-        add(PharmacyOALabel1);
-        PharmacyOALabel1.setBounds(560, 20, 481, 30);
-
-        PharmacyOALabel.setBackground(new java.awt.Color(255, 255, 255));
-        PharmacyOALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/PharamcyOrderAction.jpg"))); // NOI18N
-        add(PharmacyOALabel);
-        PharmacyOALabel.setBounds(420, 0, 1080, 860);
->>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void PharmacyOADeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyOADeleteButtonActionPerformed
@@ -260,8 +198,8 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
             SupplierMedicineItem smi1 = (SupplierMedicineItem) PharmacyOATable2.getValueAt(selectedRow1, 1);
             //order.deleteFoodItem(fi);
             cart.remove(smi1);
-            JOptionPane.showMessageDialog(null, "Medicine Item " + smi1.getSupplierMedicineName()+ " deleted from cart successfully!");
-            totalAmount = totalAmount - smi1.getSupplierMedicinePrice();
+            JOptionPane.showMessageDialog(null, "Medicine Item " + smi1.getName()+ " deleted from cart successfully!");
+            totalAmount = totalAmount - smi1.getPrice();
             populateOrder();
         }
         else
@@ -306,8 +244,8 @@ public class PharmacyOrderAction extends javax.swing.JPanel {
             SupplierMedicineItem smi2 = (SupplierMedicineItem) PharmacyOATable1.getValueAt(selectedRow, 1);
 
             cart.add(smi2);
-            JOptionPane.showMessageDialog(null, "Medicine Item " + smi2.getSupplierMedicineName()+ " added to cart successfully!");
-            totalAmount = totalAmount + smi2.getSupplierMedicinePrice();
+            JOptionPane.showMessageDialog(null, "Medicine Item " + smi2.getName()+ " added to cart successfully!");
+            totalAmount = totalAmount + smi2.getPrice();
             populateOrder();
         }
         else
@@ -341,9 +279,9 @@ private void populateMedicine() {
             for(SupplierMedicineItem smi3 : supplier.getSupplierMedicineCatalog().getSupplierMedicineItemList())
             {
                 Object[] row = new Object[dtm.getColumnCount()];
-                row[0] = smi3.getSupplierMedicineId();
+                row[0] = smi3.getId();
                 row[1] = smi3;
-                row[2] = smi3.getSupplierMedicinePrice();
+                row[2] = smi3.getPrice();
                 dtm.addRow(row);
             }
         }
@@ -367,7 +305,7 @@ private void populateMedicine() {
                 Object[] row = new Object[dtm.getColumnCount()];
                 row[0] = count;
                 row[1] = mi3;
-                row[2] =  mi3.getSupplierMedicinePrice();
+                row[2] =  mi3.getPrice();
                 dtm.addRow(row);
                 count++;
             }
@@ -380,4 +318,326 @@ private void populateMedicine() {
         }
     }
 }
+
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package userinterface.PharmacyAdminRole;
+
+
+import Business.Pharmacy.Pharmacy;
+import Business.Supplier.Supplier;
+import Business.SupplierMedicineItem.SupplierMedicineItem;
+import Business.SupplierOrders.SupplierOrders;
+import java.awt.CardLayout;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
+
+/**
+ *
+ * @author dhrit
+ */
+public class PharmacyOrderAction extends javax.swing.JPanel {
+
+    /**
+     * Creates new form PharmacyOrderAction
+     */
+    JPanel userProcessContainer;
+    Supplier supplier;
+    Pharmacy pharma;
+    SupplierOrders supplierOrders;
+    int totalAmount = 0;
+    
+    ArrayList<SupplierMedicineItem> cart = new ArrayList<SupplierMedicineItem>();
+    
+    public PharmacyOrderAction(JPanel userProcessContainer, Pharmacy pharmacy, Supplier supplier) {
+        initComponents();
+        this.userProcessContainer = userProcessContainer;
+        this.pharma = pharmacy;
+        this.supplier = supplier;
+        PharmacyOALabel1.setText("Supplier: " +this.supplier.getName());
+        populateMedicine(); 
+        populateOrder();
+        if(PharmacyOATable2.getRowCount() <= 0)
+        {
+            PharmacyOConfirmButton.setEnabled(false);
+        }
+    }
+
+   
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        PharmacyOAText = new javax.swing.JTextField();
+        PharmacyOADeleteButton = new javax.swing.JButton();
+        PharmacyOConfirmButton = new javax.swing.JButton();
+        PharmacyOABackButton = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        PharmacyOATable2 = new javax.swing.JTable();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        PharmacyOATable1 = new javax.swing.JTable();
+        PharmacyOAAddButton = new javax.swing.JButton();
+        PharmacyOATotalLabel = new javax.swing.JLabel();
+        PharmacyOALabel1 = new javax.swing.JLabel();
+        PharmacyOALabel = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(255, 255, 255));
+        setLayout(null);
+
+        PharmacyOAText.setEditable(false);
+        PharmacyOAText.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyOAText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        add(PharmacyOAText);
+        PharmacyOAText.setBounds(1209, 490, 220, 50);
+
+        PharmacyOADeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOADeleteButton.setText("Delete Item");
+        PharmacyOADeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyOADeleteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PharmacyOADeleteButtonActionPerformed(evt);
+            }
+        });
+        add(PharmacyOADeleteButton);
+        PharmacyOADeleteButton.setBounds(419, 496, 230, 50);
+
+        PharmacyOConfirmButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOConfirmButton.setText("Confirm Order");
+        PharmacyOConfirmButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyOConfirmButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PharmacyOConfirmButtonActionPerformed(evt);
+            }
+        });
+        add(PharmacyOConfirmButton);
+        PharmacyOConfirmButton.setBounds(700, 490, 230, 50);
+
+        PharmacyOABackButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOABackButton.setText("< Back");
+        PharmacyOABackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyOABackButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PharmacyOABackButtonActionPerformed(evt);
+            }
+        });
+        add(PharmacyOABackButton);
+        PharmacyOABackButton.setBounds(120, 500, 230, 50);
+
+        PharmacyOATable2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyOATable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Order No", "Medicine Name", "Price"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(PharmacyOATable2);
+
+        add(jScrollPane1);
+        jScrollPane1.setBounds(10, 300, 1460, 140);
+
+        PharmacyOATable1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PharmacyOATable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Medicine No", "Medicine Name", "Price"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        PharmacyOATable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PharmacyOATable1MouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(PharmacyOATable1);
+
+        add(jScrollPane2);
+        jScrollPane2.setBounds(10, 43, 1460, 120);
+
+        PharmacyOAAddButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOAAddButton.setText("Add Item to Order");
+        PharmacyOAAddButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PharmacyOAAddButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PharmacyOAAddButtonActionPerformed(evt);
+            }
+        });
+        add(PharmacyOAAddButton);
+        PharmacyOAAddButton.setBounds(1230, 200, 240, 60);
+
+        PharmacyOATotalLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOATotalLabel.setText("               Total Amount:");
+        add(PharmacyOATotalLabel);
+        PharmacyOATotalLabel.setBounds(1000, 490, 190, 50);
+
+        PharmacyOALabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        PharmacyOALabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PharmacyOALabel1.setText("<value>");
+        add(PharmacyOALabel1);
+        PharmacyOALabel1.setBounds(70, 10, 481, 30);
+
+        PharmacyOALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Online-pharmacy-ORDER_IMAGES.jpg"))); // NOI18N
+        add(PharmacyOALabel);
+        PharmacyOALabel.setBounds(0, 0, 1500, 860);
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void PharmacyOADeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyOADeleteButtonActionPerformed
+        // TODO add your handling code here:
+        int selectedRow1 = PharmacyOATable2.getSelectedRow();
+        if (selectedRow1 >= 0)
+        {
+            SupplierMedicineItem smi1 = (SupplierMedicineItem) PharmacyOATable2.getValueAt(selectedRow1, 1);
+            //order.deleteFoodItem(fi);
+            cart.remove(smi1);
+            JOptionPane.showMessageDialog(null, "Medicine Item " + smi1.getName()+ " deleted from cart successfully!");
+            totalAmount = totalAmount - smi1.getPrice();
+            populateOrder();
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+    }//GEN-LAST:event_PharmacyOADeleteButtonActionPerformed
+
+    private void PharmacyOConfirmButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyOConfirmButtonActionPerformed
+        // TODO add your handling code here:
+        supplierOrders = supplier.getSupplierOrderDirectory().createNewSupplierOrder(pharma);
+        for(SupplierMedicineItem mo : cart)
+        {
+            supplierOrders.addItem(mo);
+        }
+        supplierOrders.calculateTotalAmount();
+        JOptionPane.showMessageDialog(null, "Thank you for your order! Order of " + supplierOrders.getSupplierMedicineItemList().size() + " medicine item(s) for amount $" + supplierOrders.getTotalAmount() + " is placed successfully!");
+    }//GEN-LAST:event_PharmacyOConfirmButtonActionPerformed
+
+    private void PharmacyOABackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyOABackButtonActionPerformed
+        // TODO add your handling code here:
+        userProcessContainer.remove(this);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_PharmacyOABackButtonActionPerformed
+
+    private void PharmacyOATable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PharmacyOATable1MouseClicked
+        // TODO add your handling code here:
+        int selectedRow = PharmacyOATable1.getSelectedRow();
+        if (selectedRow >= 0)
+        {
+            PharmacyOAAddButton.setEnabled(true);
+        }
+    }//GEN-LAST:event_PharmacyOATable1MouseClicked
+
+    private void PharmacyOAAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PharmacyOAAddButtonActionPerformed
+        // TODO add your handling code here:
+        int selectedRow = PharmacyOATable1.getSelectedRow();
+        if (selectedRow >= 0)
+        {
+            SupplierMedicineItem smi2 = (SupplierMedicineItem) PharmacyOATable1.getValueAt(selectedRow, 1);
+
+            cart.add(smi2);
+            JOptionPane.showMessageDialog(null, "Medicine Item " + smi2.getName()+ " added to cart successfully!");
+            totalAmount = totalAmount + smi2.getPrice();
+            populateOrder();
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+    }//GEN-LAST:event_PharmacyOAAddButtonActionPerformed
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton PharmacyOAAddButton;
+    private javax.swing.JButton PharmacyOABackButton;
+    private javax.swing.JButton PharmacyOADeleteButton;
+    private javax.swing.JLabel PharmacyOALabel;
+    private javax.swing.JLabel PharmacyOALabel1;
+    private javax.swing.JTable PharmacyOATable1;
+    private javax.swing.JTable PharmacyOATable2;
+    private javax.swing.JTextField PharmacyOAText;
+    private javax.swing.JLabel PharmacyOATotalLabel;
+    private javax.swing.JButton PharmacyOConfirmButton;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    // End of variables declaration//GEN-END:variables
+
+private void populateMedicine() {
+        DefaultTableModel dtm = (DefaultTableModel)PharmacyOATable1.getModel();
+        dtm.setRowCount(0);
+        if(supplier.getSupplierMedicineCatalog().getSupplierMedicineItemList()!= null)
+        {
+            for(SupplierMedicineItem smi3 : supplier.getSupplierMedicineCatalog().getSupplierMedicineItemList())
+            {
+                Object[] row = new Object[dtm.getColumnCount()];
+                row[0] = smi3.getId();
+                row[1] = smi3;
+                row[2] = smi3.getPrice();
+                dtm.addRow(row);
+            }
+        }
+        if(dtm.getRowCount() == 0)
+            {
+                PharmacyOAAddButton.setEnabled(false);
+                PharmacyOADeleteButton.setEnabled(false);
+            }
+    }
+
+    private void populateOrder() {
+        DefaultTableModel dtm = (DefaultTableModel)PharmacyOATable2.getModel();
+        dtm.setRowCount(0);
+        if(cart != null)
+        {
+            PharmacyOADeleteButton.setEnabled(true);
+            PharmacyOConfirmButton.setEnabled(true);
+            int count = 1;
+            for(SupplierMedicineItem mi3 : cart)
+            {
+                Object[] row = new Object[dtm.getColumnCount()];
+                row[0] = count;
+                row[1] = mi3;
+                row[2] =  mi3.getPrice();
+                dtm.addRow(row);
+                count++;
+            }
+            PharmacyOAText.setText(Integer.toString(totalAmount));
+        }
+        if(PharmacyOATable2.getRowCount() <= 0)
+        {
+            PharmacyOConfirmButton.setEnabled(false);
+            PharmacyOADeleteButton.setEnabled(false);
+        }
+    }
+}
+
 

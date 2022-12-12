@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author nupoorkorde
+ * @author Vini
  */
 public class SystemAdminManageSupplier extends javax.swing.JPanel {
 
@@ -30,12 +30,12 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
         this.userProcessContainerSMR = userProcessContainer;
         this.ecosystem = ecosystem;
         this.user = user;
-        SystemAMSNameText.setEnabled(false);
-        SystemAMSAddressText.setEnabled(false);
+        txtSupplierName.setEnabled(false);
+        txtAddress.setEnabled(false);
 
-        SystemAMSSubmitButton.setEnabled(false);
-        SystemAMSDeleteButton.setEnabled(false);
-        SystemAMSViewButton.setEnabled(false);
+        btnSubmit.setEnabled(false);
+        btnDelete.setEnabled(false);
+        btnView.setEnabled(false);
         populateTable();
     }
 
@@ -48,125 +48,83 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        SystemAMSNameText = new javax.swing.JTextField();
-        SystemAMSNameLabel = new javax.swing.JLabel();
-        SystemAMSAddressLabel = new javax.swing.JLabel();
-        SystemAMSLabel1 = new javax.swing.JLabel();
-        SystemAMSDeleteButton = new javax.swing.JButton();
-        SystemAMSViewButton = new javax.swing.JButton();
-        SystemAMSCreateButton = new javax.swing.JButton();
-        SystemAMSBackButton = new javax.swing.JButton();
+        txtSupplierName = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
+        btnDelete = new javax.swing.JButton();
+        btnView = new javax.swing.JButton();
+        btnCreate = new javax.swing.JButton();
+        btnBack = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        SystemAMSTable = new javax.swing.JTable();
-        SystemAMSSubmitButton = new javax.swing.JButton();
-        SystemAMSAddressText = new javax.swing.JTextField();
-        SystemAMSLabel = new javax.swing.JLabel();
+        tblSupplier = new javax.swing.JTable();
+        btnSubmit = new javax.swing.JButton();
+        txtAddress = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
-        add(SystemAMSNameText);
-<<<<<<< Updated upstream
-        SystemAMSNameText.setBounds(336, 179, 228, 22);
+        add(txtSupplierName);
+        txtSupplierName.setBounds(336, 179, 228, 26);
 
-        SystemAMSNameLabel.setText("Supplier Name:");
-        add(SystemAMSNameLabel);
-        SystemAMSNameLabel.setBounds(188, 183, 144, 18);
+        jLabel1.setText("Supplier Name:");
+        add(jLabel1);
+        jLabel1.setBounds(188, 183, 144, 18);
 
-        SystemAMSAddressLabel.setText("Address:");
-        add(SystemAMSAddressLabel);
-        SystemAMSAddressLabel.setBounds(188, 245, 144, 16);
-=======
-        SystemAMSNameText.setBounds(260, 320, 228, 22);
+        jLabel2.setText("Address:");
+        add(jLabel2);
+        jLabel2.setBounds(188, 245, 144, 20);
 
-        SystemAMSNameLabel.setText("Supplier Name:");
-        add(SystemAMSNameLabel);
-        SystemAMSNameLabel.setBounds(140, 320, 144, 18);
+        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTitle.setText("Manage Supplier");
+        add(lblTitle);
+        lblTitle.setBounds(123, 18, 445, 29);
 
-        SystemAMSAddressLabel.setText("Address:");
-        add(SystemAMSAddressLabel);
-        SystemAMSAddressLabel.setBounds(140, 380, 144, 16);
->>>>>>> Stashed changes
-
-        SystemAMSLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        SystemAMSLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SystemAMSLabel1.setText("Manage Supplier");
-        add(SystemAMSLabel1);
-<<<<<<< Updated upstream
-        SystemAMSLabel1.setBounds(123, 18, 445, 29);
-
-        SystemAMSDeleteButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        SystemAMSDeleteButton.setText("Delete");
-        SystemAMSDeleteButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-=======
-        SystemAMSLabel1.setBounds(300, 10, 445, 29);
-
-        SystemAMSDeleteButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        SystemAMSDeleteButton.setText("Delete");
-        SystemAMSDeleteButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
->>>>>>> Stashed changes
-        SystemAMSDeleteButton.addActionListener(new java.awt.event.ActionListener() {
+        btnDelete.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btnDelete.setText("Delete");
+        btnDelete.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSDeleteButtonActionPerformed(evt);
+                btnDeleteActionPerformed(evt);
             }
         });
-        add(SystemAMSDeleteButton);
-<<<<<<< Updated upstream
-        SystemAMSDeleteButton.setBounds(21, 179, 41, 21);
+        add(btnDelete);
+        btnDelete.setBounds(21, 179, 41, 21);
 
-        SystemAMSViewButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        SystemAMSDeleteButton.setBounds(220, 120, 80, 40);
-
-        SystemAMSViewButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSViewButton.setText("View");
-        SystemAMSViewButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SystemAMSViewButton.addActionListener(new java.awt.event.ActionListener() {
+        btnView.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btnView.setText("View");
+        btnView.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSViewButtonActionPerformed(evt);
+                btnViewActionPerformed(evt);
             }
         });
-        add(SystemAMSViewButton);
-<<<<<<< Updated upstream
-        SystemAMSViewButton.setBounds(18, 132, 80, 21);
+        add(btnView);
+        btnView.setBounds(18, 132, 80, 21);
 
-        SystemAMSCreateButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        SystemAMSViewButton.setBounds(110, 120, 80, 40);
-
-        SystemAMSCreateButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSCreateButton.setText("Create");
-        SystemAMSCreateButton.addActionListener(new java.awt.event.ActionListener() {
+        btnCreate.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btnCreate.setText("Create");
+        btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSCreateButtonActionPerformed(evt);
+                btnCreateActionPerformed(evt);
             }
         });
-        add(SystemAMSCreateButton);
-<<<<<<< Updated upstream
-        SystemAMSCreateButton.setBounds(21, 226, 72, 22);
+        add(btnCreate);
+        btnCreate.setBounds(21, 226, 69, 23);
 
-        SystemAMSBackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        SystemAMSCreateButton.setBounds(340, 120, 90, 40);
-
-        SystemAMSBackButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSBackButton.setText("Back");
-        SystemAMSBackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SystemAMSBackButton.addActionListener(new java.awt.event.ActionListener() {
+        btnBack.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btnBack.setText("Back");
+        btnBack.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSBackButtonActionPerformed(evt);
+                btnBackActionPerformed(evt);
             }
         });
-        add(SystemAMSBackButton);
-<<<<<<< Updated upstream
-        SystemAMSBackButton.setBounds(18, 92, 80, 21);
-=======
-        SystemAMSBackButton.setBounds(10, 60, 80, 40);
->>>>>>> Stashed changes
+        add(btnBack);
+        btnBack.setBounds(18, 92, 80, 21);
 
-        SystemAMSTable.setModel(new javax.swing.table.DefaultTableModel(
+        tblSupplier.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -185,54 +143,40 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        SystemAMSTable.addMouseListener(new java.awt.event.MouseAdapter() {
+        tblSupplier.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SystemAMSTableMouseClicked(evt);
+                tblSupplierMouseClicked(evt);
             }
         });
-        jScrollPane2.setViewportView(SystemAMSTable);
+        jScrollPane2.setViewportView(tblSupplier);
 
         add(jScrollPane2);
-<<<<<<< Updated upstream
         jScrollPane2.setBounds(188, 65, 500, 96);
-=======
-        jScrollPane2.setBounds(10, 200, 530, 96);
->>>>>>> Stashed changes
 
-        SystemAMSSubmitButton.setText("Submit");
-        SystemAMSSubmitButton.addActionListener(new java.awt.event.ActionListener() {
+        btnSubmit.setText("Submit");
+        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSSubmitButtonActionPerformed(evt);
+                btnSubmitActionPerformed(evt);
             }
         });
-        add(SystemAMSSubmitButton);
-<<<<<<< Updated upstream
-        SystemAMSSubmitButton.setBounds(353, 279, 72, 23);
-        add(SystemAMSAddressText);
-        SystemAMSAddressText.setBounds(336, 242, 236, 22);
+        add(btnSubmit);
+        btnSubmit.setBounds(353, 279, 83, 29);
+        add(txtAddress);
+        txtAddress.setBounds(336, 242, 236, 26);
 
-        SystemAMSLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemAdminManageSupplierEmployee.jpg"))); // NOI18N
-        add(SystemAMSLabel);
-        SystemAMSLabel.setBounds(180, 150, 740, 340);
-=======
-        SystemAMSSubmitButton.setBounds(232, 430, 90, 40);
-        add(SystemAMSAddressText);
-        SystemAMSAddressText.setBounds(260, 380, 236, 22);
-
-        SystemAMSLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemAdminManageSupplierEmployee.jpg"))); // NOI18N
-        add(SystemAMSLabel);
-        SystemAMSLabel.setBounds(550, 160, 450, 330);
->>>>>>> Stashed changes
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (14).png"))); // NOI18N
+        add(jLabel4);
+        jLabel4.setBounds(180, 150, 740, 340);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SystemAMSDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSDeleteButtonActionPerformed
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
-        int selectedRowSAMR = SystemAMSTable.getSelectedRow();
+        int selectedRowSAMR = tblSupplier.getSelectedRow();
         if (selectedRowSAMR >= 0)
         {
-            Supplier selectedSupplier = (Supplier) SystemAMSTable.getValueAt(selectedRowSAMR, 1);
+            Supplier selectedSupplier = (Supplier) tblSupplier.getValueAt(selectedRowSAMR, 1);
             ecosystem.getSupplierDirectory().deleteSupplier(selectedSupplier);
-            JOptionPane.showMessageDialog(null, "Supplier " + selectedSupplier.getSupplierName()+ " deleted successfully!");
+            JOptionPane.showMessageDialog(null, "Supplier " + selectedSupplier.getName()+ " deleted successfully!");
             populateTable();
         }
         else
@@ -240,43 +184,43 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_SystemAMSDeleteButtonActionPerformed
+    }//GEN-LAST:event_btnDeleteActionPerformed
 
-    private void SystemAMSCreateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSCreateButtonActionPerformed
+    private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
         // TODO add your handling code here:
-        SystemAMSCreateButton.setEnabled(false);
-        SystemAMSNameText.setEnabled(true);
-        SystemAMSAddressText.setEnabled(true);
-        SystemAMSSubmitButton.setEnabled(true);
-    }//GEN-LAST:event_SystemAMSCreateButtonActionPerformed
+        btnCreate.setEnabled(false);
+        txtSupplierName.setEnabled(true);
+        txtAddress.setEnabled(true);
+        btnSubmit.setEnabled(true);
+    }//GEN-LAST:event_btnCreateActionPerformed
 
-    private void SystemAMSSubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSSubmitButtonActionPerformed
+    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
         // TODO add your handling code here:
-        Supplier s = ecosystem.getSupplierDirectory().createSupplier(SystemAMSNameText.getText(), SystemAMSAddressText.getText());
+        Supplier s = ecosystem.getSupplierDirectory().createSupplier(txtSupplierName.getText(), txtAddress.getText());
         if(s == null)
         {
-            JOptionPane.showMessageDialog(null,"Supplier " + SystemAMSNameText.getText() + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null,"Supplier " + txtSupplierName.getText() + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
         else
         {
-            JOptionPane.showMessageDialog(null, "Supplier created successfully as " + s.getSupplierName());
-            SystemAMSCreateButton.setEnabled(true);
-            SystemAMSNameText.setEnabled(false);
-            SystemAMSAddressText.setEnabled(false);
-            SystemAMSSubmitButton.setEnabled(false);
-            SystemAMSNameText.setText("");
-            SystemAMSAddressText.setText("");
+            JOptionPane.showMessageDialog(null, "Supplier created successfully as " + s.getName());
+            btnCreate.setEnabled(true);
+            txtSupplierName.setEnabled(false);
+            txtAddress.setEnabled(false);
+            btnSubmit.setEnabled(false);
+            txtSupplierName.setText("");
+            txtAddress.setText("");
         }
         populateTable();
-    }//GEN-LAST:event_SystemAMSSubmitButtonActionPerformed
+    }//GEN-LAST:event_btnSubmitActionPerformed
 
-    private void SystemAMSViewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSViewButtonActionPerformed
+    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
         // TODO add your handling code here:
-        int selectedRow = SystemAMSTable.getSelectedRow();
+        int selectedRow = tblSupplier.getSelectedRow();
         if (selectedRow >= 0)
         {
-            Supplier selectedSupplier = (Supplier) SystemAMSTable.getValueAt(selectedRow, 1);
+            Supplier selectedSupplier = (Supplier) tblSupplier.getValueAt(selectedRow, 1);
             SystemAdminManageSupplierEmployee se = new SystemAdminManageSupplierEmployee(userProcessContainerSMR, selectedSupplier, ecosystem);
             userProcessContainerSMR.add("SysAdminManageEmployees", se);
             CardLayout layout = (CardLayout) userProcessContainerSMR.getLayout();
@@ -287,9 +231,9 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_SystemAMSViewButtonActionPerformed
+    }//GEN-LAST:event_btnViewActionPerformed
 
-    private void SystemAMSBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSBackButtonActionPerformed
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
         userProcessContainerSMR.remove(this);
         Component[] componentArray = userProcessContainerSMR.getComponents();
@@ -298,39 +242,39 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
         //dwjp.populateTree();
         CardLayout layout = (CardLayout) userProcessContainerSMR.getLayout();
         layout.previous(userProcessContainerSMR);
-    }//GEN-LAST:event_SystemAMSBackButtonActionPerformed
+    }//GEN-LAST:event_btnBackActionPerformed
 
-    private void SystemAMSTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SystemAMSTableMouseClicked
+    private void tblSupplierMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblSupplierMouseClicked
         // TODO add your handling code here:
-        int selectedRow = SystemAMSTable.getSelectedRow();
+        int selectedRow = tblSupplier.getSelectedRow();
         if (selectedRow >= 0)
         {
-            SystemAMSDeleteButton.setEnabled(true);
-            SystemAMSViewButton.setEnabled(true);
+            btnDelete.setEnabled(true);
+            btnView.setEnabled(true);
         }
-    }//GEN-LAST:event_SystemAMSTableMouseClicked
+    }//GEN-LAST:event_tblSupplierMouseClicked
 
                                        
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel SystemAMSAddressLabel;
-    private javax.swing.JTextField SystemAMSAddressText;
-    private javax.swing.JButton SystemAMSBackButton;
-    private javax.swing.JButton SystemAMSCreateButton;
-    private javax.swing.JButton SystemAMSDeleteButton;
-    private javax.swing.JLabel SystemAMSLabel;
-    private javax.swing.JLabel SystemAMSLabel1;
-    private javax.swing.JLabel SystemAMSNameLabel;
-    private javax.swing.JTextField SystemAMSNameText;
-    private javax.swing.JButton SystemAMSSubmitButton;
-    private javax.swing.JTable SystemAMSTable;
-    private javax.swing.JButton SystemAMSViewButton;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnCreate;
+    private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnSubmit;
+    private javax.swing.JButton btnView;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel lblTitle;
+    private javax.swing.JTable tblSupplier;
+    private javax.swing.JTextField txtAddress;
+    private javax.swing.JTextField txtSupplierName;
     // End of variables declaration//GEN-END:variables
  
     private void populateTable() {
-        DefaultTableModel dtm = (DefaultTableModel)SystemAMSTable.getModel();
+        DefaultTableModel dtm = (DefaultTableModel)tblSupplier.getModel();
         dtm.setRowCount(0);
         int count1 = 1;
         if(ecosystem.getSupplierDirectory().getSupplierList()!= null)
@@ -338,16 +282,16 @@ public class SystemAdminManageSupplier extends javax.swing.JPanel {
             for(Supplier s : ecosystem.getSupplierDirectory().getSupplierList())
             {
                 Object[] row = new Object[dtm.getColumnCount()];
-                row[0] = s.getSupplierId();
+                row[0] = s.getId();
                 row[1] = s;
-                row[2] = s.getSupplierAddress();
+                row[2] = s.getAddress();
                 dtm.addRow(row);
                 count1++;
             }
         }
         else
         {
-            SystemAMSTable.setEnabled(false);
+            tblSupplier.setEnabled(false);
         }
     }
 }

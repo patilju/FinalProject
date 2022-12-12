@@ -36,7 +36,7 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         this.customer = customer;
         this.pharma = pharmacy;
-        CustomerPharmacyNameLabel.setText("Pharmacy: " +this.pharma.getPharmacyName());
+        CustomerPharmacyNameLabel.setText("Pharmacy: " +this.pharma.getName());
         populateMedicine(); 
         populateOrder();
         if(COAOrderTable.getRowCount() <= 0)
@@ -65,7 +65,6 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         COADeleteItemButton = new javax.swing.JButton();
         btnOrder = new javax.swing.JButton();
         COABackButton = new javax.swing.JButton();
-<<<<<<< Updated upstream
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -75,25 +74,9 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         CustomerPharmacyNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         CustomerPharmacyNameLabel.setText("<value>");
         add(CustomerPharmacyNameLabel);
-        CustomerPharmacyNameLabel.setBounds(80, 10, 481, 30);
+        CustomerPharmacyNameLabel.setBounds(120, 20, 481, 30);
 
         COAOrderTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-=======
-        jLabel1 = new javax.swing.JLabel();
-
-        setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(1000, 1000));
-        setLayout(null);
-
-        CustomerPharmacyNameLabel.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        CustomerPharmacyNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CustomerPharmacyNameLabel.setText("<value>");
-        add(CustomerPharmacyNameLabel);
-        CustomerPharmacyNameLabel.setBounds(30, 0, 530, 40);
-
-        COAOrderTable.setBackground(new java.awt.Color(255, 204, 204));
-        COAOrderTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
         COAOrderTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -113,16 +96,9 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         jScrollPane1.setViewportView(COAOrderTable);
 
         add(jScrollPane1);
-<<<<<<< Updated upstream
         jScrollPane1.setBounds(21, 236, 670, 104);
 
         MedicineTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-=======
-        jScrollPane1.setBounds(40, 610, 1250, 130);
-
-        MedicineTable.setBackground(new java.awt.Color(255, 204, 204));
-        MedicineTable.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
->>>>>>> Stashed changes
         MedicineTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -139,34 +115,17 @@ public class CustomerOrderAction extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-<<<<<<< Updated upstream
-=======
-        MedicineTable.setSelectionForeground(new java.awt.Color(102, 204, 255));
->>>>>>> Stashed changes
         MedicineTable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 MedicineTableMouseClicked(evt);
             }
         });
         jScrollPane2.setViewportView(MedicineTable);
-<<<<<<< Updated upstream
 
         add(jScrollPane2);
         jScrollPane2.setBounds(20, 79, 670, 104);
 
         AddMedicineItemButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        if (MedicineTable.getColumnModel().getColumnCount() > 0) {
-            MedicineTable.getColumnModel().getColumn(2).setHeaderValue("Medicine Price");
-        }
-
-        add(jScrollPane2);
-        jScrollPane2.setBounds(40, 60, 1250, 210);
-
-        AddMedicineItemButton.setBackground(new java.awt.Color(0, 0, 0));
-        AddMedicineItemButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        AddMedicineItemButton.setForeground(new java.awt.Color(255, 255, 255));
->>>>>>> Stashed changes
         AddMedicineItemButton.setText("Add Item to Order");
         AddMedicineItemButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         AddMedicineItemButton.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +134,6 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             }
         });
         add(AddMedicineItemButton);
-<<<<<<< Updated upstream
         AddMedicineItemButton.setBounds(300, 190, 157, 37);
 
         COATotalAmountLabel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -190,31 +148,6 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         COAOrderTotalAmountText.setBounds(530, 360, 159, 30);
 
         COADeleteItemButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        AddMedicineItemButton.setBounds(40, 290, 230, 37);
-
-        COATotalAmountLabel.setBackground(new java.awt.Color(255, 255, 255));
-        COATotalAmountLabel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        COATotalAmountLabel.setText("Total Amount:");
-        add(COATotalAmountLabel);
-        COATotalAmountLabel.setBounds(500, 750, 140, 40);
-
-        COAOrderTotalAmountText.setEditable(false);
-        COAOrderTotalAmountText.setBackground(new java.awt.Color(255, 255, 255));
-        COAOrderTotalAmountText.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        COAOrderTotalAmountText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        COAOrderTotalAmountText.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                COAOrderTotalAmountTextActionPerformed(evt);
-            }
-        });
-        add(COAOrderTotalAmountText);
-        COAOrderTotalAmountText.setBounds(640, 750, 220, 40);
-
-        COADeleteItemButton.setBackground(new java.awt.Color(0, 0, 0));
-        COADeleteItemButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        COADeleteItemButton.setForeground(new java.awt.Color(255, 255, 255));
->>>>>>> Stashed changes
         COADeleteItemButton.setText("Delete Item");
         COADeleteItemButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         COADeleteItemButton.addActionListener(new java.awt.event.ActionListener() {
@@ -223,17 +156,9 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             }
         });
         add(COADeleteItemButton);
-<<<<<<< Updated upstream
         COADeleteItemButton.setBounds(110, 360, 69, 40);
 
         btnOrder.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        COADeleteItemButton.setBounds(40, 750, 160, 40);
-
-        btnOrder.setBackground(new java.awt.Color(0, 0, 0));
-        btnOrder.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        btnOrder.setForeground(new java.awt.Color(255, 255, 255));
->>>>>>> Stashed changes
         btnOrder.setText("Confirm Order");
         btnOrder.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnOrder.addActionListener(new java.awt.event.ActionListener() {
@@ -242,17 +167,9 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             }
         });
         add(btnOrder);
-<<<<<<< Updated upstream
         btnOrder.setBounds(530, 400, 159, 21);
 
         COABackButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        btnOrder.setBounds(1130, 750, 159, 40);
-
-        COABackButton.setBackground(new java.awt.Color(0, 0, 0));
-        COABackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        COABackButton.setForeground(new java.awt.Color(255, 255, 255));
->>>>>>> Stashed changes
         COABackButton.setText("< Back");
         COABackButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         COABackButton.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -266,21 +183,11 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             }
         });
         add(COABackButton);
-<<<<<<< Updated upstream
         COABackButton.setBounds(30, 360, 60, 40);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/CustomerOrderAction-Dhriti.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (2).png"))); // NOI18N
         add(jLabel2);
-        jLabel2.setBounds(10, 0, 1460, 800);
-=======
-        COABackButton.setBounds(40, 360, 130, 40);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/customer2nd.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        jLabel1.setToolTipText("");
-        add(jLabel1);
-        jLabel1.setBounds(20, 0, 1290, 840);
->>>>>>> Stashed changes
+        jLabel2.setBounds(400, 10, 1070, 790);
     }// </editor-fold>//GEN-END:initComponents
 
     private void MedicineTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MedicineTableMouseClicked
@@ -300,8 +207,8 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             MedicineItem mi2 = (MedicineItem) MedicineTable.getValueAt(selectedRow, 1);
            
             cart.add(mi2);
-            JOptionPane.showMessageDialog(null, "Medicine Item " + mi2.getMedicineName()+ " added to cart successfully!");
-            totalAmount = totalAmount + mi2.getMedicinePrice();
+            JOptionPane.showMessageDialog(null, "Medicine Item " + mi2.getName()+ " added to cart successfully!");
+            totalAmount = totalAmount + mi2.getPrice();
             populateOrder();
         }
         else
@@ -319,8 +226,8 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             MedicineItem mi1 = (MedicineItem) COAOrderTable.getValueAt(selectedRow1, 1);
             //order.deleteFoodItem(fi);
             cart.remove(mi1);
-            JOptionPane.showMessageDialog(null, "Medicine Item " + mi1.getMedicineName()+ " deleted from cart successfully!");
-            totalAmount = totalAmount - mi1.getMedicinePrice();
+            JOptionPane.showMessageDialog(null, "Medicine Item " + mi1.getName()+ " deleted from cart successfully!");
+            totalAmount = totalAmount - mi1.getPrice();
             populateOrder();
         }
         else
@@ -353,13 +260,6 @@ public class CustomerOrderAction extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_COABackButtonFocusLost
 
-<<<<<<< Updated upstream
-=======
-    private void COAOrderTotalAmountTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_COAOrderTotalAmountTextActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_COAOrderTotalAmountTextActionPerformed
-
->>>>>>> Stashed changes
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AddMedicineItemButton;
@@ -371,11 +271,7 @@ public class CustomerOrderAction extends javax.swing.JPanel {
     private javax.swing.JLabel CustomerPharmacyNameLabel;
     private javax.swing.JTable MedicineTable;
     private javax.swing.JButton btnOrder;
-<<<<<<< Updated upstream
     private javax.swing.JLabel jLabel2;
-=======
-    private javax.swing.JLabel jLabel1;
->>>>>>> Stashed changes
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
@@ -388,9 +284,9 @@ public class CustomerOrderAction extends javax.swing.JPanel {
             for(MedicineItem mi : pharma.getMedicineCatalog().getMedicineItemList())
             {
                 Object[] row = new Object[dtm.getColumnCount()];
-                row[0] = mi.getMedicineId();
+                row[0] = mi.getId();
                 row[1] = mi;
-                row[2] = mi.getMedicinePrice();
+                row[2] = mi.getPrice();
                 dtm.addRow(row);
             }
         }
@@ -414,7 +310,7 @@ public class CustomerOrderAction extends javax.swing.JPanel {
                 Object[] row = new Object[dtm.getColumnCount()];
                 row[0] = count;
                 row[1] = mi3;
-                row[2] =  mi3.getMedicinePrice();
+                row[2] =  mi3.getPrice();
                 dtm.addRow(row);
                 count++;
             }

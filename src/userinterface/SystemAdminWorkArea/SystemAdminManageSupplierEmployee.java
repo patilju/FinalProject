@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author nupoorkorde
+ * @author Vini
  */
 public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
 
@@ -38,17 +38,17 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
          this.userProcessContainer = userProcessContainer;
         this.supplier = supplier;
         this.ecosystem = ecosystem;
-        SystemAMSEUsernameText.setEnabled(false);
-        SystemAMSEPasswordText.setEnabled(false);
-        SystemAMSEConfirmPasswordText.setEnabled(false);
-        SystemAMSENameText.setEnabled(false);
-        SystemAMSEPhoneNumberText.setEnabled(false);
-        SystemAMSEAddressText.setEnabled(false);
-        SystemAMSESubmitButton.setEnabled(false);
-        SystemAMSEDeleteButton.setEnabled(false);
-        SystemAMSEViewButton.setEnabled(false);
-        SystemAMSERoleRadio2.setEnabled(false);
-        SystemAMSERoleRadio1.setEnabled(false);
+        txtUsernameSME.setEnabled(false);
+        txtPasswordSME.setEnabled(false);
+        txtRePasswordSME.setEnabled(false);
+        txtNameSME.setEnabled(false);
+        txtPhoneSME.setEnabled(false);
+        txtAddressSME.setEnabled(false);
+        BtnSubmit.setEnabled(false);
+        BtnDelete.setEnabled(false);
+        BtnView.setEnabled(false);
+        radioBtnDeliverySME.setEnabled(false);
+        radioBtnManagerSME.setEnabled(false);
         populateSupplierEmpTable();
     }
 
@@ -61,114 +61,80 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        SystemAMSEBackButton = new javax.swing.JButton();
-        SystemAMSEViewButton = new javax.swing.JButton();
-        SystemAMSEDeleteButton = new javax.swing.JButton();
-        SystemAMSECreateButton = new javax.swing.JButton();
-        SystemAMSESubmitButton = new javax.swing.JButton();
+        BtnBack = new javax.swing.JButton();
+        BtnView = new javax.swing.JButton();
+        BtnDelete = new javax.swing.JButton();
+        BtnCreate = new javax.swing.JButton();
+        BtnSubmit = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        SystemAMSETable = new javax.swing.JTable();
-        SystemAMSELabel1 = new javax.swing.JLabel();
-        SystemAMSEUsernameText = new javax.swing.JTextField();
-        SystemAMSEPhoneNumberText = new javax.swing.JTextField();
-        SystemAMSEPhoneNumberLabel = new javax.swing.JLabel();
-        SystemAMSERoleRadio2 = new javax.swing.JRadioButton();
-        SystemAMSEPasswordText = new javax.swing.JTextField();
-        SystemAMSEConfirmPasswordText = new javax.swing.JTextField();
-        SystemAMSEAddressLabel = new javax.swing.JLabel();
-        SystemAMSEUsernameLabel = new javax.swing.JLabel();
-        SystemAMSEAddressText = new javax.swing.JTextField();
-        SystemAMSEPasswordLabel = new javax.swing.JLabel();
-        SystemAMSERoleLabel = new javax.swing.JLabel();
-        SystemAMSENameLabel = new javax.swing.JLabel();
-        SystemAMSEConfirmPasswordLabel = new javax.swing.JLabel();
-        SystemAMSERoleRadio1 = new javax.swing.JRadioButton();
-        SystemAMSENameText = new javax.swing.JTextField();
-        SystemAMSELabel = new javax.swing.JLabel();
+        tblManageSupplierEmp = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        txtUsernameSME = new javax.swing.JTextField();
+        txtPhoneSME = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        radioBtnDeliverySME = new javax.swing.JRadioButton();
+        txtPasswordSME = new javax.swing.JTextField();
+        txtRePasswordSME = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtAddressSME = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        radioBtnManagerSME = new javax.swing.JRadioButton();
+        txtNameSME = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-<<<<<<< Updated upstream
-=======
-        SystemAMSEBackButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSEBackButton.setText("Back");
-        SystemAMSEBackButton.addActionListener(new java.awt.event.ActionListener() {
+        BtnBack.setText("Back");
+        BtnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSEBackButtonActionPerformed(evt);
+                BtnBackActionPerformed(evt);
             }
         });
-        add(SystemAMSEBackButton);
-<<<<<<< Updated upstream
-        SystemAMSEBackButton.setBounds(20, 65, 84, 23);
+        add(BtnBack);
+        BtnBack.setBounds(20, 65, 84, 29);
 
-=======
-        SystemAMSEBackButton.setBounds(30, 40, 100, 30);
-
-        SystemAMSEViewButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSEViewButton.setText("View");
-        SystemAMSEViewButton.addActionListener(new java.awt.event.ActionListener() {
+        BtnView.setText("View");
+        BtnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSEViewButtonActionPerformed(evt);
+                BtnViewActionPerformed(evt);
             }
         });
-        add(SystemAMSEViewButton);
-<<<<<<< Updated upstream
-        SystemAMSEViewButton.setBounds(20, 112, 84, 23);
+        add(BtnView);
+        BtnView.setBounds(20, 112, 84, 29);
 
-=======
-        SystemAMSEViewButton.setBounds(30, 130, 100, 40);
-
-        SystemAMSEDeleteButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSEDeleteButton.setText("Delete");
-        SystemAMSEDeleteButton.addActionListener(new java.awt.event.ActionListener() {
+        BtnDelete.setText("Delete");
+        BtnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSEDeleteButtonActionPerformed(evt);
+                BtnDeleteActionPerformed(evt);
             }
         });
-        add(SystemAMSEDeleteButton);
-<<<<<<< Updated upstream
-        SystemAMSEDeleteButton.setBounds(20, 152, 84, 23);
+        add(BtnDelete);
+        BtnDelete.setBounds(20, 152, 84, 29);
 
-=======
-        SystemAMSEDeleteButton.setBounds(190, 130, 100, 40);
-
-        SystemAMSECreateButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSECreateButton.setText("Create");
-        SystemAMSECreateButton.addActionListener(new java.awt.event.ActionListener() {
+        BtnCreate.setText("Create");
+        BtnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSECreateButtonActionPerformed(evt);
+                BtnCreateActionPerformed(evt);
             }
         });
-        add(SystemAMSECreateButton);
-<<<<<<< Updated upstream
-        SystemAMSECreateButton.setBounds(20, 199, 84, 23);
+        add(BtnCreate);
+        BtnCreate.setBounds(20, 199, 84, 29);
 
-=======
-        SystemAMSECreateButton.setBounds(360, 130, 100, 40);
-
-        SystemAMSESubmitButton.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSESubmitButton.setText("Submit");
-        SystemAMSESubmitButton.addActionListener(new java.awt.event.ActionListener() {
+        BtnSubmit.setText("Submit");
+        BtnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSESubmitButtonActionPerformed(evt);
+                BtnSubmitActionPerformed(evt);
             }
         });
-        add(SystemAMSESubmitButton);
-<<<<<<< Updated upstream
-        SystemAMSESubmitButton.setBounds(270, 610, 120, 40);
+        add(BtnSubmit);
+        BtnSubmit.setBounds(270, 610, 120, 40);
 
-=======
-        SystemAMSESubmitButton.setBounds(790, 740, 120, 40);
-
-        SystemAMSETable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSETable.setModel(new javax.swing.table.DefaultTableModel(
+        tblManageSupplierEmp.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -187,230 +153,162 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        SystemAMSETable.addMouseListener(new java.awt.event.MouseAdapter() {
+        tblManageSupplierEmp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SystemAMSETableMouseClicked(evt);
+                tblManageSupplierEmpMouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(SystemAMSETable);
+        jScrollPane1.setViewportView(tblManageSupplierEmp);
 
         add(jScrollPane1);
-<<<<<<< Updated upstream
         jScrollPane1.setBounds(148, 65, 800, 136);
 
-        SystemAMSELabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        SystemAMSELabel1.setText("Manage Employee");
-        add(SystemAMSELabel1);
-        SystemAMSELabel1.setBounds(450, 10, 190, 29);
-        add(SystemAMSEUsernameText);
-        SystemAMSEUsernameText.setBounds(260, 220, 300, 27);
-        add(SystemAMSEPhoneNumberText);
-        SystemAMSEPhoneNumberText.setBounds(260, 400, 300, 27);
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setText("Manage Employee");
+        add(jLabel1);
+        jLabel1.setBounds(450, 10, 190, 28);
+        add(txtUsernameSME);
+        txtUsernameSME.setBounds(260, 220, 300, 27);
+        add(txtPhoneSME);
+        txtPhoneSME.setBounds(260, 400, 300, 27);
 
-        SystemAMSEPhoneNumberLabel.setText("Phone Number:");
-        add(SystemAMSEPhoneNumberLabel);
-        SystemAMSEPhoneNumberLabel.setBounds(106, 402, 120, 16);
+        jLabel5.setText("Phone Number:");
+        add(jLabel5);
+        jLabel5.setBounds(106, 402, 120, 20);
 
-=======
-        jScrollPane1.setBounds(590, 100, 550, 136);
-
-        SystemAMSELabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        SystemAMSELabel1.setText("Manage Employee");
-        add(SystemAMSELabel1);
-        SystemAMSELabel1.setBounds(490, 10, 240, 28);
-        add(SystemAMSEUsernameText);
-        SystemAMSEUsernameText.setBounds(820, 260, 300, 27);
-        add(SystemAMSEPhoneNumberText);
-        SystemAMSEPhoneNumberText.setBounds(820, 490, 300, 27);
-
-        SystemAMSEPhoneNumberLabel.setText("Phone Number:");
-        add(SystemAMSEPhoneNumberLabel);
-        SystemAMSEPhoneNumberLabel.setBounds(670, 500, 120, 16);
-
-        SystemAMSERoleRadio2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSERoleRadio2.setText("Delivery Man");
-        SystemAMSERoleRadio2.addActionListener(new java.awt.event.ActionListener() {
+        radioBtnDeliverySME.setText("Delivery Man");
+        radioBtnDeliverySME.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSERoleRadio2ActionPerformed(evt);
+                radioBtnDeliverySMEActionPerformed(evt);
             }
         });
-        add(SystemAMSERoleRadio2);
-<<<<<<< Updated upstream
-        SystemAMSERoleRadio2.setBounds(260, 540, 119, 21);
-        add(SystemAMSEPasswordText);
-        SystemAMSEPasswordText.setBounds(260, 270, 300, 22);
-        add(SystemAMSEConfirmPasswordText);
-        SystemAMSEConfirmPasswordText.setBounds(260, 310, 300, 28);
+        add(radioBtnDeliverySME);
+        radioBtnDeliverySME.setBounds(260, 540, 119, 29);
+        add(txtPasswordSME);
+        txtPasswordSME.setBounds(260, 270, 300, 26);
+        add(txtRePasswordSME);
+        txtRePasswordSME.setBounds(260, 310, 300, 28);
 
-        SystemAMSEAddressLabel.setText("        Address:");
-        add(SystemAMSEAddressLabel);
-        SystemAMSEAddressLabel.setBounds(108, 447, 110, 16);
+        jLabel6.setText("        Address:");
+        add(jLabel6);
+        jLabel6.setBounds(108, 447, 110, 20);
 
-        SystemAMSEUsernameLabel.setText("Username: ");
-        add(SystemAMSEUsernameLabel);
-        SystemAMSEUsernameLabel.setBounds(150, 220, 100, 25);
-        add(SystemAMSEAddressText);
-        SystemAMSEAddressText.setBounds(260, 440, 300, 28);
+        jLabel2.setText("Username: ");
+        add(jLabel2);
+        jLabel2.setBounds(150, 220, 100, 25);
+        add(txtAddressSME);
+        txtAddressSME.setBounds(260, 440, 300, 28);
 
-        SystemAMSEPasswordLabel.setText("Password: ");
-        add(SystemAMSEPasswordLabel);
-        SystemAMSEPasswordLabel.setBounds(151, 266, 80, 25);
+        jLabel3.setText("Password: ");
+        add(jLabel3);
+        jLabel3.setBounds(151, 266, 80, 25);
 
-        SystemAMSERoleLabel.setText("      Role:");
-        add(SystemAMSERoleLabel);
-        SystemAMSERoleLabel.setBounds(145, 501, 70, 16);
+        jLabel7.setText("      Role:");
+        add(jLabel7);
+        jLabel7.setBounds(145, 501, 70, 20);
 
-        SystemAMSENameLabel.setText("     Name:");
-        add(SystemAMSENameLabel);
-        SystemAMSENameLabel.setBounds(143, 361, 80, 16);
+        jLabel4.setText("     Name:");
+        add(jLabel4);
+        jLabel4.setBounds(143, 361, 80, 20);
 
-        SystemAMSEConfirmPasswordLabel.setText("Confirm Password:");
-        add(SystemAMSEConfirmPasswordLabel);
-        SystemAMSEConfirmPasswordLabel.setBounds(94, 312, 140, 27);
+        jLabel8.setText("Confirm Password:");
+        add(jLabel8);
+        jLabel8.setBounds(94, 312, 140, 27);
 
-=======
-        SystemAMSERoleRadio2.setBounds(850, 690, 119, 20);
-        add(SystemAMSEPasswordText);
-        SystemAMSEPasswordText.setBounds(820, 320, 300, 22);
-        add(SystemAMSEConfirmPasswordText);
-        SystemAMSEConfirmPasswordText.setBounds(820, 360, 300, 28);
-
-        SystemAMSEAddressLabel.setText("        Address:");
-        add(SystemAMSEAddressLabel);
-        SystemAMSEAddressLabel.setBounds(650, 560, 110, 16);
-
-        SystemAMSEUsernameLabel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        SystemAMSEUsernameLabel.setText("Username: ");
-        add(SystemAMSEUsernameLabel);
-        SystemAMSEUsernameLabel.setBounds(670, 270, 100, 25);
-        add(SystemAMSEAddressText);
-        SystemAMSEAddressText.setBounds(820, 560, 300, 28);
-
-        SystemAMSEPasswordLabel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        SystemAMSEPasswordLabel.setText("Password: ");
-        add(SystemAMSEPasswordLabel);
-        SystemAMSEPasswordLabel.setBounds(670, 320, 80, 25);
-
-        SystemAMSERoleLabel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        SystemAMSERoleLabel.setText("      Role:");
-        add(SystemAMSERoleLabel);
-        SystemAMSERoleLabel.setBounds(690, 650, 70, 14);
-
-        SystemAMSENameLabel.setText("     Name:");
-        add(SystemAMSENameLabel);
-        SystemAMSENameLabel.setBounds(660, 430, 80, 16);
-
-        SystemAMSEConfirmPasswordLabel.setText("Confirm Password:");
-        add(SystemAMSEConfirmPasswordLabel);
-        SystemAMSEConfirmPasswordLabel.setBounds(670, 370, 140, 27);
-
-        SystemAMSERoleRadio1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
-        SystemAMSERoleRadio1.setText("Supplier Manager");
-        SystemAMSERoleRadio1.addActionListener(new java.awt.event.ActionListener() {
+        radioBtnManagerSME.setText("Supplier Manager");
+        radioBtnManagerSME.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SystemAMSERoleRadio1ActionPerformed(evt);
+                radioBtnManagerSMEActionPerformed(evt);
             }
         });
-        add(SystemAMSERoleRadio1);
-<<<<<<< Updated upstream
-        SystemAMSERoleRadio1.setBounds(260, 500, 116, 19);
-        add(SystemAMSENameText);
-        SystemAMSENameText.setBounds(260, 350, 300, 30);
+        add(radioBtnManagerSME);
+        radioBtnManagerSME.setBounds(260, 500, 155, 19);
+        add(txtNameSME);
+        txtNameSME.setBounds(260, 350, 300, 30);
 
-        SystemAMSELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemManageEmployees.jpg"))); // NOI18N
-        add(SystemAMSELabel);
-        SystemAMSELabel.setBounds(0, 0, 1330, 800);
-=======
-        SystemAMSERoleRadio1.setBounds(850, 650, 120, 19);
-        add(SystemAMSENameText);
-        SystemAMSENameText.setBounds(820, 420, 300, 30);
-
-        SystemAMSELabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/SystemManageEmployees.jpg"))); // NOI18N
-        add(SystemAMSELabel);
-        SystemAMSELabel.setBounds(-10, 250, 570, 520);
->>>>>>> Stashed changes
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Manage_Emplyee_Final_IMAGE.png"))); // NOI18N
+        add(jLabel10);
+        jLabel10.setBounds(0, 0, 1330, 800);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SystemAMSERoleRadio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSERoleRadio2ActionPerformed
+    private void radioBtnDeliverySMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioBtnDeliverySMEActionPerformed
         // TODO add your handling code here:
-        SystemAMSERoleRadio1.setSelected(false);
-    }//GEN-LAST:event_SystemAMSERoleRadio2ActionPerformed
+        radioBtnManagerSME.setSelected(false);
+    }//GEN-LAST:event_radioBtnDeliverySMEActionPerformed
 
-    private void SystemAMSERoleRadio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSERoleRadio1ActionPerformed
+    private void radioBtnManagerSMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioBtnManagerSMEActionPerformed
         // TODO add your handling code here:
-        SystemAMSERoleRadio2.setSelected(false);
-    }//GEN-LAST:event_SystemAMSERoleRadio1ActionPerformed
+        radioBtnDeliverySME.setSelected(false);
+    }//GEN-LAST:event_radioBtnManagerSMEActionPerformed
 
-    private void SystemAMSEBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSEBackButtonActionPerformed
+    private void BtnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBackActionPerformed
         // TODO add your handling code here:
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_SystemAMSEBackButtonActionPerformed
+    }//GEN-LAST:event_BtnBackActionPerformed
 
-    private void SystemAMSESubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSESubmitButtonActionPerformed
+    private void BtnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSubmitActionPerformed
         // TODO add your handling code here:
         if(validateThis())
         {
 
-            Employee e = supplier.getEmployeeDirectory().createEmployee(SystemAMSENameText.getText(), SystemAMSEAddressText.getText(), SystemAMSEPhoneNumberText.getText());
+            Employee e = supplier.getEmployeeDirectory().createEmployee(txtNameSME.getText(), txtAddressSME.getText(), txtPhoneSME.getText());
             if(e == null)
             {
-                JOptionPane.showMessageDialog(null,"Employee " + SystemAMSENameText.getText() + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null,"Employee " + txtNameSME.getText() + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
                 return;
             }
             else
             {
-                if(SystemAMSERoleRadio1.isSelected())
+                if(radioBtnManagerSME.isSelected())
                 {
-                    UserAccount ua = ecosystem.getUserAccountDirectory().createUserAccount(SystemAMSEUsernameText.getText(), SystemAMSEPasswordText.getText(), e, new SupplierAdminRole());
+                    UserAccount ua = ecosystem.getUserAccountDirectory().createUserAccount(txtUsernameSME.getText(), txtPasswordSME.getText(), e, new SupplierAdminRole());
                     if(ua != null)
                     {
-                        JOptionPane.showMessageDialog(null, "Manager account created successfully for " + e.getEmployeeName());
+                        JOptionPane.showMessageDialog(null, "Manager account created successfully for " + e.getName());
                     }
                     else
                     {
                         supplier.getEmployeeDirectory().deleteEmployee(e);
-                        JOptionPane.showMessageDialog(null,"Username " + SystemAMSEUsernameText.getText() + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
+                        JOptionPane.showMessageDialog(null,"Username " + txtUsernameSME.getText() + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
                         return;
                     }
                 }
                 else
                 {
-                    UserAccount ua = ecosystem.getUserAccountDirectory().createUserAccount(SystemAMSEUsernameText.getText(), SystemAMSEPasswordText.getText(), e, new SupplierDeliveryManRole());
+                    UserAccount ua = ecosystem.getUserAccountDirectory().createUserAccount(txtUsernameSME.getText(), txtPasswordSME.getText(), e, new SupplierDeliveryManRole());
                     if(ua != null)
                     {
-                        SupplierDeliveryMan sdm = supplier.getSupplierDeliveryManDirectory().createSupplierDeliveryMan(SystemAMSENameText.getText(), SystemAMSEAddressText.getText(), SystemAMSEPhoneNumberText.getText());
-                        JOptionPane.showMessageDialog(null, "Delivery Man account created successfully for " + e.getEmployeeName());
+                        SupplierDeliveryMan sdm = supplier.getSupplierDeliveryManDirectory().createSupplierDeliveryMan(txtNameSME.getText(), txtAddressSME.getText(), txtPhoneSME.getText());
+                        JOptionPane.showMessageDialog(null, "Delivery Man account created successfully for " + e.getName());
                     }
                     else
                     {
                         supplier.getEmployeeDirectory().deleteEmployee(e);
-                        JOptionPane.showMessageDialog(null,"Username " + SystemAMSEUsernameText.getText() + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
+                        JOptionPane.showMessageDialog(null,"Username " + txtUsernameSME.getText() + " already exists!", "Warning", JOptionPane.WARNING_MESSAGE);
                         return;
                     }
 
                 }
-                SystemAMSECreateButton.setEnabled(true);
-                SystemAMSEUsernameText.setText("");
-                SystemAMSEUsernameText.setEnabled(false);
-                SystemAMSEPasswordText.setText("");
-                SystemAMSEPasswordText.setEnabled(false);
-                SystemAMSEConfirmPasswordText.setText("");
-                SystemAMSEConfirmPasswordText.setEnabled(false);
-                SystemAMSENameText.setText("");
-                SystemAMSENameText.setEnabled(false);
-                SystemAMSEPhoneNumberText.setText("");
-                SystemAMSEPhoneNumberText.setEnabled(false);
-                SystemAMSEAddressText.setText("");
-                SystemAMSEAddressText.setEnabled(false);
-                SystemAMSESubmitButton.setEnabled(false);
-                SystemAMSERoleRadio2.setSelected(false);
-                SystemAMSERoleRadio2.setEnabled(false);
-                SystemAMSERoleRadio1.setSelected(false);
-                SystemAMSERoleRadio1.setEnabled(false);
+                BtnCreate.setEnabled(true);
+                txtUsernameSME.setText("");
+                txtUsernameSME.setEnabled(false);
+                txtPasswordSME.setText("");
+                txtPasswordSME.setEnabled(false);
+                txtRePasswordSME.setText("");
+                txtRePasswordSME.setEnabled(false);
+                txtNameSME.setText("");
+                txtNameSME.setEnabled(false);
+                txtPhoneSME.setText("");
+                txtPhoneSME.setEnabled(false);
+                txtAddressSME.setText("");
+                txtAddressSME.setEnabled(false);
+                BtnSubmit.setEnabled(false);
+                radioBtnDeliverySME.setSelected(false);
+                radioBtnDeliverySME.setEnabled(false);
+                radioBtnManagerSME.setSelected(false);
+                radioBtnManagerSME.setEnabled(false);
             }
             populateSupplierEmpTable();
         }
@@ -418,25 +316,25 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
         {
             return;
         }
-    }//GEN-LAST:event_SystemAMSESubmitButtonActionPerformed
+    }//GEN-LAST:event_BtnSubmitActionPerformed
 
-    private void SystemAMSETableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SystemAMSETableMouseClicked
+    private void tblManageSupplierEmpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblManageSupplierEmpMouseClicked
         // TODO add your handling code here:
         
-        int selectedRow = SystemAMSETable.getSelectedRow();
+        int selectedRow = tblManageSupplierEmp.getSelectedRow();
         if (selectedRow >= 0)
         {
-            SystemAMSEDeleteButton.setEnabled(true);
-            SystemAMSEViewButton.setEnabled(true);
+            BtnDelete.setEnabled(true);
+            BtnView.setEnabled(true);
         }
-    }//GEN-LAST:event_SystemAMSETableMouseClicked
+    }//GEN-LAST:event_tblManageSupplierEmpMouseClicked
 
-    private void SystemAMSEViewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSEViewButtonActionPerformed
+    private void BtnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnViewActionPerformed
         // TODO add your handling code here:
-        int selectedRow = SystemAMSETable.getSelectedRow();
+        int selectedRow = tblManageSupplierEmp.getSelectedRow();
         if (selectedRow >= 0)
         {
-            Employee selectedEmployee = (Employee) SystemAMSETable.getValueAt(selectedRow, 1);
+            Employee selectedEmployee = (Employee) tblManageSupplierEmp.getValueAt(selectedRow, 1);
             SystemUpdateSupplierEmployee fs = new SystemUpdateSupplierEmployee(userProcessContainer, selectedEmployee, ecosystem);
             userProcessContainer.add("SysUpdateSupplierEmployee", fs);
             CardLayout layout = (CardLayout) userProcessContainer.getLayout();
@@ -447,16 +345,16 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_SystemAMSEViewButtonActionPerformed
+    }//GEN-LAST:event_BtnViewActionPerformed
 
-    private void SystemAMSEDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSEDeleteButtonActionPerformed
+    private void BtnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDeleteActionPerformed
         // TODO add your handling code here:
-        int selectedRow = SystemAMSETable.getSelectedRow();
+        int selectedRow = tblManageSupplierEmp.getSelectedRow();
         if (selectedRow >= 0)
         {
-            Employee selectedEmployee = (Employee) SystemAMSETable.getValueAt(selectedRow, 1);
+            Employee selectedEmployee = (Employee) tblManageSupplierEmp.getValueAt(selectedRow, 1);
             supplier.getEmployeeDirectory().deleteEmployee(selectedEmployee);
-            JOptionPane.showMessageDialog(null, "Employee " + selectedEmployee.getEmployeeName()+ " deleted successfully!");
+            JOptionPane.showMessageDialog(null, "Employee " + selectedEmployee.getName()+ " deleted successfully!");
             populateSupplierEmpTable();
         }
         else
@@ -464,60 +362,60 @@ public class SystemAdminManageSupplierEmployee extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_SystemAMSEDeleteButtonActionPerformed
+    }//GEN-LAST:event_BtnDeleteActionPerformed
 
-    private void SystemAMSECreateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemAMSECreateButtonActionPerformed
+    private void BtnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCreateActionPerformed
         // TODO add your handling code here:
-        SystemAMSECreateButton.setEnabled(false);
-        SystemAMSEUsernameText.setEnabled(true);
-        SystemAMSEPasswordText.setEnabled(true);
-        SystemAMSEConfirmPasswordText.setEnabled(true);
-        SystemAMSENameText.setEnabled(true);
-        SystemAMSEPhoneNumberText.setEnabled(true);
-        SystemAMSEAddressText.setEnabled(true);
-        SystemAMSESubmitButton.setEnabled(true);
-        SystemAMSERoleRadio2.setEnabled(true);
-        SystemAMSERoleRadio1.setEnabled(true);
-    }//GEN-LAST:event_SystemAMSECreateButtonActionPerformed
+        BtnCreate.setEnabled(false);
+        txtUsernameSME.setEnabled(true);
+        txtPasswordSME.setEnabled(true);
+        txtRePasswordSME.setEnabled(true);
+        txtNameSME.setEnabled(true);
+        txtPhoneSME.setEnabled(true);
+        txtAddressSME.setEnabled(true);
+        BtnSubmit.setEnabled(true);
+        radioBtnDeliverySME.setEnabled(true);
+        radioBtnManagerSME.setEnabled(true);
+    }//GEN-LAST:event_BtnCreateActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel SystemAMSEAddressLabel;
-    private javax.swing.JTextField SystemAMSEAddressText;
-    private javax.swing.JButton SystemAMSEBackButton;
-    private javax.swing.JLabel SystemAMSEConfirmPasswordLabel;
-    private javax.swing.JTextField SystemAMSEConfirmPasswordText;
-    private javax.swing.JButton SystemAMSECreateButton;
-    private javax.swing.JButton SystemAMSEDeleteButton;
-    private javax.swing.JLabel SystemAMSELabel;
-    private javax.swing.JLabel SystemAMSELabel1;
-    private javax.swing.JLabel SystemAMSENameLabel;
-    private javax.swing.JTextField SystemAMSENameText;
-    private javax.swing.JLabel SystemAMSEPasswordLabel;
-    private javax.swing.JTextField SystemAMSEPasswordText;
-    private javax.swing.JLabel SystemAMSEPhoneNumberLabel;
-    private javax.swing.JTextField SystemAMSEPhoneNumberText;
-    private javax.swing.JLabel SystemAMSERoleLabel;
-    private javax.swing.JRadioButton SystemAMSERoleRadio1;
-    private javax.swing.JRadioButton SystemAMSERoleRadio2;
-    private javax.swing.JButton SystemAMSESubmitButton;
-    private javax.swing.JTable SystemAMSETable;
-    private javax.swing.JLabel SystemAMSEUsernameLabel;
-    private javax.swing.JTextField SystemAMSEUsernameText;
-    private javax.swing.JButton SystemAMSEViewButton;
+    private javax.swing.JButton BtnBack;
+    private javax.swing.JButton BtnCreate;
+    private javax.swing.JButton BtnDelete;
+    private javax.swing.JButton BtnSubmit;
+    private javax.swing.JButton BtnView;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JRadioButton radioBtnDeliverySME;
+    private javax.swing.JRadioButton radioBtnManagerSME;
+    private javax.swing.JTable tblManageSupplierEmp;
+    private javax.swing.JTextField txtAddressSME;
+    private javax.swing.JTextField txtNameSME;
+    private javax.swing.JTextField txtPasswordSME;
+    private javax.swing.JTextField txtPhoneSME;
+    private javax.swing.JTextField txtRePasswordSME;
+    private javax.swing.JTextField txtUsernameSME;
     // End of variables declaration//GEN-END:variables
 
 
 private void populateSupplierEmpTable() {
-        DefaultTableModel dtm = (DefaultTableModel)SystemAMSETable.getModel();
+        DefaultTableModel dtm = (DefaultTableModel)tblManageSupplierEmp.getModel();
         dtm.setRowCount(0);
         if(supplier.getEmployeeDirectory().getEmployeeList() != null)
         {
             for(Employee e : supplier.getEmployeeDirectory().getEmployeeList())
             {
                 Object[] row = new Object[dtm.getColumnCount()];
-                row[0]= e.getEmployeeId();
+                row[0]= e.getId();
                 row[1]= e;
                 UserAccount ua = ecosystem.getUserAccountDirectory().findEmployee(e);
                 row[2] = ua.getRole().toString().substring(14).replace("Role", "");
@@ -526,26 +424,26 @@ private void populateSupplierEmpTable() {
         }
         if(dtm.getRowCount() == 0)
             {
-                SystemAMSEDeleteButton.setEnabled(false);
-                SystemAMSEViewButton.setEnabled(false);
+                BtnDelete.setEnabled(false);
+                BtnView.setEnabled(false);
             }
     }
 
     private boolean validateThis() {
         String regex = "\\d{10}";
-        if(("".equals(SystemAMSEUsernameText.getText())) || ("".equals(SystemAMSEPasswordText.getText())) || ("".equals(SystemAMSEConfirmPasswordText.getText())) 
-                || ("".equals(SystemAMSENameText.getText())) || ("".equals(SystemAMSEPhoneNumberText.getText())) || ("".equals(SystemAMSEAddressText.getText()))
-                || ((SystemAMSERoleRadio2.isEnabled() == false) && (SystemAMSERoleRadio1.isEnabled() == false)))
+        if(("".equals(txtUsernameSME.getText())) || ("".equals(txtPasswordSME.getText())) || ("".equals(txtRePasswordSME.getText())) 
+                || ("".equals(txtNameSME.getText())) || ("".equals(txtPhoneSME.getText())) || ("".equals(txtAddressSME.getText()))
+                || ((radioBtnDeliverySME.isEnabled() == false) && (radioBtnManagerSME.isEnabled() == false)))
         {
             JOptionPane.showMessageDialog(null,"Please fill all details!", "Warning", JOptionPane.WARNING_MESSAGE);
             return false;
         }
-        else if(!(SystemAMSEPasswordText.getText().equals(SystemAMSEConfirmPasswordText.getText())))
+        else if(!(txtPasswordSME.getText().equals(txtRePasswordSME.getText())))
         {
             JOptionPane.showMessageDialog(null,"Passwords do not match!", "Warning", JOptionPane.WARNING_MESSAGE);
             return false;
         }
-        else if(!(SystemAMSEPhoneNumberText.getText().matches(regex)))
+        else if(!(txtPhoneSME.getText().matches(regex)))
         {
             JOptionPane.showMessageDialog(null,"Phone number must have only 10 digits!", "Warning", JOptionPane.WARNING_MESSAGE);
             return false;

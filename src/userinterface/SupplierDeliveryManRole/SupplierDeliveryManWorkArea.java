@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author nupoorkorde
+ * @author Vini
  */
 public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
   private JPanel userProcessContainer;
@@ -40,14 +40,14 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
         
         for(Supplier s : business.getSupplierDirectory().getSupplierList())
         {
-            if(s.findSupplierDeliveryMan(account.getEmployee().getEmployeeName()) != null)
+            if(s.findSupplierDeliveryMan(account.getEmployee().getName()) != null)
             {
-                this.supplierDeliveryMan = s.findSupplierDeliveryMan(account.getEmployee().getEmployeeName());
+                this.supplierDeliveryMan = s.findSupplierDeliveryMan(account.getEmployee().getName());
                 this.supplier = s;
                 break;
             }
         }
-        SupplierDMWALabel1.setText("Orders to be delivered by " + this.supplierDeliveryMan);
+        lblDeliveryMan.setText("Orders to be delivered by " + this.supplierDeliveryMan);
         
 //        if(workRequestJTable.getRowCount() > 0)
 //        {
@@ -57,7 +57,7 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
     public void populateTable(){
         if(supplier.getSupplierOrderDirectory() != null)
         {
-            DefaultTableModel dtm = (DefaultTableModel)SupplierDMWATable.getModel();
+            DefaultTableModel dtm = (DefaultTableModel)workRequestJTable.getModel();
             dtm.setRowCount(0);
             for(SupplierOrders so : supplier.getSupplierOrderDirectory().getSupplierOrderList())
             {
@@ -94,21 +94,17 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        SupplierDMWATable = new javax.swing.JTable();
-        SupplierDMWALabel1 = new javax.swing.JLabel();
-        SupplierDMWAProcessButton = new javax.swing.JButton();
-        SupplierDMWARefreshButton = new javax.swing.JButton();
-        SupplierDMWALabel = new javax.swing.JLabel();
+        workRequestJTable = new javax.swing.JTable();
+        lblDeliveryMan = new javax.swing.JLabel();
+        processJButton = new javax.swing.JButton();
+        refreshJButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(null);
 
-<<<<<<< Updated upstream
-        SupplierDMWATable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-=======
-        SupplierDMWATable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
->>>>>>> Stashed changes
-        SupplierDMWATable.setModel(new javax.swing.table.DefaultTableModel(
+        workRequestJTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -131,81 +127,58 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(SupplierDMWATable);
+        jScrollPane1.setViewportView(workRequestJTable);
 
         add(jScrollPane1);
-<<<<<<< Updated upstream
         jScrollPane1.setBounds(126, 176, 910, 100);
 
-        SupplierDMWALabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        SupplierDMWALabel1.setText("<>");
-        add(SupplierDMWALabel1);
-        SupplierDMWALabel1.setBounds(88, 68, 400, 20);
+        lblDeliveryMan.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        lblDeliveryMan.setText("<>");
+        add(lblDeliveryMan);
+        lblDeliveryMan.setBounds(88, 68, 400, 20);
 
-        SupplierDMWAProcessButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        jScrollPane1.setBounds(60, 60, 970, 150);
-
-        SupplierDMWALabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        SupplierDMWALabel1.setText("<>");
-        add(SupplierDMWALabel1);
-        SupplierDMWALabel1.setBounds(80, 20, 400, 20);
-
-        SupplierDMWAProcessButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
->>>>>>> Stashed changes
-        SupplierDMWAProcessButton.setText("Process");
-        SupplierDMWAProcessButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SupplierDMWAProcessButton.addActionListener(new java.awt.event.ActionListener() {
+        processJButton.setBackground(new java.awt.Color(255, 255, 255));
+        processJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        processJButton.setText("Process");
+        processJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplierDMWAProcessButtonActionPerformed(evt);
+                processJButtonActionPerformed(evt);
             }
         });
-        add(SupplierDMWAProcessButton);
-<<<<<<< Updated upstream
-        SupplierDMWAProcessButton.setBounds(926, 294, 110, 50);
+        add(processJButton);
+        processJButton.setBounds(926, 294, 110, 50);
 
-        SupplierDMWARefreshButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-=======
-        SupplierDMWAProcessButton.setBounds(60, 230, 210, 30);
-
-        SupplierDMWARefreshButton.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
->>>>>>> Stashed changes
-        SupplierDMWARefreshButton.setText("Refresh");
-        SupplierDMWARefreshButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        SupplierDMWARefreshButton.addActionListener(new java.awt.event.ActionListener() {
+        refreshJButton.setBackground(new java.awt.Color(255, 255, 255));
+        refreshJButton.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        refreshJButton.setText("Refresh");
+        refreshJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplierDMWARefreshButtonActionPerformed(evt);
+                refreshJButtonActionPerformed(evt);
             }
         });
-        add(SupplierDMWARefreshButton);
-<<<<<<< Updated upstream
-        SupplierDMWARefreshButton.setBounds(946, 128, 90, 30);
+        add(refreshJButton);
+        refreshJButton.setBounds(946, 128, 90, 30);
 
-        SupplierDMWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/delivery1234.jpg"))); // NOI18N
-        add(SupplierDMWALabel);
-        SupplierDMWALabel.setBounds(0, 80, 1080, 700);
-=======
-        SupplierDMWARefreshButton.setBounds(280, 230, 200, 30);
-
-        SupplierDMWALabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/blue-pill-background.png"))); // NOI18N
-        add(SupplierDMWALabel);
-        SupplierDMWALabel.setBounds(0, 0, 1130, 880);
->>>>>>> Stashed changes
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/MicrosoftTeams-image (4).png"))); // NOI18N
+        add(jLabel1);
+        jLabel1.setBounds(0, 80, 1080, 700);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SupplierDMWAProcessButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierDMWAProcessButtonActionPerformed
+    private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
 
-        int selectedRow = SupplierDMWATable.getSelectedRow();
+        int selectedRow = workRequestJTable.getSelectedRow();
         if (selectedRow >= 0)
         {
-            if((SupplierDMWATable.getValueAt(selectedRow, 1)) == null)
+            if((workRequestJTable.getValueAt(selectedRow, 1)) == null)
             {
                 JOptionPane.showMessageDialog(null,"Order is not live anymore!", "Warning", JOptionPane.WARNING_MESSAGE);
                 return;
             }
             else
             {
-                SupplierOrders so = (SupplierOrders) SupplierDMWATable.getValueAt(selectedRow, 0);
+                SupplierOrders so = (SupplierOrders) workRequestJTable.getValueAt(selectedRow, 0);
                 SupplierProcessDeliveryWorkArea fs = new SupplierProcessDeliveryWorkArea(userProcessContainer, so);
                 userProcessContainer.add("SysAdminManageEmployees", fs);
                 CardLayout layout = (CardLayout) userProcessContainer.getLayout();
@@ -217,10 +190,10 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please select a row!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-    }//GEN-LAST:event_SupplierDMWAProcessButtonActionPerformed
+    }//GEN-LAST:event_processJButtonActionPerformed
 
-    private void SupplierDMWARefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierDMWARefreshButtonActionPerformed
-        if(SupplierDMWATable.getRowCount() > 0)
+    private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
+        if(workRequestJTable.getRowCount() > 0)
         {
             populateTable();
             JOptionPane.showMessageDialog(null, "Table refreshed!");
@@ -229,15 +202,15 @@ public class SupplierDeliveryManWorkArea extends javax.swing.JPanel {
         {
             JOptionPane.showMessageDialog(null,"Nothing to refresh!", "Warning", JOptionPane.WARNING_MESSAGE);
         }
-    }//GEN-LAST:event_SupplierDMWARefreshButtonActionPerformed
+    }//GEN-LAST:event_refreshJButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel SupplierDMWALabel;
-    private javax.swing.JLabel SupplierDMWALabel1;
-    private javax.swing.JButton SupplierDMWAProcessButton;
-    private javax.swing.JButton SupplierDMWARefreshButton;
-    private javax.swing.JTable SupplierDMWATable;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblDeliveryMan;
+    private javax.swing.JButton processJButton;
+    private javax.swing.JButton refreshJButton;
+    private javax.swing.JTable workRequestJTable;
     // End of variables declaration//GEN-END:variables
 }
